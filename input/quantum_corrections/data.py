@@ -410,6 +410,7 @@ atom_energies = {
         "C": -37.842468 + SOC["C"],
         "P": -341.246985 + SOC["P"],
         "S": -398.101240 + SOC["S"],
+        'F': -99.7301998263, 
     },
     "LevelOfTheory(method='g3',software='gaussian')": {
         "H": -0.5010030,

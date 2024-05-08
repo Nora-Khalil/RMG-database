@@ -126,22 +126,6 @@ C2F4-2
 5 *2 C u0 p0 c0 {2,S} {3,S} {6,D}
 6 *1 C u0 p0 c0 {1,S} {4,S} {5,D}
 
-CH3CCl
-1    Cl u0 p3 c0 {3,S}
-2 *2 C  u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
-3 *1 C  u0 p1 c0 {1,S} {2,S}
-4 *3 H  u0 p0 c0 {2,S}
-5    H  u0 p0 c0 {2,S}
-6    H  u0 p0 c0 {2,S}
-
-CH2CHCl
-1    Cl u0 p3 c0 {3,S}
-2 *2 C  u0 p0 c0 {3,D} {5,S} {6,S}
-3 *1 C  u0 p0 c0 {1,S} {2,D} {4,S}
-4 *3 H  u0 p0 c0 {3,S}
-5    H  u0 p0 c0 {2,S}
-6    H  u0 p0 c0 {2,S}
-
 CH3CF
 1    F u0 p3 c0 {3,S}
 2 *2 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
@@ -157,6 +141,22 @@ CH2CHF
 4 *3 H u0 p0 c0 {3,S}
 5    H u0 p0 c0 {2,S}
 6    H u0 p0 c0 {2,S}
+
+CH3CCl
+1    Cl u0 p3 c0 {3,S}
+2 *2 C  u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
+3 *1 C  u0 p1 c0 {1,S} {2,S}
+4 *3 H  u0 p0 c0 {2,S}
+5    H  u0 p0 c0 {2,S}
+6    H  u0 p0 c0 {2,S}
+
+CH2CHCl
+1    Cl u0 p3 c0 {3,S}
+2 *2 C  u0 p0 c0 {3,D} {5,S} {6,S}
+3 *1 C  u0 p0 c0 {1,S} {2,D} {4,S}
+4 *3 H  u0 p0 c0 {3,S}
+5    H  u0 p0 c0 {2,S}
+6    H  u0 p0 c0 {2,S}
 
 CH3CH2CBr
 1    Br u0 p3 c0 {4,S}

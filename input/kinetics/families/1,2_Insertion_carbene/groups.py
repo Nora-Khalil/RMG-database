@@ -41,28 +41,29 @@ entry(
 
 entry(
     index = 1,
-    label = "HH",
+    label = "Root_5Br1sCbCdCl1sCsCtF1sHI1sNSSidSis->H",
     group = 
 """
-1 *1 C2s                     u0 p1 {2,S} {3,S}
-2    [H,F1s,Cl1s,Br1s,I1s]   u0 {1,S}
-3    [H,F1s,Cl1s,Br1s,I1s,C] u0 {1,S}
-4 *2 H                       u0 {5,S}
-5 *3 H                       u0 {4,S}
+1 *1 C2s                                             u0 p1 {2,S} {3,S}
+2    [H,F1s,Cl1s,Br1s,I1s]                           u0 {1,S}
+3    [H,F1s,Cl1s,Br1s,I1s,C]                         u0 {1,S}
+4 *2 [H,F1s,Cl1s,Br1s,I1s,Cs,Cd,Cb,Ct,O,Sis,Sid,N,S] u0 {5,S}
+5 *3 H                                               u0 {4,S}
 """,
     kinetics = None,
 )
 
 entry(
     index = 2,
-    label = "HH_2Br1sCl1sF1sHI1s->H",
+    label = "Root_5Br1sCbCdCl1sCsCtF1sHI1sNSSidSis->H_Ext-4Br1sCbCdCl1sCsCtF1sHI1sNOSSidSis-R",
     group = 
 """
-1 *1 C2s                     u0 p1 {2,S} {3,S}
-2    H                       u0 {1,S}
-3    [H,F1s,Cl1s,Br1s,I1s,C] u0 {1,S}
-4 *2 H                       u0 {5,S}
-5 *3 H                       u0 {4,S}
+1 *1 C2s                                             u0 p1 {2,S} {3,S}
+2    H                                               u0 {1,S}
+3    H                                               u0 {1,S}
+4 *2 [H,F1s,Cl1s,Br1s,I1s,Cs,Cd,Cb,Ct,O,Sis,Sid,N,S] u0 {5,S} {6,[S,D,T,B,Q]}
+5 *3 H                                               u0 {4,S}
+6    R!H                                             ux {4,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )
@@ -765,13 +766,13 @@ entry(
     label = "CH2_CH_N-4CbCdCsCt->Cs_Ext-4CbCdCt-R_Ext-6R!H-R",
     group = 
 """
-1 *1 C2s        u0 p1 {2,S} {3,S}
-2    H          u0 {1,S}
-3    H          u0 {1,S}
-4 *2 [Cd,Cb,Ct] u0 {5,S} {6,[S,D,T,B,Q]}
-5 *3 H          u0 {4,S}
-6    C          ux {4,[S,D,T,B,Q]} {7,[S,D,T,B,Q]}
-7    C          ux {6,[S,D,T,B,Q]}
+1 *1 C2s                          u0 p1 {2,S} {3,S}
+2    H                            u0 {1,S}
+3    H                            u0 {1,S}
+4 *2 [Ct,H,Br1s,O,Cl1s,Cd,Cb,F1s] u0 {5,S} {6,[S,D,T,B,Q]}
+5 *3 H                            u0 {4,S}
+6    C                            ux {4,[S,D,T,B,Q]} {7,[S,D,T,B,Q]}
+7    C                            ux {6,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )
@@ -797,13 +798,13 @@ entry(
     label = "CH2_CH_N-4CbCdCsCt->Cs_Ext-4CbCdCt-R_Ext-6R!H-R_N-Sp-6R!H-4CbCdCt",
     group = 
 """
-1 *1 C2s        u0 p1 {2,S} {3,S}
-2    H          u0 {1,S}
-3    H          u0 {1,S}
-4 *2 [Cd,Cb,Ct] u0 {5,S} {6,[B,D,T]}
-5 *3 H          u0 {4,S}
-6    C          ux {4,[B,D,T]} {7,[S,D,T,B,Q]}
-7    C          ux {6,[S,D,T,B,Q]}
+1 *1 C2s                          u0 p1 {2,S} {3,S}
+2    H                            u0 {1,S}
+3    H                            u0 {1,S}
+4 *2 [Ct,H,Br1s,O,Cl1s,Cd,Cb,F1s] u0 {5,S} {6,[B,D,T]}
+5 *3 H                            u0 {4,S}
+6    C                            ux {4,[B,D,T]} {7,[S,D,T,B,Q]}
+7    C                            ux {6,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )
@@ -829,13 +830,13 @@ entry(
     label = "CH2_CH_N-4CbCdCsCt->Cs_Ext-4CbCdCt-R_Ext-6R!H-R_N-Sp-6R!H-4CbCdCt_N-Sp-7R!H=6R!H",
     group = 
 """
-1 *1 C2s        u0 p1 {2,S} {3,S}
-2    H          u0 {1,S}
-3    H          u0 {1,S}
-4 *2 [Cd,Cb,Ct] u0 {5,S} {6,[B,D,T]}
-5 *3 H          u0 {4,S}
-6    C          ux {4,[B,D,T]} {7,[S,B]}
-7    C          ux {6,[S,B]}
+1 *1 C2s                          u0 p1 {2,S} {3,S}
+2    H                            u0 {1,S}
+3    H                            u0 {1,S}
+4 *2 [Ct,H,Br1s,O,Cl1s,Cd,Cb,F1s] u0 {5,S} {6,[B,D,T]}
+5 *3 H                            u0 {4,S}
+6    C                            ux {4,[B,D,T]} {7,[S,B]}
+7    C                            ux {6,[S,B]}
 """,
     kinetics = None,
 )
@@ -899,7 +900,7 @@ entry(
 1 *1 C2s u0 p1 {2,S} {3,S}
 2    H   u0 {1,S}
 3    H   u0 {1,S}
-4 *2 Cd  u0 r0 {5,S} {6,[B,D,T]}
+4 *2 Ct  u0 r0 {5,S} {6,[B,D,T]}
 5 *3 H   u0 {4,S}
 6    C   ux r0 {4,[B,D,T]} {7,S}
 7    C   ux r0 {6,S}
@@ -915,7 +916,7 @@ entry(
 1 *1 C2s     u0 p1 {2,S} {3,S}
 2    H       u0 {1,S}
 3    H       u0 {1,S}
-4 *2 [Cb,Ct] u0 r0 {5,S} {6,[B,D,T]}
+4 *2 [Cb,Cd] u0 r0 {5,S} {6,[B,D,T]}
 5 *3 H       u0 {4,S}
 6    C       ux r0 {4,[B,D,T]} {7,S}
 7    C       ux r0 {6,S}
@@ -1126,11 +1127,11 @@ entry(
     label = "CHY_CY",
     group = 
 """
-1 *1 C2s                 u0 p1 {2,S} {3,S}
-2    H                   u0 {1,S}
-3    F1s                 u0 {1,S}
-4 *2 Cs                  u0 {5,S}
-5 *3 [F1s,Cl1s,Br1s,I1s] u0 {4,S}
+1 *1 C2s               u0 p1 {2,S} {3,S}
+2    Br1s              u0 {1,S}
+3    [Cl1s,H,Br1s,F1s] u0 {1,S}
+4 *2 O                 u0 r0 {5,S}
+5 *3 H                 u0 {4,S}
 """,
     kinetics = None,
 )

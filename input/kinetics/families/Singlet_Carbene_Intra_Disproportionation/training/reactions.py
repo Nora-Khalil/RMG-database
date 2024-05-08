@@ -87,7 +87,7 @@ entry(
     index = 5,
     label = "CH3CF <=> CH2CHF",
     degeneracy = 3.0,
-    kinetics = Arrhenius(A=(1e13,'s^-1'), n=0, Ea=(15,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(A=(1e+13,'s^-1'), n=0, Ea=(15,'kcal/mol'), T0=(1,'K')),
     rank = 10,
     shortDesc = """MP2/6-311+G(2d,p)""",
     longDesc = 
@@ -101,7 +101,7 @@ entry(
     index = 6,
     label = "CH3CCl <=> CH2CHCl",
     degeneracy = 3.0,
-    kinetics = Arrhenius(A=(1e13,'s^-1'), n=0, Ea=(10,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(A=(1e+13,'s^-1'), n=0, Ea=(10,'kcal/mol'), T0=(1,'K')),
     rank = 10,
     shortDesc = """MP2/6-311+G(2d,p)""",
     longDesc = 
@@ -115,7 +115,7 @@ entry(
     index = 7,
     label = "CH3CH2CBr <=> CH3CHCHBr",
     degeneracy = 2.0,
-    kinetics = Arrhenius(A=(1e13,'s^-1'), n=0, Ea=(4.2,'kcal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(A=(1e+13,'s^-1'), n=0, Ea=(4.2,'kcal/mol'), T0=(1,'K')),
     rank = 10,
     shortDesc = """MP2/6-311+G(2d,p)""",
     longDesc = 

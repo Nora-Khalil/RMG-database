@@ -39,7 +39,7 @@ entry(
     label = "Root_1R->H",
     group =
 """
-1 * H u1
+1 * C u1 r1
 2 * R u1
 """,
     kinetics = None,
@@ -50,8 +50,8 @@ entry(
     label = "Root_1R->H_2R->S",
     group =
 """
-1 * H u1
-2 * S u1
+1 * C u1 r1
+2 * O u1
 """,
     kinetics = None,
 )

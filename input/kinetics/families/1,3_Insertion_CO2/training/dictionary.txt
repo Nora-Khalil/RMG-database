@@ -112,6 +112,7 @@ C4H8O2-2
 13    H u0 p0 c0 {5,S}
 14    H u0 p0 c0 {5,S}
 
+<<<<<<< HEAD
 CH3N
 1    N u0 p1 c0 {2,D} {5,S}
 2 *4 C u0 p0 c0 {1,D} {3,S} {4,S}
@@ -184,6 +185,19 @@ C4H9NO2
 14    H u0 p0 c0 {6,S}
 15    H u0 p0 c0 {6,S}
 16    H u0 p0 c0 {3,S}
+=======
+CHFO2
+1 *3 F u0 p3 c0 {4,S}
+2 *2 O u0 p2 c0 {4,S} {5,S}
+3    O u0 p2 c0 {4,D}
+4 *1 C u0 p0 c0 {1,S} {2,S} {3,D}
+5 *4 H u0 p0 c0 {2,S}
+
+FH
+1 *3 F u0 p3 c0 {2,S}
+2 *4 H u0 p0 c0 {1,S}
+
+>>>>>>> 6af2e5617 (Retrained 1,3_Insertion_CO2 family. This is the second retraining. Since adding in new reaction families, the number of matched reactions from PFAS_HPL changed. This retraining update this family with the most up-to-date reaction count)
 C2HF3O2
 1    F u0 p3 c0 {6,S}
 2    F u0 p3 c0 {6,S}
@@ -200,6 +214,25 @@ CHF3
 3    F u0 p3 c0 {4,S}
 4 *3 C u0 p0 c0 {1,S} {2,S} {3,S} {5,S}
 5 *4 H u0 p0 c0 {4,S}
+
+C3F4O2
+1    F u0 p3 c0 {7,S}
+2    F u0 p3 c0 {8,S}
+3    F u0 p3 c0 {8,S}
+4 *3 F u0 p3 c0 {9,S}
+5 *2 O u0 p2 c0 {7,S} {9,S}
+6    O u0 p2 c0 {9,D}
+7 *4 C u0 p0 c0 {1,S} {5,S} {8,D}
+8    C u0 p0 c0 {2,S} {3,S} {7,D}
+9 *1 C u0 p0 c0 {4,S} {5,S} {6,D}
+
+C2F4
+1 *3 F u0 p3 c0 {5,S}
+2    F u0 p3 c0 {6,S}
+3    F u0 p3 c0 {6,S}
+4    F u0 p3 c0 {5,S}
+5 *4 C u0 p0 c0 {1,S} {4,S} {6,D}
+6    C u0 p0 c0 {2,S} {3,S} {5,D}
 
 C3HF4O2
 multiplicity 2

@@ -100,9 +100,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([38.8421,42.7102,46.1452,48.8863,52.1602,54.1136,56.2067],'J/(mol*K)','+|-',[2.77279,2.8985,2.71756,2.52334,2.18775,1.94272,3.75494]),
-        H298 = (-193.465,'kJ/mol','+|-',13.3847),
-        S298 = (240.709,'J/(mol*K)','+|-',7.61983),
+        Cpdata = ([38.3115,42.0935,45.4821,48.2067,51.4977,53.4671,55.6377],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-191.648,'kJ/mol','+|-',15.6194),
+        S298 = (238.226,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -110,7 +110,6 @@ entry(
 Fitted from following species using Ridge regression
 
 F[C]F (CF2) from C1_C2_Fluorine
-F[C]F (CF2(s)) from NCSU_C2_C8_PFAS
 """,
 )
 
@@ -173,9 +172,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([49.3413,56.6756,62.5984,67.2584,73.7722,78.1618,84.0516],'J/(mol*K)','+|-',[1.06874,1.11719,1.04745,0.972593,0.843243,0.748798,1.4473]),
-        H298 = (-150.27,'kJ/mol','+|-',5.15896),
-        S298 = (199.329,'J/(mol*K)','+|-',2.93698),
+        Cpdata = ([48.8466,56.1313,62.2464,67.2602,74.5175,79.2335,84.9476],'J/(mol*K)','+|-',[1.04899,1.16907,1.15467,1.09555,0.926231,0.778876,1.56901]),
+        H298 = (-159.225,'kJ/mol','+|-',4.82567),
+        S298 = (199.95,'J/(mol*K)','+|-',2.43976),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -186,21 +185,6 @@ C[C]F (CH3CF) from C1_C2_Fluorine
 F[C]CF (CH2FCF) from C1_C2_Fluorine
 F[C]C(F)F (CHF2CF) from C1_C2_Fluorine
 F[C]C(F)(F)F (CF3CF) from C1_C2_Fluorine
-F[C]C(F)(F)F (PF2alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)F (PF3alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)F (PF4alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16alkyl(s)) from NCSU_C2_C8_PFAS
 CC[C]F (CC[C]F) from CHOF_G4
 F[C]CF (F[C]CF) from CHOF_G4
 CC(F)(F)[C]F (CC(F)(F)[C]F) from CHOF_G4
@@ -269,9 +253,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([34.4541,36.5126,38.9404,41.3326,45.2054,48.153,52.543],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (148.298,'kJ/mol','+|-',18.9287),
-        S298 = (223.109,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([34.113,36.1511,38.5549,40.9234,44.7578,47.6763,52.0229],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (146.83,'kJ/mol','+|-',15.6194),
+        S298 = (220.901,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -553,9 +537,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([33.7962,34.8454,36.2424,37.8282,41.1232,44.2324,49.7829],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (429.885,'kJ/mol','+|-',18.9287),
-        S298 = (189.203,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([33.4616,34.5004,35.8836,37.4537,40.7161,43.7945,49.2901],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (425.629,'kJ/mol','+|-',15.6194),
+        S298 = (187.33,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -686,9 +670,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([42.5516,49.0934,54.73,59.3009,65.7671,70.8092,78.9203],'J/(mol*K)','+|-',[2.23302,2.33426,2.18854,2.03213,1.76187,1.56454,3.02398]),
-        H298 = (120.111,'kJ/mol','+|-',10.7791),
-        S298 = (180.542,'J/(mol*K)','+|-',6.13651),
+        Cpdata = ([41.9494,48.3941,54.224,59.1421,66.2903,71.5975,79.5505],'J/(mol*K)','+|-',[1.99919,2.22803,2.20059,2.08791,1.76523,1.48439,2.99025]),
+        H298 = (112.249,'kJ/mol','+|-',9.19684),
+        S298 = (180.25,'J/(mol*K)','+|-',4.64973),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -923,9 +907,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([14.5715,14.6874,14.9054,15.2075,15.9469,16.5814,17.5858],'J/(mol*K)','+|-',[1.3864,1.44925,1.35878,1.26167,1.09387,0.971358,1.87747]),
-        H298 = (-55.267,'kJ/mol','+|-',6.69233),
-        S298 = (98.8209,'J/(mol*K)','+|-',3.80991),
+        Cpdata = ([14.499,14.6143,14.8312,15.1318,15.8676,16.4989,17.5181],'J/(mol*K)','+|-',[1.70611,1.9014,1.87799,1.78182,1.50644,1.26678,2.55188]),
+        H298 = (-54.992,'kJ/mol','+|-',7.84857),
+        S298 = (98.3292,'J/(mol*K)','+|-',3.96808),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -933,7 +917,6 @@ entry(
 Fitted from following species using Ridge regression
 
 [C-]#[O+] (CO) from C1_C3_hydrofluorocarbons_NIST
-[C-]#[O+] (CO) from NCSU_C2_C8_PFAS
 """,
 )
 
@@ -1574,9 +1557,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([29.7797,32.1125,33.8183,34.781,36.7782,38.2343,40.2409],'J/(mol*K)','+|-',[0.649326,0.678764,0.636391,0.59091,0.512322,0.454941,0.879323]),
-        H298 = (-0.658462,'kJ/mol','+|-',3.13439),
-        S298 = (126.487,'J/(mol*K)','+|-',1.78439),
+        Cpdata = ([29.7291,32.0567,33.7623,34.7241,36.7168,38.1691,40.1884],'J/(mol*K)','+|-',[0.567376,0.632321,0.624536,0.592556,0.500976,0.421275,0.848643]),
+        H298 = (-0.435583,'kJ/mol','+|-',2.61009),
+        S298 = (126.331,'J/(mol*K)','+|-',1.31961),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -1640,9 +1623,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([21.5955,24.8315,27.1266,28.3696,31.2548,33.5375,37.2251],'J/(mol*K)','+|-',[0.797631,0.833793,0.781742,0.725873,0.629336,0.558849,1.08016]),
-        H298 = (111.629,'kJ/mol','+|-',3.85028),
-        S298 = (103.375,'J/(mol*K)','+|-',2.19195),
+        Cpdata = ([21.6109,24.8528,27.1457,28.3819,31.2478,33.5165,37.2181],'J/(mol*K)','+|-',[0.697033,0.77682,0.767255,0.727968,0.61546,0.517545,1.04258]),
+        H298 = (111.766,'kJ/mol','+|-',3.20655),
+        S298 = (103.403,'J/(mol*K)','+|-',1.62117),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -1717,9 +1700,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([12.8086,15.0047,17.0352,18.445,20.0993,21.2122,22.5305],'J/(mol*K)','+|-',[1.92069,2.00777,1.88243,1.7479,1.51544,1.3457,2.60102]),
-        H298 = (154.518,'kJ/mol','+|-',9.27145),
-        S298 = (35.1583,'J/(mol*K)','+|-',5.2782),
+        Cpdata = ([12.9001,15.0994,17.1391,18.5626,20.2414,21.3696,22.7025],'J/(mol*K)','+|-',[1.66779,1.8587,1.83581,1.74181,1.47261,1.23833,2.49457]),
+        H298 = (152.877,'kJ/mol','+|-',7.67232),
+        S298 = (35.6034,'J/(mol*K)','+|-',3.87897),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -1855,9 +1838,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([12.4204,13.6656,14.5933,15.8995,17.9217,19.3904,22.1182],'J/(mol*K)','+|-',[0.910729,0.952018,0.892587,0.828796,0.71857,0.638089,1.23332]),
-        H298 = (125.137,'kJ/mol','+|-',4.39621),
-        S298 = (33.3355,'J/(mol*K)','+|-',2.50275),
+        Cpdata = ([12.4551,13.6922,14.6465,15.9852,18.0648,19.5654,22.3021],'J/(mol*K)','+|-',[0.794015,0.884903,0.874007,0.829254,0.701092,0.589554,1.18763]),
+        H298 = (123.895,'kJ/mol','+|-',3.65269),
+        S298 = (33.7883,'J/(mol*K)','+|-',1.84673),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -2752,9 +2735,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([37.2177,41.2776,44.6204,47.356,51.4301,54.3209,58.3107],'J/(mol*K)','+|-',[2.77279,2.8985,2.71756,2.52334,2.18775,1.94272,3.75494]),
-        H298 = (-393.514,'kJ/mol','+|-',13.3847),
-        S298 = (213.768,'J/(mol*K)','+|-',7.61983),
+        Cpdata = ([36.8493,40.8689,44.1786,46.8871,50.9209,53.7831,57.8183],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-389.618,'kJ/mol','+|-',15.6194),
+        S298 = (211.651,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -2762,7 +2745,6 @@ entry(
 Previously contains all zeros as data. New data fitted from following species using Ridge regression
 
 O=C=O (CO2) from C1_C3_hydrofluorocarbons_NIST
-O=C=O (CO2) from NCSU_C2_C8_PFAS
 """,
 )
 
@@ -3000,9 +2982,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-0.784947,-0.730269,-0.253546,-0.0623252,0.0275698,0.0601849,0.447086],'J/(mol*K)','+|-',[2.77279,2.8985,2.71756,2.52334,2.18775,1.94272,3.75494]),
-        H298 = (-19.4252,'kJ/mol','+|-',13.3847),
-        S298 = (-4.26473,'J/(mol*K)','+|-',7.61983),
+        Cpdata = ([-0.781042,-0.726636,-0.252284,-0.0620152,0.0274326,0.0598854,0.444862],'J/(mol*K)','+|-',[2.4128,2.68898,2.65587,2.51988,2.13043,1.7915,3.6089]),
+        H298 = (-19.3286,'kJ/mol','+|-',11.0996),
+        S298 = (-4.24351,'J/(mol*K)','+|-',5.61171),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -3449,9 +3431,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([15.3187,17.7401,19.2067,20.4964,21.9966,22.9498,23.8239],'J/(mol*K)','+|-',[1.55004,1.62031,1.51916,1.41059,1.22299,1.08601,2.09908]),
-        H298 = (136.404,'kJ/mol','+|-',7.48225),
-        S298 = (21.5308,'J/(mol*K)','+|-',4.25961),
+        Cpdata = ([15.3585,17.7842,19.254,20.5472,22.0508,23.006,23.8824],'J/(mol*K)','+|-',[1.34903,1.50344,1.48493,1.4089,1.19115,1.00165,2.01778]),
+        H298 = (136.725,'kJ/mol','+|-',6.2059),
+        S298 = (21.5992,'J/(mol*K)','+|-',3.13758),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -3481,9 +3463,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([16.0825,18.5057,19.5696,20.6014,21.9388,22.8395,23.6338],'J/(mol*K)','+|-',[2.49936,2.61267,2.44957,2.27451,1.97201,1.75114,3.38466]),
-        H298 = (139.528,'kJ/mol','+|-',12.0648),
-        S298 = (21.0569,'J/(mol*K)','+|-',6.86842),
+        Cpdata = ([16.12,18.547,19.6155,20.6517,21.9929,22.8958,23.6929],'J/(mol*K)','+|-',[2.16923,2.41754,2.38777,2.26551,1.91537,1.61065,3.2446]),
+        H298 = (139.828,'kJ/mol','+|-',9.9791),
+        S298 = (21.1339,'J/(mol*K)','+|-',5.04523),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -3511,9 +3493,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([15.3982,17.7215,19.1559,20.5782,22.161,23.1466,24.0764],'J/(mol*K)','+|-',[3.17663,3.32065,3.11335,2.89085,2.50638,2.22566,4.30182]),
-        H298 = (133.461,'kJ/mol','+|-',15.334),
-        S298 = (24.8948,'J/(mol*K)','+|-',8.7296),
+        Cpdata = ([15.2831,17.5909,19.0143,20.4255,21.9969,22.9754,23.8981],'J/(mol*K)','+|-',[2.75521,3.07059,3.03278,2.87749,2.43277,2.04574,4.12106]),
+        H298 = (132.488,'kJ/mol','+|-',12.6748),
+        S298 = (24.6987,'J/(mol*K)','+|-',6.40809),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -3539,9 +3521,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([16.0772,17.9212,19.2309,20.6095,22.0366,22.8758,23.7031],'J/(mol*K)','+|-',[4.21656,4.40772,4.13256,3.83722,3.32689,2.95427,5.7101]),
-        H298 = (133.699,'kJ/mol','+|-',20.3539),
-        S298 = (25.6059,'J/(mol*K)','+|-',11.5874),
+        Cpdata = ([15.8786,17.7002,18.9937,20.3551,21.7648,22.5936,23.4105],'J/(mol*K)','+|-',[3.64372,4.0608,4.0108,3.80543,3.2173,2.70545,5.45003]),
+        H298 = (132.057,'kJ/mol','+|-',16.7622),
+        S298 = (25.2847,'J/(mol*K)','+|-',8.4746),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -3566,9 +3548,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([15.7642,18.0672,19.4295,20.7192,22.1075,23.0476,24.0478],'J/(mol*K)','+|-',[3.17663,3.32065,3.11335,2.89085,2.50638,2.22566,4.30182]),
-        H298 = (133.343,'kJ/mol','+|-',15.334),
-        S298 = (25.6083,'J/(mol*K)','+|-',8.7296),
+        Cpdata = ([15.6473,17.9349,19.2865,20.5658,21.9437,22.8769,23.8696],'J/(mol*K)','+|-',[2.75521,3.07059,3.03278,2.87749,2.43277,2.04574,4.12106]),
+        H298 = (132.371,'kJ/mol','+|-',12.6748),
+        S298 = (25.4086,'J/(mol*K)','+|-',6.40809),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -3594,9 +3576,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([16.1797,17.9374,19.2818,20.5581,21.8387,22.6455,23.5285],'J/(mol*K)','+|-',[3.17663,3.32065,3.11335,2.89085,2.50638,2.22566,4.30182]),
-        H298 = (133.484,'kJ/mol','+|-',15.334),
-        S298 = (23.9692,'J/(mol*K)','+|-',8.7296),
+        Cpdata = ([16.0607,17.8058,19.1395,20.4055,21.6762,22.4768,23.3529],'J/(mol*K)','+|-',[2.75521,3.07059,3.03278,2.87749,2.43277,2.04574,4.12106]),
+        H298 = (132.511,'kJ/mol','+|-',12.6748),
+        S298 = (23.7777,'J/(mol*K)','+|-',6.40809),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -4318,9 +4300,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([47.2141,54.4405,60.2367,64.6692,70.5537,74.2844,78.6295],'J/(mol*K)','+|-',[1.75367,1.83317,1.71873,1.5959,1.38365,1.22868,2.37483]),
-        H298 = (-606.786,'kJ/mol','+|-',8.4652),
-        S298 = (258.759,'J/(mol*K)','+|-',4.8192),
+        Cpdata = ([47.0221,54.2341,60.0135,64.4202,70.3095,74.0539,78.4415],'J/(mol*K)','+|-',[1.71036,1.90614,1.88267,1.78627,1.5102,1.26994,2.55824]),
+        H298 = (-605.306,'kJ/mol','+|-',7.86814),
+        S298 = (258.067,'J/(mol*K)','+|-',3.97797),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -4329,7 +4311,6 @@ Fitted from following species using Ridge regression
 
 O=C(F)F (CF2O) from C1_C2_Fluorine
 O=C(F)F (CF2O) from C1_C3_hydrofluorocarbons_NIST
-O=C(F)F (CF2O) from NCSU_C2_C8_PFAS
 O=C(F)F (CF2O) from PFCA_thermo
 O=C(F)F (ODC(F)F) from CHOF_G4
 """,
@@ -4430,9 +4411,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([67.8199,75.4304,81.1243,85.7214,92.5097,96.9504,102.206],'J/(mol*K)','+|-',[2.77279,2.8985,2.71756,2.52334,2.18775,1.94272,3.75494]),
-        H298 = (-299.66,'kJ/mol','+|-',13.3847),
-        S298 = (289.092,'J/(mol*K)','+|-',7.61983),
+        Cpdata = ([67.4825,75.0552,80.7207,85.295,92.0495,96.4681,101.698],'J/(mol*K)','+|-',[2.4128,2.68898,2.65587,2.51988,2.13043,1.7915,3.6089]),
+        H298 = (-298.169,'kJ/mol','+|-',11.0996),
+        S298 = (287.654,'J/(mol*K)','+|-',5.61171),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -4456,9 +4437,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([40.0555,45.0233,49.0944,52.3096,56.9212,59.9727,62.8884],'J/(mol*K)','+|-',[0.245483,0.256613,0.240593,0.223399,0.193688,0.171994,0.332436]),
-        H298 = (-339.954,'kJ/mol','+|-',1.18498),
-        S298 = (154.432,'J/(mol*K)','+|-',0.674606),
+        Cpdata = ([40.0364,44.9376,49.0073,52.278,57.0533,60.2108,62.9125],'J/(mol*K)','+|-',[0.219759,0.244914,0.241898,0.229512,0.194041,0.16317,0.3287]),
+        H298 = (-341.129,'kJ/mol','+|-',1.01095),
+        S298 = (154.561,'J/(mol*K)','+|-',0.511117),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -4468,25 +4449,9 @@ Fitted from following species using Ridge regression
 C=C(F)F (CH2CF2) from C1_C2_Fluorine
 FC=C(F)F (CHFCF2) from C1_C2_Fluorine
 FC(F)=C(F)F (CF2CF2) from C1_C2_Fluorine
-FC=C(F)F (CHFCF2) from C1_C3_hydrofluorocarbons_NIST
 FC(F)=C(F)F (CF2CF2) from C1_C3_hydrofluorocarbons_NIST
 C=C(F)F (CH2CF2) from C1_C3_hydrofluorocarbons_NIST
 FC(F)=C(F)C(F)(F)F (C3F6) from C1_C3_hydrofluorocarbons_NIST
-FC(F)=C(F)F (PF2ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)F (PF3ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)F (PF4ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)F (PF5ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16ene) from NCSU_C2_C8_PFAS
 FC(F)=C(F)F (CF2CF2) from PFCA_thermo
 FC(F)=C(F)C(F)(F)F (CF3CFCF2) from PFCA_thermo
 FC(F)=C(F)C(F)(F)C(F)(F)F (C2F5CFCF2) from PFCA_thermo
@@ -4974,9 +4939,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([40.1326,45.5548,50.8294,55.4724,62.3195,67.2352,74.1554],'J/(mol*K)','+|-',[2.26398,2.36662,2.21888,2.0603,1.78629,1.58622,3.0659]),
-        H298 = (-383.046,'kJ/mol','+|-',10.9285),
-        S298 = (246.525,'J/(mol*K)','+|-',6.22156),
+        Cpdata = ([39.9992,45.4034,50.6605,55.2881,62.1125,67.0119,73.9091],'J/(mol*K)','+|-',[1.97331,2.19919,2.17211,2.06089,1.74238,1.46518,2.95155]),
+        H298 = (-381.774,'kJ/mol','+|-',9.0778),
+        S298 = (245.706,'J/(mol*K)','+|-',4.58955),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -5084,9 +5049,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([57.0193,65.2138,71.6112,76.7909,84.7465,90.3089,97.9421],'J/(mol*K)','+|-',[2.77279,2.8985,2.71756,2.52334,2.18775,1.94272,3.75494]),
-        H298 = (-153.297,'kJ/mol','+|-',13.3847),
-        S298 = (271.335,'J/(mol*K)','+|-',7.61983),
+        Cpdata = ([56.7356,64.8894,71.255,76.4089,84.3249,89.8597,97.4549],'J/(mol*K)','+|-',[2.4128,2.68898,2.65587,2.51988,2.13043,1.7915,3.6089]),
+        H298 = (-152.534,'kJ/mol','+|-',11.0996),
+        S298 = (269.986,'J/(mol*K)','+|-',5.61171),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -5110,9 +5075,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([31.0553,35.8554,40.169,43.8696,49.5493,53.6769,59.6208],'J/(mol*K)','+|-',[0.208506,0.217959,0.204352,0.189748,0.164512,0.146087,0.282361]),
-        H298 = (-147.27,'kJ/mol','+|-',1.00649),
-        S298 = (136.616,'J/(mol*K)','+|-',0.572989),
+        Cpdata = ([31.0581,35.8502,40.1585,43.854,49.52,53.6435,59.6172],'J/(mol*K)','+|-',[0.182669,0.203578,0.201071,0.190776,0.161291,0.135631,0.273224]),
+        H298 = (-147.217,'kJ/mol','+|-',0.840328),
+        S298 = (136.668,'J/(mol*K)','+|-',0.424853),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -5122,7 +5087,6 @@ Fitted from following species using Ridge regression
 C=CF (CH2CHF) from C1_C2_Fluorine
 FC=CF (CHFCHF) from C1_C2_Fluorine
 FC=C(F)F (CHFCF2) from C1_C2_Fluorine
-FC=C(F)F (CHFCF2) from C1_C3_hydrofluorocarbons_NIST
 C=CF (CH2CHF) from C1_C3_hydrofluorocarbons_NIST
 FC=CC(F)(F)F (CHFCHCF3) from C1_C3_hydrofluorocarbons_NIST
 FC=CF (CHFCHF[Z]) from C1_C3_hydrofluorocarbons_NIST
@@ -5761,16 +5725,15 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([35.895,44.4625,50.6461,54.8117,59.9133,62.7644,64.7771],'J/(mol*K)','+|-',[2.26397,2.36661,2.21887,2.0603,1.78629,1.58622,3.06589]),
-        H298 = (-419.614,'kJ/mol','+|-',10.9285),
-        S298 = (151.772,'J/(mol*K)','+|-',6.22155),
+        Cpdata = ([36.0555,44.6002,50.7717,54.944,60.0714,62.9365,64.9614],'J/(mol*K)','+|-',[1.9415,2.16374,2.1371,2.02766,1.71429,1.44156,2.90397]),
+        H298 = (-420.395,'kJ/mol','+|-',8.93145),
+        S298 = (152.076,'J/(mol*K)','+|-',4.51556),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
 """
 Fitted from following species using Ridge regression
 
-O=C(O)F (FCOOH) from NCSU_C2_C8_PFAS
 O=C(O)F (FC_O_OH) from PFCA_thermo
 O=C(F)OF (ODC(F)OF) from CHOF_G4
 COC(=O)F (COC(DO)F) from CHOF_G4
@@ -6321,9 +6284,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([38.4713,43.3592,47.2939,50.2174,54.4572,57.3401,61.1028],'J/(mol*K)','+|-',[0.612706,0.640483,0.6005,0.557584,0.483428,0.429283,0.829732]),
-        H298 = (-355.117,'kJ/mol','+|-',2.95762),
-        S298 = (168.164,'J/(mol*K)','+|-',1.68376),
+        Cpdata = ([37.3428,41.9798,46.037,49.2355,54.1104,57.3978,61.5798],'J/(mol*K)','+|-',[0.565495,0.630225,0.622465,0.590592,0.499315,0.419879,0.845829]),
+        H298 = (-359.916,'kJ/mol','+|-',2.60144),
+        S298 = (168.464,'J/(mol*K)','+|-',1.31523),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -6332,21 +6295,6 @@ Fitted from following species using Ridge regression
 
 O=C(F)C(F)(F)F (CF3CFO) from C1_C2_Fluorine
 O=C(F)C(F)(F)F (CF3COF) from C1_C3_hydrofluorocarbons_NIST
-O=C(F)C(F)(F)F (PF2acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)F (PF3acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)F (PF4acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16acylF) from NCSU_C2_C8_PFAS
 O=C(F)C(F)(F)F (CF3CFO) from PFCA_thermo
 O=C(F)C(F)(F)C(F)(F)F (C2F5CFO) from PFCA_thermo
 O=C(F)C(F)(F)C(F)(F)C(F)(F)F (C3F7CFO) from PFCA_thermo
@@ -6463,9 +6411,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([29.0953,32.9117,35.6114,37.6632,40.8176,42.7236,44.6056],'J/(mol*K)','+|-',[0.244019,0.255082,0.239159,0.222066,0.192533,0.170969,0.330453]),
-        H298 = (-153.615,'kJ/mol','+|-',1.17792),
-        S298 = (52.6467,'J/(mol*K)','+|-',0.670582),
+        Cpdata = ([29.1873,32.9237,35.5906,37.6658,40.929,42.8888,44.5745],'J/(mol*K)','+|-',[0.21481,0.239399,0.236451,0.224344,0.189671,0.159496,0.321299]),
+        H298 = (-154.713,'kJ/mol','+|-',0.988188),
+        S298 = (52.81,'J/(mol*K)','+|-',0.499608),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -6474,20 +6422,6 @@ Fitted from following species using Ridge regression
 
 C=C(F)C(F)(F)F (CH2CFCF3) from C1_C3_hydrofluorocarbons_NIST
 FC(F)=C(F)C(F)(F)F (C3F6) from C1_C3_hydrofluorocarbons_NIST
-FC(F)=C(F)C(F)(F)F (PF3ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)F (PF4ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)F (PF5ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16ene) from NCSU_C2_C8_PFAS
 FC(F)=C(F)C(F)(F)F (CF3CFCF2) from PFCA_thermo
 FC(F)=C(F)C(F)(F)C(F)(F)F (C2F5CFCF2) from PFCA_thermo
 FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)F (C3F7CFCF2) from PFCA_thermo
@@ -6921,9 +6855,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([35.4435,39.1763,43.6723,48.2228,55.966,61.9942,71.1639],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-108.585,'kJ/mol','+|-',18.9287),
-        S298 = (218.745,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([35.0926,38.7884,43.24,47.7454,55.412,61.3805,70.4593],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-107.51,'kJ/mol','+|-',15.6194),
+        S298 = (216.579,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -7147,9 +7081,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([29.8137,34.0506,38.323,41.9647,47.7546,51.9044,58.597],'J/(mol*K)','+|-',[0.517908,0.541388,0.507591,0.471315,0.408632,0.362865,0.701356]),
-        H298 = (-109.087,'kJ/mol','+|-',2.50001),
-        S298 = (146.456,'J/(mol*K)','+|-',1.42325),
+        Cpdata = ([30.1564,34.3292,38.4741,41.9979,47.6354,51.7182,58.2182],'J/(mol*K)','+|-',[0.453394,0.505293,0.499071,0.473516,0.400334,0.336644,0.678157]),
+        H298 = (-109.924,'kJ/mol','+|-',2.08574),
+        S298 = (147.16,'J/(mol*K)','+|-',1.05451),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -7425,9 +7359,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([28.324,32.7211,36.9889,40.9146,46.9526,51.2086,57.1541],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-114.414,'kJ/mol','+|-',18.9287),
-        S298 = (148.334,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([28.0435,32.3971,36.6227,40.5095,46.4878,50.7016,56.5883],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-113.282,'kJ/mol','+|-',15.6194),
+        S298 = (146.866,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -7468,9 +7402,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([21.755,27.6216,32.934,37.0412,42.7154,46.2682,49.4833],'J/(mol*K)','+|-',[1.22375,1.27923,1.19937,1.11365,0.965542,0.857399,1.65721]),
-        H298 = (-181.994,'kJ/mol','+|-',5.90719),
-        S298 = (51.5648,'J/(mol*K)','+|-',3.36294),
+        Cpdata = ([21.844,27.8538,33.2978,37.4897,43.2123,46.7457,50.1114],'J/(mol*K)','+|-',[1.07135,1.19399,1.17928,1.1189,0.945972,0.795476,1.60246]),
+        H298 = (-180.313,'kJ/mol','+|-',4.92852),
+        S298 = (51.5411,'J/(mol*K)','+|-',2.49176),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -7478,36 +7412,6 @@ entry(
 Previously contains all zeros as data. New data fitted from following species using Ridge regression
 
 O=C(O)C(F)(F)F (CF3C(O)OH) from C1_C2_Fluorine
-O=C(O)C(F)(F)F (PF2acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)F (PF3acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)F (PF4acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8acid) from NCSU_C2_C8_PFAS
-O=C1OC1(F)F (PF2lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)F (PF3lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)F (PF4lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)F (PF5lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8lactone) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16acid) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16lactone) from NCSU_C2_C8_PFAS
 O=C(O)C(F)(F)F (CF3C_O_OH) from PFCA_thermo
 O=C(O)C(F)(F)C(F)(F)F (C2F5C_O_OH) from PFCA_thermo
 O=C(O)C(F)(F)C(F)(F)C(F)(F)F (C3F7C_O_OH) from PFCA_thermo
@@ -7776,9 +7680,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([26.302,29.5783,32.5814,35.0472,38.8479,41.1663,43.9981],'J/(mol*K)','+|-',[0.939344,0.98193,0.920632,0.854836,0.741147,0.658137,1.27207]),
-        H298 = (-113.755,'kJ/mol','+|-',4.53434),
-        S298 = (65.3403,'J/(mol*K)','+|-',2.58138),
+        Cpdata = ([27.0432,30.2973,33.0958,35.3269,38.75,40.8801,43.3734],'J/(mol*K)','+|-',[0.823569,0.91784,0.906539,0.860119,0.727187,0.611498,1.23184]),
+        H298 = (-113.924,'kJ/mol','+|-',3.78865),
+        S298 = (65.8171,'J/(mol*K)','+|-',1.91546),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -8695,9 +8599,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([24.7252,30.0355,34.985,39.3589,46.2027,51.0892,57.9962],'J/(mol*K)','+|-',[1.96066,2.04955,1.9216,1.78427,1.54697,1.37371,2.65514]),
-        H298 = (-88.5008,'kJ/mol','+|-',9.46438),
-        S298 = (88.4053,'J/(mol*K)','+|-',5.38803),
+        Cpdata = ([24.6022,29.8861,34.811,39.1631,45.9729,50.835,57.7077],'J/(mol*K)','+|-',[1.70611,1.9014,1.87799,1.78182,1.50644,1.26678,2.55188]),
+        H298 = (-88.0605,'kJ/mol','+|-',7.84857),
+        S298 = (87.9655,'J/(mol*K)','+|-',3.96808),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -8738,9 +8642,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([21.9756,27.2453,31.816,35.7948,42.2323,47.2377,55.928],'J/(mol*K)','+|-',[0.287807,0.300855,0.282074,0.261915,0.227081,0.201648,0.389751]),
-        H298 = (22.3343,'kJ/mol','+|-',1.38928),
-        S298 = (114.565,'J/(mol*K)','+|-',0.790914),
+        Cpdata = ([21.9696,27.2735,31.8449,35.7869,42.1139,47.0584,55.9052],'J/(mol*K)','+|-',[0.252892,0.281839,0.278369,0.264115,0.223296,0.187771,0.378258]),
+        H298 = (22.9975,'kJ/mol','+|-',1.16337),
+        S298 = (114.596,'J/(mol*K)','+|-',0.588178),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -9021,9 +8925,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([51.8985,59.4209,65.5903,70.692,78.6324,84.7197,94.3646],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-47.7075,'kJ/mol','+|-',18.9287),
-        S298 = (241.861,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([51.3847,58.8326,64.941,69.9922,77.8539,83.881,93.4304],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-47.2352,'kJ/mol','+|-',15.6194),
+        S298 = (239.467,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -9085,9 +8989,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([19.7224,25.5674,30.3301,34.177,40.8335,46.1462,54.7877],'J/(mol*K)','+|-',[1.65172,1.72661,1.61882,1.50313,1.30322,1.15726,2.23678]),
-        H298 = (26.4308,'kJ/mol','+|-',7.97309),
-        S298 = (116.725,'J/(mol*K)','+|-',4.53905),
+        Cpdata = ([19.7703,25.601,30.3544,34.1951,40.8455,46.151,54.7811],'J/(mol*K)','+|-',[1.44084,1.60576,1.58599,1.50478,1.27222,1.06982,2.15511]),
+        H298 = (26.3776,'kJ/mol','+|-',6.62826),
+        S298 = (116.634,'J/(mol*K)','+|-',3.35111),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -9411,9 +9315,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([19.1063,22.4056,24.7053,26.5586,28.804,29.6448,28.8638],'J/(mol*K)','+|-',[0.778885,0.814196,0.763369,0.708813,0.614544,0.545714,1.05477]),
-        H298 = (20.6156,'kJ/mol','+|-',3.75978),
-        S298 = (-53.8019,'J/(mol*K)','+|-',2.14043),
+        Cpdata = ([19.1038,22.4179,24.7192,26.5646,28.788,29.611,28.8512],'J/(mol*K)','+|-',[0.68099,0.758941,0.749596,0.711213,0.601294,0.505634,1.01858]),
+        H298 = (20.7996,'kJ/mol','+|-',3.13275),
+        S298 = (-53.8429,'J/(mol*K)','+|-',1.58385),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -9632,9 +9536,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([17.7684,21.397,24.6316,27.3944,32.0473,35.3712,40.95],'J/(mol*K)','+|-',[0.231214,0.241696,0.226608,0.210413,0.182429,0.161997,0.313112]),
-        H298 = (23.434,'kJ/mol','+|-',1.1161),
-        S298 = (34.7725,'J/(mol*K)','+|-',0.635392),
+        Cpdata = ([17.8197,21.4864,24.7142,27.4284,31.9786,35.2426,40.8884],'J/(mol*K)','+|-',[0.202901,0.226127,0.223342,0.211906,0.179156,0.150654,0.303486]),
+        H298 = (23.3724,'kJ/mol','+|-',0.933403),
+        S298 = (34.9041,'J/(mol*K)','+|-',0.47191),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -10357,9 +10261,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([15.4319,18.7393,22.2217,25.2595,30.6372,34.3768,39.8949],'J/(mol*K)','+|-',[2.35039,2.45695,2.30357,2.13894,1.85447,1.64677,3.18292]),
-        H298 = (30.3764,'kJ/mol','+|-',11.3457),
-        S298 = (35.4385,'J/(mol*K)','+|-',6.45904),
+        Cpdata = ([15.4144,18.6972,22.154,25.1685,30.5136,34.2279,39.7262],'J/(mol*K)','+|-',[2.04785,2.28227,2.25416,2.13874,1.8082,1.52053,3.06304]),
+        H298 = (30.0162,'kJ/mol','+|-',9.42071),
+        S298 = (35.4074,'J/(mol*K)','+|-',4.76292),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -10388,9 +10292,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([18.0453,21.5485,24.9435,27.7397,32.2605,35.2852,40.4669],'J/(mol*K)','+|-',[2.36397,2.47115,2.31688,2.1513,1.86519,1.65628,3.20131]),
-        H298 = (24.7442,'kJ/mol','+|-',11.4112),
-        S298 = (33.8786,'J/(mol*K)','+|-',6.49636),
+        Cpdata = ([18.0729,21.528,24.8863,27.6595,32.1547,35.1535,40.2699],'J/(mol*K)','+|-',[2.05989,2.29568,2.26741,2.15131,1.81882,1.52946,3.08104]),
+        H298 = (25.0631,'kJ/mol','+|-',9.47608),
+        S298 = (33.633,'J/(mol*K)','+|-',4.79091),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -10419,9 +10323,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([17.7125,20.5105,23.6411,26.3704,31.3587,34.8605,40.0224],'J/(mol*K)','+|-',[2.35768,2.46457,2.31071,2.14557,1.86022,1.65187,3.19279]),
-        H298 = (25.609,'kJ/mol','+|-',11.3808),
-        S298 = (34.0794,'J/(mol*K)','+|-',6.47906),
+        Cpdata = ([17.7001,20.4751,23.5842,26.2923,31.2459,34.7259,39.8622],'J/(mol*K)','+|-',[2.05416,2.2893,2.26111,2.14533,1.81377,1.52521,3.07248]),
+        H298 = (25.2779,'kJ/mol','+|-',9.44973),
+        S298 = (34.0221,'J/(mol*K)','+|-',4.77759),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -11057,9 +10961,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([13.9758,18.1569,22.0487,26.1177,31.8095,34.8146,40.5672],'J/(mol*K)','+|-',[3.94443,4.12326,3.86586,3.58958,3.11218,2.76361,5.34159]),
-        H298 = (47.7054,'kJ/mol','+|-',19.0403),
-        S298 = (38.2284,'J/(mol*K)','+|-',10.8396),
+        Cpdata = ([13.9403,18.039,21.864,25.8769,31.4998,34.4572,40.1012],'J/(mol*K)','+|-',[3.41511,3.80603,3.75917,3.56668,3.01545,2.53571,5.1081]),
+        H298 = (47.614,'kJ/mol','+|-',15.7105),
+        S298 = (37.688,'J/(mol*K)','+|-',7.94291),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -13059,9 +12963,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([6.79233,11.1983,14.613,17.9695,23.7496,26.5168,31.026],'J/(mol*K)','+|-',[3.92686,4.10489,3.84863,3.57358,3.09831,2.7513,5.31779]),
-        H298 = (36.9688,'kJ/mol','+|-',18.9555),
-        S298 = (-72.5793,'J/(mol*K)','+|-',10.7913),
+        Cpdata = ([6.72229,11.0926,14.4786,17.8071,23.5434,26.2873,30.7223],'J/(mol*K)','+|-',[3.40004,3.78923,3.74257,3.55093,3.00213,2.52452,5.08555]),
+        H298 = (36.5501,'kJ/mol','+|-',15.6411),
+        S298 = (-71.9124,'J/(mol*K)','+|-',7.90784),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -13088,9 +12992,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([7.68797,11.1726,14.7782,17.8593,22.931,25.4739,30.8117],'J/(mol*K)','+|-',[3.92686,4.10489,3.84863,3.57358,3.09831,2.7513,5.31779]),
-        H298 = (34.8314,'kJ/mol','+|-',18.9555),
-        S298 = (-69.8469,'J/(mol*K)','+|-',10.7913),
+        Cpdata = ([7.60907,11.0671,14.6422,17.698,22.7329,25.2548,30.5101],'J/(mol*K)','+|-',[3.40004,3.78923,3.74257,3.55093,3.00213,2.52452,5.08555]),
+        H298 = (34.4339,'kJ/mol','+|-',15.6411),
+        S298 = (-69.2071,'J/(mol*K)','+|-',7.90784),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -13117,9 +13021,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([9.58813,12.9836,15.5988,18.9746,24.7509,27.4357,32.3195],'J/(mol*K)','+|-',[3.929,4.10712,3.85073,3.57553,3.1,2.75279,5.32068]),
-        H298 = (43.0631,'kJ/mol','+|-',18.9658),
-        S298 = (-70.5162,'J/(mol*K)','+|-',10.7972),
+        Cpdata = ([9.5121,12.94,15.5306,18.818,24.3751,26.9284,31.9756],'J/(mol*K)','+|-',[3.40215,3.79158,3.74489,3.55313,3.004,2.52609,5.0887]),
+        H298 = (43.8006,'kJ/mol','+|-',15.6508),
+        S298 = (-69.9462,'J/(mol*K)','+|-',7.91274),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -13146,9 +13050,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([7.33082,11.1979,14.838,18.141,23.7898,26.5302,32.1122],'J/(mol*K)','+|-',[3.929,4.10712,3.85073,3.57553,3.1,2.75279,5.32068]),
-        H298 = (24.8983,'kJ/mol','+|-',18.9658),
-        S298 = (-77.6643,'J/(mol*K)','+|-',10.7972),
+        Cpdata = ([7.27714,11.1719,14.7773,17.9927,23.4235,26.0318,31.7704],'J/(mol*K)','+|-',[3.40215,3.79158,3.74489,3.55313,3.004,2.52609,5.0887]),
+        H298 = (25.8156,'kJ/mol','+|-',15.6508),
+        S298 = (-77.0235,'J/(mol*K)','+|-',7.91274),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -13175,9 +13079,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([8.00623,11.7928,15.2823,18.4419,23.682,26.1969,31.0512],'J/(mol*K)','+|-',[3.92686,4.10489,3.84863,3.57358,3.09831,2.7513,5.31779]),
-        H298 = (31.8603,'kJ/mol','+|-',18.9555),
-        S298 = (-72.821,'J/(mol*K)','+|-',10.7913),
+        Cpdata = ([7.92418,11.6812,15.1413,18.2748,23.4765,25.9706,30.7472],'J/(mol*K)','+|-',[3.40004,3.78923,3.74257,3.55093,3.00213,2.52452,5.08555]),
+        H298 = (31.4922,'kJ/mol','+|-',15.6411),
+        S298 = (-72.1517,'J/(mol*K)','+|-',7.90784),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -13204,9 +13108,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([10.2449,12.7051,16.011,19.011,23.9354,26.322,32.0577],'J/(mol*K)','+|-',[3.929,4.10712,3.85073,3.57553,3.1,2.75279,5.32068]),
-        H298 = (46.2682,'kJ/mol','+|-',18.9658),
-        S298 = (-73.1375,'J/(mol*K)','+|-',10.7972),
+        Cpdata = ([10.1623,12.6642,15.9387,18.8541,23.5676,25.8257,31.7165],'J/(mol*K)','+|-',[3.40215,3.79158,3.74489,3.55313,3.004,2.52609,5.0887]),
+        H298 = (46.9739,'kJ/mol','+|-',15.6508),
+        S298 = (-72.5415,'J/(mol*K)','+|-',7.91274),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -19811,9 +19715,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([61.0296,71.9285,80.3473,86.5516,94.349,98.8591,103.484],'J/(mol*K)','+|-',[1.96066,2.04955,1.9216,1.78427,1.54697,1.37371,2.65515]),
-        H298 = (-933.282,'kJ/mol','+|-',9.46438),
-        S298 = (261.319,'J/(mol*K)','+|-',5.38803),
+        Cpdata = ([60.743,71.5736,79.974,86.158,93.9897,98.5352,103.161],'J/(mol*K)','+|-',[1.97331,2.19919,2.17211,2.06089,1.74238,1.46518,2.95155]),
+        H298 = (-930.234,'kJ/mol','+|-',9.0778),
+        S298 = (260.415,'J/(mol*K)','+|-',4.58955),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -19822,7 +19726,6 @@ Fitted from following species using Ridge regression
 
 FC(F)(F)F (CF4) from C1_C2_Fluorine
 FC(F)(F)F (CF4) from C1_C3_hydrofluorocarbons_NIST
-FC(F)(F)F (CF4) from NCSU_C2_C8_PFAS
 FC(F)(F)F (FC(F)(F)F) from CHOF_G4
 """,
 )
@@ -20100,9 +20003,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([50.9972,60.5629,68.8598,75.5421,84.6971,90.7759,98.5375],'J/(mol*K)','+|-',[1.96066,2.04955,1.9216,1.78427,1.54697,1.37371,2.65515]),
-        H298 = (-697.011,'kJ/mol','+|-',9.46438),
-        S298 = (259.334,'J/(mol*K)','+|-',5.38803),
+        Cpdata = ([50.7189,60.2414,68.4842,75.0976,84.2503,90.354,98.1946],'J/(mol*K)','+|-',[1.97331,2.19919,2.17211,2.06089,1.74238,1.46518,2.95155]),
+        H298 = (-694.555,'kJ/mol','+|-',9.0778),
+        S298 = (258.469,'J/(mol*K)','+|-',4.58955),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -20111,7 +20014,6 @@ Fitted from following species using Ridge regression
 
 FC(F)F (CHF3) from C1_C2_Fluorine
 FC(F)F (CHF3) from C1_C3_hydrofluorocarbons_NIST
-FC(F)F (CHF3) from NCSU_C2_C8_PFAS
 FC(F)F (FC(F)F) from CHOF_G4
 """,
 )
@@ -20285,9 +20187,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([42.8593,50.5649,58.3494,65.3562,75.7578,83.2369,93.8458],'J/(mol*K)','+|-',[1.96066,2.04955,1.9216,1.78427,1.54697,1.37371,2.65515]),
-        H298 = (-451.648,'kJ/mol','+|-',9.46438),
-        S298 = (246.321,'J/(mol*K)','+|-',5.38803),
+        Cpdata = ([42.6681,50.2885,57.9959,64.9492,75.3389,82.8086,93.4997],'J/(mol*K)','+|-',[1.97331,2.19919,2.17211,2.06089,1.74238,1.46518,2.95155]),
+        H298 = (-449.794,'kJ/mol','+|-',9.0778),
+        S298 = (245.502,'J/(mol*K)','+|-',4.58955),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -20296,7 +20198,6 @@ Fitted from following species using Ridge regression
 
 FCF (CH2F2) from C1_C2_Fluorine
 FCF (CH2F2) from C1_C3_hydrofluorocarbons_NIST
-FCF (CH2F2) from NCSU_C2_C8_PFAS
 FCF (FCF) from CHOF_G4
 """,
 )
@@ -20392,9 +20293,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([37.4875,43.5685,50.5367,57.2596,68.1132,76.5412,89.573],'J/(mol*K)','+|-',[2.26398,2.36662,2.21888,2.0603,1.78629,1.58622,3.0659]),
-        H298 = (-235.777,'kJ/mol','+|-',10.9285),
-        S298 = (222.548,'J/(mol*K)','+|-',6.22156),
+        Cpdata = ([37.363,43.4238,50.3689,57.0694,67.8869,76.287,89.2754],'J/(mol*K)','+|-',[1.97331,2.19919,2.17211,2.06089,1.74238,1.46518,2.95155]),
+        H298 = (-234.994,'kJ/mol','+|-',9.0778),
+        S298 = (221.808,'J/(mol*K)','+|-',4.58955),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -20690,9 +20591,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([49.9465,59.2437,65.875,70.7317,77.13,80.6958,84.8359],'J/(mol*K)','+|-',[0.525939,0.549783,0.515462,0.478623,0.414969,0.368491,0.712232]),
-        H298 = (-719.475,'kJ/mol','+|-',2.53878),
-        S298 = (172.083,'J/(mol*K)','+|-',1.44532),
+        Cpdata = ([49.904,59.2063,65.8495,70.7151,77.1197,80.6779,84.7873],'J/(mol*K)','+|-',[0.463678,0.516754,0.510391,0.484257,0.409415,0.34428,0.693539]),
+        H298 = (-719.713,'kJ/mol','+|-',2.13305),
+        S298 = (172.004,'J/(mol*K)','+|-',1.07843),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -20700,7 +20601,6 @@ entry(
 Fitted from following species using Ridge regression
 
 OC(F)(F)F (CF3OH) from C1_C2_Fluorine
-FC(OS(=O)O)(F)F (PF1Sulfite) from NCSU_C2_C8_PFAS
 FCOOC(F)(F)F (FCOOC(F)(F)F) from CHOF_G4
 OC(F)(F)OC(F)(F)F (OC(F)(F)OC(F)(F)F) from CHOF_G4
 OC(F)OC(F)(F)F (OC(F)OC(F)(F)F) from CHOF_G4
@@ -20935,9 +20835,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([44.5378,52.522,58.4965,63.2295,70.1381,74.614,80.5939],'J/(mol*K)','+|-',[0.466734,0.487894,0.457436,0.424744,0.368256,0.32701,0.632055]),
-        H298 = (-487.218,'kJ/mol','+|-',2.25299),
-        S298 = (161.78,'J/(mol*K)','+|-',1.28262),
+        Cpdata = ([44.5249,52.4968,58.4723,63.2104,70.1313,74.6127,80.5832],'J/(mol*K)','+|-',[0.407922,0.454615,0.449018,0.426026,0.360183,0.302881,0.610143]),
+        H298 = (-487.366,'kJ/mol','+|-',1.87656),
+        S298 = (161.811,'J/(mol*K)','+|-',0.948749),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -21116,9 +21016,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([34.2013,42.0429,48.7435,54.323,62.7257,68.3724,76.732],'J/(mol*K)','+|-',[0.410847,0.429473,0.402663,0.373885,0.32416,0.287854,0.556372]),
-        H298 = (-256.014,'kJ/mol','+|-',1.98321),
-        S298 = (141.113,'J/(mol*K)','+|-',1.12904),
+        Cpdata = ([34.1809,42.0114,48.7148,54.3007,62.7165,68.3698,76.7263],'J/(mol*K)','+|-',[0.359137,0.400247,0.395318,0.375076,0.317108,0.266659,0.537174]),
+        H298 = (-256.17,'kJ/mol','+|-',1.65213),
+        S298 = (141.111,'J/(mol*K)','+|-',0.835285),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -22096,9 +21996,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([53.1563,61.8959,68.1359,72.7441,78.8772,82.6147,86.1612],'J/(mol*K)','+|-',[0.206057,0.215398,0.201952,0.187519,0.16258,0.144371,0.279044]),
-        H298 = (-667.735,'kJ/mol','+|-',0.994664),
-        S298 = (171.173,'J/(mol*K)','+|-',0.566258),
+        Cpdata = ([53.2891,62.0632,68.2507,72.8163,78.9325,82.6802,86.0758],'J/(mol*K)','+|-',[0.197094,0.219654,0.21695,0.205841,0.174028,0.146342,0.2948]),
+        H298 = (-671.015,'kJ/mol','+|-',0.906687),
+        S298 = (170.856,'J/(mol*K)','+|-',0.458402),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -22110,185 +22010,10 @@ FCC(F)(F)F (CH2FCF3) from C1_C2_Fluorine
 FC(F)C(F)(F)F (CHF2CF3) from C1_C2_Fluorine
 FC(F)(F)C(F)(F)F (CF3CF3) from C1_C2_Fluorine
 FCC(F)(F)F (CH2F-CF3) from C1_C3_hydrofluorocarbons_NIST
-FC(F)C(F)(F)C(F)(F)F (C3F7H) from C1_C3_hydrofluorocarbons_NIST
 FC(F)(F)C(F)(F)F (CF3-CF3) from C1_C3_hydrofluorocarbons_NIST
 CC(F)(F)F (CH3-CF3) from C1_C3_hydrofluorocarbons_NIST
 FC(F)C(F)(F)F (CHF2-CF3) from C1_C3_hydrofluorocarbons_NIST
 OC(F)(F)C(F)(F)C(F)(F)F (C3F7OH) from C1_C3_hydrofluorocarbons_NIST
-O=C(O)C(F)(F)C(F)(F)F (PF3acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)F (PF4acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8acid) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)F (PF3acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)F (PF4acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7acylF) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)F (PF2alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)F (PF3alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF4alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8alkane) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)F (PF2-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)F (PF3-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)F (PF4-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7-1H) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)F (PF4ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)F (PF5ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7ene) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)F (PF2ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)F (PF3ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF4ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7ol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)F (PF2diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)F (PF3diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)F (PF4diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7diol) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)F (PF3lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)F (PF4lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)F (PF5lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8lactone) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)F (PF3alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)F (PF4alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7alkyl(s)) from NCSU_C2_C8_PFAS
-FC(S(=O)(=O)O)(C(F)(F)F)F (PF2Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F (PF3Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(S(=O)(=O)O)(F)F)(F)F)(C(F)(F)F)F (PF4Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F (PF5Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF6Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(F)(F)F)F (PF7Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF8Sacid) from NCSU_C2_C8_PFAS
-FC(C(F)(F)F)(OS(=O)O)F (PF2Sulfite) from NCSU_C2_C8_PFAS
-FC(C(C(F)(F)F)(F)F)(OS(=O)O)F (PF3Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(F)(F)F)(F)F)(F)F)(F)F (PF4Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F (PF5Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF6Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF7Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF8Sulfite) from NCSU_C2_C8_PFAS
-FC(C1(F)OS1(=O)=O)(F)F (PF2Sultone) from NCSU_C2_C8_PFAS
-FC(C(C1(F)OS1(=O)=O)(F)F)(F)F (PF3Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F (PF4Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(C(F)(F)F)F (PF5Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(C(F)(F)F)F (PF6Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF7Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF8Sultone) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16acid) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16acylF) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16alkane) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16-1H) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16ene) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16ol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16diol) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16lactone) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16alkyl(s)) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF9Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF10Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF11Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF12Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF13Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF14Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF15Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF16Sacid) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF9Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF10Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF11Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF12Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF13Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF14Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF15Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF16Sulfite) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF9Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF10Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF11Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF12Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF13Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF14Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF15Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF16Sultone) from NCSU_C2_C8_PFAS
 O=C(O)C(F)(F)C(F)(F)F (C2F5C_O_OH) from PFCA_thermo
 O=C(O)C(F)(F)C(F)(F)C(F)(F)F (C3F7C_O_OH) from PFCA_thermo
 O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (C4F9C_O_OH) from PFCA_thermo
@@ -22581,9 +22306,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([51.3032,60.3411,67.001,72.0875,78.679,82.6636,86.3006],'J/(mol*K)','+|-',[0.426408,0.44574,0.417914,0.388047,0.336438,0.298757,0.577446]),
-        H298 = (-667.676,'kJ/mol','+|-',2.05833),
-        S298 = (168.395,'J/(mol*K)','+|-',1.1718),
+        Cpdata = ([51.1993,60.2787,66.9672,72.0695,78.6737,82.6765,86.3656],'J/(mol*K)','+|-',[0.374572,0.417447,0.412307,0.391195,0.330736,0.278119,0.560259]),
+        H298 = (-668.061,'kJ/mol','+|-',1.72314),
+        S298 = (168.558,'J/(mol*K)','+|-',0.871182),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -22594,7 +22319,6 @@ C=C(F)C(F)(F)F (CH2CFCF3) from C1_C3_hydrofluorocarbons_NIST
 C=CC(F)(F)F (CF3CHCH2) from C1_C3_hydrofluorocarbons_NIST
 FC=CC(F)(F)F (CHFCHCF3) from C1_C3_hydrofluorocarbons_NIST
 FC(F)=C(F)C(F)(F)F (C3F6) from C1_C3_hydrofluorocarbons_NIST
-FC(F)=C(F)C(F)(F)F (PF3ene) from NCSU_C2_C8_PFAS
 FC(F)=C(F)C(F)(F)F (CF3CFCF2) from PFCA_thermo
 CC(=CF)C(F)(F)F (CC(DCF)C(F)(F)F) from CHOF_G4
 C=C(C(F)(F)F)C(F)(F)F (CDC(C(F)(F)F)C(F)(F)F) from CHOF_G4
@@ -22710,9 +22434,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([52.1977,62.4299,69.6611,74.4012,80.4777,83.9128,86.5023],'J/(mol*K)','+|-',[1.45261,1.51847,1.42368,1.32193,1.14612,1.01775,1.96714]),
-        H298 = (-662.025,'kJ/mol','+|-',7.01197),
-        S298 = (163.353,'J/(mol*K)','+|-',3.99188),
+        Cpdata = ([52.1217,62.3564,69.5526,74.2529,80.2616,83.6595,86.2335],'J/(mol*K)','+|-',[1.26684,1.41186,1.39447,1.32307,1.11859,0.940629,1.89486]),
+        H298 = (-660.063,'kJ/mol','+|-',5.82785),
+        S298 = (162.719,'J/(mol*K)','+|-',2.94644),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -22778,9 +22502,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([50.6303,59.3337,65.6264,70.3811,76.5483,80.2791,83.818],'J/(mol*K)','+|-',[2.32246,2.42775,2.27619,2.11352,1.83243,1.6272,3.1451]),
-        H298 = (-665.642,'kJ/mol','+|-',11.2108),
-        S298 = (171.261,'J/(mol*K)','+|-',6.38228),
+        Cpdata = ([50.1206,58.8589,65.2578,70.1142,76.4128,80.198,83.9171],'J/(mol*K)','+|-',[2.02406,2.25574,2.22797,2.11389,1.78718,1.50286,3.02745]),
+        H298 = (-662.597,'kJ/mol','+|-',9.31124),
+        S298 = (169.99,'J/(mol*K)','+|-',4.70757),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -22808,9 +22532,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([50.663,59.5693,66.3122,71.4852,77.9482,81.5328,85.5088],'J/(mol*K)','+|-',[1.85762,1.94184,1.82062,1.6905,1.46567,1.30152,2.51561]),
-        H298 = (-663.019,'kJ/mol','+|-',8.967),
-        S298 = (166.865,'J/(mol*K)','+|-',5.10488),
+        Cpdata = ([51.5036,60.6668,67.3029,72.204,78.0324,81.2621,84.8015],'J/(mol*K)','+|-',[1.80054,2.00664,1.98193,1.88045,1.58982,1.33689,2.69312]),
+        H298 = (-661.951,'kJ/mol','+|-',8.28298),
+        S298 = (168.118,'J/(mol*K)','+|-',4.18771),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -22819,7 +22543,6 @@ Fitted from following species using Ridge regression
 
 O=C(F)C(F)(F)F (CF3CFO) from C1_C2_Fluorine
 O=C(F)C(F)(F)F (CF3COF) from C1_C3_hydrofluorocarbons_NIST
-O=C(F)C(F)(F)F (PF2acylF) from NCSU_C2_C8_PFAS
 O=C(F)C(F)(F)F (CF3CFO) from PFCA_thermo
 O=C(F)C(F)(F)F (ODC(F)C(F)(F)F) from CHOF_G4
 """,
@@ -22840,9 +22563,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([48.5299,58.1713,65.5479,71.4235,79.0653,83.3062,86.3939],'J/(mol*K)','+|-',[1.76745,1.84758,1.73224,1.60844,1.39453,1.23834,2.39349]),
-        H298 = (-662.493,'kJ/mol','+|-',8.53171),
-        S298 = (165.841,'J/(mol*K)','+|-',4.85707),
+        Cpdata = ([49.2247,58.1742,64.7169,69.9757,77.0823,81.2925,83.3602],'J/(mol*K)','+|-',[1.7002,1.89482,1.87149,1.77566,1.50123,1.2624,2.54305]),
+        H298 = (-674.755,'kJ/mol','+|-',7.82142),
+        S298 = (167.976,'J/(mol*K)','+|-',3.95435),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -22850,7 +22573,6 @@ entry(
 Fitted from following species using Ridge regression
 
 O=C(O)C(F)(F)F (CF3C(O)OH) from C1_C2_Fluorine
-O=C(O)C(F)(F)F (PF2acid) from NCSU_C2_C8_PFAS
 O=C(O)C(F)(F)F (CF3C_O_OH) from PFCA_thermo
 O=C(O)C(F)(F)F (ODC(O)C(F)(F)F) from CHOF_G4
 O=C(OF)C(F)(F)F (ODC(OF)C(F)(F)F) from CHOF_G4
@@ -22873,9 +22595,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([55.2093,63.6363,69.5913,73.9144,79.4043,82.6843,86.1899],'J/(mol*K)','+|-',[1.19747,1.25176,1.17362,1.08974,0.944814,0.838993,1.62163]),
-        H298 = (-652.572,'kJ/mol','+|-',5.78038),
-        S298 = (166.888,'J/(mol*K)','+|-',3.29074),
+        Cpdata = ([54.7983,63.2393,69.3015,73.7456,79.4263,82.7992,86.4809],'J/(mol*K)','+|-',[1.04676,1.16658,1.15221,1.09321,0.924257,0.777216,1.56567]),
+        H298 = (-651.916,'kJ/mol','+|-',4.81539),
+        S298 = (166.539,'J/(mol*K)','+|-',2.43456),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -22907,9 +22629,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([54.2095,62.9386,68.4183,72.307,77.8988,81.3566,84.8549],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-643.498,'kJ/mol','+|-',18.9287),
-        S298 = (171.497,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([53.6728,62.3155,67.741,71.5912,77.1276,80.5512,84.0149],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-637.127,'kJ/mol','+|-',15.6194),
+        S298 = (169.799,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -22935,9 +22657,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([54.7222,63.5307,69.0234,72.709,78.0112,81.3972,84.9116],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-640.966,'kJ/mol','+|-',18.9287),
-        S298 = (169.801,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([54.1805,62.9018,68.3401,71.9891,77.2389,80.5914,84.071],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-634.62,'kJ/mol','+|-',15.6194),
+        S298 = (168.12,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -22987,9 +22709,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([28.0031,32.8431,35.8479,37.8477,40.1187,40.7692,40.2571],'J/(mol*K)','+|-',[1.89802,1.98407,1.86021,1.72727,1.49755,1.32982,2.57032]),
-        H298 = (-358.127,'kJ/mol','+|-',9.16202),
-        S298 = (114.261,'J/(mol*K)','+|-',5.2159),
+        Cpdata = ([28.4417,33.3985,36.1697,37.7985,39.4205,39.8495,39.4143],'J/(mol*K)','+|-',[1.91924,2.13892,2.11259,2.00441,1.69463,1.42503,2.87066]),
+        H298 = (-353.022,'kJ/mol','+|-',8.82903),
+        S298 = (114.615,'J/(mol*K)','+|-',4.46378),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -22998,7 +22720,6 @@ Fitted from following species using Ridge regression
 
 [CH]C(F)(F)F (CF3CH(S)) from C1_C2_Fluorine
 F[C]C(F)(F)F (CF3CF) from C1_C2_Fluorine
-F[C]C(F)(F)F (PF2alkyl(s)) from NCSU_C2_C8_PFAS
 F[C]C(F)(F)F (F[C]C(F)(F)F) from CHOF_G4
 """,
 )
@@ -23269,9 +22990,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([46.2548,54.0135,60.0049,64.7964,71.7798,76.4864,82.4859],'J/(mol*K)','+|-',[0.193452,0.202222,0.189598,0.176048,0.152635,0.135539,0.261974]),
-        H298 = (-437.58,'kJ/mol','+|-',0.933819),
-        S298 = (163.699,'J/(mol*K)','+|-',0.531619),
+        Cpdata = ([45.9368,53.7555,59.8603,64.7338,71.7828,76.5247,82.7601],'J/(mol*K)','+|-',[0.172827,0.19261,0.190238,0.180497,0.152601,0.128324,0.258503]),
+        H298 = (-436.342,'kJ/mol','+|-',0.795053),
+        S298 = (162.003,'J/(mol*K)','+|-',0.401963),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -23283,25 +23004,9 @@ FCC(F)F (CH2FCHF2) from C1_C2_Fluorine
 FC(F)C(F)F (CHF2CHF2) from C1_C2_Fluorine
 FC(F)C(F)(F)F (CHF2CF3) from C1_C2_Fluorine
 CC(F)F (CH3-CHF2) from C1_C3_hydrofluorocarbons_NIST
-FC(F)C(F)(F)C(F)(F)F (C3F7H) from C1_C3_hydrofluorocarbons_NIST
 FC(F)C(F)F (CHF2-CHF2) from C1_C3_hydrofluorocarbons_NIST
 FCC(F)F (CH2F-CHF2) from C1_C3_hydrofluorocarbons_NIST
 FC(F)C(F)(F)F (CHF2-CF3) from C1_C3_hydrofluorocarbons_NIST
-FC(F)C(F)(F)F (PF2-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)F (PF3-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)F (PF4-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16-1H) from NCSU_C2_C8_PFAS
 FC(F)C(F)(F)C(F)F (FC(F)C(F)(F)C(F)F) from CHOF_G4
 COC(F)(F)C(F)F (COC(F)(F)C(F)F) from CHOF_G4
 OC(OF)C(F)F (OC(OF)C(F)F) from CHOF_G4
@@ -23653,9 +23358,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([19.0937,22.2029,25.2042,27.8518,31.4711,33.4452,35.7589],'J/(mol*K)','+|-',[2.15119,2.24871,2.10834,1.95766,1.6973,1.5072,2.91316]),
-        H298 = (-126.117,'kJ/mol','+|-',10.3841),
-        S298 = (111.738,'J/(mol*K)','+|-',5.91161),
+        Cpdata = ([19.559,22.7232,25.5225,27.8109,30.6975,32.3601,34.8354],'J/(mol*K)','+|-',[1.91924,2.13892,2.11259,2.00441,1.69463,1.42503,2.87066]),
+        H298 = (-117.136,'kJ/mol','+|-',8.82903),
+        S298 = (111.051,'J/(mol*K)','+|-',4.46378),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -23681,9 +23386,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([41.4878,49.8407,57.1545,62.6413,70.9226,76.3117,82.0596],'J/(mol*K)','+|-',[1.5699,1.64107,1.53862,1.42866,1.23866,1.09992,2.12597]),
-        H298 = (-425.779,'kJ/mol','+|-',7.57811),
-        S298 = (160.098,'J/(mol*K)','+|-',4.31418),
+        Cpdata = ([41.4093,49.7679,57.0419,62.482,70.6817,76.025,81.7553],'J/(mol*K)','+|-',[1.36854,1.52519,1.50641,1.42928,1.20838,1.01614,2.04697]),
+        H298 = (-423.697,'kJ/mol','+|-',6.29567),
+        S298 = (159.368,'J/(mol*K)','+|-',3.18296),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -23720,9 +23425,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([44.2672,51.4255,57.5411,62.8128,70.5309,75.7112,81.767],'J/(mol*K)','+|-',[0.385393,0.402865,0.377716,0.350721,0.304077,0.27002,0.521903]),
-        H298 = (-428.947,'kJ/mol','+|-',1.86034),
-        S298 = (161.483,'J/(mol*K)','+|-',1.05909),
+        Cpdata = ([44.2047,51.3815,57.5113,62.7972,70.5356,75.7285,81.7965],'J/(mol*K)','+|-',[0.33697,0.375542,0.370918,0.351925,0.297535,0.250199,0.504017]),
+        H298 = (-428.682,'kJ/mol','+|-',1.55016),
+        S298 = (161.457,'J/(mol*K)','+|-',0.783728),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -23844,9 +23549,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([43.9265,51.0861,57.1049,62.1805,69.8212,74.9296,81.0082],'J/(mol*K)','+|-',[1.02703,1.07359,1.00657,0.934635,0.810333,0.719574,1.39081]),
-        H298 = (-424.459,'kJ/mol','+|-',4.95762),
-        S298 = (161.822,'J/(mol*K)','+|-',2.82235),
+        Cpdata = ([43.679,50.7718,56.7842,61.8848,69.6096,74.7792,80.9052],'J/(mol*K)','+|-',[0.898083,1.00088,0.98856,0.93794,0.792981,0.666825,1.34329]),
+        H298 = (-424.874,'kJ/mol','+|-',4.13144),
+        S298 = (161.623,'J/(mol*K)','+|-',2.08877),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -24059,9 +23764,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([36.4505,43.885,50.2181,55.5152,63.6874,69.6278,78.3034],'J/(mol*K)','+|-',[0.16188,0.169219,0.158656,0.147317,0.127724,0.113419,0.21922]),
-        H298 = (-220.839,'kJ/mol','+|-',0.781418),
-        S298 = (145.108,'J/(mol*K)','+|-',0.444858),
+        Cpdata = ([36.074,43.5802,50.0399,55.438,63.7131,69.6972,78.5742],'J/(mol*K)','+|-',[0.14207,0.158333,0.156383,0.148375,0.125444,0.105487,0.212499]),
+        H298 = (-219.246,'kJ/mol','+|-',0.653564),
+        S298 = (143.753,'J/(mol*K)','+|-',0.330428),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -24625,9 +24330,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([13.6965,16.7385,19.9601,22.9511,27.5498,30.7104,34.6278],'J/(mol*K)','+|-',[2.15119,2.24871,2.10834,1.95766,1.6973,1.5072,2.91316]),
-        H298 = (55.6991,'kJ/mol','+|-',10.3841),
-        S298 = (84.1673,'J/(mol*K)','+|-',5.91161),
+        Cpdata = ([14.1797,17.2769,20.2958,22.9264,26.7892,29.6344,33.7081],'J/(mol*K)','+|-',[1.91924,2.13892,2.11259,2.00441,1.69463,1.42503,2.87066]),
+        H298 = (64.076,'kJ/mol','+|-',8.82903),
+        S298 = (83.5723,'J/(mol*K)','+|-',4.46378),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -24653,9 +24358,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([33.1757,40.6721,47.7278,53.4362,62.3568,68.7465,77.2948],'J/(mol*K)','+|-',[1.5714,1.64264,1.5401,1.43003,1.23984,1.10098,2.128]),
-        H298 = (-217.298,'kJ/mol','+|-',7.58536),
-        S298 = (141.643,'J/(mol*K)','+|-',4.31831),
+        Cpdata = ([33.1196,40.6166,47.6399,53.3124,62.1713,68.5257,77.0553],'J/(mol*K)','+|-',[1.37107,1.52801,1.5092,1.43192,1.21061,1.01802,2.05075]),
+        H298 = (-216.026,'kJ/mol','+|-',6.30731),
+        S298 = (141.108,'J/(mol*K)','+|-',3.18884),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -24684,9 +24389,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([34.9576,41.7078,48.0544,53.755,62.5279,68.8624,77.5329],'J/(mol*K)','+|-',[0.331913,0.34696,0.325301,0.302052,0.261881,0.23255,0.449479]),
-        H298 = (-211.513,'kJ/mol','+|-',1.60219),
-        S298 = (142.617,'J/(mol*K)','+|-',0.912119),
+        Cpdata = ([34.9077,41.6764,48.0402,53.756,62.5459,68.8956,77.5713],'J/(mol*K)','+|-',[0.29022,0.32344,0.319458,0.3031,0.256256,0.215488,0.434091]),
+        H298 = (-211.235,'kJ/mol','+|-',1.33509),
+        S298 = (142.561,'J/(mol*K)','+|-',0.674996),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -24857,9 +24562,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([38.3991,45.5273,51.529,56.6722,64.5838,70.1157,77.9055],'J/(mol*K)','+|-',[0.964518,1.00825,0.945305,0.877746,0.76101,0.675775,1.30616]),
-        H298 = (-217.759,'kJ/mol','+|-',4.65586),
-        S298 = (138.41,'J/(mol*K)','+|-',2.65056),
+        Cpdata = ([38.0372,45.1176,51.1604,56.3764,64.4397,70.0628,77.9637],'J/(mol*K)','+|-',[0.843678,0.94025,0.928673,0.88112,0.744943,0.626429,1.26192]),
+        H298 = (-218.167,'kJ/mol','+|-',3.88116),
+        S298 = (138.161,'J/(mol*K)','+|-',1.96223),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -25070,9 +24775,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([44.4384,53.4493,59.0747,62.8735,67.3952,69.4508,69.6902],'J/(mol*K)','+|-',[0.321227,0.33579,0.314828,0.292328,0.25345,0.225063,0.435009]),
-        H298 = (-485.955,'kJ/mol','+|-',1.55061),
-        S298 = (63.0397,'J/(mol*K)','+|-',0.882754),
+        Cpdata = ([44.7836,53.7682,59.2481,62.9073,67.256,69.2599,69.4582],'J/(mol*K)','+|-',[0.29342,0.327007,0.322981,0.306442,0.259082,0.217864,0.438879]),
+        H298 = (-486.272,'kJ/mol','+|-',1.34982),
+        S298 = (64.6833,'J/(mol*K)','+|-',0.68244),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -25081,36 +24786,6 @@ Fitted from following species using Ridge regression
 
 CC(O)(F)F (CH3CF2OH) from C1_C2_Fluorine
 OC(F)(F)C(F)(F)C(F)(F)F (C3F7OH) from C1_C3_hydrofluorocarbons_NIST
-OC(F)(F)C(F)(F)F (PF2ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)F (PF3ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF4ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7ol) from NCSU_C2_C8_PFAS
-FC(C(F)(F)F)(OS(=O)O)F (PF2Sulfite) from NCSU_C2_C8_PFAS
-FC(C(C(F)(F)F)(F)F)(OS(=O)O)F (PF3Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(F)(F)F)(F)F)(F)F)(F)F (PF4Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F (PF5Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF6Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF7Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF8Sulfite) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16ol) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF9Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF10Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF11Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF12Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF13Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF14Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF15Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF16Sulfite) from NCSU_C2_C8_PFAS
 FCC(F)(F)OOF (FCC(F)(F)OOF) from CHOF_G4
 CC(O)(F)F (CC(O)(F)F) from CHOF_G4
 COC(F)(F)C(F)F (COC(F)(F)C(F)F) from CHOF_G4
@@ -25249,16 +24924,15 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([45.431,55.6228,61.4972,65.0849,69.162,70.9253,69.8589],'J/(mol*K)','+|-',[1.53864,1.6084,1.50799,1.40022,1.214,1.07803,2.08365]),
-        H298 = (-472.162,'kJ/mol','+|-',7.42725),
-        S298 = (61.3577,'J/(mol*K)','+|-',4.2283),
+        Cpdata = ([45.5542,55.8677,61.7792,65.3408,69.2733,70.9255,69.8276],'J/(mol*K)','+|-',[1.34339,1.49716,1.47873,1.40301,1.18617,0.997463,2.00935]),
+        H298 = (-469.339,'kJ/mol','+|-',6.17997),
+        S298 = (60.5274,'J/(mol*K)','+|-',3.12447),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
 """
 Fitted from following species using Ridge regression
 
-O=C1OC1(F)F (PF2lactone) from NCSU_C2_C8_PFAS
 O=C1OC1(F)F (c_CF2OC_O) from PFCA_thermo
 O=C(F)C(F)(F)OF (ODC(F)C(F)(F)OF) from CHOF_G4
 O=CC(F)(F)OF (ODCC(F)(F)OF) from CHOF_G4
@@ -25284,9 +24958,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([44.7169,54.854,60.3741,64.1509,68.5209,70.3829,69.3482],'J/(mol*K)','+|-',[0.835681,0.873568,0.819034,0.7605,0.659357,0.585508,1.13169]),
-        H298 = (-484.693,'kJ/mol','+|-',4.03395),
-        S298 = (60.4097,'J/(mol*K)','+|-',2.29651),
+        Cpdata = ([44.538,54.6828,60.2407,64.0567,68.4756,70.3645,69.3888],'J/(mol*K)','+|-',[0.730519,0.814139,0.804115,0.76294,0.645027,0.542409,1.09266]),
+        H298 = (-484.148,'kJ/mol','+|-',3.3606),
+        S298 = (59.9558,'J/(mol*K)','+|-',1.69905),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -25332,9 +25006,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([45.5647,55.5204,60.8332,64.6285,68.649,70.4151,69.7707],'J/(mol*K)','+|-',[1.71882,1.79675,1.68458,1.56419,1.35616,1.20427,2.32765]),
-        H298 = (-464.909,'kJ/mol','+|-',8.29699),
-        S298 = (60.8286,'J/(mol*K)','+|-',4.72344),
+        Cpdata = ([45.3637,55.306,60.6109,64.3996,68.4114,70.1756,69.542],'J/(mol*K)','+|-',[1.49942,1.67106,1.65048,1.56597,1.32395,1.11332,2.24273]),
+        H298 = (-463.328,'kJ/mol','+|-',6.89777),
+        S298 = (60.0691,'J/(mol*K)','+|-',3.48737),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -25531,37 +25205,22 @@ entry(
     group = 
 """
 1 * Cs  u0 {2,S} {3,S} {4,S} {5,S}
-2   O2s u0 {1,S}
+2   F1s u0 {1,S}
 3   O2s u0 {1,S}
-4   F1s u0 {1,S}
+4   O2s u0 {1,S}
 5   Cs  u0 {1,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([31.6425,41.0144,46.8703,50.5956,54.4758,55.6445,53.7647],'J/(mol*K)','+|-',[0.610749,0.638438,0.598583,0.555804,0.481884,0.427912,0.827082]),
-        H298 = (-299.082,'kJ/mol','+|-',2.94817),
-        S298 = (-60.1762,'J/(mol*K)','+|-',1.67838),
+        Cpdata = ([36.7759,46.1613,50.8724,53.4613,55.729,55.9816,52.3282],'J/(mol*K)','+|-',[0.624504,0.695989,0.687419,0.65222,0.551419,0.463693,0.934092]),
+        H298 = (-297.524,'kJ/mol','+|-',2.8729),
+        S298 = (-48.2026,'J/(mol*K)','+|-',1.45248),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
 """
 Fitted from following species using Ridge regression
 
-OC(O)(F)C(F)(F)F (PF2diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)F (PF3diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)F (PF4diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16diol) from NCSU_C2_C8_PFAS
 CC(O)(F)OF (CC(O)(F)OF) from CHOF_G4
 FOC(F)(OF)C(F)(F)F (FOC(F)(OF)C(F)(F)F) from CHOF_G4
 FOC(F)(OF)C(F)F (FOC(F)(OF)C(F)F) from CHOF_G4
@@ -25863,179 +25522,16 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([41.8728,49.8276,55.9675,60.5523,66.2355,69.0137,71.5606],'J/(mol*K)','+|-',[0.0508414,0.0531464,0.0498286,0.0462675,0.0401142,0.0356213,0.0688499]),
-        H298 = (-403.184,'kJ/mol','+|-',0.245418),
-        S298 = (47.3751,'J/(mol*K)','+|-',0.139716),
+        Cpdata = ([47.3837,53.9328,58.0131,60.9843,65.0576,67.1952,66.562],'J/(mol*K)','+|-',[0.201832,0.224936,0.222166,0.21079,0.178212,0.14986,0.301888]),
+        H298 = (-433.248,'kJ/mol','+|-',0.928487),
+        S298 = (68.3819,'J/(mol*K)','+|-',0.469424),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
 """
 Fitted from following species using Ridge regression
 
-FC(F)C(F)(F)C(F)(F)F (C3F7H) from C1_C3_hydrofluorocarbons_NIST
 OC(F)(F)C(F)(F)C(F)(F)F (C3F7OH) from C1_C3_hydrofluorocarbons_NIST
-O=C(O)C(F)(F)C(F)(F)C(F)(F)F (PF4acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8acid) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)F (PF4acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7acylF) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)F (PF3alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF4alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8alkane) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)F (PF3-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)F (PF4-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7-1H) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)F (PF5ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7ene) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)F (PF3ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF4ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7ol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)F (PF3diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)F (PF4diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7diol) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)F (PF4lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)F (PF5lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8lactone) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)F (PF4alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7alkyl(s)) from NCSU_C2_C8_PFAS
-FC(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F (PF3Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(S(=O)(=O)O)(F)F)(F)F)(C(F)(F)F)F (PF4Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F (PF5Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF6Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(F)(F)F)F (PF7Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF8Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(F)(F)F)(F)F)(OS(=O)O)F (PF3Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(F)(F)F)(F)F)(F)F)(F)F (PF4Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F (PF5Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF6Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF7Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF8Sulfite) from NCSU_C2_C8_PFAS
-FC(C(C1(F)OS1(=O)=O)(F)F)(F)F (PF3Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F (PF4Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(C(F)(F)F)F (PF5Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(C(F)(F)F)F (PF6Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF7Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF8Sultone) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16acid) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16acylF) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15alkane) from NCSU_C2_C8_PFAS
-FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16alkane) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15-1H) from NCSU_C2_C8_PFAS
-FC(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16-1H) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16ene) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16ol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16diol) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16lactone) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16alkyl(s)) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF9Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF10Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF11Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF12Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF13Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF14Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF15Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF16Sacid) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF9Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF10Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF11Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF12Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF13Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF14Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF15Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF16Sulfite) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF9Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF10Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF11Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF12Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF13Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF14Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF15Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF16Sultone) from NCSU_C2_C8_PFAS
 O=C(O)C(F)(F)C(F)(F)C(F)(F)F (C3F7C_O_OH) from PFCA_thermo
 O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (C4F9C_O_OH) from PFCA_thermo
 O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (C5F11C_O_OH) from PFCA_thermo
@@ -26230,43 +25726,15 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([47.4583,53.7622,57.2259,59.3423,61.5157,62.889,64.3342],'J/(mol*K)','+|-',[0.716115,0.748581,0.70185,0.65169,0.565019,0.501735,0.96977]),
-        H298 = (-414.03,'kJ/mol','+|-',3.45679),
-        S298 = (70.4595,'J/(mol*K)','+|-',1.96793),
+        Cpdata = ([43.818,50.5896,55.4313,58.9765,63.2474,65.5834,69.0543],'J/(mol*K)','+|-',[0.737358,0.821761,0.811642,0.770082,0.651066,0.547487,1.10289]),
+        H298 = (-411.366,'kJ/mol','+|-',3.39206),
+        S298 = (68.5472,'J/(mol*K)','+|-',1.71495),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
 """
 Fitted from following species using Ridge regression
 
-O=C(O)C(F)(F)C(F)(F)F (PF3acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)F (PF4acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8acid) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)F (PF3acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)F (PF4acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7acylF) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16acid) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15acylF) from NCSU_C2_C8_PFAS
-O=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16acylF) from NCSU_C2_C8_PFAS
 O=C(O)C(F)(F)C(F)(F)F (C2F5C_O_OH) from PFCA_thermo
 O=C(O)C(F)(F)C(F)(F)C(F)(F)F (C3F7C_O_OH) from PFCA_thermo
 O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (C4F9C_O_OH) from PFCA_thermo
@@ -26309,28 +25777,15 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([44.8333,51.9388,56.3222,59.5009,63.3625,65.3957,62.8076],'J/(mol*K)','+|-',[0.484927,0.506912,0.475267,0.441301,0.38261,0.339757,0.656693]),
-        H298 = (-430.684,'kJ/mol','+|-',2.34081),
-        S298 = (67.2991,'J/(mol*K)','+|-',1.33261),
+        Cpdata = ([44.7504,51.66,56.0706,59.5116,64.1146,66.579,62.9391],'J/(mol*K)','+|-',[0.455936,0.508125,0.501869,0.47617,0.402578,0.338531,0.681958]),
+        H298 = (-434.811,'kJ/mol','+|-',2.09743),
+        S298 = (67.52,'J/(mol*K)','+|-',1.06042),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
 """
 Fitted from following species using Ridge regression
 
-FC(F)=C(F)C(F)(F)C(F)(F)F (PF4ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)F (PF5ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15ene) from NCSU_C2_C8_PFAS
-FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16ene) from NCSU_C2_C8_PFAS
 FC(F)=C(F)C(F)(F)C(F)(F)F (C2F5CFCF2) from PFCA_thermo
 FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)F (C3F7CFCF2) from PFCA_thermo
 FC(F)=C(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (C4F9CFCF2) from PFCA_thermo
@@ -26387,46 +25842,6 @@ C=CC(F)(F)CBr (CDCC(F)(F)CBr) from CHOFBr_G4
 
 entry(
     index = 959,
-    label = "Cs-C2sCsF1sF1s",
-    group = 
-"""
-1 * Cs  u0 {2,S} {3,S} {4,S} {5,S}
-2   C2s u0 {1,S}
-3   F1s u0 {1,S}
-4   F1s u0 {1,S}
-5   Cs  u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([28.9215,29.8026,27.9027,24.8732,19.0633,15.8806,13.3593],'J/(mol*K)','+|-',[1.40661,1.47038,1.37859,1.28006,1.10982,0.985518,1.90484]),
-        H298 = (-83.1743,'kJ/mol','+|-',6.78989),
-        S298 = (9.30968,'J/(mol*K)','+|-',3.86545),
-    ),
-    shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
-    longDesc = 
-"""
-Fitted from following species using Ridge regression
-
-F[C]C(F)(F)C(F)(F)F (PF3alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)F (PF4alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15alkyl(s)) from NCSU_C2_C8_PFAS
-F[C]C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16alkyl(s)) from NCSU_C2_C8_PFAS
-CC(F)(F)[C]F (CC(F)(F)[C]F) from CHOF_G4
-""",
-)
-
-entry(
-    index = 960,
     label = "Cs-CsCtF1sF1s",
     group = 
 """
@@ -26438,9 +25853,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([41.5677,49.4436,54.8259,59.0127,64.3178,67.2844,69.0189],'J/(mol*K)','+|-',[1.37912,1.44164,1.35164,1.25505,1.08813,0.966258,1.86761]),
-        H298 = (-418.895,'kJ/mol','+|-',6.65719),
-        S298 = (70.4583,'J/(mol*K)','+|-',3.78991),
+        Cpdata = ([41.6603,49.4983,54.8008,58.9184,64.1363,67.0596,68.6914],'J/(mol*K)','+|-',[1.20342,1.34117,1.32465,1.25682,1.06258,0.893534,1.79999]),
+        H298 = (-417.827,'kJ/mol','+|-',5.53606),
+        S298 = (70.7335,'J/(mol*K)','+|-',2.79892),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -26465,6 +25880,32 @@ C#CC(F)(F)C(Br)Br (C#CC(F)(F)C(Br)Br) from CHOFBr_G4
 )
 
 entry(
+    index = 960,
+    label = "Cs-C2sCsF1sF1s",
+    group = 
+"""
+1 * Cs  u0 {2,S} {3,S} {4,S} {5,S}
+2   F1s u0 {1,S}
+3   F1s u0 {1,S}
+4   Cs  u0 {1,S}
+5   C2s u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([25.005,25.5355,25.2484,24.8858,24.2995,23.3196,20.0941],'J/(mol*K)','+|-',[3.1208,3.47803,3.4352,3.2593,2.75558,2.31719,4.66788]),
+        H298 = (-132.871,'kJ/mol','+|-',14.3566),
+        S298 = (10.5954,'J/(mol*K)','+|-',7.25839),
+    ),
+    shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
+    longDesc = 
+"""
+Fitted from following species using Ridge regression
+
+CC(F)(F)[C]F (CC(F)(F)[C]F) from CHOF_G4
+""",
+)
+
+entry(
     index = 961,
     label = "Cs-CdCdF1sF1s",
     group = 
@@ -26477,9 +25918,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([43.519,50.5281,55.2045,59.0579,64.0268,66.8167,67.6056],'J/(mol*K)','+|-',[1.15428,1.20661,1.13128,1.05043,0.910732,0.808728,1.56313]),
-        H298 = (-446.478,'kJ/mol','+|-',5.57186),
-        S298 = (71.5865,'J/(mol*K)','+|-',3.17204),
+        Cpdata = ([44.9371,51.7573,55.9248,59.3696,63.9903,66.4064,65.9023],'J/(mol*K)','+|-',[1.00857,1.12401,1.11018,1.05333,0.890536,0.748859,1.50855]),
+        H298 = (-443.713,'kJ/mol','+|-',4.6397),
+        S298 = (68.6815,'J/(mol*K)','+|-',2.34574),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -26776,29 +26217,15 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([25.0913,28.9645,31.3741,33.2321,35.2618,36.034,36.467],'J/(mol*K)','+|-',[0.764663,0.799329,0.74943,0.695871,0.603323,0.53575,1.03551]),
-        H298 = (-193.326,'kJ/mol','+|-',3.69113),
-        S298 = (3.96019,'J/(mol*K)','+|-',2.10135),
+        Cpdata = ([22.2809,26.3306,29.7302,32.1983,34.525,35.6159,40.1339],'J/(mol*K)','+|-',[0.915367,1.02015,1.00759,0.955992,0.808243,0.679658,1.36915]),
+        H298 = (-159.769,'kJ/mol','+|-',4.21095),
+        S298 = (-4.0631,'J/(mol*K)','+|-',2.12897),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
 """
 Fitted from following species using Ridge regression
 
-O=C1OC1(F)C(F)(F)F (PF3lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)F (PF4lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)F (PF5lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16lactone) from NCSU_C2_C8_PFAS
 O=C1OC1(F)C(F)(F)F (CF3_c_FCOC_O) from PFCA_thermo
 O=C1OC1(F)C(F)(F)C(F)(F)F (C2F5_c_FCOC_O) from PFCA_thermo
 O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)F (C3F7_c_FCOC_O) from PFCA_thermo
@@ -26821,9 +26248,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([35.2192,44.1899,48.9973,51.8747,55.0011,55.7126,52.9468],'J/(mol*K)','+|-',[0.504651,0.52753,0.494598,0.45925,0.398172,0.353576,0.683403]),
-        H298 = (-261.078,'kJ/mol','+|-',2.43602),
-        S298 = (-47.7829,'J/(mol*K)','+|-',1.38682),
+        Cpdata = ([35.1417,44.0811,48.8993,51.7998,54.9734,55.7082,52.9346],'J/(mol*K)','+|-',[0.441642,0.492195,0.486135,0.461242,0.389957,0.327918,0.660579]),
+        H298 = (-261.209,'kJ/mol','+|-',2.03168),
+        S298 = (-47.5778,'J/(mol*K)','+|-',1.02718),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -26910,9 +26337,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([33.7232,41.8546,46.5371,49.147,52.3144,53.0857,49.6709],'J/(mol*K)','+|-',[2.29611,2.40021,2.25037,2.08955,1.81165,1.60874,3.10942]),
-        H298 = (-274.469,'kJ/mol','+|-',11.0837),
-        S298 = (-46.2559,'J/(mol*K)','+|-',6.30988),
+        Cpdata = ([33.0691,41.1939,45.9872,48.7077,52.0033,52.8581,49.6956],'J/(mol*K)','+|-',[2.00125,2.23033,2.20287,2.09007,1.76705,1.48593,2.99334]),
+        H298 = (-272.919,'kJ/mol','+|-',9.20633),
+        S298 = (-47.3451,'J/(mol*K)','+|-',4.65453),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -27026,9 +26453,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([35.7606,40.531,46.4966,52.737,64.0228,73.6747,90.4443],'J/(mol*K)','+|-',[2.77279,2.8985,2.71756,2.52334,2.18775,1.94272,3.75494]),
-        H298 = (-74.6048,'kJ/mol','+|-',13.3847),
-        S298 = (186.352,'J/(mol*K)','+|-',7.61983),
+        Cpdata = ([35.4065,40.1291,46.0338,52.2085,63.3652,72.8881,89.5182],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-73.866,'kJ/mol','+|-',15.6194),
+        S298 = (184.508,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -27036,7 +26463,6 @@ entry(
 Previously contains all zeros as data. New data fitted from following species using Ridge regression
 
 C (CH4) from C1_C3_hydrofluorocarbons_NIST
-C (CH4) from NCSU_C2_C8_PFAS
 """,
 )
 
@@ -27072,9 +26498,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([25.8979,32.3774,38.5901,44.1634,53.3986,60.7482,72.8949],'J/(mol*K)','+|-',[0.140316,0.146677,0.137521,0.127693,0.11071,0.0983103,0.190017]),
-        H298 = (-47.7743,'kJ/mol','+|-',0.677325),
-        S298 = (125.02,'J/(mol*K)','+|-',0.385598),
+        Cpdata = ([25.4187,32.0011,38.3813,44.0848,53.4473,60.8462,73.2611],'J/(mol*K)','+|-',[0.123763,0.13793,0.136231,0.129256,0.109279,0.0918937,0.185116]),
+        H298 = (-45.2016,'kJ/mol','+|-',0.569345),
+        S298 = (123.206,'J/(mol*K)','+|-',0.287849),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -27800,9 +27226,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([25.6926,31.9814,38.2109,44.1504,53.3604,60.7031,70.9395],'J/(mol*K)','+|-',[3.95537,4.13469,3.87658,3.59953,3.12081,2.77127,5.3564]),
-        H298 = (-57.1103,'kJ/mol','+|-',19.0931),
-        S298 = (117.467,'J/(mol*K)','+|-',10.8696),
+        Cpdata = ([25.0989,31.3889,37.683,43.6804,52.9502,60.2866,70.6122],'J/(mol*K)','+|-',[3.42428,3.81625,3.76926,3.57625,3.02354,2.54252,5.12181]),
+        H298 = (-55.7162,'kJ/mol','+|-',15.7527),
+        S298 = (115.607,'J/(mol*K)','+|-',7.96423),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -27828,9 +27254,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([25.1138,31.7216,37.9582,43.5759,52.7766,60.008,72.1407],'J/(mol*K)','+|-',[1.42836,1.49311,1.3999,1.29985,1.12698,1.00076,1.93429]),
-        H298 = (-50.7308,'kJ/mol','+|-',6.89487),
-        S298 = (122.051,'J/(mol*K)','+|-',3.92522),
+        Cpdata = ([24.4804,31.1123,37.5249,43.3412,52.8548,60.2371,72.6505],'J/(mol*K)','+|-',[1.24867,1.3916,1.37447,1.30409,1.10254,0.927135,1.86768]),
+        H298 = (-50.5602,'kJ/mol','+|-',5.74424),
+        S298 = (121.568,'J/(mol*K)','+|-',2.90417),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -27866,9 +27292,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([24.7252,30.0355,34.985,39.3589,46.2027,51.0892,57.9962],'J/(mol*K)','+|-',[1.96066,2.04955,1.9216,1.78427,1.54697,1.37371,2.65514]),
-        H298 = (-88.5008,'kJ/mol','+|-',9.46438),
-        S298 = (88.4053,'J/(mol*K)','+|-',5.38803),
+        Cpdata = ([24.6022,29.8861,34.811,39.1631,45.9729,50.835,57.7077],'J/(mol*K)','+|-',[1.70611,1.9014,1.87799,1.78182,1.50644,1.26678,2.55188]),
+        H298 = (-88.0605,'kJ/mol','+|-',7.84857),
+        S298 = (87.9655,'J/(mol*K)','+|-',3.96808),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -27894,9 +27320,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([23.6413,29.554,35.8337,42.1293,52.5792,59.8603,71.5401],'J/(mol*K)','+|-',[3.9689,4.14883,3.88984,3.61184,3.13148,2.78075,5.37472]),
-        H298 = (-84.6997,'kJ/mol','+|-',19.1584),
-        S298 = (115.023,'J/(mol*K)','+|-',10.9068),
+        Cpdata = ([24.5246,30.6271,36.7234,42.6844,52.402,59.2106,70.3595],'J/(mol*K)','+|-',[3.44027,3.83407,3.78686,3.59295,3.03766,2.55439,5.14573]),
+        H298 = (-79.1104,'kJ/mol','+|-',15.8262),
+        S298 = (113.588,'J/(mol*K)','+|-',8.00141),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -27922,9 +27348,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([28.3048,34.3482,39.6738,44.4896,52.2784,58.3327,68.5527],'J/(mol*K)','+|-',[4.10783,4.29406,4.026,3.73827,3.2411,2.87809,5.56286]),
-        H298 = (-64.4226,'kJ/mol','+|-',19.8291),
-        S298 = (118.57,'J/(mol*K)','+|-',11.2886),
+        Cpdata = ([27.9365,33.7782,38.9208,43.6052,51.2688,57.2824,67.2522],'J/(mol*K)','+|-',[3.554,3.96082,3.91205,3.71173,3.13808,2.63884,5.31584]),
+        H298 = (-65.4488,'kJ/mol','+|-',16.3494),
+        S298 = (117.419,'J/(mol*K)','+|-',8.26594),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -27995,9 +27421,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([24.5214,31.311,37.9533,43.9272,53.3717,60.8066,72.44],'J/(mol*K)','+|-',[0.709256,0.74141,0.695127,0.645448,0.559607,0.496929,0.96048]),
-        H298 = (-34.4889,'kJ/mol','+|-',3.42367),
-        S298 = (117.883,'J/(mol*K)','+|-',1.94908),
+        Cpdata = ([24.4476,31.217,37.871,43.8819,53.3881,60.8598,72.4843],'J/(mol*K)','+|-',[0.620087,0.691066,0.682557,0.647607,0.547519,0.460413,0.927485]),
+        H298 = (-34.0257,'kJ/mol','+|-',2.85258),
+        S298 = (117.637,'J/(mol*K)','+|-',1.4422),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -28057,9 +27483,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([23.8933,31.0445,37.7755,43.9061,53.5364,61.0735,73.3377],'J/(mol*K)','+|-',[0.512923,0.536177,0.502705,0.466778,0.404699,0.359372,0.694605]),
-        H298 = (-57.7332,'kJ/mol','+|-',2.47595),
-        S298 = (117.783,'J/(mol*K)','+|-',1.40955),
+        Cpdata = ([23.972,31.1055,37.8002,43.8995,53.5113,61.0322,73.2222],'J/(mol*K)','+|-',[0.44854,0.499883,0.493728,0.468446,0.396048,0.33304,0.670896]),
+        H298 = (-57.155,'kJ/mol','+|-',2.06341),
+        S298 = (117.441,'J/(mol*K)','+|-',1.04322),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -28133,9 +27559,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([26.2486,31.9555,38.6457,45.2678,55.0208,62.595,74.2399],'J/(mol*K)','+|-',[1.05257,1.10029,1.03161,0.95788,0.830487,0.73747,1.42541]),
-        H298 = (-30.824,'kJ/mol','+|-',5.08092),
-        S298 = (118.421,'J/(mol*K)','+|-',2.89255),
+        Cpdata = ([26.2349,31.9566,38.6439,45.2495,54.9606,62.5047,74.1827],'J/(mol*K)','+|-',[0.919925,1.02523,1.0126,0.960752,0.812267,0.683042,1.37596]),
+        H298 = (-30.5289,'kJ/mol','+|-',4.23192),
+        S298 = (118.283,'J/(mol*K)','+|-',2.13957),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -28174,9 +27600,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([24.119,30.8549,37.6607,43.8486,53.7358,61.3211,73.52],'J/(mol*K)','+|-',[0.639511,0.668504,0.626772,0.581978,0.504578,0.448064,0.866032]),
-        H298 = (-44.4314,'kJ/mol','+|-',3.08701),
-        S298 = (118.007,'J/(mol*K)','+|-',1.75742),
+        Cpdata = ([24.0046,30.818,37.6596,43.8313,53.6188,61.1556,73.5549],'J/(mol*K)','+|-',[0.559605,0.623662,0.615982,0.584441,0.494115,0.415506,0.83702]),
+        H298 = (-43.1561,'kJ/mol','+|-',2.57434),
+        S298 = (117.759,'J/(mol*K)','+|-',1.30154),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -28245,9 +27671,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([24.4847,31.7782,38.3891,44.2145,53.29,60.5024,72.473],'J/(mol*K)','+|-',[1.39413,1.45733,1.36635,1.2687,1.09997,0.976774,1.88794]),
-        H298 = (-37.4527,'kJ/mol','+|-',6.72964),
-        S298 = (119.664,'J/(mol*K)','+|-',3.83115),
+        Cpdata = ([24.4612,31.7464,38.347,44.1598,53.2072,60.3982,72.3807],'J/(mol*K)','+|-',[1.21766,1.35704,1.34033,1.2717,1.07516,0.90411,1.82129]),
+        H298 = (-37.2727,'kJ/mol','+|-',5.60158),
+        S298 = (119.473,'J/(mol*K)','+|-',2.83204),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -28280,9 +27706,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([24.5937,31.8218,38.3896,44.2854,53.6013,61.1368,73.519],'J/(mol*K)','+|-',[0.958563,1.00202,0.939468,0.872327,0.756312,0.671603,1.2981]),
-        H298 = (-29.095,'kJ/mol','+|-',4.62712),
-        S298 = (121.258,'J/(mol*K)','+|-',2.6342),
+        Cpdata = ([24.5942,31.8141,38.3742,44.2612,53.5581,61.0795,73.4691],'J/(mol*K)','+|-',[0.837786,0.933685,0.922189,0.874968,0.739741,0.622055,1.25311]),
+        H298 = (-28.9874,'kJ/mol','+|-',3.85406),
+        S298 = (121.149,'J/(mol*K)','+|-',1.94853),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -28415,9 +27841,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([24.788,31.8876,38.5701,44.6635,54.2859,61.6718,73.4512],'J/(mol*K)','+|-',[2.32996,2.43559,2.28355,2.12035,1.83835,1.63245,3.15525]),
-        H298 = (-44.5342,'kJ/mol','+|-',11.247),
-        S298 = (117.614,'J/(mol*K)','+|-',6.40289),
+        Cpdata = ([24.6897,31.7705,38.4339,44.5091,54.1016,61.4653,73.2094],'J/(mol*K)','+|-',[2.03017,2.26255,2.23469,2.12027,1.79258,1.50739,3.03659]),
+        H298 = (-44.3685,'kJ/mol','+|-',9.33935),
+        S298 = (117.253,'J/(mol*K)','+|-',4.72178),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -28446,9 +27872,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([25.5,32.474,39.0633,45.1215,54.6313,61.9177,73.2408],'J/(mol*K)','+|-',[2.26398,2.36662,2.21888,2.0603,1.78629,1.58622,3.0659]),
-        H298 = (-34.5315,'kJ/mol','+|-',10.9285),
-        S298 = (118.563,'J/(mol*K)','+|-',6.22156),
+        Cpdata = ([25.4153,32.3661,38.9336,44.9716,54.4498,61.712,72.9975],'J/(mol*K)','+|-',[1.97331,2.19919,2.17211,2.06089,1.74238,1.46518,2.95155]),
+        H298 = (-34.4168,'kJ/mol','+|-',9.0778),
+        S298 = (118.169,'J/(mol*K)','+|-',4.58955),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -28477,9 +27903,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([26.016,33.083,39.4722,45.1626,54.2669,61.5019,73.2384],'J/(mol*K)','+|-',[1.96066,2.04955,1.9216,1.78427,1.54697,1.37371,2.65515]),
-        H298 = (-37.459,'kJ/mol','+|-',9.46438),
-        S298 = (120.974,'J/(mol*K)','+|-',5.38803),
+        Cpdata = ([25.9511,33.0005,39.3738,45.05,54.1316,61.3485,73.0558],'J/(mol*K)','+|-',[1.71036,1.90614,1.88267,1.78627,1.5102,1.26994,2.55824]),
+        H298 = (-37.3656,'kJ/mol','+|-',7.86814),
+        S298 = (120.672,'J/(mol*K)','+|-',3.97797),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -28606,9 +28032,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([1.93768,3.92943,6.91094,10.037,14.9556,19.168,26.3929],'J/(mol*K)','+|-',[3.56016,3.72157,3.48924,3.23988,2.80899,2.49438,4.82121]),
-        H298 = (225.463,'kJ/mol','+|-',17.1854),
-        S298 = (75.2277,'J/(mol*K)','+|-',9.78358),
+        Cpdata = ([2.40823,4.4295,7.19105,9.93585,14.0696,17.9171,25.2445],'J/(mol*K)','+|-',[3.11961,3.47671,3.4339,3.25806,2.75453,2.31631,4.66611]),
+        H298 = (232.097,'kJ/mol','+|-',14.3511),
+        S298 = (73.8687,'J/(mol*K)','+|-',7.25563),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -28632,9 +28058,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([23.8251,29.9552,36.1913,41.7904,51.078,58.3149,70.9116],'J/(mol*K)','+|-',[0.415972,0.43483,0.407686,0.378549,0.328204,0.291445,0.563313]),
-        H298 = (-45.6787,'kJ/mol','+|-',2.00795),
-        S298 = (121.759,'J/(mol*K)','+|-',1.14312),
+        Cpdata = ([23.9023,30.0132,36.2224,41.8001,51.0646,58.2884,70.8407],'J/(mol*K)','+|-',[0.363741,0.405377,0.400386,0.379884,0.321173,0.270077,0.54406]),
+        H298 = (-45.9803,'kJ/mol','+|-',1.67331),
+        S298 = (122.079,'J/(mol*K)','+|-',0.845993),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -29157,9 +28583,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([23.9069,29.5964,34.6233,38.9683,46.0144,51.1929,58.9739],'J/(mol*K)','+|-',[0.179915,0.188072,0.176331,0.163729,0.141954,0.126055,0.243643]),
-        H298 = (-34.4039,'kJ/mol','+|-',0.868477),
-        S298 = (40.5524,'J/(mol*K)','+|-',0.49442),
+        Cpdata = ([23.5313,29.3073,34.4772,38.9418,46.1135,51.3393,59.3326],'J/(mol*K)','+|-',[0.158112,0.176211,0.174041,0.16513,0.139609,0.117398,0.236494]),
+        H298 = (-32.251,'kJ/mol','+|-',0.727362),
+        S298 = (39.2115,'J/(mol*K)','+|-',0.367739),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -30175,9 +29601,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([21.1154,29.2948,35.5963,40.5149,47.3978,52.5012,59.357],'J/(mol*K)','+|-',[3.93761,4.11612,3.85917,3.58336,3.10679,2.75882,5.33234]),
-        H298 = (-27.1235,'kJ/mol','+|-',19.0074),
-        S298 = (36.2918,'J/(mol*K)','+|-',10.8208),
+        Cpdata = ([20.7644,28.9043,35.1826,40.0775,46.8862,51.9451,58.8611],'J/(mol*K)','+|-',[3.40913,3.79936,3.75258,3.56043,3.01016,2.53127,5.09915]),
+        H298 = (-25.7076,'kJ/mol','+|-',15.683),
+        S298 = (35.6403,'J/(mol*K)','+|-',7.92899),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -30203,9 +29629,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([19.1172,27.419,33.9051,38.9946,46.5844,52.1775,59.8374],'J/(mol*K)','+|-',[3.95157,4.13072,3.87286,3.59607,3.11781,2.76861,5.35126]),
-        H298 = (-46.837,'kJ/mol','+|-',19.0748),
-        S298 = (34.099,'J/(mol*K)','+|-',10.8592),
+        Cpdata = ([18.7457,27.1237,33.6105,38.6033,45.9026,51.3338,59.3065],'J/(mol*K)','+|-',[3.42134,3.81296,3.76602,3.57318,3.02094,2.54033,5.1174]),
+        H298 = (-44.2007,'kJ/mol','+|-',15.7391),
+        S298 = (33.4379,'J/(mol*K)','+|-',7.95738),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -30231,9 +29657,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([21.393,28.7579,34.6406,39.3392,46.564,51.9119,58.6855],'J/(mol*K)','+|-',[1.98281,2.07271,1.94332,1.80443,1.56445,1.38923,2.68514]),
-        H298 = (-24.6,'kJ/mol','+|-',9.57131),
-        S298 = (36.7178,'J/(mol*K)','+|-',5.44891),
+        Cpdata = ([21.2822,28.6934,34.5881,39.2483,46.3387,51.6122,58.5658],'J/(mol*K)','+|-',[1.72984,1.92785,1.90411,1.80661,1.5274,1.2844,2.58738]),
+        H298 = (-23.6277,'kJ/mol','+|-',7.95775),
+        S298 = (36.5285,'J/(mol*K)','+|-',4.02327),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -30262,9 +29688,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([19.5252,28.3717,34.9905,39.9468,47.0404,52.4298,58.8595],'J/(mol*K)','+|-',[2.27883,2.38215,2.23344,2.07382,1.79801,1.59663,3.08602]),
-        H298 = (-13.1749,'kJ/mol','+|-',11.0002),
-        S298 = (42.4634,'J/(mol*K)','+|-',6.26239),
+        Cpdata = ([19.481,28.2342,34.8178,39.791,46.9468,52.3627,58.6812],'J/(mol*K)','+|-',[1.98625,2.21361,2.18636,2.0744,1.7538,1.47479,2.97091]),
+        H298 = (-13.122,'kJ/mol','+|-',9.13734),
+        S298 = (42.1641,'J/(mol*K)','+|-',4.61965),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -30292,9 +29718,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([19.1341,24.4573,31.0102,37.4069,46.3448,53.0731,63.6203],'J/(mol*K)','+|-',[3.9289,4.10702,3.85064,3.57544,3.09993,2.75273,5.32056]),
-        H298 = (-19.0418,'kJ/mol','+|-',18.9654),
-        S298 = (42.6893,'J/(mol*K)','+|-',10.7969),
+        Cpdata = ([19.7968,28.2113,34.6639,39.5599,46.5237,51.7881,59.4842],'J/(mol*K)','+|-',[3.40184,3.79124,3.74456,3.55282,3.00373,2.52586,5.08825]),
+        H298 = (-33.3745,'kJ/mol','+|-',15.6494),
+        S298 = (39.527,'J/(mol*K)','+|-',7.91204),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -30975,9 +30401,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([0.240504,0.2526,1.50248,2.99837,6.38083,8.99762,12.5758],'J/(mol*K)','+|-',[3.56219,3.72368,3.49123,3.24172,2.81058,2.49579,4.82395]),
-        H298 = (256.096,'kJ/mol','+|-',17.1952),
-        S298 = (-14.8326,'J/(mol*K)','+|-',9.78913),
+        Cpdata = ([1.20244,1.16176,2.04294,3.04484,5.53156,7.75043,11.2017],'J/(mol*K)','+|-',[3.1208,3.47803,3.4352,3.2593,2.75558,2.31719,4.66788]),
+        H298 = (259.879,'kJ/mol','+|-',14.3566),
+        S298 = (-13.503,'J/(mol*K)','+|-',7.25839),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -31721,9 +31147,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([21.5281,26.3426,31.1809,34.9198,39.1094,42.0783,45.7568],'J/(mol*K)','+|-',[3.94185,4.12055,3.86332,3.58722,3.11014,2.7618,5.33809]),
-        H298 = (0.255347,'kJ/mol','+|-',19.0278),
-        S298 = (-57.8168,'J/(mol*K)','+|-',10.8325),
+        Cpdata = ([15.0496,22.4971,28.7237,33.4395,38.8264,42.8735,47.9544],'J/(mol*K)','+|-',[3.41287,3.80352,3.75669,3.56433,3.01346,2.53405,5.10474]),
+        H298 = (-31.7411,'kJ/mol','+|-',15.7002),
+        S298 = (-47.2526,'J/(mol*K)','+|-',7.93768),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -31752,9 +31178,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([20.4901,24.8318,29.5764,33.1373,37.3206,40.6108,45.7644],'J/(mol*K)','+|-',[3.95616,4.13552,3.87735,3.60025,3.12143,2.77182,5.35747]),
-        H298 = (-40.913,'kJ/mol','+|-',19.0969),
-        S298 = (-56.8488,'J/(mol*K)','+|-',10.8718),
+        Cpdata = ([16.3998,24.5962,31.1056,35.4189,40.2867,44.0677,50.0283],'J/(mol*K)','+|-',[3.42614,3.81832,3.7713,3.57819,3.02518,2.5439,5.12459]),
+        H298 = (-55.6641,'kJ/mol','+|-',15.7612),
+        S298 = (-44.8538,'J/(mol*K)','+|-',7.96855),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -31783,9 +31209,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([23.3249,28.6866,33.2535,36.7761,40.7076,43.3894,46.771],'J/(mol*K)','+|-',[3.9395,4.11811,3.86103,3.58509,3.10829,2.76016,5.33491]),
-        H298 = (-8.03043,'kJ/mol','+|-',19.0165),
-        S298 = (-64.9271,'J/(mol*K)','+|-',10.826),
+        Cpdata = ([23.4266,28.675,33.0698,36.4536,40.2141,42.8266,46.0374],'J/(mol*K)','+|-',[3.41076,3.80118,3.75438,3.56214,3.01161,2.53249,5.10159]),
+        H298 = (-9.35133,'kJ/mol','+|-',15.6905),
+        S298 = (-62.7795,'J/(mol*K)','+|-',7.93279),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -31814,9 +31240,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([24.2854,29.4705,33.192,36.2799,40.6462,43.3307,44.8349],'J/(mol*K)','+|-',[3.95266,4.13186,3.87392,3.59706,3.11867,2.76937,5.35273]),
-        H298 = (-12.4522,'kJ/mol','+|-',19.08),
-        S298 = (-66.5166,'J/(mol*K)','+|-',10.8622),
+        Cpdata = ([24.2582,29.2572,32.8429,35.9153,40.3768,43.1183,44.2416],'J/(mol*K)','+|-',[3.42228,3.81401,3.76705,3.57416,3.02177,2.54103,5.11881]),
+        H298 = (-13.432,'kJ/mol','+|-',15.7434),
+        S298 = (-64.4394,'J/(mol*K)','+|-',7.95956),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -31845,9 +31271,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([21.7631,26.7015,31.6181,35.3249,39.9478,43.1375,47.2997],'J/(mol*K)','+|-',[3.95346,4.13269,3.87471,3.59779,3.1193,2.76993,5.35381]),
-        H298 = (-29.0402,'kJ/mol','+|-',19.0839),
-        S298 = (-67.147,'J/(mol*K)','+|-',10.8644),
+        Cpdata = ([21.84,26.7861,31.5529,35.0479,39.2835,42.2863,46.5306],'J/(mol*K)','+|-',[3.42295,3.81477,3.76779,3.57486,3.02237,2.54153,5.11982]),
+        H298 = (-29.1278,'kJ/mol','+|-',15.7466),
+        S298 = (-65.0088,'J/(mol*K)','+|-',7.96114),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -31876,9 +31302,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([22.331,26.6094,30.5544,33.6576,38.1441,41.3333,45.2851],'J/(mol*K)','+|-',[3.94242,4.12115,3.86388,3.58774,3.11059,2.7622,5.33886]),
-        H298 = (-26.9968,'kJ/mol','+|-',19.0306),
-        S298 = (-54.7086,'J/(mol*K)','+|-',10.834),
+        Cpdata = ([18.2627,26.2797,31.9715,35.903,41.2803,45.0739,49.584],'J/(mol*K)','+|-',[3.41401,3.8048,3.75795,3.56553,3.01447,2.5349,5.10645]),
+        H298 = (-42.911,'kJ/mol','+|-',15.7054),
+        S298 = (-42.7034,'J/(mol*K)','+|-',7.94034),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -31907,9 +31333,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([25.2944,30.0621,33.634,36.5225,40.5791,43.3603,44.8069],'J/(mol*K)','+|-',[3.95147,4.13061,3.87275,3.59598,3.11773,2.76854,5.35111]),
-        H298 = (-18.9051,'kJ/mol','+|-',19.0743),
-        S298 = (-66.5033,'J/(mol*K)','+|-',10.8589),
+        Cpdata = ([25.3152,29.8893,33.3139,36.17,40.2879,43.1169,44.2173],'J/(mol*K)','+|-',[3.42109,3.81269,3.76574,3.57292,3.02072,2.54015,5.11703]),
+        H298 = (-20.173,'kJ/mol','+|-',15.738),
+        S298 = (-64.764,'J/(mol*K)','+|-',7.9568),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -31938,9 +31364,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([24.8582,29.4923,32.759,35.6524,39.781,42.3998,44.2781],'J/(mol*K)','+|-',[3.9535,4.13273,3.87474,3.59783,3.11933,2.76996,5.35386]),
-        H298 = (-41.9068,'kJ/mol','+|-',19.0841),
-        S298 = (-62.8484,'J/(mol*K)','+|-',10.8645),
+        Cpdata = ([24.3792,28.8578,32.1575,35.1606,39.4684,42.1698,44.0465],'J/(mol*K)','+|-',[3.42347,3.81534,3.76836,3.5754,3.02282,2.54192,5.12059]),
+        H298 = (-38.1233,'kJ/mol','+|-',15.7489),
+        S298 = (-62.1731,'J/(mol*K)','+|-',7.96233),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -31969,9 +31395,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([22.5425,27.1876,31.692,35.1765,39.0164,41.9849,45.6884],'J/(mol*K)','+|-',[3.94059,4.11924,3.86209,3.58608,3.10915,2.76092,5.33639]),
-        H298 = (-8.04399,'kJ/mol','+|-',19.0218),
-        S298 = (-63.0824,'J/(mol*K)','+|-',10.829),
+        Cpdata = ([22.5502,27.1199,31.4935,34.8685,38.5624,41.4642,45.0599],'J/(mol*K)','+|-',[3.41167,3.8022,3.75538,3.56308,3.01241,2.53316,5.10295]),
+        H298 = (-8.3942,'kJ/mol','+|-',15.6947),
+        S298 = (-61.4083,'J/(mol*K)','+|-',7.9349),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -32000,9 +31426,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([21.2269,25.7402,30.2659,33.9101,38.7034,41.4707,46.0283],'J/(mol*K)','+|-',[3.95455,4.13384,3.87578,3.59878,3.12016,2.7707,5.35529]),
-        H298 = (-26.117,'kJ/mol','+|-',19.0892),
-        S298 = (-59.8334,'J/(mol*K)','+|-',10.8674),
+        Cpdata = ([14.1097,20.7754,26.6472,31.5519,37.7551,41.4326,47.7472],'J/(mol*K)','+|-',[3.42386,3.81578,3.76879,3.57581,3.02317,2.54221,5.12118]),
+        H298 = (-37.037,'kJ/mol','+|-',15.7507),
+        S298 = (-43.2292,'J/(mol*K)','+|-',7.96325),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -51752,9 +51178,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([18.4102,26.4179,32.3285,35.867,41.141,43.9638,45.3492],'J/(mol*K)','+|-',[3.95407,4.13333,3.87531,3.59835,3.11979,2.77036,5.35464]),
-        H298 = (-55.4268,'kJ/mol','+|-',19.0869),
-        S298 = (-49.3169,'J/(mol*K)','+|-',10.8661),
+        Cpdata = ([17.6491,25.7148,31.7181,35.2688,40.419,43.1868,45.0585],'J/(mol*K)','+|-',[3.4235,3.81538,3.7684,3.57544,3.02286,2.54194,5.12065]),
+        H298 = (-53.2193,'kJ/mol','+|-',15.7491),
+        S298 = (-50.0947,'J/(mol*K)','+|-',7.96242),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -51781,9 +51207,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([18.9411,27.6768,34.0471,37.4565,41.9964,44.2145,44.6165],'J/(mol*K)','+|-',[3.93996,4.11858,3.86148,3.58551,3.10865,2.76048,5.33553]),
-        H298 = (-33.2813,'kJ/mol','+|-',19.0187),
-        S298 = (-55.8534,'J/(mol*K)','+|-',10.8273),
+        Cpdata = ([18.2151,26.8846,33.3173,36.8115,41.4443,43.7259,44.3632],'J/(mol*K)','+|-',[3.41121,3.80167,3.75486,3.5626,3.012,2.53281,5.10225]),
+        H298 = (-32.3183,'kJ/mol','+|-',15.6925),
+        S298 = (-56.5351,'J/(mol*K)','+|-',7.93381),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -52208,9 +51634,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([25.0272,31.9718,37.6784,42.2187,48.9034,53.6411,60.3205],'J/(mol*K)','+|-',[0.245496,0.256626,0.240606,0.22341,0.193698,0.172003,0.332453]),
-        H298 = (-39.9764,'kJ/mol','+|-',1.18504),
-        S298 = (37.6298,'J/(mol*K)','+|-',0.67464),
+        Cpdata = ([24.7407,31.7142,37.5086,42.1284,48.9125,53.6965,60.4926],'J/(mol*K)','+|-',[0.215017,0.239629,0.236678,0.224559,0.189853,0.159649,0.321607]),
+        H298 = (-39.1883,'kJ/mol','+|-',0.989138),
+        S298 = (36.8387,'J/(mol*K)','+|-',0.500088),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -59843,138 +59269,6 @@ thermo_DFT_CCSDTF12_BAC |         2
 
 entry(
     index = 2379,
-    label = "Cs-F1sF1sF1sS6dd",
-    group = 
-"""
-1 * Cs   u0 {2,S} {3,S} {4,S} {5,S}
-2   S6dd u0 {1,S}
-3   F1s  u0 {1,S}
-4   F1s  u0 {1,S}
-5   F1s  u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([17.8784,20.3373,21.8752,22.6868,23.1346,23.9575,26.168],'J/(mol*K)','+|-',[2.68369,2.80536,2.63023,2.44226,2.11745,1.88029,3.63428]),
-        H298 = (-225.7,'kJ/mol','+|-',12.9546),
-        S298 = (88.8123,'J/(mol*K)','+|-',7.37498),
-    ),
-    shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
-    longDesc = 
-"""
-Fitted from following species using Ridge regression
-
-FC(S(=O)(=O)O)(F)F (PF1Sacid) from NCSU_C2_C8_PFAS
-""",
-)
-
-entry(
-    index = 2380,
-    label = "Cs-CsF1sF1sS6dd",
-    group = 
-"""
-1 * Cs   u0 {2,S} {3,S} {4,S} {5,S}
-2   S6dd u0 {1,S}
-3   F1s  u0 {1,S}
-4   F1s  u0 {1,S}
-5   Cs   u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([4.58698,7.13009,9.45722,11.385,13.5706,14.5864,14.7034],'J/(mol*K)','+|-',[1.6551,1.73014,1.62213,1.5062,1.30588,1.15962,2.24135]),
-        H298 = (34.1164,'kJ/mol','+|-',7.98941),
-        S298 = (-32.7123,'J/(mol*K)','+|-',4.54834),
-    ),
-    shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
-    longDesc = 
-"""
-Fitted from following species using Ridge regression
-
-FC(S(=O)(=O)O)(C(F)(F)F)F (PF2Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F (PF3Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(S(=O)(=O)O)(F)F)(F)F)(C(F)(F)F)F (PF4Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F (PF5Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF6Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(F)(F)F)F (PF7Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF8Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF9Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF10Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF11Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF12Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF13Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF14Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF15Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF16Sacid) from NCSU_C2_C8_PFAS
-""",
-)
-
-entry(
-    index = 2381,
-    label = "Cs-F1sF1sO2sS6dd",
-    group = 
-"""
-1 * Cs   u0 {2,S} {3,S} {4,S} {5,S}
-2   F1s  u0 {1,S}
-3   F1s  u0 {1,S}
-4   O2s  u0 {1,S}
-5   S6dd u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([20.7982,22.9057,24.1589,25.1046,27.3229,28.6642,29.9068],'J/(mol*K)','+|-',[2.50945,2.62322,2.45946,2.28369,1.97997,1.75821,3.39832]),
-        H298 = (-223.54,'kJ/mol','+|-',12.1134),
-        S298 = (72.636,'J/(mol*K)','+|-',6.89613),
-    ),
-    shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
-    longDesc = 
-"""
-Fitted from following species using Ridge regression
-
-FC1(F)OS1(=O)=O (PF1Sultone) from NCSU_C2_C8_PFAS
-""",
-)
-
-entry(
-    index = 2382,
-    label = "Cs-CsF1sO2sS6dd",
-    group = 
-"""
-1 * Cs   u0 {2,S} {3,S} {4,S} {5,S}
-2   Cs   u0 {1,S}
-3   F1s  u0 {1,S}
-4   O2s  u0 {1,S}
-5   S6dd u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([9.91332,11.0058,11.3597,11.5716,12.4588,12.4391,11.2391],'J/(mol*K)','+|-',[1.65049,1.72531,1.61761,1.502,1.30224,1.15639,2.2351]),
-        H298 = (1.1511,'kJ/mol','+|-',7.96713),
-        S298 = (-36.228,'J/(mol*K)','+|-',4.53565),
-    ),
-    shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
-    longDesc = 
-"""
-Fitted from following species using Ridge regression
-
-FC(C1(F)OS1(=O)=O)(F)F (PF2Sultone) from NCSU_C2_C8_PFAS
-FC(C(C1(F)OS1(=O)=O)(F)F)(F)F (PF3Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F (PF4Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(C(F)(F)F)F (PF5Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(C(F)(F)F)F (PF6Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF7Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF8Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF9Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF10Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF11Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF12Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF13Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF14Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF15Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF16Sultone) from NCSU_C2_C8_PFAS
-""",
-)
-
-entry(
-    index = 2383,
     label = "Ca",
     group = 
 """
@@ -59982,9 +59276,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([20.8378,20.811,20.8032,20.8016,20.7936,20.7926,20.8139],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (716.673,'kJ/mol','+|-',18.9287),
-        S298 = (158.09,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([20.6315,20.605,20.5972,20.5957,20.5878,20.5868,20.6078],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (709.578,'kJ/mol','+|-',15.6194),
+        S298 = (156.525,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -59996,7 +59290,7 @@ Previously contains None as data. New data fitted from following species using R
 )
 
 entry(
-    index = 2384,
+    index = 2380,
     label = "O",
     group = 
 """
@@ -60011,7 +59305,7 @@ entry(
 )
 
 entry(
-    index = 2385,
+    index = 2381,
     label = "O0sc",
     group = 
 """
@@ -60032,7 +59326,7 @@ neighbor at the center
 )
 
 entry(
-    index = 2386,
+    index = 2382,
     label = "Oa(S)",
     group = 
 """
@@ -60054,7 +59348,7 @@ level of theory frequency: B3LYP/6-311++g(d,p)//B3LYP/6-311++g(d,p)
 )
 
 entry(
-    index = 2387,
+    index = 2383,
     label = "O2d",
     group = 
 """
@@ -60074,7 +59368,7 @@ entry(
 )
 
 entry(
-    index = 2388,
+    index = 2384,
     label = "O2d-Cd",
     group = 
 """
@@ -60095,7 +59389,7 @@ entry(
 )
 
 entry(
-    index = 2389,
+    index = 2385,
     label = "O2d-O2d",
     group = 
 """
@@ -60116,7 +59410,7 @@ entry(
 )
 
 entry(
-    index = 2390,
+    index = 2386,
     label = "O2d-Sd",
     group = 
 """
@@ -60138,53 +59432,7 @@ Inferred from a least squares fit from 40 species mostly calculated at cbsqb3, 4
 )
 
 entry(
-    index = 2391,
-    label = "O2d-S2d",
-    group = 
-"""
-1   S2d u0 {2,D}
-2 * O2d u0 {1,D}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([15.0991,15.7454,16.3945,16.9439,17.6124,18.0487,18.7602],'J/(mol*K)','+|-',[1.96066,2.04955,1.9216,1.78427,1.54697,1.37371,2.65514]),
-        H298 = (2.37788,'kJ/mol','+|-',9.46438),
-        S298 = (110.963,'J/(mol*K)','+|-',5.38803),
-    ),
-    shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
-    longDesc = 
-"""
-Fitted from following species using Ridge regression
-
-O=S (SO) from NCSU_C2_C8_PFAS
-""",
-)
-
-entry(
-    index = 2392,
-    label = "O2d-S6ddd",
-    group = 
-"""
-1   S6ddd u0 {2,D}
-2 * O2d   u0 {1,D}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([15.2283,17.2896,18.9195,20.1771,21.8298,22.7941,23.8467],'J/(mol*K)','+|-',[1.1764,1.22973,1.15296,1.07056,0.928183,0.824225,1.59309]),
-        H298 = (-118.772,'kJ/mol','+|-',5.67863),
-        S298 = (76.9561,'J/(mol*K)','+|-',3.23282),
-    ),
-    shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
-    longDesc = 
-"""
-Fitted from following species using Ridge regression
-
-O=S(=O)=O (SO3) from NCSU_C2_C8_PFAS
-""",
-)
-
-entry(
-    index = 2393,
+    index = 2387,
     label = "O2d-N3d",
     group = 
 """
@@ -60205,7 +59453,7 @@ entry(
 )
 
 entry(
-    index = 2394,
+    index = 2388,
     label = "O2d-N5dc",
     group = 
 """
@@ -60226,7 +59474,7 @@ entry(
 )
 
 entry(
-    index = 2395,
+    index = 2389,
     label = "O2s",
     group = 
 """
@@ -60241,7 +59489,7 @@ entry(
 )
 
 entry(
-    index = 2396,
+    index = 2390,
     label = "O2sBrBr",
     group = 
 """
@@ -60265,7 +59513,7 @@ CHOBr_G4 |         1
 )
 
 entry(
-    index = 2397,
+    index = 2391,
     label = "O2sBrCl",
     group = 
 """
@@ -60289,7 +59537,7 @@ CHOClBr_G4 |         1
 )
 
 entry(
-    index = 2398,
+    index = 2392,
     label = "O2sClCl",
     group = 
 """
@@ -60313,7 +59561,7 @@ CHOCl_G4 |         1
 )
 
 entry(
-    index = 2399,
+    index = 2393,
     label = "O2sBrF",
     group = 
 """
@@ -60337,7 +59585,7 @@ CHOFBr_G4 |         1
 )
 
 entry(
-    index = 2400,
+    index = 2394,
     label = "O2sClF",
     group = 
 """
@@ -60361,7 +59609,7 @@ CHOFCl_G4 |         1
 )
 
 entry(
-    index = 2401,
+    index = 2395,
     label = "O2sFF",
     group = 
 """
@@ -60385,7 +59633,7 @@ CHOF_G4 |         1
 )
 
 entry(
-    index = 2402,
+    index = 2396,
     label = "O2s-F1sF1s",
     group = 
 """
@@ -60395,9 +59643,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([42.5387,46.6995,49.7038,51.7269,54.1943,55.6283,56.9867],'J/(mol*K)','+|-',[2.77279,2.8985,2.71756,2.52334,2.18775,1.94272,3.75494]),
-        H298 = (25.336,'kJ/mol','+|-',13.3847),
-        S298 = (246.675,'J/(mol*K)','+|-',7.61983),
+        Cpdata = ([42.3271,46.4672,49.4566,51.4696,53.9247,55.3516,56.7032],'J/(mol*K)','+|-',[2.4128,2.68898,2.65587,2.51988,2.13043,1.7915,3.6089]),
+        H298 = (25.21,'kJ/mol','+|-',11.0996),
+        S298 = (245.448,'J/(mol*K)','+|-',5.61171),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -60410,7 +59658,7 @@ FOF (FOF) from CHOF_G4
 )
 
 entry(
-    index = 2403,
+    index = 2397,
     label = "O2sBrH",
     group = 
 """
@@ -60434,7 +59682,7 @@ CHOBr_G4 |         1
 )
 
 entry(
-    index = 2404,
+    index = 2398,
     label = "O2sClH",
     group = 
 """
@@ -60458,7 +59706,7 @@ CHOCl_G4 |         1
 )
 
 entry(
-    index = 2405,
+    index = 2399,
     label = "O2sFH",
     group = 
 """
@@ -60482,7 +59730,7 @@ CHOF_G4 |         1
 )
 
 entry(
-    index = 2406,
+    index = 2400,
     label = "O2s-F1sH",
     group = 
 """
@@ -60492,9 +59740,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([35.6107,37.8918,40.1725,42.2003,45.2011,47.4907,51.2918],'J/(mol*K)','+|-',[2.77279,2.8985,2.71756,2.52334,2.18775,1.94272,3.75494]),
-        H298 = (-86.3905,'kJ/mol','+|-',13.3847),
-        S298 = (226.329,'J/(mol*K)','+|-',7.61983),
+        Cpdata = ([35.4335,37.7033,39.9727,41.9903,44.9763,47.2545,51.0367],'J/(mol*K)','+|-',[2.4128,2.68898,2.65587,2.51988,2.13043,1.7915,3.6089]),
+        H298 = (-85.9608,'kJ/mol','+|-',11.0996),
+        S298 = (225.203,'J/(mol*K)','+|-',5.61171),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -60507,7 +59755,7 @@ OF (OF) from CHOF_G4
 )
 
 entry(
-    index = 2407,
+    index = 2401,
     label = "O2sBrO",
     group = 
 """
@@ -60534,7 +59782,7 @@ CHOClBr_G4  |         21
 )
 
 entry(
-    index = 2408,
+    index = 2402,
     label = "O2sClO",
     group = 
 """
@@ -60560,7 +59808,7 @@ CHOClBr_G4 |         1
 )
 
 entry(
-    index = 2409,
+    index = 2403,
     label = "O2sFO",
     group = 
 """
@@ -60586,7 +59834,7 @@ CHOFBr_G4 |         1
 )
 
 entry(
-    index = 2410,
+    index = 2404,
     label = "O2s-F1sO2s",
     group = 
 """
@@ -60596,9 +59844,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([30.8267,33.0168,35.0657,36.685,38.5642,39.1329,40.0525],'J/(mol*K)','+|-',[0.719616,0.752241,0.705281,0.654877,0.567781,0.504188,0.974511]),
-        H298 = (30.84,'kJ/mol','+|-',3.47369),
-        S298 = (138.642,'J/(mol*K)','+|-',1.97756),
+        Cpdata = ([30.9002,33.0725,35.0978,36.6976,38.5535,39.108,39.9807],'J/(mol*K)','+|-',[0.629269,0.701299,0.692664,0.657196,0.555626,0.467231,0.941219]),
+        H298 = (30.6548,'kJ/mol','+|-',2.89482),
+        S298 = (138.949,'J/(mol*K)','+|-',1.46356),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -60633,7 +59881,7 @@ FOOC(F)=C(F)F (FOOC(F)DC(F)F) from CHOF_G4
 )
 
 entry(
-    index = 2411,
+    index = 2405,
     label = "O2sBrC",
     group = 
 """
@@ -60660,7 +59908,7 @@ CHOClBr_G4  |         174
 )
 
 entry(
-    index = 2412,
+    index = 2406,
     label = "O2sCCl",
     group = 
 """
@@ -60687,7 +59935,7 @@ CHOClBr_G4  |         33
 )
 
 entry(
-    index = 2413,
+    index = 2407,
     label = "O2sCF",
     group = 
 """
@@ -60714,7 +59962,7 @@ CHOFBr_G4   |         55
 )
 
 entry(
-    index = 2414,
+    index = 2408,
     label = "O2s-HH",
     group = 
 """
@@ -60724,9 +59972,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([33.5965,34.2678,35.2141,36.3207,38.7331,41.2948,47.3125],'J/(mol*K)','+|-',[2.77279,2.8985,2.71756,2.52334,2.18775,1.94272,3.75494]),
-        H298 = (-241.83,'kJ/mol','+|-',13.3847),
-        S298 = (188.811,'J/(mol*K)','+|-',7.61983),
+        Cpdata = ([33.2639,33.9285,34.8654,35.9611,38.3496,40.886,46.8232],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-239.435,'kJ/mol','+|-',15.6194),
+        S298 = (186.942,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -60734,12 +59982,11 @@ entry(
 Previously contains all zeros as data. New data fitted from following species using Ridge regression
 
 O (H2O) from C1_C3_hydrofluorocarbons_NIST
-O (H2O) from NCSU_C2_C8_PFAS
 """,
 )
 
 entry(
-    index = 2415,
+    index = 2409,
     label = "O2s-OsH",
     group = 
 """
@@ -60749,9 +59996,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([22.5465,23.9658,25.4834,26.8535,28.591,29.642,33.1924],'J/(mol*K)','+|-',[0.49295,0.515298,0.48313,0.448602,0.38894,0.345378,0.667557]),
-        H298 = (-62.8175,'kJ/mol','+|-',2.37954),
-        S298 = (117.442,'J/(mol*K)','+|-',1.35466),
+        Cpdata = ([22.7495,24.1103,25.5658,26.8853,28.5367,29.5046,32.9989],'J/(mol*K)','+|-',[0.445406,0.49639,0.490278,0.465173,0.39328,0.330713,0.666208]),
+        H298 = (-62.7791,'kJ/mol','+|-',2.04899),
+        S298 = (117.903,'J/(mol*K)','+|-',1.03593),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -60760,7 +60007,6 @@ Previously contains all zeros as data. New data fitted from following species us
 
 OOF (FOOH) from C1_C2_Fluorine
 OO (H2O2) from C1_C3_hydrofluorocarbons_NIST
-OO (H2O2) from NCSU_C2_C8_PFAS
 OOC(F)C(F)(F)F (OOC(F)C(F)(F)F) from CHOF_G4
 OOC(F)C(F)F (OOC(F)C(F)F) from CHOF_G4
 OOC=CF (OOCDCF) from CHOF_G4
@@ -60820,7 +60066,7 @@ OOC(F)Br (OOC(F)Br) from CHOFBr_G4
 )
 
 entry(
-    index = 2416,
+    index = 2410,
     label = "O2s-(Os-CdOd)H",
     group = 
 """
@@ -60845,7 +60091,7 @@ S298 taken from O2s-OsH
 )
 
 entry(
-    index = 2417,
+    index = 2411,
     label = "O2s-OsOs",
     group = 
 """
@@ -60867,7 +60113,7 @@ entry(
 )
 
 entry(
-    index = 2418,
+    index = 2412,
     label = "O2s-SsOs",
     group = 
 """
@@ -60889,7 +60135,7 @@ entry(
 )
 
 entry(
-    index = 2419,
+    index = 2413,
     label = "O2s-CH",
     group = 
 """
@@ -60906,7 +60152,7 @@ entry(
 )
 
 entry(
-    index = 2420,
+    index = 2414,
     label = "O2s-CtH",
     group = 
 """
@@ -60916,9 +60162,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([23.1229,24.2974,24.9441,26.1342,28.6623,30.8171,34.514],'J/(mol*K)','+|-',[2.55314,2.66889,2.50228,2.32345,2.01444,1.78882,3.45748]),
-        H298 = (-177.731,'kJ/mol','+|-',12.3244),
-        S298 = (110.651,'J/(mol*K)','+|-',7.0162),
+        Cpdata = ([23.0138,24.1857,24.8278,26.0084,28.5195,30.6628,34.3376],'J/(mol*K)','+|-',[2.21778,2.47164,2.44121,2.31621,1.95824,1.6467,3.31721]),
+        H298 = (-176.128,'kJ/mol','+|-',10.2024),
+        S298 = (110.119,'J/(mol*K)','+|-',5.15814),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -60934,7 +60180,7 @@ OC#CC(F)F (OC#CC(F)F) from CHOF_G4
 )
 
 entry(
-    index = 2421,
+    index = 2415,
     label = "O2s-CdsH",
     group = 
 """
@@ -60951,7 +60197,7 @@ entry(
 )
 
 entry(
-    index = 2422,
+    index = 2416,
     label = "O2s-(Cds-O2d)H",
     group = 
 """
@@ -60976,7 +60222,7 @@ DOI: 10.1002/chem.201301381
 )
 
 entry(
-    index = 2423,
+    index = 2417,
     label = "O2s-(CsO2d)COH",
     group = 
 """
@@ -60988,9 +60234,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([22.4586,24.2913,24.9362,25.327,25.9307,26.6017,30.1721],'J/(mol*K)','+|-',[1.40115,1.46468,1.37324,1.2751,1.10552,0.981698,1.89746]),
-        H298 = (-172.056,'kJ/mol','+|-',6.76356),
-        S298 = (115.953,'J/(mol*K)','+|-',3.85047),
+        Cpdata = ([21.7312,24.7898,26.6167,27.8156,28.9444,29.5414,33.9989],'J/(mol*K)','+|-',[1.31013,1.4601,1.44212,1.36828,1.15681,0.972772,1.95961]),
+        H298 = (-158.635,'kJ/mol','+|-',6.02699),
+        S298 = (113.774,'J/(mol*K)','+|-',3.04712),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -60998,21 +60244,6 @@ entry(
 Fitted from following species using Ridge regression
 
 O=C(O)C(F)(F)F (CF3C(O)OH) from C1_C2_Fluorine
-O=C(O)C(F)(F)F (PF2acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)F (PF3acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)F (PF4acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15acid) from NCSU_C2_C8_PFAS
-O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16acid) from NCSU_C2_C8_PFAS
 O=C(O)C(F)(F)F (CF3C_O_OH) from PFCA_thermo
 O=C(O)C(F)(F)C(F)(F)F (C2F5C_O_OH) from PFCA_thermo
 O=C(O)C(F)(F)C(F)(F)C(F)(F)F (C3F7C_O_OH) from PFCA_thermo
@@ -61034,7 +60265,7 @@ O=C(O)C(F)Br (ODC(O)C(F)Br) from CHOFBr_G4
 )
 
 entry(
-    index = 2424,
+    index = 2418,
     label = "O2s-(F1sO2d)COH",
     group = 
 """
@@ -61046,23 +60277,22 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([18.2009,19.1659,20.7367,22.6702,26.1628,28.7167,33.3513],'J/(mol*K)','+|-',[3.20174,3.3469,3.13796,2.9137,2.52619,2.24325,4.33583]),
-        H298 = (-188.696,'kJ/mol','+|-',15.4552),
-        S298 = (115.576,'J/(mol*K)','+|-',8.79861),
+        Cpdata = ([20.1986,21.2358,22.6387,24.2261,27.0771,29.3166,33.2444],'J/(mol*K)','+|-',[3.08476,3.43786,3.39553,3.22166,2.72375,2.29043,4.61398]),
+        H298 = (-191.639,'kJ/mol','+|-',14.1908),
+        S298 = (115.979,'J/(mol*K)','+|-',7.17456),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
 """
 Fitted from following species using Ridge regression
 
-O=C(O)F (FCOOH) from NCSU_C2_C8_PFAS
 O=C(O)F (FC_O_OH) from PFCA_thermo
 O=C(O)F (ODC(O)F) from CHOF_G4
 """,
 )
 
 entry(
-    index = 2425,
+    index = 2419,
     label = "O2s-(Cds-Cd)H",
     group = 
 """
@@ -61087,7 +60317,7 @@ DOI: 10.1002/chem.201301381
 )
 
 entry(
-    index = 2426,
+    index = 2420,
     label = "O2s-(Cds-Nd)H",
     group = 
 """
@@ -61112,7 +60342,7 @@ CHON_G4 |         46
 )
 
 entry(
-    index = 2427,
+    index = 2421,
     label = "O2s-CsH",
     group = 
 """
@@ -61122,9 +60352,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([20.1058,21.5581,22.665,24.0045,26.7481,29.0483,33.442],'J/(mol*K)','+|-',[0.15506,0.162089,0.151971,0.14111,0.122343,0.10864,0.209983]),
-        H298 = (-164.147,'kJ/mol','+|-',0.748494),
-        S298 = (123.378,'J/(mol*K)','+|-',0.426114),
+        Cpdata = ([20.5064,21.98,22.9997,24.2447,26.843,29.0629,33.3443],'J/(mol*K)','+|-',[0.138119,0.153929,0.152034,0.144249,0.121955,0.102553,0.206589]),
+        H298 = (-163.628,'kJ/mol','+|-',0.635387),
+        S298 = (124.329,'J/(mol*K)','+|-',0.321238),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -61138,36 +60368,6 @@ CC(O)(F)F (CH3CF2OH) from C1_C2_Fluorine
 OC(F)F (CHF2OH) from C1_C2_Fluorine
 CO (CH3OH) from C1_C3_hydrofluorocarbons_NIST
 OC(F)(F)C(F)(F)C(F)(F)F (C3F7OH) from C1_C3_hydrofluorocarbons_NIST
-OC(F)(F)C(F)(F)F (PF2ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)F (PF3ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF4ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7ol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)F (PF2diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)F (PF3diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)F (PF4diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF5diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7diol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15ol) from NCSU_C2_C8_PFAS
-OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16ol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15diol) from NCSU_C2_C8_PFAS
-OC(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16diol) from NCSU_C2_C8_PFAS
 CC(O)(F)OF (CC(O)(F)OF) from CHOF_G4
 CC(O)(F)F (CC(O)(F)F) from CHOF_G4
 OC(F)(F)OC(F)(F)F (OC(F)(F)OC(F)(F)F) from CHOF_G4
@@ -61722,7 +60922,7 @@ CC(F)(Br)C(O)Br (CC(F)(Br)C(O)Br) from CHOFBr_G4
 )
 
 entry(
-    index = 2428,
+    index = 2422,
     label = "O2s-CbH",
     group = 
 """
@@ -61744,7 +60944,7 @@ entry(
 )
 
 entry(
-    index = 2429,
+    index = 2423,
     label = "O2s-CSH",
     group = 
 """
@@ -61767,7 +60967,7 @@ entry(
 )
 
 entry(
-    index = 2430,
+    index = 2424,
     label = "O2s-C2sH",
     group = 
 """
@@ -61777,9 +60977,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([19.551,20.455,20.6378,21.2113,24.2299,26.1079,30.4307],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-158.429,'kJ/mol','+|-',18.9287),
-        S298 = (129.999,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([19.3575,20.2525,20.4335,21.0013,23.99,25.8494,30.1294],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-156.86,'kJ/mol','+|-',15.6194),
+        S298 = (128.712,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -61791,7 +60991,7 @@ O[C]F (O[C]F) from CHOF_G4
 )
 
 entry(
-    index = 2431,
+    index = 2425,
     label = "O2s-OsC",
     group = 
 """
@@ -61808,7 +61008,7 @@ entry(
 )
 
 entry(
-    index = 2432,
+    index = 2426,
     label = "O2s-OsCt",
     group = 
 """
@@ -61830,7 +61030,7 @@ entry(
 )
 
 entry(
-    index = 2433,
+    index = 2427,
     label = "O2s-OsCds",
     group = 
 """
@@ -61847,7 +61047,7 @@ entry(
 )
 
 entry(
-    index = 2434,
+    index = 2428,
     label = "O2s-O2s(Cds-O2d)",
     group = 
 """
@@ -61873,7 +61073,7 @@ O=C(C)OO    -84.1 (Klipp_Glar)        -86.5              -83.5
 )
 
 entry(
-    index = 2435,
+    index = 2429,
     label = "O2s-O2s(Cds-Cd)",
     group = 
 """
@@ -61896,7 +61096,7 @@ entry(
 )
 
 entry(
-    index = 2436,
+    index = 2430,
     label = "O2s-OsCs",
     group = 
 """
@@ -61918,7 +61118,7 @@ entry(
 )
 
 entry(
-    index = 2437,
+    index = 2431,
     label = "O2s-OsCb",
     group = 
 """
@@ -61935,7 +61135,7 @@ entry(
 )
 
 entry(
-    index = 2438,
+    index = 2432,
     label = "O2s-CC",
     group = 
 """
@@ -61952,7 +61152,7 @@ entry(
 )
 
 entry(
-    index = 2439,
+    index = 2433,
     label = "O2s-CtCt",
     group = 
 """
@@ -61969,7 +61169,7 @@ entry(
 )
 
 entry(
-    index = 2440,
+    index = 2434,
     label = "O2s-CtCds",
     group = 
 """
@@ -61986,7 +61186,7 @@ entry(
 )
 
 entry(
-    index = 2441,
+    index = 2435,
     label = "O2s-Ct(Cds-O2d)",
     group = 
 """
@@ -62004,7 +61204,7 @@ entry(
 )
 
 entry(
-    index = 2442,
+    index = 2436,
     label = "O2s-Ct(Cds-Cd)",
     group = 
 """
@@ -62022,7 +61222,7 @@ entry(
 )
 
 entry(
-    index = 2443,
+    index = 2437,
     label = "O2s-CtCs",
     group = 
 """
@@ -62032,9 +61232,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([14.2766,15.054,15.471,16.8476,18.9132,20.356,21.3546],'J/(mol*K)','+|-',[2.67045,2.79152,2.61726,2.43021,2.107,1.87101,3.61635]),
-        H298 = (-96.9954,'kJ/mol','+|-',12.8906),
-        S298 = (28.9518,'J/(mol*K)','+|-',7.33859),
+        Cpdata = ([14.2072,14.9856,15.388,16.7445,18.7819,20.2139,21.1995],'J/(mol*K)','+|-',[2.31901,2.58446,2.55264,2.42193,2.04762,1.72186,3.46862]),
+        H298 = (-95.1667,'kJ/mol','+|-',10.6681),
+        S298 = (28.552,'J/(mol*K)','+|-',5.39357),
     ),
     shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62050,7 +61250,7 @@ FC#COC(F)F (FC#COC(F)F) from CHOF_G4
 )
 
 entry(
-    index = 2444,
+    index = 2438,
     label = "O2s-CtCb",
     group = 
 """
@@ -62067,7 +61267,7 @@ entry(
 )
 
 entry(
-    index = 2445,
+    index = 2439,
     label = "O2s-CdsCds",
     group = 
 """
@@ -62084,7 +61284,7 @@ entry(
 )
 
 entry(
-    index = 2446,
+    index = 2440,
     label = "O2s-(Cds-O2d)(Cds-O2d)",
     group = 
 """
@@ -62110,7 +61310,7 @@ DOI: 10.1002/chem.201301381
 )
 
 entry(
-    index = 2447,
+    index = 2441,
     label = "O2s-(Cds-O2d)(Cds-Cd)",
     group = 
 """
@@ -62136,7 +61336,7 @@ DOI: 10.1002/chem.201301381
 )
 
 entry(
-    index = 2448,
+    index = 2442,
     label = "O2s-(Cds-Cd)(Cds-Cd)",
     group = 
 """
@@ -62158,7 +61358,7 @@ entry(
 )
 
 entry(
-    index = 2449,
+    index = 2443,
     label = "O2s-CdsCs",
     group = 
 """
@@ -62175,7 +61375,7 @@ entry(
 )
 
 entry(
-    index = 2450,
+    index = 2444,
     label = "O2s-Cs(Cds-O2d)",
     group = 
 """
@@ -62200,7 +61400,7 @@ DOI: 10.1002/chem.201301381
 )
 
 entry(
-    index = 2451,
+    index = 2445,
     label = "O2s-(F1sF1s)(O2d)COCs",
     group = 
 """
@@ -62213,23 +61413,22 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([10.8009,9.78153,10.1928,12.0757,15.2495,17.2455,20.6594],'J/(mol*K)','+|-',[2.98861,3.1241,2.92908,2.71974,2.35803,2.09393,4.0472]),
-        H298 = (-153.511,'kJ/mol','+|-',14.4264),
-        S298 = (40.6684,'J/(mol*K)','+|-',8.21291),
+        Cpdata = ([10.3953,9.29661,9.5035,11.1953,14.4707,16.7648,19.9417],'J/(mol*K)','+|-',[2.94529,3.28243,3.24201,3.076,2.6006,2.18687,4.40537]),
+        H298 = (-163.455,'kJ/mol','+|-',13.5492),
+        S298 = (41.2558,'J/(mol*K)','+|-',6.85018),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
 """
 Fitted from following species using Ridge regression
 
-O=C1OC1(F)F (PF2lactone) from NCSU_C2_C8_PFAS
 O=C1OC1(F)F (c_CF2OC_O) from PFCA_thermo
 O=C1OC1(F)F (ODC1OC1(F)F) from CHOF_G4
 """,
 )
 
 entry(
-    index = 2452,
+    index = 2446,
     label = "O2s-(CsF1s)(O2d)COCs",
     group = 
 """
@@ -62242,29 +61441,15 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([25.0913,28.9645,31.3741,33.2321,35.2618,36.034,36.467],'J/(mol*K)','+|-',[0.764663,0.799329,0.74943,0.695871,0.603323,0.53575,1.03551]),
-        H298 = (-193.326,'kJ/mol','+|-',3.69113),
-        S298 = (3.96019,'J/(mol*K)','+|-',2.10135),
+        Cpdata = ([22.2809,26.3306,29.7302,32.1983,34.525,35.6159,40.1339],'J/(mol*K)','+|-',[0.915367,1.02015,1.00759,0.955992,0.808243,0.679658,1.36915]),
+        H298 = (-159.769,'kJ/mol','+|-',4.21095),
+        S298 = (-4.0631,'J/(mol*K)','+|-',2.12897),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
 """
 Fitted from following species using Ridge regression
 
-O=C1OC1(F)C(F)(F)F (PF3lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)F (PF4lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)F (PF5lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF6lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF7lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF8lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF9lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF10lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF11lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF12lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF13lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF14lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF15lactone) from NCSU_C2_C8_PFAS
-O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (PF16lactone) from NCSU_C2_C8_PFAS
 O=C1OC1(F)C(F)(F)F (CF3_c_FCOC_O) from PFCA_thermo
 O=C1OC1(F)C(F)(F)C(F)(F)F (C2F5_c_FCOC_O) from PFCA_thermo
 O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)F (C3F7_c_FCOC_O) from PFCA_thermo
@@ -62275,7 +61460,7 @@ O=C1OC1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F (C6F13_c_FCOC_O) from PFCA
 )
 
 entry(
-    index = 2453,
+    index = 2447,
     label = "O2s-(F1sO2d)(HHH)COCs",
     group = 
 """
@@ -62290,9 +61475,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([14.9127,14.1299,14.6942,16.5523,20.3997,21.9192,21.9812],'J/(mol*K)','+|-',[4.54701,4.75316,4.45643,4.13794,3.58762,3.1858,6.15761]),
-        H298 = (-132.646,'kJ/mol','+|-',21.9491),
-        S298 = (32.0629,'J/(mol*K)','+|-',12.4955),
+        Cpdata = ([14.5296,13.7963,14.3936,16.2478,20.0545,21.5579,21.6514],'J/(mol*K)','+|-',[3.90824,4.3556,4.30197,4.08169,3.45086,2.90186,5.84568]),
+        H298 = (-130.26,'kJ/mol','+|-',17.979),
+        S298 = (31.1274,'J/(mol*K)','+|-',9.08981),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62304,7 +61489,7 @@ COC(=O)F (COC(DO)F) from CHOF_G4
 )
 
 entry(
-    index = 2454,
+    index = 2448,
     label = "O2s-(F1sF1sH)(O2dH)COCs",
     group = 
 """
@@ -62319,9 +61504,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([13.0964,14.3882,14.9647,15.4499,17.0122,18.6322,19.9036],'J/(mol*K)','+|-',[3.949,4.12803,3.87033,3.59373,3.11578,2.76681,5.34777]),
-        H298 = (-91.4484,'kJ/mol','+|-',19.0624),
-        S298 = (41.8113,'J/(mol*K)','+|-',10.8521),
+        Cpdata = ([12.9796,14.2706,14.8405,15.3158,16.8506,18.449,19.7172],'J/(mol*K)','+|-',[3.41878,3.81012,3.76321,3.57051,3.01869,2.53844,5.11359]),
+        H298 = (-90.3964,'kJ/mol','+|-',15.7274),
+        S298 = (41.3664,'J/(mol*K)','+|-',7.95144),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62333,7 +61518,7 @@ O=COC(F)F (ODCOC(F)F) from CHOF_G4
 )
 
 entry(
-    index = 2455,
+    index = 2449,
     label = "O2s-(F1sHH)(F1sO2d)COCs",
     group = 
 """
@@ -62348,9 +61533,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([14.8576,13.879,14.4696,16.0001,18.4996,19.3974,21.4196],'J/(mol*K)','+|-',[4.54655,4.75267,4.45598,4.13752,3.58725,3.18547,6.15698]),
-        H298 = (-119.025,'kJ/mol','+|-',21.9468),
-        S298 = (35.875,'J/(mol*K)','+|-',12.4942),
+        Cpdata = ([14.5718,13.6364,14.2303,15.7329,18.169,19.0375,21.0307],'J/(mol*K)','+|-',[3.90783,4.35515,4.30152,4.08126,3.4505,2.90156,5.84507]),
+        H298 = (-116.918,'kJ/mol','+|-',17.9771),
+        S298 = (35.2217,'J/(mol*K)','+|-',9.08887),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62362,7 +61547,7 @@ O=C(F)OCF (ODC(F)OCF) from CHOF_G4
 )
 
 entry(
-    index = 2456,
+    index = 2450,
     label = "O2s-(F1sF1sF1s)(F1sO2d)COCs",
     group = 
 """
@@ -62377,9 +61562,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([22.9797,22.8421,21.2546,20.9206,21.6098,22.1561,21.1959],'J/(mol*K)','+|-',[4.55839,4.76505,4.46758,4.1483,3.59659,3.19377,6.17301]),
-        H298 = (-105.524,'kJ/mol','+|-',22.004),
-        S298 = (30.3438,'J/(mol*K)','+|-',12.5268),
+        Cpdata = ([22.6354,22.5167,20.9451,20.599,21.2496,21.784,20.8518],'J/(mol*K)','+|-',[3.91826,4.36677,4.313,4.09215,3.45971,2.9093,5.86067]),
+        H298 = (-103.47,'kJ/mol','+|-',18.0251),
+        S298 = (29.8215,'J/(mol*K)','+|-',9.11312),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62391,7 +61576,7 @@ O=C(F)OC(F)(F)F (ODC(F)OC(F)(F)F) from CHOF_G4
 )
 
 entry(
-    index = 2457,
+    index = 2451,
     label = "O2s-(F1sF1sF1s)(O2dH)COCs",
     group = 
 """
@@ -62406,9 +61591,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([23.9378,22.1558,19.6807,17.5312,15.7117,15.6454,15.9095],'J/(mol*K)','+|-',[3.95643,4.1358,3.87762,3.60049,3.12165,2.77202,5.35784]),
-        H298 = (-85.0615,'kJ/mol','+|-',19.0982),
-        S298 = (43.2988,'J/(mol*K)','+|-',10.8725),
+        Cpdata = ([23.743,21.9734,19.5111,17.3741,15.5664,15.5082,15.8001],'J/(mol*K)','+|-',[3.42561,3.81772,3.77072,3.57764,3.02471,2.5435,5.12379]),
+        H298 = (-83.9832,'kJ/mol','+|-',15.7588),
+        S298 = (42.9491,'J/(mol*K)','+|-',7.96731),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62420,7 +61605,7 @@ O=COC(F)(F)F (ODCOC(F)(F)F) from CHOF_G4
 )
 
 entry(
-    index = 2458,
+    index = 2452,
     label = "O2s-(F1sF1sH)(F1sO2d)COCs",
     group = 
 """
@@ -62435,9 +61620,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([12.5598,14.9824,16.5226,18.1071,21.3146,23.2949,23.8777],'J/(mol*K)','+|-',[4.55194,4.7583,4.46126,4.14243,3.5915,3.18925,6.16428]),
-        H298 = (-114.631,'kJ/mol','+|-',21.9728),
-        S298 = (31.7512,'J/(mol*K)','+|-',12.509),
+        Cpdata = ([12.2893,14.7227,16.2586,17.8159,20.9538,22.8951,23.4695],'J/(mol*K)','+|-',[3.91237,4.3602,4.30652,4.086,3.45451,2.90493,5.85186]),
+        H298 = (-112.576,'kJ/mol','+|-',17.998),
+        S298 = (31.105,'J/(mol*K)','+|-',9.09943),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62449,7 +61634,7 @@ O=C(F)OC(F)F (ODC(F)OC(F)F) from CHOF_G4
 )
 
 entry(
-    index = 2459,
+    index = 2453,
     label = "O2s-(F1sHH)(O2dH)COCs",
     group = 
 """
@@ -62464,9 +61649,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([15.877,13.9169,12.779,12.2477,12.7106,14.2205,16.7476],'J/(mol*K)','+|-',[3.94278,4.12153,3.86424,3.58807,3.11088,2.76245,5.33935]),
-        H298 = (-91.9472,'kJ/mol','+|-',19.0324),
-        S298 = (48.5772,'J/(mol*K)','+|-',10.835),
+        Cpdata = ([15.74,13.8102,12.6809,12.1486,12.5939,14.0823,16.5874],'J/(mol*K)','+|-',[3.41352,3.80425,3.75741,3.56501,3.01404,2.53453,5.10572]),
+        H298 = (-90.8823,'kJ/mol','+|-',15.7032),
+        S298 = (48.099,'J/(mol*K)','+|-',7.9392),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62478,7 +61663,7 @@ O=COCF (ODCOCF) from CHOF_G4
 )
 
 entry(
-    index = 2460,
+    index = 2454,
     label = "O2s-(F1sH)(O2d)COCs",
     group = 
 """
@@ -62491,9 +61676,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([10.405,10.7084,11.626,13.1387,16.2246,18.5318,21.1966],'J/(mol*K)','+|-',[4.10783,4.29406,4.026,3.73827,3.2411,2.87809,5.56286]),
-        H298 = (-142.206,'kJ/mol','+|-',19.8291),
-        S298 = (37.6654,'J/(mol*K)','+|-',11.2886),
+        Cpdata = ([10.2139,10.3725,11.1507,12.5646,15.572,17.8755,20.3649],'J/(mol*K)','+|-',[3.554,3.96082,3.91205,3.71173,3.13808,2.63884,5.31584]),
+        H298 = (-142.462,'kJ/mol','+|-',16.3494),
+        S298 = (37.3159,'J/(mol*K)','+|-',8.26594),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62505,7 +61690,7 @@ O=C1OC1F (ODC1OC1F) from CHOF_G4
 )
 
 entry(
-    index = 2461,
+    index = 2455,
     label = "O2s-(CsF1sF1s)(CsO2d)COCs",
     group = 
 """
@@ -62520,9 +61705,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([23.9574,22.0477,15.8645,11.8683,12.2212,13.1288,7.50808],'J/(mol*K)','+|-',[3.05389,3.19234,2.99305,2.77915,2.40954,2.13966,4.13561]),
-        H298 = (-176.601,'kJ/mol','+|-',14.7415),
-        S298 = (62.0314,'J/(mol*K)','+|-',8.3923),
+        Cpdata = ([16.9269,16.7591,13.0349,10.8316,12.6736,14.1197,12.2327],'J/(mol*K)','+|-',[2.67188,2.97772,2.94106,2.79046,2.35919,1.98387,3.99642]),
+        H298 = (-131.909,'kJ/mol','+|-',12.2914),
+        S298 = (29.8667,'J/(mol*K)','+|-',6.21429),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62535,7 +61720,7 @@ O=C1OC(F)(F)C(F)(F)C1(F)C(F)(F)F (ODC1OC(F)(F)C(F)(F)C1(F)C(F)(F)F) from CHOF_G4
 )
 
 entry(
-    index = 2462,
+    index = 2456,
     label = "O2s-(Cl1sF1sH)(O2dH)COCs",
     group = 
 """
@@ -62550,9 +61735,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([11.164,11.9138,13.0893,14.4487,16.7352,18.6784,19.9968],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-90.8197,'kJ/mol','+|-',18.9287),
-        S298 = (47.6569,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([11.0535,11.7959,12.9597,14.3056,16.5695,18.4935,19.7988],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-89.9206,'kJ/mol','+|-',15.6194),
+        S298 = (47.1851,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62564,7 +61749,7 @@ O=COC(F)Cl (ODCOC(F)Cl) from CHOFCl_G4
 )
 
 entry(
-    index = 2463,
+    index = 2457,
     label = "O2s-(Cl1sO2d)(F1sF1sH)COCs",
     group = 
 """
@@ -62579,9 +61764,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([10.1798,9.47849,10.9634,13.1377,16.6653,17.9786,20.2511],'J/(mol*K)','+|-',[3.949,4.12803,3.87033,3.59373,3.11578,2.76681,5.34777]),
-        H298 = (-97.3159,'kJ/mol','+|-',19.0624),
-        S298 = (42.2057,'J/(mol*K)','+|-',10.8521),
+        Cpdata = ([10.0918,9.40956,10.8788,13.0265,16.507,17.8018,20.0613],'J/(mol*K)','+|-',[3.41878,3.81012,3.76321,3.57051,3.01869,2.53844,5.11359]),
+        H298 = (-96.2057,'kJ/mol','+|-',15.7274),
+        S298 = (41.7569,'J/(mol*K)','+|-',7.95144),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62593,7 +61778,7 @@ O=C(Cl)OC(F)F (ODC(Cl)OC(F)F) from CHOFCl_G4
 )
 
 entry(
-    index = 2464,
+    index = 2458,
     label = "O2s-(Cl1sF1sF1s)(O2dH)COCs",
     group = 
 """
@@ -62608,9 +61793,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([22.9776,22.05,20.1693,18.7962,17.1577,16.911,17.1132],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-81.7297,'kJ/mol','+|-',18.9287),
-        S298 = (46.6583,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([22.7501,21.8317,19.9697,18.6101,16.9878,16.7435,16.9438],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-80.9205,'kJ/mol','+|-',15.6194),
+        S298 = (46.1964,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62622,7 +61807,7 @@ O=COC(F)(F)Cl (ODCOC(F)(F)Cl) from CHOFCl_G4
 )
 
 entry(
-    index = 2465,
+    index = 2459,
     label = "O2s-(Cl1sF1sH)(Cl1sO2d)COCs",
     group = 
 """
@@ -62637,9 +61822,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([10.0906,9.04171,9.97501,11.7411,14.99,17.0448,19.4506],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-97.7079,'kJ/mol','+|-',18.9287),
-        S298 = (48.5177,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([9.99074,8.95219,9.87626,11.6249,14.8416,16.876,19.258],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-96.7406,'kJ/mol','+|-',15.6194),
+        S298 = (48.0374,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62651,7 +61836,7 @@ O=C(Cl)OC(F)Cl (ODC(Cl)OC(F)Cl) from CHOFCl_G4
 )
 
 entry(
-    index = 2466,
+    index = 2460,
     label = "O2s-(Cl1sO2d)(F1sHH)COCs",
     group = 
 """
@@ -62666,9 +61851,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([14.5273,12.7175,12.1332,12.1366,12.7104,14.4059,17.9519],'J/(mol*K)','+|-',[3.94278,4.12153,3.86424,3.58807,3.11088,2.76245,5.33935]),
-        H298 = (-101.417,'kJ/mol','+|-',19.0324),
-        S298 = (43.9537,'J/(mol*K)','+|-',10.835),
+        Cpdata = ([14.4037,12.6227,12.0415,12.0386,12.5937,14.2658,17.7798],'J/(mol*K)','+|-',[3.41352,3.80425,3.75741,3.56501,3.01404,2.53453,5.10572]),
+        H298 = (-100.258,'kJ/mol','+|-',15.7032),
+        S298 = (43.5212,'J/(mol*K)','+|-',7.9392),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62680,7 +61865,7 @@ O=C(Cl)OCF (ODC(Cl)OCF) from CHOFCl_G4
 )
 
 entry(
-    index = 2467,
+    index = 2461,
     label = "O2s-(Cl1sCl1sF1s)(O2dH)COCs",
     group = 
 """
@@ -62695,9 +61880,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([25.3421,22.4955,20.5415,19.2501,17.534,17.101,16.9503],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-80.3775,'kJ/mol','+|-',18.9287),
-        S298 = (44.8003,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([25.0912,22.2728,20.3382,19.0595,17.3604,16.9317,16.7825],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-79.5817,'kJ/mol','+|-',15.6194),
+        S298 = (44.3568,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62709,7 +61894,7 @@ O=COC(F)(Cl)Cl (ODCOC(F)(Cl)Cl) from CHOFCl_G4
 )
 
 entry(
-    index = 2468,
+    index = 2462,
     label = "O2s-(Br1sCl1sF1s)(O2dH)COCs",
     group = 
 """
@@ -62724,9 +61909,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([25.6102,23.2926,21.7113,20.554,18.5714,17.7143,16.7527],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-79.9253,'kJ/mol','+|-',18.9287),
-        S298 = (50.5776,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([25.3567,23.062,21.4963,20.3505,18.3875,17.539,16.5869],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-79.134,'kJ/mol','+|-',15.6194),
+        S298 = (50.0769,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62738,7 +61923,7 @@ O=COC(F)(Cl)Br (ODCOC(F)(Cl)Br) from CHOFClBr_G4
 )
 
 entry(
-    index = 2469,
+    index = 2463,
     label = "O2s-(Br1sO2d)(Cl1sF1sH)COCs",
     group = 
 """
@@ -62753,9 +61938,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([10.6726,9.52974,9.99773,11.1497,13.634,15.6615,18.7916],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-94.6733,'kJ/mol','+|-',18.9287),
-        S298 = (68.6595,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([10.5669,9.43539,9.89875,11.0393,13.499,15.5065,18.6055],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-93.736,'kJ/mol','+|-',15.6194),
+        S298 = (67.9798,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62767,7 +61952,7 @@ O=C(Br)OC(F)Cl (ODC(Br)OC(F)Cl) from CHOFClBr_G4
 )
 
 entry(
-    index = 2470,
+    index = 2464,
     label = "O2s-(Br1sO2d)(F1sF1sF1s)COCs",
     group = 
 """
@@ -62782,9 +61967,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([18.1301,18.4685,19.0561,18.8807,17.8209,18.1283,19.1662],'J/(mol*K)','+|-',[3.95643,4.1358,3.87762,3.60049,3.12165,2.77202,5.35784]),
-        H298 = (-86.5119,'kJ/mol','+|-',19.0982),
-        S298 = (51.536,'J/(mol*K)','+|-',10.8725),
+        Cpdata = ([17.9927,18.3227,18.8927,18.7102,17.6547,17.9666,19.0246],'J/(mol*K)','+|-',[3.42561,3.81772,3.77072,3.57764,3.02471,2.5435,5.12379]),
+        H298 = (-85.4192,'kJ/mol','+|-',15.7588),
+        S298 = (51.1048,'J/(mol*K)','+|-',7.96731),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62796,7 +61981,7 @@ O=C(Br)OC(F)(F)F (ODC(Br)OC(F)(F)F) from CHOFBr_G4
 )
 
 entry(
-    index = 2471,
+    index = 2465,
     label = "O2s-(Br1sBr1sF1s)(Br1sO2d)COCs",
     group = 
 """
@@ -62811,9 +61996,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([16.136,15.6284,15.9802,16.938,18.7637,20.0765,20.6691],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-85.7381,'kJ/mol','+|-',18.9287),
-        S298 = (47.2426,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([15.9762,15.4737,15.822,16.7703,18.578,19.8778,20.4644],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-84.8893,'kJ/mol','+|-',15.6194),
+        S298 = (46.7749,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62825,7 +62010,7 @@ O=C(Br)OC(F)(Br)Br (ODC(Br)OC(F)(Br)Br) from CHOFBr_G4
 )
 
 entry(
-    index = 2472,
+    index = 2466,
     label = "O2s-(Br1sBr1sF1s)(O2dH)COCs",
     group = 
 """
@@ -62840,9 +62025,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([24.5694,24.644,22.9712,20.8781,17.5822,16.7019,17.3373],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-80.6413,'kJ/mol','+|-',18.9287),
-        S298 = (39.8053,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([24.3261,24.4,22.7437,20.6714,17.4081,16.5365,17.1656],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-79.8429,'kJ/mol','+|-',15.6194),
+        S298 = (39.4112,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62854,7 +62039,7 @@ O=COC(F)(Br)Br (ODCOC(F)(Br)Br) from CHOFBr_G4
 )
 
 entry(
-    index = 2473,
+    index = 2467,
     label = "O2s-(Br1sF1sF1s)(O2dH)COCs",
     group = 
 """
@@ -62869,9 +62054,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([22.8221,22.0061,20.2753,19.0256,17.4768,17.2231,17.0432],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-79.8251,'kJ/mol','+|-',18.9287),
-        S298 = (45.8827,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([22.5962,21.7882,20.0746,18.8373,17.3038,17.0526,16.8745],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-79.0349,'kJ/mol','+|-',15.6194),
+        S298 = (45.4284,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62883,7 +62068,7 @@ O=COC(F)(F)Br (ODCOC(F)(F)Br) from CHOFBr_G4
 )
 
 entry(
-    index = 2474,
+    index = 2468,
     label = "O2s-(Br1sO2d)(F1sHH)COCs",
     group = 
 """
@@ -62898,9 +62083,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([14.8978,12.7905,11.7451,11.3622,11.6943,13.038,17.1646],'J/(mol*K)','+|-',[3.94278,4.12153,3.86424,3.58807,3.11088,2.76245,5.33935]),
-        H298 = (-98.0418,'kJ/mol','+|-',19.0324),
-        S298 = (63.794,'J/(mol*K)','+|-',10.835),
+        Cpdata = ([14.7705,12.6949,11.6572,11.2719,11.5877,12.9115,17.0003],'J/(mol*K)','+|-',[3.41352,3.80425,3.75741,3.56501,3.01404,2.53453,5.10572]),
+        H298 = (-96.9167,'kJ/mol','+|-',15.7032),
+        S298 = (63.1652,'J/(mol*K)','+|-',7.9392),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62912,7 +62097,7 @@ O=C(Br)OCF (ODC(Br)OCF) from CHOFBr_G4
 )
 
 entry(
-    index = 2475,
+    index = 2469,
     label = "O2s-(Br1sF1sH)(Br1sO2d)COCs",
     group = 
 """
@@ -62927,9 +62112,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([9.68283,8.52932,9.16862,10.5443,13.6004,16.1161,18.6587],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-94.5626,'kJ/mol','+|-',18.9287),
-        S298 = (63.6593,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([9.58697,8.44488,9.07785,10.44,13.4658,15.9565,18.474],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-93.6264,'kJ/mol','+|-',15.6194),
+        S298 = (63.0291,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62941,7 +62126,7 @@ O=C(Br)OC(F)Br (ODC(Br)OC(F)Br) from CHOFBr_G4
 )
 
 entry(
-    index = 2476,
+    index = 2470,
     label = "O2s-(Br1sF1sH)(O2dH)COCs",
     group = 
 """
@@ -62956,9 +62141,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([14.2985,13.154,13.0764,13.6949,15.6349,18.007,20.1525],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-90.456,'kJ/mol','+|-',18.9287),
-        S298 = (49.1312,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([14.1569,13.0238,12.947,13.5593,15.4801,17.8288,19.953],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-89.5605,'kJ/mol','+|-',15.6194),
+        S298 = (48.6448,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62970,7 +62155,7 @@ O=COC(F)Br (ODCOC(F)Br) from CHOFBr_G4
 )
 
 entry(
-    index = 2477,
+    index = 2471,
     label = "O2s-(Br1sF1sF1s)(Br1sO2d)COCs",
     group = 
 """
@@ -62985,9 +62170,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([15.2643,16.6184,17.9684,18.6246,18.4563,18.179,20.0852],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-83.2167,'kJ/mol','+|-',18.9287),
-        S298 = (54.0581,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([15.1132,16.4539,17.7905,18.4403,18.2736,17.999,19.8863],'J/(mol*K)','+|-',[3.39532,3.78397,3.73738,3.546,2.99797,2.52102,5.07849]),
+        H298 = (-82.3929,'kJ/mol','+|-',15.6194),
+        S298 = (53.5229,'J/(mol*K)','+|-',7.89686),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -62999,7 +62184,7 @@ O=C(Br)OC(F)(F)Br (ODC(Br)OC(F)(F)Br) from CHOFBr_G4
 )
 
 entry(
-    index = 2478,
+    index = 2472,
     label = "O2s-(Br1sO2d)(F1sF1sH)COCs",
     group = 
 """
@@ -63014,9 +62199,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([10.7096,9.733,10.6672,12.2839,15.5053,17.0471,19.4925],'J/(mol*K)','+|-',[3.949,4.12803,3.87033,3.59373,3.11578,2.76681,5.34777]),
-        H298 = (-93.8211,'kJ/mol','+|-',19.0624),
-        S298 = (62.5439,'J/(mol*K)','+|-',10.8521),
+        Cpdata = ([10.6165,9.66155,10.5855,12.1812,15.3586,16.8796,19.3102],'J/(mol*K)','+|-',[3.41878,3.81012,3.76321,3.57051,3.01869,2.53844,5.11359]),
+        H298 = (-92.7456,'kJ/mol','+|-',15.7274),
+        S298 = (61.8938,'J/(mol*K)','+|-',7.95144),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -63028,7 +62213,7 @@ O=C(Br)OC(F)F (ODC(Br)OC(F)F) from CHOFBr_G4
 )
 
 entry(
-    index = 2479,
+    index = 2473,
     label = "O2s-Cs(Cds-Cd)",
     group = 
 """
@@ -63053,7 +62238,7 @@ DOI: 10.1002/chem.201301381
 )
 
 entry(
-    index = 2480,
+    index = 2474,
     label = "O2s-CdsCb",
     group = 
 """
@@ -63070,7 +62255,7 @@ entry(
 )
 
 entry(
-    index = 2481,
+    index = 2475,
     label = "O2s-Cb(Cds-O2d)",
     group = 
 """
@@ -63088,7 +62273,7 @@ entry(
 )
 
 entry(
-    index = 2482,
+    index = 2476,
     label = "O2s-Cb(Cds-Cd)",
     group = 
 """
@@ -63106,7 +62291,7 @@ entry(
 )
 
 entry(
-    index = 2483,
+    index = 2477,
     label = "O2s-CsCs",
     group = 
 """
@@ -63130,7 +62315,7 @@ DOI: 10.1002/chem.201301381
 )
 
 entry(
-    index = 2484,
+    index = 2478,
     label = "O2s-CsCb",
     group = 
 """
@@ -63152,7 +62337,7 @@ entry(
 )
 
 entry(
-    index = 2485,
+    index = 2479,
     label = "O2s-CbCb",
     group = 
 """
@@ -63174,7 +62359,7 @@ entry(
 )
 
 entry(
-    index = 2486,
+    index = 2480,
     label = "O2s-Cs(Cds-S2d)",
     group = 
 """
@@ -63197,7 +62382,7 @@ entry(
 )
 
 entry(
-    index = 2487,
+    index = 2481,
     label = "O2s-C2sCs",
     group = 
 """
@@ -63207,9 +62392,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([14.5103,15.864,16.0791,16.6075,19.0306,20.0168,20.8243],'J/(mol*K)','+|-',[1.97338,2.06284,1.93407,1.79584,1.55701,1.38262,2.67237]),
-        H298 = (-82.7721,'kJ/mol','+|-',9.52576),
-        S298 = (39.7767,'J/(mol*K)','+|-',5.42298),
+        Cpdata = ([14.4738,15.8334,16.0508,16.5781,18.9931,19.9789,20.8063],'J/(mol*K)','+|-',[1.72146,1.91851,1.89489,1.79786,1.52,1.27818,2.57485]),
+        H298 = (-82.3552,'kJ/mol','+|-',7.91921),
+        S298 = (39.6104,'J/(mol*K)','+|-',4.00379),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -63224,7 +62409,7 @@ CO[C]F (CO[C]F) from CHOF_G4
 )
 
 entry(
-    index = 2488,
+    index = 2482,
     label = "O2s-CS",
     group = 
 """
@@ -63241,7 +62426,7 @@ entry(
 )
 
 entry(
-    index = 2489,
+    index = 2483,
     label = "O2s-CS2",
     group = 
 """
@@ -63263,7 +62448,7 @@ entry(
 )
 
 entry(
-    index = 2490,
+    index = 2484,
     label = "O2s-CS4",
     group = 
 """
@@ -63285,46 +62470,7 @@ entry(
 )
 
 entry(
-    index = 2491,
-    label = "O2s-CsS4d",
-    group = 
-"""
-1 * O2s u0 {2,S} {3,S}
-2   Cs  u0 {1,S}
-3   S4d u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([21.9578,25.6084,28.1398,29.7387,31.2754,32.0602,33.1153],'J/(mol*K)','+|-',[0.355124,0.371224,0.34805,0.323175,0.280195,0.248812,0.480912]),
-        H298 = (-139.961,'kJ/mol','+|-',1.71423),
-        S298 = (61.6149,'J/(mol*K)','+|-',0.975905),
-    ),
-    shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
-    longDesc = 
-"""
-Fitted from following species using Ridge regression
-
-FC(OS(=O)O)(F)F (PF1Sulfite) from NCSU_C2_C8_PFAS
-FC(C(F)(F)F)(OS(=O)O)F (PF2Sulfite) from NCSU_C2_C8_PFAS
-FC(C(C(F)(F)F)(F)F)(OS(=O)O)F (PF3Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(F)(F)F)(F)F)(F)F)(F)F (PF4Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F (PF5Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF6Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF7Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF8Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF9Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF10Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF11Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF12Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF13Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF14Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF15Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF16Sulfite) from NCSU_C2_C8_PFAS
-""",
-)
-
-entry(
-    index = 2492,
+    index = 2485,
     label = "O2s-CS6",
     group = 
 """
@@ -63346,46 +62492,7 @@ entry(
 )
 
 entry(
-    index = 2493,
-    label = "O2s-CsS6dd",
-    group = 
-"""
-1 * O2s  u0 {2,S} {3,S}
-2   Cs   u0 {1,S}
-3   S6dd u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([30.7115,33.9115,35.5186,36.6762,39.7817,41.1033,41.1459],'J/(mol*K)','+|-',[1.2343,1.29026,1.20971,1.12326,0.973869,0.864793,1.6715]),
-        H298 = (-222.388,'kJ/mol','+|-',5.95813),
-        S298 = (36.408,'J/(mol*K)','+|-',3.39194),
-    ),
-    shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
-    longDesc = 
-"""
-Fitted from following species using Ridge regression
-
-FC1(F)OS1(=O)=O (PF1Sultone) from NCSU_C2_C8_PFAS
-FC(C1(F)OS1(=O)=O)(F)F (PF2Sultone) from NCSU_C2_C8_PFAS
-FC(C(C1(F)OS1(=O)=O)(F)F)(F)F (PF3Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F (PF4Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(C(F)(F)F)F (PF5Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(C(F)(F)F)F (PF6Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF7Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF8Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF9Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF10Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF11Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF12Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF13Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF14Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF15Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF16Sultone) from NCSU_C2_C8_PFAS
-""",
-)
-
-entry(
-    index = 2494,
+    index = 2486,
     label = "O2s-SH",
     group = 
 """
@@ -63402,7 +62509,7 @@ entry(
 )
 
 entry(
-    index = 2495,
+    index = 2487,
     label = "O2s-S_nonDeH",
     group = 
 """
@@ -63424,7 +62531,7 @@ entry(
 )
 
 entry(
-    index = 2496,
+    index = 2488,
     label = "O2s-S_DeH",
     group = 
 """
@@ -63446,86 +62553,7 @@ entry(
 )
 
 entry(
-    index = 2497,
-    label = "O2s-S6ddH",
-    group = 
-"""
-1 * O2s  u0 {2,S} {3,S}
-2   S6dd u0 {1,S}
-3   H    u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([47.96,56.5891,63.1547,67.9318,73.3858,76.3814,80.4837],'J/(mol*K)','+|-',[1.5108,1.57929,1.48071,1.37488,1.19203,1.05852,2.04594]),
-        H298 = (-459.278,'kJ/mol','+|-',7.29284),
-        S298 = (174.467,'J/(mol*K)','+|-',4.15178),
-    ),
-    shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
-    longDesc = 
-"""
-Fitted from following species using Ridge regression
-
-OS(=O)(=O)F (FSO3H) from NCSU_C2_C8_PFAS
-FC(S(=O)(=O)O)(F)F (PF1Sacid) from NCSU_C2_C8_PFAS
-FC(S(=O)(=O)O)(C(F)(F)F)F (PF2Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F (PF3Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(S(=O)(=O)O)(F)F)(F)F)(C(F)(F)F)F (PF4Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F (PF5Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF6Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(F)(F)F)F (PF7Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF8Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF9Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF10Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF11Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF12Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF13Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF14Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF15Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF16Sacid) from NCSU_C2_C8_PFAS
-""",
-)
-
-entry(
-    index = 2498,
-    label = "O2s-S4dH",
-    group = 
-"""
-1 * O2s u0 {2,S} {3,S}
-2   S4d u0 {1,S}
-3   H   u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([21.9578,25.6084,28.1398,29.7387,31.2754,32.0602,33.1153],'J/(mol*K)','+|-',[0.355124,0.371224,0.34805,0.323175,0.280195,0.248812,0.480912]),
-        H298 = (-139.961,'kJ/mol','+|-',1.71423),
-        S298 = (61.6149,'J/(mol*K)','+|-',0.975905),
-    ),
-    shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
-    longDesc = 
-"""
-Fitted from following species using Ridge regression
-
-FC(OS(=O)O)(F)F (PF1Sulfite) from NCSU_C2_C8_PFAS
-FC(C(F)(F)F)(OS(=O)O)F (PF2Sulfite) from NCSU_C2_C8_PFAS
-FC(C(C(F)(F)F)(F)F)(OS(=O)O)F (PF3Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(F)(F)F)(F)F)(F)F)(F)F (PF4Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F (PF5Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF6Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF7Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF8Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF9Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF10Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF11Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF12Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF13Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF14Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF15Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF16Sulfite) from NCSU_C2_C8_PFAS
-""",
-)
-
-entry(
-    index = 2499,
+    index = 2489,
     label = "O2s-N",
     group = 
 """
@@ -63546,7 +62574,7 @@ entry(
 )
 
 entry(
-    index = 2500,
+    index = 2490,
     label = "O2s-N5tc",
     group = 
 """
@@ -63562,7 +62590,7 @@ entry(
 )
 
 entry(
-    index = 2501,
+    index = 2491,
     label = "O2s-N5tcH",
     group = 
 """
@@ -63586,7 +62614,7 @@ thermo_DFT_CCSDTF12_BAC |         1
 )
 
 entry(
-    index = 2502,
+    index = 2492,
     label = "O2s-HN",
     group = 
 """
@@ -63610,7 +62638,7 @@ CHON_G4 |         2
 )
 
 entry(
-    index = 2503,
+    index = 2493,
     label = "O2s-HN5dc",
     group = 
 """
@@ -63634,7 +62662,7 @@ CHON_G4 |         6
 )
 
 entry(
-    index = 2504,
+    index = 2494,
     label = "O2s-HN5sc",
     group = 
 """
@@ -63658,7 +62686,7 @@ CHON_G4 |         4
 )
 
 entry(
-    index = 2505,
+    index = 2495,
     label = "O2s-HN3s",
     group = 
 """
@@ -63682,7 +62710,7 @@ CHON_G4 |         140
 )
 
 entry(
-    index = 2506,
+    index = 2496,
     label = "O2s-HN3d",
     group = 
 """
@@ -63706,7 +62734,7 @@ CHON_G4 |         53
 )
 
 entry(
-    index = 2507,
+    index = 2497,
     label = "O2s-NO",
     group = 
 """
@@ -63723,7 +62751,7 @@ entry(
 )
 
 entry(
-    index = 2508,
+    index = 2498,
     label = "O2s-OsN3d",
     group = 
 """
@@ -63748,7 +62776,7 @@ thermo_DFT_CCSDTF12_BAC |         2
 )
 
 entry(
-    index = 2509,
+    index = 2499,
     label = "O2s-ON",
     group = 
 """
@@ -63772,7 +62800,7 @@ CHON_G4 |         3
 )
 
 entry(
-    index = 2510,
+    index = 2500,
     label = "O2s-OsN3s",
     group = 
 """
@@ -63796,7 +62824,7 @@ CHON_G4 |         27
 )
 
 entry(
-    index = 2511,
+    index = 2501,
     label = "O2s-OsNH2",
     group = 
 """
@@ -63822,7 +62850,7 @@ CHON_G4 |         13
 )
 
 entry(
-    index = 2512,
+    index = 2502,
     label = "O2s-OsN5dc",
     group = 
 """
@@ -63847,7 +62875,7 @@ thermo_DFT_CCSDTF12_BAC |         3
 )
 
 entry(
-    index = 2513,
+    index = 2503,
     label = "O2s-CN",
     group = 
 """
@@ -63872,7 +62900,7 @@ BurcatNS |         1
 )
 
 entry(
-    index = 2514,
+    index = 2504,
     label = "O2s-CsN3s",
     group = 
 """
@@ -63896,7 +62924,7 @@ CHON_G4 |         53
 )
 
 entry(
-    index = 2515,
+    index = 2505,
     label = "O2s-CsN3d",
     group = 
 """
@@ -63921,7 +62949,7 @@ NOx2018 |         1
 )
 
 entry(
-    index = 2516,
+    index = 2506,
     label = "O2s-CdN3d",
     group = 
 """
@@ -63945,7 +62973,7 @@ CHON_G4 |         5
 )
 
 entry(
-    index = 2517,
+    index = 2507,
     label = "O2s-CsN5dc",
     group = 
 """
@@ -63972,7 +63000,7 @@ CHON                    |         2
 )
 
 entry(
-    index = 2518,
+    index = 2508,
     label = "O2s-NN",
     group = 
 """
@@ -63997,7 +63025,7 @@ thermo_DFT_CCSDTF12_BAC |         2
 )
 
 entry(
-    index = 2519,
+    index = 2509,
     label = "O2s-N3sdN3sd",
     group = 
 """
@@ -64021,7 +63049,7 @@ CHON_G4 |         50
 )
 
 entry(
-    index = 2520,
+    index = 2510,
     label = "O4tc",
     group = 
 """
@@ -64036,7 +63064,7 @@ Dummy L3 group added by Hao-Wei Pang during fitting groups from thermo libraries
 )
 
 entry(
-    index = 2521,
+    index = 2511,
     label = "O4tc-C2tc",
     group = 
 """
@@ -64045,9 +63073,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([14.5715,14.6874,14.9054,15.2075,15.9469,16.5814,17.5858],'J/(mol*K)','+|-',[1.3864,1.44925,1.35878,1.26167,1.09387,0.971358,1.87747]),
-        H298 = (-55.267,'kJ/mol','+|-',6.69233),
-        S298 = (98.8209,'J/(mol*K)','+|-',3.80991),
+        Cpdata = ([14.499,14.6143,14.8312,15.1318,15.8676,16.4989,17.5181],'J/(mol*K)','+|-',[1.70611,1.9014,1.87799,1.78182,1.50644,1.26678,2.55188]),
+        H298 = (-54.992,'kJ/mol','+|-',7.84857),
+        S298 = (98.3292,'J/(mol*K)','+|-',3.96808),
     ),
     shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
     longDesc = 
@@ -64055,12 +63083,11 @@ entry(
 Fitted from following species using Ridge regression
 
 [C-]#[O+] (CO) from C1_C3_hydrofluorocarbons_NIST
-[C-]#[O+] (CO) from NCSU_C2_C8_PFAS
 """,
 )
 
 entry(
-    index = 2522,
+    index = 2512,
     label = "Si",
     group = 
 """
@@ -64075,7 +63102,7 @@ entry(
 )
 
 entry(
-    index = 2523,
+    index = 2513,
     label = "SiJ2(S)",
     group = 
 """
@@ -64090,7 +63117,7 @@ entry(
 )
 
 entry(
-    index = 2524,
+    index = 2514,
     label = "S",
     group = 
 """
@@ -64105,7 +63132,7 @@ entry(
 )
 
 entry(
-    index = 2525,
+    index = 2515,
     label = "Sc",
     group = 
 """
@@ -64125,7 +63152,7 @@ entry(
 )
 
 entry(
-    index = 2526,
+    index = 2516,
     label = "Sa(S)",
     group = 
 """
@@ -64146,7 +63173,7 @@ Singlet sulfur, thermo data copied from triplet sulfur, likely very incorrect (t
 )
 
 entry(
-    index = 2527,
+    index = 2517,
     label = "S2d",
     group = 
 """
@@ -64161,7 +63188,7 @@ entry(
 )
 
 entry(
-    index = 2528,
+    index = 2518,
     label = "S2d-C",
     group = 
 """
@@ -64182,7 +63209,7 @@ entry(
 )
 
 entry(
-    index = 2529,
+    index = 2519,
     label = "S2d-S",
     group = 
 """
@@ -64203,7 +63230,7 @@ entry(
 )
 
 entry(
-    index = 2530,
+    index = 2520,
     label = "S2d-O",
     group = 
 """
@@ -64224,30 +63251,7 @@ entry(
 )
 
 entry(
-    index = 2531,
-    label = "S2d-O2d",
-    group = 
-"""
-1   O2d u0 {2,D}
-2 * S2d u0 {1,D}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([15.0991,15.7454,16.3945,16.9439,17.6124,18.0487,18.7602],'J/(mol*K)','+|-',[1.96066,2.04955,1.9216,1.78427,1.54697,1.37371,2.65514]),
-        H298 = (2.37788,'kJ/mol','+|-',9.46438),
-        S298 = (110.963,'J/(mol*K)','+|-',5.38803),
-    ),
-    shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
-    longDesc = 
-"""
-Fitted from following species using Ridge regression
-
-O=S (SO) from NCSU_C2_C8_PFAS
-""",
-)
-
-entry(
-    index = 2532,
+    index = 2521,
     label = "S2s",
     group = 
 """
@@ -64262,7 +63266,7 @@ entry(
 )
 
 entry(
-    index = 2533,
+    index = 2522,
     label = "S2s-HH",
     group = 
 """
@@ -64284,7 +63288,7 @@ entry(
 )
 
 entry(
-    index = 2534,
+    index = 2523,
     label = "S2s-CH",
     group = 
 """
@@ -64301,7 +63305,7 @@ entry(
 )
 
 entry(
-    index = 2535,
+    index = 2524,
     label = "S2s-CsH",
     group = 
 """
@@ -64323,7 +63327,7 @@ entry(
 )
 
 entry(
-    index = 2536,
+    index = 2525,
     label = "S2s-CdH",
     group = 
 """
@@ -64345,7 +63349,7 @@ entry(
 )
 
 entry(
-    index = 2537,
+    index = 2526,
     label = "S2s-CtH",
     group = 
 """
@@ -64367,7 +63371,7 @@ entry(
 )
 
 entry(
-    index = 2538,
+    index = 2527,
     label = "S2s-CbH",
     group = 
 """
@@ -64389,7 +63393,7 @@ entry(
 )
 
 entry(
-    index = 2539,
+    index = 2528,
     label = "S2s-(C=O)H",
     group = 
 """
@@ -64412,7 +63416,7 @@ entry(
 )
 
 entry(
-    index = 2540,
+    index = 2529,
     label = "S2s-(C=S2d)H",
     group = 
 """
@@ -64435,7 +63439,7 @@ entry(
 )
 
 entry(
-    index = 2541,
+    index = 2530,
     label = "S2s-SH",
     group = 
 """
@@ -64452,7 +63456,7 @@ entry(
 )
 
 entry(
-    index = 2542,
+    index = 2531,
     label = "S2s-S2sH",
     group = 
 """
@@ -64474,7 +63478,7 @@ entry(
 )
 
 entry(
-    index = 2543,
+    index = 2532,
     label = "S2s-S_DeH",
     group = 
 """
@@ -64496,7 +63500,7 @@ entry(
 )
 
 entry(
-    index = 2544,
+    index = 2533,
     label = "S2s-SS",
     group = 
 """
@@ -64513,7 +63517,7 @@ entry(
 )
 
 entry(
-    index = 2545,
+    index = 2534,
     label = "S2s-SsSs",
     group = 
 """
@@ -64535,7 +63539,7 @@ entry(
 )
 
 entry(
-    index = 2546,
+    index = 2535,
     label = "S2s-SO",
     group = 
 """
@@ -64552,7 +63556,7 @@ entry(
 )
 
 entry(
-    index = 2547,
+    index = 2536,
     label = "S2s-S2O",
     group = 
 """
@@ -64574,7 +63578,7 @@ entry(
 )
 
 entry(
-    index = 2548,
+    index = 2537,
     label = "S2s-S4O",
     group = 
 """
@@ -64596,7 +63600,7 @@ entry(
 )
 
 entry(
-    index = 2549,
+    index = 2538,
     label = "S2s-S6O",
     group = 
 """
@@ -64618,7 +63622,7 @@ entry(
 )
 
 entry(
-    index = 2550,
+    index = 2539,
     label = "S2s-SC",
     group = 
 """
@@ -64635,7 +63639,7 @@ entry(
 )
 
 entry(
-    index = 2551,
+    index = 2540,
     label = "S2s-S2sC",
     group = 
 """
@@ -64652,7 +63656,7 @@ entry(
 )
 
 entry(
-    index = 2552,
+    index = 2541,
     label = "S2s-S2sCs",
     group = 
 """
@@ -64674,7 +63678,7 @@ entry(
 )
 
 entry(
-    index = 2553,
+    index = 2542,
     label = "S2s-S2sCd",
     group = 
 """
@@ -64696,7 +63700,7 @@ entry(
 )
 
 entry(
-    index = 2554,
+    index = 2543,
     label = "S2s-S2sCt",
     group = 
 """
@@ -64718,7 +63722,7 @@ entry(
 )
 
 entry(
-    index = 2555,
+    index = 2544,
     label = "S2s-S2sCb",
     group = 
 """
@@ -64740,7 +63744,7 @@ entry(
 )
 
 entry(
-    index = 2556,
+    index = 2545,
     label = "S2s-S46C",
     group = 
 """
@@ -64762,7 +63766,7 @@ entry(
 )
 
 entry(
-    index = 2557,
+    index = 2546,
     label = "S2s-CC",
     group = 
 """
@@ -64779,7 +63783,7 @@ entry(
 )
 
 entry(
-    index = 2558,
+    index = 2547,
     label = "S2s-CsCs",
     group = 
 """
@@ -64801,7 +63805,7 @@ entry(
 )
 
 entry(
-    index = 2559,
+    index = 2548,
     label = "S2s-CsCd",
     group = 
 """
@@ -64823,7 +63827,7 @@ entry(
 )
 
 entry(
-    index = 2560,
+    index = 2549,
     label = "S2s-Cs(C=O)",
     group = 
 """
@@ -64846,7 +63850,7 @@ entry(
 )
 
 entry(
-    index = 2561,
+    index = 2550,
     label = "S2s-CsCt",
     group = 
 """
@@ -64868,7 +63872,7 @@ entry(
 )
 
 entry(
-    index = 2562,
+    index = 2551,
     label = "S2s-CsCb",
     group = 
 """
@@ -64890,7 +63894,7 @@ entry(
 )
 
 entry(
-    index = 2563,
+    index = 2552,
     label = "S2s-CdCd",
     group = 
 """
@@ -64912,7 +63916,7 @@ entry(
 )
 
 entry(
-    index = 2564,
+    index = 2553,
     label = "S2s-CdCt",
     group = 
 """
@@ -64934,7 +63938,7 @@ entry(
 )
 
 entry(
-    index = 2565,
+    index = 2554,
     label = "S2s-CdCb",
     group = 
 """
@@ -64956,7 +63960,7 @@ entry(
 )
 
 entry(
-    index = 2566,
+    index = 2555,
     label = "S2s-CtCt",
     group = 
 """
@@ -64978,7 +63982,7 @@ entry(
 )
 
 entry(
-    index = 2567,
+    index = 2556,
     label = "S2s-CtCb",
     group = 
 """
@@ -65000,7 +64004,7 @@ entry(
 )
 
 entry(
-    index = 2568,
+    index = 2557,
     label = "S2s-CbCb",
     group = 
 """
@@ -65022,7 +64026,7 @@ entry(
 )
 
 entry(
-    index = 2569,
+    index = 2558,
     label = "S2s-(C=S2d)Cs",
     group = 
 """
@@ -65045,7 +64049,7 @@ entry(
 )
 
 entry(
-    index = 2570,
+    index = 2559,
     label = "S2s-(C=S2d)(C=S2d)",
     group = 
 """
@@ -65069,7 +64073,7 @@ entry(
 )
 
 entry(
-    index = 2571,
+    index = 2560,
     label = "S2s-(C=S2d)Cmb",
     group = 
 """
@@ -65092,7 +64096,7 @@ entry(
 )
 
 entry(
-    index = 2572,
+    index = 2561,
     label = "S2s-OH",
     group = 
 """
@@ -65114,7 +64118,7 @@ entry(
 )
 
 entry(
-    index = 2573,
+    index = 2562,
     label = "S2s-OO",
     group = 
 """
@@ -65136,7 +64140,7 @@ entry(
 )
 
 entry(
-    index = 2574,
+    index = 2563,
     label = "S2s-OC",
     group = 
 """
@@ -65153,7 +64157,7 @@ entry(
 )
 
 entry(
-    index = 2575,
+    index = 2564,
     label = "S2s-OCs",
     group = 
 """
@@ -65175,7 +64179,7 @@ entry(
 )
 
 entry(
-    index = 2576,
+    index = 2565,
     label = "S4dd",
     group = 
 """
@@ -65190,7 +64194,7 @@ entry(
 )
 
 entry(
-    index = 2577,
+    index = 2566,
     label = "S4dd-OdOd",
     group = 
 """
@@ -65200,21 +64204,19 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([39.9084,43.373,46.4504,48.9767,52.2961,54.3207,56.6494],'J/(mol*K)','+|-',[3.92132,4.0991,3.8432,3.56854,3.09394,2.74741,5.31029]),
-        H298 = (-296.814,'kJ/mol','+|-',18.9287),
-        S298 = (248.201,'J/(mol*K)','+|-',10.7761),
+        Cpdata = ([0,0,0,0,0,0,0],'J/(mol*K)'),
+        H298 = (0,'kJ/mol'),
+        S298 = (0,'J/(mol*K)'),
     ),
-    shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
+    shortDesc = """RMG-type entries for Sulfur Groups, based on quantum calculations perfomred by Vandeputte (2011), Gillis, Class (2013), and Bozzelli, refit by Ryan Gillis in 2019""",
     longDesc = 
 """
-Previously contains all zeros as data. New data fitted from following species using Ridge regression
-
-O=S=O (SO2) from NCSU_C2_C8_PFAS
+"
 """,
 )
 
 entry(
-    index = 2578,
+    index = 2567,
     label = "S4dd-CdOd",
     group = 
 """
@@ -65236,7 +64238,7 @@ entry(
 )
 
 entry(
-    index = 2579,
+    index = 2568,
     label = "S4dd-CdCd",
     group = 
 """
@@ -65258,7 +64260,7 @@ entry(
 )
 
 entry(
-    index = 2580,
+    index = 2569,
     label = "S4dd-OdSd",
     group = 
 """
@@ -65275,7 +64277,7 @@ entry(
 )
 
 entry(
-    index = 2581,
+    index = 2570,
     label = "S4dd-OdS4d",
     group = 
 """
@@ -65297,7 +64299,7 @@ entry(
 )
 
 entry(
-    index = 2582,
+    index = 2571,
     label = "S4dd-OdS6d",
     group = 
 """
@@ -65319,7 +64321,7 @@ entry(
 )
 
 entry(
-    index = 2583,
+    index = 2572,
     label = "S4dd-SdCd",
     group = 
 """
@@ -65336,7 +64338,7 @@ entry(
 )
 
 entry(
-    index = 2584,
+    index = 2573,
     label = "S4dd-S2dCd",
     group = 
 """
@@ -65358,7 +64360,7 @@ entry(
 )
 
 entry(
-    index = 2585,
+    index = 2574,
     label = "S4dd-S46dCd",
     group = 
 """
@@ -65380,7 +64382,7 @@ entry(
 )
 
 entry(
-    index = 2586,
+    index = 2575,
     label = "S4d",
     group = 
 """
@@ -65395,7 +64397,7 @@ entry(
 )
 
 entry(
-    index = 2587,
+    index = 2576,
     label = "S4d-Od",
     group = 
 """
@@ -65411,7 +64413,7 @@ entry(
 )
 
 entry(
-    index = 2588,
+    index = 2577,
     label = "S4d-OdHH",
     group = 
 """
@@ -65434,7 +64436,7 @@ entry(
 )
 
 entry(
-    index = 2589,
+    index = 2578,
     label = "S4d-OdCC",
     group = 
 """
@@ -65453,7 +64455,7 @@ Inferred from a least squares fit from 40 species mostly calculated at cbsqb3, 4
 )
 
 entry(
-    index = 2590,
+    index = 2579,
     label = "S4d-OdCsCs",
     group = 
 """
@@ -65476,7 +64478,7 @@ entry(
 )
 
 entry(
-    index = 2591,
+    index = 2580,
     label = "S4d-OdCdCd",
     group = 
 """
@@ -65499,7 +64501,7 @@ entry(
 )
 
 entry(
-    index = 2592,
+    index = 2581,
     label = "S4d-OdCH",
     group = 
 """
@@ -65518,7 +64520,7 @@ Inferred from a least squares fit from 40 species mostly calculated at cbsqb3, 4
 )
 
 entry(
-    index = 2593,
+    index = 2582,
     label = "S4d-OdCsH",
     group = 
 """
@@ -65541,7 +64543,7 @@ entry(
 )
 
 entry(
-    index = 2594,
+    index = 2583,
     label = "S4d-OdCdH",
     group = 
 """
@@ -65564,7 +64566,7 @@ entry(
 )
 
 entry(
-    index = 2595,
+    index = 2584,
     label = "S4d-OdCS",
     group = 
 """
@@ -65587,7 +64589,7 @@ entry(
 )
 
 entry(
-    index = 2596,
+    index = 2585,
     label = "S4d-OdCO",
     group = 
 """
@@ -65605,7 +64607,7 @@ entry(
 )
 
 entry(
-    index = 2597,
+    index = 2586,
     label = "S4d-OdOsCs",
     group = 
 """
@@ -65628,7 +64630,7 @@ entry(
 )
 
 entry(
-    index = 2598,
+    index = 2587,
     label = "S4d-OdOsCd",
     group = 
 """
@@ -65651,7 +64653,7 @@ entry(
 )
 
 entry(
-    index = 2599,
+    index = 2588,
     label = "S4d-OdOO",
     group = 
 """
@@ -65674,47 +64676,7 @@ entry(
 )
 
 entry(
-    index = 2600,
-    label = "S4d-O2dO2sO2s",
-    group = 
-"""
-1 * S4d u0 p1 {2,S} {3,D} {4,S}
-2   O2s u0 {1,S}
-3   O2d u0 {1,D}
-4   O2s u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([21.9578,25.6084,28.1398,29.7387,31.2754,32.0602,33.1153],'J/(mol*K)','+|-',[0.355124,0.371224,0.34805,0.323175,0.280195,0.248812,0.480912]),
-        H298 = (-139.961,'kJ/mol','+|-',1.71423),
-        S298 = (61.6149,'J/(mol*K)','+|-',0.975905),
-    ),
-    shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
-    longDesc = 
-"""
-Fitted from following species using Ridge regression
-
-FC(OS(=O)O)(F)F (PF1Sulfite) from NCSU_C2_C8_PFAS
-FC(C(F)(F)F)(OS(=O)O)F (PF2Sulfite) from NCSU_C2_C8_PFAS
-FC(C(C(F)(F)F)(F)F)(OS(=O)O)F (PF3Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(F)(F)F)(F)F)(F)F)(F)F (PF4Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F (PF5Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF6Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF7Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF8Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF9Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF10Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF11Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF12Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF13Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF14Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF15Sulfite) from NCSU_C2_C8_PFAS
-OS(=O)OC(C(C(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF16Sulfite) from NCSU_C2_C8_PFAS
-""",
-)
-
-entry(
-    index = 2601,
+    index = 2589,
     label = "S4d-OdOH",
     group = 
 """
@@ -65737,7 +64699,7 @@ entry(
 )
 
 entry(
-    index = 2602,
+    index = 2590,
     label = "S4d-OdOS",
     group = 
 """
@@ -65760,7 +64722,7 @@ entry(
 )
 
 entry(
-    index = 2603,
+    index = 2591,
     label = "S4d-OdSS",
     group = 
 """
@@ -65783,7 +64745,7 @@ entry(
 )
 
 entry(
-    index = 2604,
+    index = 2592,
     label = "S4d-OdSH",
     group = 
 """
@@ -65806,7 +64768,7 @@ entry(
 )
 
 entry(
-    index = 2605,
+    index = 2593,
     label = "S4d-Cd",
     group = 
 """
@@ -65822,7 +64784,7 @@ entry(
 )
 
 entry(
-    index = 2606,
+    index = 2594,
     label = "S4d-CdCC",
     group = 
 """
@@ -65845,7 +64807,7 @@ entry(
 )
 
 entry(
-    index = 2607,
+    index = 2595,
     label = "S4d-CdCH",
     group = 
 """
@@ -65868,7 +64830,7 @@ entry(
 )
 
 entry(
-    index = 2608,
+    index = 2596,
     label = "S4d-CdHH",
     group = 
 """
@@ -65891,7 +64853,7 @@ entry(
 )
 
 entry(
-    index = 2609,
+    index = 2597,
     label = "S4d-CdOC",
     group = 
 """
@@ -65914,7 +64876,7 @@ entry(
 )
 
 entry(
-    index = 2610,
+    index = 2598,
     label = "S4d-CdOH",
     group = 
 """
@@ -65937,7 +64899,7 @@ entry(
 )
 
 entry(
-    index = 2611,
+    index = 2599,
     label = "S4d-Sd",
     group = 
 """
@@ -65953,7 +64915,7 @@ entry(
 )
 
 entry(
-    index = 2612,
+    index = 2600,
     label = "S4d-SdOC",
     group = 
 """
@@ -65976,7 +64938,7 @@ entry(
 )
 
 entry(
-    index = 2613,
+    index = 2601,
     label = "S4d-SdOH",
     group = 
 """
@@ -65999,7 +64961,7 @@ entry(
 )
 
 entry(
-    index = 2614,
+    index = 2602,
     label = "S4d-SdCH",
     group = 
 """
@@ -66022,7 +64984,7 @@ entry(
 )
 
 entry(
-    index = 2615,
+    index = 2603,
     label = "S4d-SdSC",
     group = 
 """
@@ -66045,7 +65007,7 @@ entry(
 )
 
 entry(
-    index = 2616,
+    index = 2604,
     label = "S4s",
     group = 
 """
@@ -66061,7 +65023,7 @@ Couldn't converge these geometries to calculate values and so I copied the S6s v
 )
 
 entry(
-    index = 2617,
+    index = 2605,
     label = "S4s-OCCH",
     group = 
 """
@@ -66085,7 +65047,7 @@ entry(
 )
 
 entry(
-    index = 2618,
+    index = 2606,
     label = "S4s-CCCH",
     group = 
 """
@@ -66109,7 +65071,7 @@ entry(
 )
 
 entry(
-    index = 2619,
+    index = 2607,
     label = "S4s-OOCC",
     group = 
 """
@@ -66133,7 +65095,7 @@ entry(
 )
 
 entry(
-    index = 2620,
+    index = 2608,
     label = "S4s-SOCH",
     group = 
 """
@@ -66157,7 +65119,7 @@ entry(
 )
 
 entry(
-    index = 2621,
+    index = 2609,
     label = "S4s-SOOH",
     group = 
 """
@@ -66181,7 +65143,7 @@ entry(
 )
 
 entry(
-    index = 2622,
+    index = 2610,
     label = "S4t",
     group = 
 """
@@ -66196,7 +65158,7 @@ entry(
 )
 
 entry(
-    index = 2623,
+    index = 2611,
     label = "S4t-CtC",
     group = 
 """
@@ -66218,7 +65180,7 @@ entry(
 )
 
 entry(
-    index = 2624,
+    index = 2612,
     label = "S4t-CtH",
     group = 
 """
@@ -66240,7 +65202,7 @@ entry(
 )
 
 entry(
-    index = 2625,
+    index = 2613,
     label = "S4t-CtO",
     group = 
 """
@@ -66262,7 +65224,7 @@ entry(
 )
 
 entry(
-    index = 2626,
+    index = 2614,
     label = "S6s",
     group = 
 """
@@ -66277,7 +65239,7 @@ entry(
 )
 
 entry(
-    index = 2627,
+    index = 2615,
     label = "S6s-CCCCCH",
     group = 
 """
@@ -66304,7 +65266,7 @@ Calculated at CBS-QB3, June 2017
 )
 
 entry(
-    index = 2628,
+    index = 2616,
     label = "S6s-OCCCCH",
     group = 
 """
@@ -66330,7 +65292,7 @@ entry(
 )
 
 entry(
-    index = 2629,
+    index = 2617,
     label = "S6s-SOOCCH",
     group = 
 """
@@ -66357,7 +65319,7 @@ Calculated at CBS-QB3, June 2017
 )
 
 entry(
-    index = 2630,
+    index = 2618,
     label = "S6d",
     group = 
 """
@@ -66372,7 +65334,7 @@ entry(
 )
 
 entry(
-    index = 2631,
+    index = 2619,
     label = "S6d-OdOCCH",
     group = 
 """
@@ -66397,7 +65359,7 @@ entry(
 )
 
 entry(
-    index = 2632,
+    index = 2620,
     label = "S6d-OdCCCH",
     group = 
 """
@@ -66422,7 +65384,7 @@ entry(
 )
 
 entry(
-    index = 2633,
+    index = 2621,
     label = "S6dd",
     group = 
 """
@@ -66437,7 +65399,7 @@ entry(
 )
 
 entry(
-    index = 2634,
+    index = 2622,
     label = "S6dd-OdOd",
     group = 
 """
@@ -66454,7 +65416,7 @@ entry(
 )
 
 entry(
-    index = 2635,
+    index = 2623,
     label = "S6dd-OdOdHH",
     group = 
 """
@@ -66478,7 +65440,7 @@ entry(
 )
 
 entry(
-    index = 2636,
+    index = 2624,
     label = "S6dd-OdOdCC",
     group = 
 """
@@ -66498,7 +65460,7 @@ Inferred from a least squares fit from 40 species mostly calculated at cbsqb3, 4
 )
 
 entry(
-    index = 2637,
+    index = 2625,
     label = "S6dd-OdOdCsCs",
     group = 
 """
@@ -66522,7 +65484,7 @@ entry(
 )
 
 entry(
-    index = 2638,
+    index = 2626,
     label = "S6dd-OdOdCdCd",
     group = 
 """
@@ -66546,7 +65508,7 @@ entry(
 )
 
 entry(
-    index = 2639,
+    index = 2627,
     label = "S6dd-OdOdCH",
     group = 
 """
@@ -66566,7 +65528,7 @@ Inferred from a least squares fit from 40 species mostly calculated at cbsqb3, 4
 )
 
 entry(
-    index = 2640,
+    index = 2628,
     label = "S6dd-OdOdCsH",
     group = 
 """
@@ -66590,7 +65552,7 @@ entry(
 )
 
 entry(
-    index = 2641,
+    index = 2629,
     label = "S6dd-OdOdCdH",
     group = 
 """
@@ -66614,7 +65576,7 @@ entry(
 )
 
 entry(
-    index = 2642,
+    index = 2630,
     label = "S6dd-OdOdCS",
     group = 
 """
@@ -66638,7 +65600,7 @@ entry(
 )
 
 entry(
-    index = 2643,
+    index = 2631,
     label = "S6dd-OdOdCO",
     group = 
 """
@@ -66658,7 +65620,7 @@ Inferred from a least squares fit from 40 species mostly calculated at cbsqb3, 4
 )
 
 entry(
-    index = 2644,
+    index = 2632,
     label = "S6dd-OdOdCsOs",
     group = 
 """
@@ -66682,64 +65644,7 @@ entry(
 )
 
 entry(
-    index = 2645,
-    label = "S6dd-CsO2dO2dO2s",
-    group = 
-"""
-1 * S6dd u0 p0 {2,S} {3,D} {4,D} {5,S}
-2   O2s  u0 {1,S}
-3   O2d  u0 {1,D}
-4   O2d  u0 {1,D}
-5   Cs   u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([53.1769,61.3789,66.851,70.7481,76.4868,79.6472,82.0173],'J/(mol*K)','+|-',[1.17685,1.2302,1.1534,1.07097,0.928539,0.824541,1.5937]),
-        H298 = (-413.972,'kJ/mol','+|-',5.68081),
-        S298 = (92.508,'J/(mol*K)','+|-',3.23406),
-    ),
-    shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
-    longDesc = 
-"""
-Fitted from following species using Ridge regression
-
-FC(S(=O)(=O)O)(F)F (PF1Sacid) from NCSU_C2_C8_PFAS
-FC(S(=O)(=O)O)(C(F)(F)F)F (PF2Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F (PF3Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(S(=O)(=O)O)(F)F)(F)F)(C(F)(F)F)F (PF4Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F (PF5Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF6Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(F)(F)F)F (PF7Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF8Sacid) from NCSU_C2_C8_PFAS
-FC1(F)OS1(=O)=O (PF1Sultone) from NCSU_C2_C8_PFAS
-FC(C1(F)OS1(=O)=O)(F)F (PF2Sultone) from NCSU_C2_C8_PFAS
-FC(C(C1(F)OS1(=O)=O)(F)F)(F)F (PF3Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F (PF4Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(C(F)(F)F)F (PF5Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(C(F)(F)F)F (PF6Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF7Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF8Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F (PF9Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF10Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF11Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF12Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF13Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF14Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF15Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF16Sacid) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF9Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F (PF10Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF11Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)F (PF12Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF13Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF14Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF15Sultone) from NCSU_C2_C8_PFAS
-FC(C(C(C(C(C(C(C(C(C1(F)OS1(=O)=O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)F (PF16Sultone) from NCSU_C2_C8_PFAS
-""",
-)
-
-entry(
-    index = 2646,
+    index = 2633,
     label = "S6dd-OdOdCdOs",
     group = 
 """
@@ -66763,7 +65668,7 @@ entry(
 )
 
 entry(
-    index = 2647,
+    index = 2634,
     label = "S6dd-OdOdOO",
     group = 
 """
@@ -66787,7 +65692,7 @@ entry(
 )
 
 entry(
-    index = 2648,
+    index = 2635,
     label = "S6dd-OdOdOH",
     group = 
 """
@@ -66811,7 +65716,7 @@ entry(
 )
 
 entry(
-    index = 2649,
+    index = 2636,
     label = "S6dd-OdOdOS",
     group = 
 """
@@ -66835,7 +65740,7 @@ entry(
 )
 
 entry(
-    index = 2650,
+    index = 2637,
     label = "S6dd-OdOdSS",
     group = 
 """
@@ -66859,7 +65764,7 @@ entry(
 )
 
 entry(
-    index = 2651,
+    index = 2638,
     label = "S6dd-OdOdSH",
     group = 
 """
@@ -66883,33 +65788,7 @@ entry(
 )
 
 entry(
-    index = 2652,
-    label = "S6dd-F1sO2dO2dO2s",
-    group = 
-"""
-1 * S6dd u0 p0 {2,S} {3,D} {4,D} {5,S}
-2   O2s  u0 {1,S}
-3   O2d  u0 {1,D}
-4   O2d  u0 {1,D}
-5   F1s  u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([25.4946,29.1217,31.8222,33.86,36.6806,37.8375,39.6122],'J/(mol*K)','+|-',[2.66228,2.78298,2.60925,2.42277,2.10056,1.86529,3.60529]),
-        H298 = (-267.695,'kJ/mol','+|-',12.8512),
-        S298 = (118.367,'J/(mol*K)','+|-',7.31614),
-    ),
-    shortDesc = """Group added & fitted from RMG thermo libraries by Hao-Wei Pang""",
-    longDesc = 
-"""
-Fitted from following species using Ridge regression
-
-OS(=O)(=O)F (FSO3H) from NCSU_C2_C8_PFAS
-""",
-)
-
-entry(
-    index = 2653,
+    index = 2639,
     label = "S6dd-OdCd",
     group = 
 """
@@ -66926,7 +65805,7 @@ entry(
 )
 
 entry(
-    index = 2654,
+    index = 2640,
     label = "S6dd-OdCdCC",
     group = 
 """
@@ -66950,7 +65829,7 @@ entry(
 )
 
 entry(
-    index = 2655,
+    index = 2641,
     label = "S6dd-OdCdCH",
     group = 
 """
@@ -66974,7 +65853,7 @@ entry(
 )
 
 entry(
-    index = 2656,
+    index = 2642,
     label = "S6dd-OdCdOC",
     group = 
 """
@@ -66998,7 +65877,7 @@ entry(
 )
 
 entry(
-    index = 2657,
+    index = 2643,
     label = "S6dd-OdCdOO",
     group = 
 """
@@ -67022,7 +65901,7 @@ entry(
 )
 
 entry(
-    index = 2658,
+    index = 2644,
     label = "S6dd-OdCdOH",
     group = 
 """
@@ -67046,7 +65925,7 @@ entry(
 )
 
 entry(
-    index = 2659,
+    index = 2645,
     label = "S6dd-OdCdSH",
     group = 
 """
@@ -67070,7 +65949,7 @@ entry(
 )
 
 entry(
-    index = 2660,
+    index = 2646,
     label = "S6dd-OdCdOS",
     group = 
 """
@@ -67094,7 +65973,7 @@ entry(
 )
 
 entry(
-    index = 2661,
+    index = 2647,
     label = "S6dd-CdCd",
     group = 
 """
@@ -67111,7 +65990,7 @@ entry(
 )
 
 entry(
-    index = 2662,
+    index = 2648,
     label = "S6dd-CdCdCC",
     group = 
 """
@@ -67135,7 +66014,7 @@ entry(
 )
 
 entry(
-    index = 2663,
+    index = 2649,
     label = "S6dd-CdCdCH",
     group = 
 """
@@ -67159,7 +66038,7 @@ entry(
 )
 
 entry(
-    index = 2664,
+    index = 2650,
     label = "S6dd-CdCdOC",
     group = 
 """
@@ -67183,7 +66062,7 @@ entry(
 )
 
 entry(
-    index = 2665,
+    index = 2651,
     label = "S6dd-OdSd",
     group = 
 """
@@ -67200,7 +66079,7 @@ entry(
 )
 
 entry(
-    index = 2666,
+    index = 2652,
     label = "S6dd-OdSdOC",
     group = 
 """
@@ -67224,7 +66103,7 @@ entry(
 )
 
 entry(
-    index = 2667,
+    index = 2653,
     label = "S6dd-OdSdOH",
     group = 
 """
@@ -67248,7 +66127,7 @@ entry(
 )
 
 entry(
-    index = 2668,
+    index = 2654,
     label = "S6dd-OdSdCH",
     group = 
 """
@@ -67272,7 +66151,7 @@ entry(
 )
 
 entry(
-    index = 2669,
+    index = 2655,
     label = "S6ddd",
     group = 
 """
@@ -67287,7 +66166,7 @@ entry(
 )
 
 entry(
-    index = 2670,
+    index = 2656,
     label = "S6ddd-OdOdOd",
     group = 
 """
@@ -67298,21 +66177,19 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([5.07611,5.76318,6.30649,6.72569,7.27659,7.59804,7.94889],'J/(mol*K)','+|-',[0.392132,0.40991,0.384321,0.356854,0.309394,0.274742,0.531029]),
-        H298 = (-39.5906,'kJ/mol','+|-',1.89288),
-        S298 = (25.652,'J/(mol*K)','+|-',1.07761),
+        Cpdata = ([0,0,0,0,0,0,0],'J/(mol*K)'),
+        H298 = (0,'kJ/mol'),
+        S298 = (0,'J/(mol*K)'),
     ),
-    shortDesc = """Fitted from RMG thermo libraries by Hao-Wei Pang""",
+    shortDesc = """RMG-type entries for Sulfur Groups, based on quantum calculations perfomred by Vandeputte (2011), Gillis, Class (2013), and Bozzelli, refit by Ryan Gillis in 2019""",
     longDesc = 
 """
-Previously contains all zeros as data. New data fitted from following species using Ridge regression
-
-O=S(=O)=O (SO3) from NCSU_C2_C8_PFAS
+"
 """,
 )
 
 entry(
-    index = 2671,
+    index = 2657,
     label = "S6ddd-OdOdXd",
     group = 
 """
@@ -67335,7 +66212,7 @@ entry(
 )
 
 entry(
-    index = 2672,
+    index = 2658,
     label = "S6ddd-OdXdXd",
     group = 
 """
@@ -67358,7 +66235,7 @@ entry(
 )
 
 entry(
-    index = 2673,
+    index = 2659,
     label = "S6t",
     group = 
 """
@@ -67373,7 +66250,7 @@ entry(
 )
 
 entry(
-    index = 2674,
+    index = 2660,
     label = "S6t-CtCCC",
     group = 
 """
@@ -67397,7 +66274,7 @@ entry(
 )
 
 entry(
-    index = 2675,
+    index = 2661,
     label = "S6t-CtHHH",
     group = 
 """
@@ -67421,7 +66298,7 @@ entry(
 )
 
 entry(
-    index = 2676,
+    index = 2662,
     label = "S6t-CtOCC",
     group = 
 """
@@ -67445,7 +66322,7 @@ entry(
 )
 
 entry(
-    index = 2677,
+    index = 2663,
     label = "S6t-CtOCH",
     group = 
 """
@@ -67469,7 +66346,7 @@ entry(
 )
 
 entry(
-    index = 2678,
+    index = 2664,
     label = "S6td",
     group = 
 """
@@ -67484,7 +66361,7 @@ entry(
 )
 
 entry(
-    index = 2679,
+    index = 2665,
     label = "S6td-CtCdC",
     group = 
 """
@@ -67507,7 +66384,7 @@ entry(
 )
 
 entry(
-    index = 2680,
+    index = 2666,
     label = "S6td-CtOdC",
     group = 
 """
@@ -67530,7 +66407,7 @@ entry(
 )
 
 entry(
-    index = 2681,
+    index = 2667,
     label = "S6td-CtOdH",
     group = 
 """
@@ -67553,7 +66430,7 @@ entry(
 )
 
 entry(
-    index = 2682,
+    index = 2668,
     label = "Cl1s",
     group = 
 """
@@ -67573,7 +66450,7 @@ Dummy group for singly-bonded chlorine. Benson groups for chloroalkanes already 
 )
 
 entry(
-    index = 2683,
+    index = 2669,
     label = "Br1s",
     group = 
 """
@@ -67593,7 +66470,7 @@ Dummy group for singly-bonded bromine. Benson groups for chloroalkanes already a
 )
 
 entry(
-    index = 2684,
+    index = 2670,
     label = "F1s",
     group = 
 """
@@ -67613,7 +66490,7 @@ Dummy group for singly-bonded fluroine. Benson groups for chloroalkanes already 
 )
 
 entry(
-    index = 2685,
+    index = 2671,
     label = "I1s",
     group = 
 """
@@ -67634,7 +66511,7 @@ Benson groups for iodoalkanes already account for I in the Carbon-centered group
 )
 
 entry(
-    index = 2686,
+    index = 2672,
     label = "N",
     group = 
 """
@@ -67649,7 +66526,7 @@ entry(
 )
 
 entry(
-    index = 2687,
+    index = 2673,
     label = "N5sc-HHHN",
     group = 
 """
@@ -67675,7 +66552,7 @@ primaryNS |         1
 )
 
 entry(
-    index = 2688,
+    index = 2674,
     label = "N5sc-HHNN",
     group = 
 """
@@ -67701,7 +66578,7 @@ primaryNS |         3
 )
 
 entry(
-    index = 2689,
+    index = 2675,
     label = "N5sc-HHNO",
     group = 
 """
@@ -67727,7 +66604,7 @@ CHON_G4 |         27
 )
 
 entry(
-    index = 2690,
+    index = 2676,
     label = "N5sc-HNNO",
     group = 
 """
@@ -67753,7 +66630,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2691,
+    index = 2677,
     label = "N5sc-HHOO",
     group = 
 """
@@ -67779,7 +66656,7 @@ CHON_G4 |         9
 )
 
 entry(
-    index = 2692,
+    index = 2678,
     label = "N5sc-HNOO",
     group = 
 """
@@ -67805,7 +66682,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2693,
+    index = 2679,
     label = "N5sc-HOOO",
     group = 
 """
@@ -67831,7 +66708,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2694,
+    index = 2680,
     label = "N5sc-CHHO",
     group = 
 """
@@ -67857,7 +66734,7 @@ CHON_G4 |         42
 )
 
 entry(
-    index = 2695,
+    index = 2681,
     label = "N5sc-CHNO",
     group = 
 """
@@ -67883,7 +66760,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2696,
+    index = 2682,
     label = "N5sc-CHOO",
     group = 
 """
@@ -67909,7 +66786,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2697,
+    index = 2683,
     label = "N5sc-CCHO",
     group = 
 """
@@ -67935,7 +66812,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2698,
+    index = 2684,
     label = "N1s",
     group = 
 """
@@ -67950,7 +66827,7 @@ Nitrogen with two lone pairs and a single bond
 )
 
 entry(
-    index = 2699,
+    index = 2685,
     label = "N1s-H",
     group = 
 """
@@ -67971,7 +66848,7 @@ Data base on species NH(S), source: GRIMech3.0-N
 )
 
 entry(
-    index = 2700,
+    index = 2686,
     label = "N1s-Cs",
     group = 
 """
@@ -67995,7 +66872,7 @@ subtracting the Cs-N2sHHH group
 )
 
 entry(
-    index = 2701,
+    index = 2687,
     label = "N1s-Cd",
     group = 
 """
@@ -68018,7 +66895,7 @@ NOx2018 |         1
 )
 
 entry(
-    index = 2702,
+    index = 2688,
     label = "N1s-N1s",
     group = 
 """
@@ -68034,7 +66911,7 @@ Pointing to NH(S), so far no better alternative
 )
 
 entry(
-    index = 2703,
+    index = 2689,
     label = "N1s-O2s",
     group = 
 """
@@ -68050,7 +66927,7 @@ Pointing to NH(S), so far no better alternative
 )
 
 entry(
-    index = 2704,
+    index = 2690,
     label = "N1s-N3s",
     group = 
 """
@@ -68073,7 +66950,7 @@ subtracting the N3s-N3sFF group
 )
 
 entry(
-    index = 2705,
+    index = 2691,
     label = "N1dc",
     group = 
 """
@@ -68094,7 +66971,7 @@ entry(
 )
 
 entry(
-    index = 2706,
+    index = 2692,
     label = "N1sc",
     group = 
 """
@@ -68111,7 +66988,7 @@ Nitrogen with two lone pairs and two single bonds
 )
 
 entry(
-    index = 2707,
+    index = 2693,
     label = "N1sc-HN",
     group = 
 """
@@ -68136,7 +67013,7 @@ primaryNS |         3
 )
 
 entry(
-    index = 2708,
+    index = 2694,
     label = "N1sc-NN",
     group = 
 """
@@ -68161,7 +67038,7 @@ primaryNS |         2
 )
 
 entry(
-    index = 2709,
+    index = 2695,
     label = "N1sc-NO",
     group = 
 """
@@ -68185,7 +67062,7 @@ CHON_G4 |         5
 )
 
 entry(
-    index = 2710,
+    index = 2696,
     label = "N1sc-CH",
     group = 
 """
@@ -68209,7 +67086,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2711,
+    index = 2697,
     label = "N1sc-CN",
     group = 
 """
@@ -68233,7 +67110,7 @@ CHON_G4 |         6
 )
 
 entry(
-    index = 2712,
+    index = 2698,
     label = "N3s",
     group = 
 """
@@ -68248,7 +67125,7 @@ entry(
 )
 
 entry(
-    index = 2713,
+    index = 2699,
     label = "N3s-HHN",
     group = 
 """
@@ -68274,7 +67151,7 @@ primaryNS |         4
 )
 
 entry(
-    index = 2714,
+    index = 2700,
     label = "N3s-N3dHH",
     group = 
 """
@@ -68300,7 +67177,7 @@ primaryNS |         1
 )
 
 entry(
-    index = 2715,
+    index = 2701,
     label = "N3s-N3sHH",
     group = 
 """
@@ -68326,7 +67203,7 @@ primaryNS |         1
 )
 
 entry(
-    index = 2716,
+    index = 2702,
     label = "N3s-HNN",
     group = 
 """
@@ -68352,7 +67229,7 @@ primaryNS |         1
 )
 
 entry(
-    index = 2717,
+    index = 2703,
     label = "N3s-H(NO)(NO)",
     group = 
 """
@@ -68379,7 +67256,7 @@ BurcatNS |         1
 )
 
 entry(
-    index = 2718,
+    index = 2704,
     label = "N3s-NNN",
     group = 
 """
@@ -68404,7 +67281,7 @@ CHON_G4 |         7
 )
 
 entry(
-    index = 2719,
+    index = 2705,
     label = "N3s-HNO",
     group = 
 """
@@ -68429,7 +67306,7 @@ CHON_G4 |         64
 )
 
 entry(
-    index = 2720,
+    index = 2706,
     label = "N3s-NNO",
     group = 
 """
@@ -68454,7 +67331,7 @@ CHON_G4 |         8
 )
 
 entry(
-    index = 2721,
+    index = 2707,
     label = "N3s-HOO",
     group = 
 """
@@ -68479,7 +67356,7 @@ CHON_G4 |         21
 )
 
 entry(
-    index = 2722,
+    index = 2708,
     label = "N3s-NOO",
     group = 
 """
@@ -68504,7 +67381,7 @@ CHON_G4 |         9
 )
 
 entry(
-    index = 2723,
+    index = 2709,
     label = "N3s-OOO",
     group = 
 """
@@ -68529,7 +67406,7 @@ CHON_G4 |         3
 )
 
 entry(
-    index = 2724,
+    index = 2710,
     label = "N3s-CHO",
     group = 
 """
@@ -68554,7 +67431,7 @@ CHON_G4 |         32
 )
 
 entry(
-    index = 2725,
+    index = 2711,
     label = "N3s-CsHOs",
     group = 
 """
@@ -68579,7 +67456,7 @@ CHON_G4 |         47
 )
 
 entry(
-    index = 2726,
+    index = 2712,
     label = "N3s-CNN",
     group = 
 """
@@ -68605,7 +67482,7 @@ BurcatNS |         1
 )
 
 entry(
-    index = 2727,
+    index = 2713,
     label = "N3s-CNO",
     group = 
 """
@@ -68630,7 +67507,7 @@ CHON_G4 |         18
 )
 
 entry(
-    index = 2728,
+    index = 2714,
     label = "N3s-COO",
     group = 
 """
@@ -68655,7 +67532,7 @@ CHON_G4 |         9
 )
 
 entry(
-    index = 2729,
+    index = 2715,
     label = "N3s-CCO",
     group = 
 """
@@ -68680,7 +67557,7 @@ CHON_G4 |         3
 )
 
 entry(
-    index = 2730,
+    index = 2716,
     label = "N3s-CsCsOs",
     group = 
 """
@@ -68705,7 +67582,7 @@ CHON_G4 |         7
 )
 
 entry(
-    index = 2731,
+    index = 2717,
     label = "N3s-CHH",
     group = 
 """
@@ -68731,7 +67608,7 @@ BurcatNS |         1
 )
 
 entry(
-    index = 2732,
+    index = 2718,
     label = "N3s-CsHH",
     group = 
 """
@@ -68759,7 +67636,7 @@ CHON     |         7
 )
 
 entry(
-    index = 2733,
+    index = 2719,
     label = "N3s-CbHH",
     group = 
 """
@@ -68782,7 +67659,7 @@ entry(
 )
 
 entry(
-    index = 2734,
+    index = 2720,
     label = "N3s-(CO)HH",
     group = 
 """
@@ -68810,7 +67687,7 @@ CHON     |         1
 )
 
 entry(
-    index = 2735,
+    index = 2721,
     label = "N3s-CdHH",
     group = 
 """
@@ -68836,7 +67713,7 @@ BurcatNS |         2
 )
 
 entry(
-    index = 2736,
+    index = 2722,
     label = "N3s-CCH",
     group = 
 """
@@ -68861,7 +67738,7 @@ CHON_G4 |         31
 )
 
 entry(
-    index = 2737,
+    index = 2723,
     label = "N3s-CsCsH",
     group = 
 """
@@ -68888,7 +67765,7 @@ CHON    |         5
 )
 
 entry(
-    index = 2738,
+    index = 2724,
     label = "N3s-CbCsH",
     group = 
 """
@@ -68911,7 +67788,7 @@ entry(
 )
 
 entry(
-    index = 2739,
+    index = 2725,
     label = "N3s-CbCbH",
     group = 
 """
@@ -68934,7 +67811,7 @@ entry(
 )
 
 entry(
-    index = 2740,
+    index = 2726,
     label = "N3s-(CO)CsH",
     group = 
 """
@@ -68961,7 +67838,7 @@ CHON    |         1
 )
 
 entry(
-    index = 2741,
+    index = 2727,
     label = "N3s-(CO)CbH",
     group = 
 """
@@ -68985,7 +67862,7 @@ entry(
 )
 
 entry(
-    index = 2742,
+    index = 2728,
     label = "N3s-(CO)(CO)H",
     group = 
 """
@@ -69012,7 +67889,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2743,
+    index = 2729,
     label = "N3s-(CdCd)CsH",
     group = 
 """
@@ -69039,7 +67916,7 @@ CHON_G4 |         10
 )
 
 entry(
-    index = 2744,
+    index = 2730,
     label = "N3s-CCC",
     group = 
 """
@@ -69064,7 +67941,7 @@ CHON_G4 |         3
 )
 
 entry(
-    index = 2745,
+    index = 2731,
     label = "N3s-CsCsCs",
     group = 
 """
@@ -69091,7 +67968,7 @@ CHON    |         2
 )
 
 entry(
-    index = 2746,
+    index = 2732,
     label = "N3s-CbCsCs",
     group = 
 """
@@ -69114,7 +67991,7 @@ entry(
 )
 
 entry(
-    index = 2747,
+    index = 2733,
     label = "N3s-(CO)CsCs",
     group = 
 """
@@ -69141,7 +68018,7 @@ CHON    |         1
 )
 
 entry(
-    index = 2748,
+    index = 2734,
     label = "N3s-(CO)(CO)Cs",
     group = 
 """
@@ -69161,7 +68038,7 @@ entry(
 )
 
 entry(
-    index = 2749,
+    index = 2735,
     label = "N3s-(CO)(CO)Cb",
     group = 
 """
@@ -69186,7 +68063,7 @@ entry(
 )
 
 entry(
-    index = 2750,
+    index = 2736,
     label = "N3s-(CdCd)CsCs",
     group = 
 """
@@ -69213,7 +68090,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2751,
+    index = 2737,
     label = "N3s-NCH",
     group = 
 """
@@ -69239,7 +68116,7 @@ BurcatNS |         2
 )
 
 entry(
-    index = 2752,
+    index = 2738,
     label = "N3s-N3sCbH",
     group = 
 """
@@ -69262,7 +68139,7 @@ entry(
 )
 
 entry(
-    index = 2753,
+    index = 2739,
     label = "N3s-N3sCsH",
     group = 
 """
@@ -69287,7 +68164,7 @@ CHON_G4 |         57
 )
 
 entry(
-    index = 2754,
+    index = 2740,
     label = "N3s-NCC",
     group = 
 """
@@ -69312,7 +68189,7 @@ CHON_G4 |         2
 )
 
 entry(
-    index = 2755,
+    index = 2741,
     label = "N3s-NCdCs",
     group = 
 """
@@ -69337,7 +68214,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2756,
+    index = 2742,
     label = "N3s-(CdCd)CsN3s",
     group = 
 """
@@ -69364,7 +68241,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2757,
+    index = 2743,
     label = "N3s-NCsCs",
     group = 
 """
@@ -69390,7 +68267,7 @@ thermo_DFT_CCSDTF12_BAC |         1
 )
 
 entry(
-    index = 2758,
+    index = 2744,
     label = "N3s-CsCsN3s",
     group = 
 """
@@ -69415,7 +68292,7 @@ CHON_G4 |         7
 )
 
 entry(
-    index = 2759,
+    index = 2745,
     label = "N3s-OsHH",
     group = 
 """
@@ -69440,7 +68317,7 @@ CHON_G4 |         77
 )
 
 entry(
-    index = 2760,
+    index = 2746,
     label = "N3s-OsHH(Os)",
     group = 
 """
@@ -69464,7 +68341,7 @@ entry(
 )
 
 entry(
-    index = 2761,
+    index = 2747,
     label = "N3d",
     group = 
 """
@@ -69479,7 +68356,7 @@ entry(
 )
 
 entry(
-    index = 2762,
+    index = 2748,
     label = "N3dOd-C",
     group = 
 """
@@ -69496,7 +68373,7 @@ entry(
 )
 
 entry(
-    index = 2763,
+    index = 2749,
     label = "N3dOd-Cs",
     group = 
 """
@@ -69520,7 +68397,7 @@ CHON_G4 |         22
 )
 
 entry(
-    index = 2764,
+    index = 2750,
     label = "N3dOd-Cd",
     group = 
 """
@@ -69544,7 +68421,7 @@ CHON_G4 |         15
 )
 
 entry(
-    index = 2765,
+    index = 2751,
     label = "N3dOd-Ct",
     group = 
 """
@@ -69568,7 +68445,7 @@ CHON_G4 |         6
 )
 
 entry(
-    index = 2766,
+    index = 2752,
     label = "N3dOd-CO",
     group = 
 """
@@ -69593,7 +68470,7 @@ CHON_G4 |         4
 )
 
 entry(
-    index = 2767,
+    index = 2753,
     label = "N3dOd-N",
     group = 
 """
@@ -69610,7 +68487,7 @@ entry(
 )
 
 entry(
-    index = 2768,
+    index = 2754,
     label = "N3dOd-N3s",
     group = 
 """
@@ -69634,7 +68511,7 @@ CHON_G4 |         25
 )
 
 entry(
-    index = 2769,
+    index = 2755,
     label = "N3dOd-N3d",
     group = 
 """
@@ -69659,7 +68536,7 @@ thermo_DFT_CCSDTF12_BAC |         1
 )
 
 entry(
-    index = 2770,
+    index = 2756,
     label = "N3dOd-N5sdtc",
     group = 
 """
@@ -69683,7 +68560,7 @@ thermo_DFT_CCSDTF12_BAC |         1
 )
 
 entry(
-    index = 2771,
+    index = 2757,
     label = "N3dOd-N1sc",
     group = 
 """
@@ -69707,7 +68584,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2772,
+    index = 2758,
     label = "N3dOd-O",
     group = 
 """
@@ -69733,7 +68610,7 @@ NOx2018                 |         1
 )
 
 entry(
-    index = 2773,
+    index = 2759,
     label = "N3d-OdOH",
     group = 
 """
@@ -69758,7 +68635,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2774,
+    index = 2760,
     label = "N3d-HN",
     group = 
 """
@@ -69784,7 +68661,7 @@ primaryNS               |         1
 )
 
 entry(
-    index = 2775,
+    index = 2761,
     label = "N3d-N3dH",
     group = 
 """
@@ -69809,7 +68686,7 @@ primaryNS |         1
 )
 
 entry(
-    index = 2776,
+    index = 2762,
     label = "N3d-NN",
     group = 
 """
@@ -69834,7 +68711,7 @@ primaryNS |         2
 )
 
 entry(
-    index = 2777,
+    index = 2763,
     label = "N3d-N3dN3s",
     group = 
 """
@@ -69858,7 +68735,7 @@ CHON_G4 |         44
 )
 
 entry(
-    index = 2778,
+    index = 2764,
     label = "N3d-NO",
     group = 
 """
@@ -69882,7 +68759,7 @@ CHON_G4 |         42
 )
 
 entry(
-    index = 2779,
+    index = 2765,
     label = "N3d-OC",
     group = 
 """
@@ -69899,7 +68776,7 @@ entry(
 )
 
 entry(
-    index = 2780,
+    index = 2766,
     label = "N3d-OCd",
     group = 
 """
@@ -69923,7 +68800,7 @@ CHON_G4 |         43
 )
 
 entry(
-    index = 2781,
+    index = 2767,
     label = "N3d-OCdd",
     group = 
 """
@@ -69947,7 +68824,7 @@ CHON_G4 |         20
 )
 
 entry(
-    index = 2782,
+    index = 2768,
     label = "N3d-CN",
     group = 
 """
@@ -69973,7 +68850,7 @@ thermo_DFT_CCSDTF12_BAC |         1
 )
 
 entry(
-    index = 2783,
+    index = 2769,
     label = "N3d-N3dCs",
     group = 
 """
@@ -69998,7 +68875,7 @@ CBS_QB3_1dHR |         1
 )
 
 entry(
-    index = 2784,
+    index = 2770,
     label = "N3d-N3dCs(CsCsCs)",
     group = 
 """
@@ -70023,7 +68900,7 @@ entry(
 )
 
 entry(
-    index = 2785,
+    index = 2771,
     label = "N3d-N3dCs(CsCsH)",
     group = 
 """
@@ -70048,7 +68925,7 @@ entry(
 )
 
 entry(
-    index = 2786,
+    index = 2772,
     label = "N3d-N3dCs(CsHH)",
     group = 
 """
@@ -70073,7 +68950,7 @@ entry(
 )
 
 entry(
-    index = 2787,
+    index = 2773,
     label = "N3d-N3dCs(HHH)",
     group = 
 """
@@ -70098,7 +68975,7 @@ entry(
 )
 
 entry(
-    index = 2788,
+    index = 2774,
     label = "N3d-NC",
     group = 
 """
@@ -70123,7 +69000,7 @@ BurcatNS |         2
 )
 
 entry(
-    index = 2789,
+    index = 2775,
     label = "N3d-N3sCd",
     group = 
 """
@@ -70147,7 +69024,7 @@ CHON_G4 |         50
 )
 
 entry(
-    index = 2790,
+    index = 2776,
     label = "N3d-N3sCdd",
     group = 
 """
@@ -70171,7 +69048,7 @@ CHON_G4 |         18
 )
 
 entry(
-    index = 2791,
+    index = 2777,
     label = "N3d-N3dCd",
     group = 
 """
@@ -70195,7 +69072,7 @@ CHON_G4 |         15
 )
 
 entry(
-    index = 2792,
+    index = 2778,
     label = "N3d-N3dCdd",
     group = 
 """
@@ -70219,7 +69096,7 @@ CHON_G4 |         9
 )
 
 entry(
-    index = 2793,
+    index = 2779,
     label = "N3d-CC",
     group = 
 """
@@ -70243,7 +69120,7 @@ CHON_G4 |         45
 )
 
 entry(
-    index = 2794,
+    index = 2780,
     label = "N3d-CdCs",
     group = 
 """
@@ -70268,7 +69145,7 @@ CHON    |         3
 )
 
 entry(
-    index = 2795,
+    index = 2781,
     label = "N3d-Cd(CsHHH)",
     group = 
 """
@@ -70293,7 +69170,7 @@ entry(
 )
 
 entry(
-    index = 2796,
+    index = 2782,
     label = "N3d-Cd(CsCsHH)",
     group = 
 """
@@ -70318,7 +69195,7 @@ entry(
 )
 
 entry(
-    index = 2797,
+    index = 2783,
     label = "N3d-CdH",
     group = 
 """
@@ -70343,7 +69220,7 @@ BurcatNS |         1
 )
 
 entry(
-    index = 2798,
+    index = 2784,
     label = "N3d-CddH",
     group = 
 """
@@ -70367,7 +69244,7 @@ CHON_G4 |         55
 )
 
 entry(
-    index = 2799,
+    index = 2785,
     label = "N3t",
     group = 
 """
@@ -70388,7 +69265,7 @@ entry(
 )
 
 entry(
-    index = 2800,
+    index = 2786,
     label = "N3t-CtH",
     group = 
 """
@@ -70410,7 +69287,7 @@ Calculated by subtracting the data for the Ct-CtCs group (Ct-Cs STEIN and FAHR; 
 )
 
 entry(
-    index = 2801,
+    index = 2787,
     label = "N3t-N",
     group = 
 """
@@ -70434,7 +69311,7 @@ primaryNS      |         1
 )
 
 entry(
-    index = 2802,
+    index = 2788,
     label = "N5dc",
     group = 
 """
@@ -70454,7 +69331,7 @@ entry(
 )
 
 entry(
-    index = 2803,
+    index = 2789,
     label = "N5dc-OdO0sc",
     group = 
 """
@@ -70471,7 +69348,7 @@ entry(
 )
 
 entry(
-    index = 2804,
+    index = 2790,
     label = "N5dc-OdO0scH",
     group = 
 """
@@ -70496,7 +69373,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2805,
+    index = 2791,
     label = "N5dc-OdO0scO",
     group = 
 """
@@ -70525,7 +69402,7 @@ CHON                    |         2
 )
 
 entry(
-    index = 2806,
+    index = 2792,
     label = "N5dc-OdO0scC",
     group = 
 """
@@ -70554,7 +69431,7 @@ CHON                    |         30
 )
 
 entry(
-    index = 2807,
+    index = 2793,
     label = "N5dc-OdO0scN",
     group = 
 """
@@ -70581,7 +69458,7 @@ thermo_DFT_CCSDTF12_BAC |         3
 )
 
 entry(
-    index = 2808,
+    index = 2794,
     label = "N5dc-OdOs",
     group = 
 """
@@ -70598,7 +69475,7 @@ entry(
 )
 
 entry(
-    index = 2809,
+    index = 2795,
     label = "N5dc-OdOsN",
     group = 
 """
@@ -70623,7 +69500,7 @@ CHON_G4 |         3
 )
 
 entry(
-    index = 2810,
+    index = 2796,
     label = "N5dc-CdO0sc",
     group = 
 """
@@ -70647,7 +69524,7 @@ CHON_G4 |         45
 )
 
 entry(
-    index = 2811,
+    index = 2797,
     label = "N5dc-CHH",
     group = 
 """
@@ -70672,7 +69549,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2812,
+    index = 2798,
     label = "N5dc-HNN",
     group = 
 """
@@ -70697,7 +69574,7 @@ primaryNS |         3
 )
 
 entry(
-    index = 2813,
+    index = 2799,
     label = "N5dc-HNO",
     group = 
 """
@@ -70722,7 +69599,7 @@ CHON_G4 |         6
 )
 
 entry(
-    index = 2814,
+    index = 2800,
     label = "N5dc-OdNH",
     group = 
 """
@@ -70747,7 +69624,7 @@ CHON_G4 |         18
 )
 
 entry(
-    index = 2815,
+    index = 2801,
     label = "N5dc-NNO",
     group = 
 """
@@ -70772,7 +69649,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2816,
+    index = 2802,
     label = "N5dc-CCH",
     group = 
 """
@@ -70797,7 +69674,7 @@ CHON_G4 |         2
 )
 
 entry(
-    index = 2817,
+    index = 2803,
     label = "N5dc-CNO",
     group = 
 """
@@ -70823,7 +69700,7 @@ thermo_DFT_CCSDTF12_BAC |         1
 )
 
 entry(
-    index = 2818,
+    index = 2804,
     label = "N5ddc",
     group = 
 """
@@ -70845,7 +69722,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2819,
+    index = 2805,
     label = "N5ddc-O2d",
     group = 
 """
@@ -70868,7 +69745,7 @@ CHON_G4 |         1
 )
 
 entry(
-    index = 2820,
+    index = 2806,
     label = "N5ddc-N1dc",
     group = 
 """
@@ -70893,7 +69770,7 @@ primaryNS               |         1
 )
 
 entry(
-    index = 2821,
+    index = 2807,
     label = "N5tc",
     group = 
 """
@@ -71873,8 +70750,8 @@ L1: R
                     L6: Cs-CsCsF1sF1s
                 L5: Cs-COCsF1sF1s
                 L5: Cs-CdCsF1sF1s
-                L5: Cs-C2sCsF1sF1s
                 L5: Cs-CsCtF1sF1s
+                L5: Cs-C2sCsF1sF1s
                 L5: Cs-CdCdF1sF1s
             L4: CsBrCCH
                 L5: CsBrCsCsH
@@ -73293,10 +72170,6 @@ L1: R
                     L6: Cs-(N3dN3d)HHH
                 L5: Cs-N3sHHH
                 L5: Cs-N5sdtcHHH
-            L4: Cs-F1sF1sF1sS6dd
-            L4: Cs-CsF1sF1sS6dd
-            L4: Cs-F1sF1sO2sS6dd
-            L4: Cs-CsF1sO2sS6dd
         L3: Ca
     L2: O
         L3: O0sc
@@ -73305,8 +72178,6 @@ L1: R
             L4: O2d-Cd
             L4: O2d-O2d
             L4: O2d-Sd
-                L5: O2d-S2d
-                L5: O2d-S6ddd
             L4: O2d-N3d
             L4: O2d-N5dc
         L3: O2s
@@ -73405,14 +72276,10 @@ L1: R
             L4: O2s-CS
                 L5: O2s-CS2
                 L5: O2s-CS4
-                    L6: O2s-CsS4d
                 L5: O2s-CS6
-                    L6: O2s-CsS6dd
             L4: O2s-SH
                 L5: O2s-S_nonDeH
                 L5: O2s-S_DeH
-                    L6: O2s-S6ddH
-                    L6: O2s-S4dH
             L4: O2s-N
                 L5: O2s-N5tc
                     L6: O2s-N5tcH
@@ -73445,7 +72312,6 @@ L1: R
             L4: S2d-C
             L4: S2d-S
             L4: S2d-O
-                L5: S2d-O2d
         L3: S2s
             L4: S2s-HH
             L4: S2s-CH
@@ -73514,7 +72380,6 @@ L1: R
                     L6: S4d-OdOsCs
                     L6: S4d-OdOsCd
                 L5: S4d-OdOO
-                    L6: S4d-O2dO2sO2s
                 L5: S4d-OdOH
                 L5: S4d-OdOS
                 L5: S4d-OdSS
@@ -73559,14 +72424,12 @@ L1: R
                 L5: S6dd-OdOdCS
                 L5: S6dd-OdOdCO
                     L6: S6dd-OdOdCsOs
-                        L7: S6dd-CsO2dO2dO2s
                     L6: S6dd-OdOdCdOs
                 L5: S6dd-OdOdOO
                 L5: S6dd-OdOdOH
                 L5: S6dd-OdOdOS
                 L5: S6dd-OdOdSS
                 L5: S6dd-OdOdSH
-                L5: S6dd-F1sO2dO2dO2s
             L4: S6dd-OdCd
                 L5: S6dd-OdCdCC
                 L5: S6dd-OdCdCH

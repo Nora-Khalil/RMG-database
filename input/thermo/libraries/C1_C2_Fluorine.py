@@ -93,6 +93,8 @@ multiplicity 2
     longDesc = u"""Hf(0 K) = 58.19 kcal/mol (ANL0). CF <g> ATcT ver. 1.124, DHf298 = 246.72 ± 0.12 kJ/mol - fit JAN23. polynomial from ATcT""",
 )
 
+#confirming with Siddha to see if CHF and CHF(T) is switched
+
 entry(
     index = 4,
     label = "CHF",

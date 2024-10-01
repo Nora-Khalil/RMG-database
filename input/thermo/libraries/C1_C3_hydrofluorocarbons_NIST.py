@@ -467,45 +467,49 @@ _imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
 """,
 )
 
-entry(
-    index = 15,
-    label = "C3F7H",
-    molecule = 
-"""
-1  F u0 p3 c0 {8,S}
-2  F u0 p3 c0 {8,S}
-3  F u0 p3 c0 {10,S}
-4  F u0 p3 c0 {10,S}
-5  F u0 p3 c0 {10,S}
-6  F u0 p3 c0 {9,S}
-7  F u0 p3 c0 {9,S}
-8  C u0 p0 c0 {1,S} {2,S} {9,S} {10,S}
-9  C u0 p0 c0 {6,S} {7,S} {8,S} {11,S}
-10 C u0 p0 c0 {3,S} {4,S} {5,S} {8,S}
-11 H u0 p0 c0 {9,S}
-""",
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.19382,0.0564358,-4.24436e-05,6.01423e-09,4.21731e-12,-191303,14.797], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[20.3196,0.0104619,-3.99352e-06,6.70977e-10,-4.12887e-14,-196070,-73.9088], Tmin=(1000,'K'), Tmax=(6000,'K')),
-        ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
-        E0 = (-1589.46,'kJ/mol'),
-        Cp0 = (33.2579,'J/mol/K'),
-        CpInf = (249.434,'J/mol/K'),
-    ),
-    shortDesc = """FC227EA    T12/99""",
-    longDesc = 
-"""
-FC227EA    T12/99
-****************
-***C3-fluorinated,etc***
-************************.
-FC(F)C(F)(F)C(F)(F)F
-_imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
-""",
-)
+#commenting out because: 
+# [-374.36197236511026, -355.4766062542122, -365.4938843661234] standard deviation: 7.714675039399534
+# ['C1_C3_hydrofluorocarbons_NIST', 'NCSU_C2_C8_PFAS', 'CHOF_G4']
+
+# entry(
+#     index = 15,
+#     label = "C3F7H",
+#     molecule = 
+# """
+# 1  F u0 p3 c0 {8,S}
+# 2  F u0 p3 c0 {8,S}
+# 3  F u0 p3 c0 {10,S}
+# 4  F u0 p3 c0 {10,S}
+# 5  F u0 p3 c0 {10,S}
+# 6  F u0 p3 c0 {9,S}
+# 7  F u0 p3 c0 {9,S}
+# 8  C u0 p0 c0 {1,S} {2,S} {9,S} {10,S}
+# 9  C u0 p0 c0 {6,S} {7,S} {8,S} {11,S}
+# 10 C u0 p0 c0 {3,S} {4,S} {5,S} {8,S}
+# 11 H u0 p0 c0 {9,S}
+# """,
+#     thermo = NASA(
+#         polynomials = [
+#             NASAPolynomial(coeffs=[3.19382,0.0564358,-4.24436e-05,6.01423e-09,4.21731e-12,-191303,14.797], Tmin=(200,'K'), Tmax=(1000,'K')),
+#             NASAPolynomial(coeffs=[20.3196,0.0104619,-3.99352e-06,6.70977e-10,-4.12887e-14,-196070,-73.9088], Tmin=(1000,'K'), Tmax=(6000,'K')),
+#         ],
+#         Tmin = (200,'K'),
+#         Tmax = (6000,'K'),
+#         E0 = (-1589.46,'kJ/mol'),
+#         Cp0 = (33.2579,'J/mol/K'),
+#         CpInf = (249.434,'J/mol/K'),
+#     ),
+#     shortDesc = """FC227EA    T12/99""",
+#     longDesc = 
+# """
+# FC227EA    T12/99
+# ****************
+# ***C3-fluorinated,etc***
+# ************************.
+# FC(F)C(F)(F)C(F)(F)F
+# _imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
+# """,
+# )
 
 entry(
     index = 16,
@@ -1578,42 +1582,47 @@ _imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
 """,
 )
 
-entry(
-    index = 50,
-    label = "C3F7",
-    molecule = 
-"""
-multiplicity 2
-1  F u0 p3 c0 {8,S}
-2  F u0 p3 c0 {8,S}
-3  F u0 p3 c0 {9,S}
-4  F u0 p3 c0 {9,S}
-5  F u0 p3 c0 {9,S}
-6  F u0 p3 c0 {10,S}
-7  F u0 p3 c0 {10,S}
-8  C u0 p0 c0 {1,S} {2,S} {9,S} {10,S}
-9  C u0 p0 c0 {3,S} {4,S} {5,S} {8,S}
-10 C u1 p0 c0 {6,S} {7,S} {8,S}
-""",
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.14242,0.0603443,-6.17598e-05,2.7938e-08,-4.02551e-12,-165147,16.6898], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[20.5301,0.00760063,-2.96491e-06,5.04882e-10,-3.13453e-14,-169702,-71.9281], Tmin=(1000,'K'), Tmax=(6000,'K')),
-        ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
-        E0 = (-1371.96,'kJ/mol'),
-        Cp0 = (33.2579,'J/mol/K'),
-        CpInf = (224.491,'J/mol/K'),
-    ),
-    shortDesc = """CF3CF*CF3 M  T12/99""",
-    longDesc = 
-"""
-CF3CF*CF3 M  T12/99.
-F[C](F)C(F)(F)C(F)(F)F
-_imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
-""",
-)
+#commenting out because: 
+# [-322.28078551838286, -307.53359570209693, -314.07219104427713, -317.2839125420677] standard deviation: 5.350037574443305
+# ['C1_C3_hydrofluorocarbons_NIST', 'NCSU_C2_C8_PFAS', 'PFCA_thermo', 'CHOF_G4']
+
+
+# entry(
+#     index = 50,
+#     label = "C3F7",
+#     molecule = 
+# """
+# multiplicity 2
+# 1  F u0 p3 c0 {8,S}
+# 2  F u0 p3 c0 {8,S}
+# 3  F u0 p3 c0 {9,S}
+# 4  F u0 p3 c0 {9,S}
+# 5  F u0 p3 c0 {9,S}
+# 6  F u0 p3 c0 {10,S}
+# 7  F u0 p3 c0 {10,S}
+# 8  C u0 p0 c0 {1,S} {2,S} {9,S} {10,S}
+# 9  C u0 p0 c0 {3,S} {4,S} {5,S} {8,S}
+# 10 C u1 p0 c0 {6,S} {7,S} {8,S}
+# """,
+#     thermo = NASA(
+#         polynomials = [
+#             NASAPolynomial(coeffs=[3.14242,0.0603443,-6.17598e-05,2.7938e-08,-4.02551e-12,-165147,16.6898], Tmin=(200,'K'), Tmax=(1000,'K')),
+#             NASAPolynomial(coeffs=[20.5301,0.00760063,-2.96491e-06,5.04882e-10,-3.13453e-14,-169702,-71.9281], Tmin=(1000,'K'), Tmax=(6000,'K')),
+#         ],
+#         Tmin = (200,'K'),
+#         Tmax = (6000,'K'),
+#         E0 = (-1371.96,'kJ/mol'),
+#         Cp0 = (33.2579,'J/mol/K'),
+#         CpInf = (224.491,'J/mol/K'),
+#     ),
+#     shortDesc = """CF3CF*CF3 M  T12/99""",
+#     longDesc = 
+# """
+# CF3CF*CF3 M  T12/99.
+# F[C](F)C(F)(F)C(F)(F)F
+# _imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
+# """,
+# )
 
 entry(
     index = 51,
@@ -2027,75 +2036,83 @@ _imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
 """,
 )
 
-entry(
-    index = 63,
-    label = "CH2F-CF2",
-    molecule = 
-"""
-multiplicity 2
-1 F u0 p3 c0 {4,S}
-2 F u0 p3 c0 {5,S}
-3 F u0 p3 c0 {5,S}
-4 C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
-5 C u1 p0 c0 {2,S} {3,S} {4,S}
-6 H u0 p0 c0 {4,S}
-7 H u0 p0 c0 {4,S}
-""",
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.09008,0.0293901,-2.55533e-05,1.17108e-08,-2.31129e-12,-55373.1,17.8136], Tmin=(298,'K'), Tmax=(1150,'K')),
-            NASAPolynomial(coeffs=[8.87024,0.0100895,-4.39156e-06,8.57582e-10,-6.11641e-14,-57295.5,-17.249], Tmin=(1150,'K'), Tmax=(3000,'K')),
-        ],
-        Tmin = (298,'K'),
-        Tmax = (3000,'K'),
-        E0 = (-461.245,'kJ/mol'),
-        Cp0 = (33.2579,'J/mol/K'),
-        CpInf = (153.818,'J/mol/K'),
-    ),
-    shortDesc = """91CHERAU""",
-    longDesc = 
-"""
-91CHERAU
-_low T polynomial Tmin changed from 300.0 to 298.0 K when importing to RMG.
-FC[C](F)F
-_imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
-""",
-)
+#commenting out because 
+# [-109.52104028030999, -106.71303710076694, -111.32866889253329] standard deviation: 1.8990190418920214
+# ['C1_C2_Fluorine', 'C1_C3_hydrofluorocarbons_NIST', 'CHOF_G4']
 
-entry(
-    index = 64,
-    label = "CHF2-CHF",
-    molecule = 
-"""
-multiplicity 2
-1 F u0 p3 c0 {4,S}
-2 F u0 p3 c0 {4,S}
-3 F u0 p3 c0 {5,S}
-4 C u0 p0 c0 {1,S} {2,S} {5,S} {6,S}
-5 C u1 p0 c0 {3,S} {4,S} {7,S}
-6 H u0 p0 c0 {4,S}
-7 H u0 p0 c0 {5,S}
-""",
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[1.81368,0.0327767,-3.24205e-05,1.68313e-08,-3.60024e-12,-56094.6,18.5911], Tmin=(298,'K'), Tmax=(1250,'K')),
-            NASAPolynomial(coeffs=[9.42456,0.00938455,-4.0695e-06,7.95489e-10,-5.68744e-14,-58166,-20.3132], Tmin=(1250,'K'), Tmax=(3000,'K')),
-        ],
-        Tmin = (298,'K'),
-        Tmax = (3000,'K'),
-        E0 = (-467.484,'kJ/mol'),
-        Cp0 = (33.2579,'J/mol/K'),
-        CpInf = (153.818,'J/mol/K'),
-    ),
-    shortDesc = """91CHERAU""",
-    longDesc = 
-"""
-91CHERAU
-_low T polynomial Tmin changed from 300.0 to 298.0 K when importing to RMG.
-F[CH]C(F)F
-_imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
-""",
-)
+# entry(
+#     index = 63,
+#     label = "CH2F-CF2",
+#     molecule = 
+# """
+# multiplicity 2
+# 1 F u0 p3 c0 {4,S}
+# 2 F u0 p3 c0 {5,S}
+# 3 F u0 p3 c0 {5,S}
+# 4 C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
+# 5 C u1 p0 c0 {2,S} {3,S} {4,S}
+# 6 H u0 p0 c0 {4,S}
+# 7 H u0 p0 c0 {4,S}
+# """,
+#     thermo = NASA(
+#         polynomials = [
+#             NASAPolynomial(coeffs=[2.09008,0.0293901,-2.55533e-05,1.17108e-08,-2.31129e-12,-55373.1,17.8136], Tmin=(298,'K'), Tmax=(1150,'K')),
+#             NASAPolynomial(coeffs=[8.87024,0.0100895,-4.39156e-06,8.57582e-10,-6.11641e-14,-57295.5,-17.249], Tmin=(1150,'K'), Tmax=(3000,'K')),
+#         ],
+#         Tmin = (298,'K'),
+#         Tmax = (3000,'K'),
+#         E0 = (-461.245,'kJ/mol'),
+#         Cp0 = (33.2579,'J/mol/K'),
+#         CpInf = (153.818,'J/mol/K'),
+#     ),
+#     shortDesc = """91CHERAU""",
+#     longDesc = 
+# """
+# 91CHERAU
+# _low T polynomial Tmin changed from 300.0 to 298.0 K when importing to RMG.
+# FC[C](F)F
+# _imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
+# """,
+# )
+
+# commenting this out because: 
+# [-110.01968190301446, -108.11452863862974, -111.27130096144391] standard deviation: 1.2979201621699412
+# ['C1_C2_Fluorine', 'C1_C3_hydrofluorocarbons_NIST', 'CHOF_G4']
+
+# entry(
+#     index = 64,
+#     label = "CHF2-CHF",
+#     molecule = 
+# """
+# multiplicity 2
+# 1 F u0 p3 c0 {4,S}
+# 2 F u0 p3 c0 {4,S}
+# 3 F u0 p3 c0 {5,S}
+# 4 C u0 p0 c0 {1,S} {2,S} {5,S} {6,S}
+# 5 C u1 p0 c0 {3,S} {4,S} {7,S}
+# 6 H u0 p0 c0 {4,S}
+# 7 H u0 p0 c0 {5,S}
+# """,
+#     thermo = NASA(
+#         polynomials = [
+#             NASAPolynomial(coeffs=[1.81368,0.0327767,-3.24205e-05,1.68313e-08,-3.60024e-12,-56094.6,18.5911], Tmin=(298,'K'), Tmax=(1250,'K')),
+#             NASAPolynomial(coeffs=[9.42456,0.00938455,-4.0695e-06,7.95489e-10,-5.68744e-14,-58166,-20.3132], Tmin=(1250,'K'), Tmax=(3000,'K')),
+#         ],
+#         Tmin = (298,'K'),
+#         Tmax = (3000,'K'),
+#         E0 = (-467.484,'kJ/mol'),
+#         Cp0 = (33.2579,'J/mol/K'),
+#         CpInf = (153.818,'J/mol/K'),
+#     ),
+#     shortDesc = """91CHERAU""",
+#     longDesc = 
+# """
+# 91CHERAU
+# _low T polynomial Tmin changed from 300.0 to 298.0 K when importing to RMG.
+# F[CH]C(F)F
+# _imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
+# """,
+# )
 
 entry(
     index = 65,
@@ -2233,37 +2250,41 @@ _imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
 """,
 )
 
-entry(
-    index = 69,
-    label = "CFCO",
-    molecule = 
-"""
-multiplicity 2
-1 F u0 p3 c0 {3,S}
-2 O u0 p2 c0 {4,D}
-3 C u1 p0 c0 {1,S} {4,D}
-4 C u0 p0 c0 {2,D} {3,D}
-""",
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.75942,0.014232,-1.60103e-05,9.88857e-09,-2.66132e-12,6674.73,8.18592], Tmin=(298,'K'), Tmax=(1050,'K')),
-            NASAPolynomial(coeffs=[7.30331,0.00297939,-1.30582e-06,2.54074e-10,-1.81035e-14,5735.56,-9.84341], Tmin=(1050,'K'), Tmax=(3000,'K')),
-        ],
-        Tmin = (298,'K'),
-        Tmax = (3000,'K'),
-        E0 = (55.396,'kJ/mol'),
-        Cp0 = (33.2579,'J/mol/K'),
-        CpInf = (83.1447,'J/mol/K'),
-    ),
-    shortDesc = """96ZACWES""",
-    longDesc = 
-"""
-96ZACWES
-_low T polynomial Tmin changed from 300.0 to 298.0 K when importing to RMG.
-O=C=[C]F
-_imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
-""",
-)
+# commenting out because; 
+# [16.517516622418803, 11.099437505881443] standard deviation: 2.70903955826868
+# ['C1_C3_hydrofluorocarbons_NIST', 'CHOF_G4']
+
+# entry(
+#     index = 69,
+#     label = "CFCO",
+#     molecule = 
+# """
+# multiplicity 2
+# 1 F u0 p3 c0 {3,S}
+# 2 O u0 p2 c0 {4,D}
+# 3 C u1 p0 c0 {1,S} {4,D}
+# 4 C u0 p0 c0 {2,D} {3,D}
+# """,
+#     thermo = NASA(
+#         polynomials = [
+#             NASAPolynomial(coeffs=[3.75942,0.014232,-1.60103e-05,9.88857e-09,-2.66132e-12,6674.73,8.18592], Tmin=(298,'K'), Tmax=(1050,'K')),
+#             NASAPolynomial(coeffs=[7.30331,0.00297939,-1.30582e-06,2.54074e-10,-1.81035e-14,5735.56,-9.84341], Tmin=(1050,'K'), Tmax=(3000,'K')),
+#         ],
+#         Tmin = (298,'K'),
+#         Tmax = (3000,'K'),
+#         E0 = (55.396,'kJ/mol'),
+#         Cp0 = (33.2579,'J/mol/K'),
+#         CpInf = (83.1447,'J/mol/K'),
+#     ),
+#     shortDesc = """96ZACWES""",
+#     longDesc = 
+# """
+# 96ZACWES
+# _low T polynomial Tmin changed from 300.0 to 298.0 K when importing to RMG.
+# O=C=[C]F
+# _imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
+# """,
+# )
 
 entry(
     index = 70,
@@ -2569,37 +2590,41 @@ _imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
 """,
 )
 
-entry(
-    index = 79,
-    label = "CHFCF2",
-    molecule = 
-"""
-1 F u0 p3 c0 {4,S}
-2 F u0 p3 c0 {5,S}
-3 F u0 p3 c0 {5,S}
-4 C u0 p0 c0 {1,S} {5,D} {6,S}
-5 C u0 p0 c0 {2,S} {3,S} {4,D}
-6 H u0 p0 c0 {4,S}
-""",
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.00354,0.0274141,-2.30032e-05,7.09389e-09,1.96149e-13,-60300,16.5697], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[9.56304,0.00603922,-2.24656e-06,3.71317e-10,-2.25981e-14,-62366.6,-22.3574], Tmin=(1000,'K'), Tmax=(6000,'K')),
-        ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
-        E0 = (-502.477,'kJ/mol'),
-        Cp0 = (33.2579,'J/mol/K'),
-        CpInf = (133.032,'J/mol/K'),
-    ),
-    shortDesc = """T 6/11""",
-    longDesc = 
-"""
-T 6/11.
-FC=C(F)F
-_imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
-""",
-)
+#commenting this out: 
+# [-119.08062148903159, -116.71000857920652, -118.91772929718138] standard deviation: 1.0811706722586765
+# ['C1_C2_Fluorine', 'C1_C3_hydrofluorocarbons_NIST', 'CHOF_G4']
+
+# entry(
+#     index = 79,
+#     label = "CHFCF2",
+#     molecule = 
+# """
+# 1 F u0 p3 c0 {4,S}
+# 2 F u0 p3 c0 {5,S}
+# 3 F u0 p3 c0 {5,S}
+# 4 C u0 p0 c0 {1,S} {5,D} {6,S}
+# 5 C u0 p0 c0 {2,S} {3,S} {4,D}
+# 6 H u0 p0 c0 {4,S}
+# """,
+#     thermo = NASA(
+#         polynomials = [
+#             NASAPolynomial(coeffs=[2.00354,0.0274141,-2.30032e-05,7.09389e-09,1.96149e-13,-60300,16.5697], Tmin=(200,'K'), Tmax=(1000,'K')),
+#             NASAPolynomial(coeffs=[9.56304,0.00603922,-2.24656e-06,3.71317e-10,-2.25981e-14,-62366.6,-22.3574], Tmin=(1000,'K'), Tmax=(6000,'K')),
+#         ],
+#         Tmin = (200,'K'),
+#         Tmax = (6000,'K'),
+#         E0 = (-502.477,'kJ/mol'),
+#         Cp0 = (33.2579,'J/mol/K'),
+#         CpInf = (133.032,'J/mol/K'),
+#     ),
+#     shortDesc = """T 6/11""",
+#     longDesc = 
+# """
+# T 6/11.
+# FC=C(F)F
+# _imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
+# """,
+# )
 
 entry(
     index = 80,
@@ -3001,35 +3026,37 @@ _imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
 """,
 )
 
-entry(
-    index = 92,
-    label = "CHF",
-    molecule = 
-"""
-multiplicity 3
-1 F u0 p3 c0 {2,S}
-2 C u2 p0 c0 {1,S} {3,S}
-3 H u0 p0 c0 {2,S}
-""",
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.42273,-0.00560196,2.21849e-05,-2.39634e-08,8.91307e-12,16651.6,2.54111], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[2.09415,0.00534934,-1.69763e-06,2.19446e-10,-1.00206e-14,17204.2,13.7861], Tmin=(1000,'K'), Tmax=(6000,'K')),
-        ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
-        E0 = (138.483,'kJ/mol'),
-        Cp0 = (33.2579,'J/mol/K'),
-        CpInf = (58.2013,'J/mol/K'),
-    ),
-    shortDesc = """singlet      T 7/11""",
-    longDesc = 
-"""
-singlet      T 7/11.
-[CH]F
-_imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
-""",
-)
+#Franklin confirmed (through Siddha) that this is probably for the singlet rather than the triplet, so commenting out
+
+# entry(
+#     index = 92,
+#     label = "CHF",
+#     molecule = 
+# """
+# multiplicity 3
+# 1 F u0 p3 c0 {2,S}
+# 2 C u2 p0 c0 {1,S} {3,S}
+# 3 H u0 p0 c0 {2,S}
+# """,
+#     thermo = NASA(
+#         polynomials = [
+#             NASAPolynomial(coeffs=[4.42273,-0.00560196,2.21849e-05,-2.39634e-08,8.91307e-12,16651.6,2.54111], Tmin=(200,'K'), Tmax=(1000,'K')),
+#             NASAPolynomial(coeffs=[2.09415,0.00534934,-1.69763e-06,2.19446e-10,-1.00206e-14,17204.2,13.7861], Tmin=(1000,'K'), Tmax=(6000,'K')),
+#         ],
+#         Tmin = (200,'K'),
+#         Tmax = (6000,'K'),
+#         E0 = (138.483,'kJ/mol'),
+#         Cp0 = (33.2579,'J/mol/K'),
+#         CpInf = (58.2013,'J/mol/K'),
+#     ),
+#     shortDesc = """singlet      T 7/11""",
+#     longDesc = 
+# """
+# singlet      T 7/11.
+# [CH]F
+# _imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
+# """,
+# )
 
 entry(
     index = 93,
@@ -3139,38 +3166,42 @@ _imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
 """,
 )
 
-entry(
-    index = 96,
-    label = "CF2CH",
-    molecule = 
-"""
-multiplicity 2
-1 F u0 p3 c0 {3,S}
-2 F u0 p3 c0 {3,S}
-3 C u0 p0 c0 {1,S} {2,S} {4,D}
-4 C u1 p0 c0 {3,D} {5,S}
-5 H u0 p0 c0 {4,S}
-""",
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[0.647126,0.0316596,-4.14529e-05,2.86094e-08,-8.06098e-12,-9438.54,21.7994], Tmin=(298,'K'), Tmax=(1050,'K')),
-            NASAPolynomial(coeffs=[7.41103,0.0064817,-3.06314e-06,6.25625e-10,-4.55126e-14,-11017.4,-11.6171], Tmin=(1050,'K'), Tmax=(3000,'K')),
-        ],
-        Tmin = (298,'K'),
-        Tmax = (3000,'K'),
-        E0 = (-81.0671,'kJ/mol'),
-        Cp0 = (33.2579,'J/mol/K'),
-        CpInf = (108.088,'J/mol/K'),
-    ),
-    shortDesc = """96ZACWES""",
-    longDesc = 
-"""
-96ZACWES
-_low T polynomial Tmin changed from 300.0 to 298.0 K when importing to RMG.
-[CH]=C(F)F
-_imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
-""",
-)
+# commenting this out because; 
+# [-18.208708822365868, -16.217189414290836, -18.914990398483408] standard deviation: 1.1422742114752682
+# ['C1_C2_Fluorine', 'C1_C3_hydrofluorocarbons_NIST', 'CHOF_G4']
+
+# entry(
+#     index = 96,
+#     label = "CF2CH",
+#     molecule = 
+# """
+# multiplicity 2
+# 1 F u0 p3 c0 {3,S}
+# 2 F u0 p3 c0 {3,S}
+# 3 C u0 p0 c0 {1,S} {2,S} {4,D}
+# 4 C u1 p0 c0 {3,D} {5,S}
+# 5 H u0 p0 c0 {4,S}
+# """,
+#     thermo = NASA(
+#         polynomials = [
+#             NASAPolynomial(coeffs=[0.647126,0.0316596,-4.14529e-05,2.86094e-08,-8.06098e-12,-9438.54,21.7994], Tmin=(298,'K'), Tmax=(1050,'K')),
+#             NASAPolynomial(coeffs=[7.41103,0.0064817,-3.06314e-06,6.25625e-10,-4.55126e-14,-11017.4,-11.6171], Tmin=(1050,'K'), Tmax=(3000,'K')),
+#         ],
+#         Tmin = (298,'K'),
+#         Tmax = (3000,'K'),
+#         E0 = (-81.0671,'kJ/mol'),
+#         Cp0 = (33.2579,'J/mol/K'),
+#         CpInf = (108.088,'J/mol/K'),
+#     ),
+#     shortDesc = """96ZACWES""",
+#     longDesc = 
+# """
+# 96ZACWES
+# _low T polynomial Tmin changed from 300.0 to 298.0 K when importing to RMG.
+# [CH]=C(F)F
+# _imported from C1_C3_hydrofluorocarbons_NIST/thermo-frozen3.txt.
+# """,
+# )
 
 entry(
     index = 97,

@@ -112,7 +112,6 @@ All species include systematic conformer search and 1D rotor scans
     rank = 3,
     shortDesc = The chemkin file reaction is CF3C(O)OH <=> CF3H+CO2,
     longDesc = 
-
 Training reaction from kinetics library: PFAS_HPL
 Original entry: CF3C(O)OH <=> CF3H+CO2
 """,
@@ -143,7 +142,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_Insertion_CO2/
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C2F4C(O)OH <=> CF2CF2H+CO2
 """,
 )
@@ -156,7 +155,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_Insertion_CO2/
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C2F5C(O)OH <=> C2F5H+CO2
 """,
 )
@@ -169,7 +168,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_Insertion_CO2/
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C3F6C(O)OH <=> C2F4CF2H+CO2
 """,
 )
@@ -182,7 +181,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_Insertion_CO2/
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C3F7C(O)OH <=> C3F7H+CO2
 """,
 )
@@ -195,7 +194,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_Insertion_CO2/
+Training reaction from kinetics library: PFAS_HPL
 Original entry: CF3OCF(CF3)C(O)OH <=> CF3OCFHCF3+CO2
 """,
 )
@@ -208,7 +207,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_Insertion_CO2/
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C4F9C(O)OH <=> C4F9H+CO2
 """,
 )
@@ -221,7 +220,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_Insertion_CO2/
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C2F5OCF(CF3)C(O)OH <=> C2F5OCFHCF3+CO2
 """,
 )
@@ -234,7 +233,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_Insertion_CO2/
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C3F7OCF(CF3)C(O)OH <=> C3F7OCFHCF3+CO2
 """,
 )
@@ -247,7 +246,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_Insertion_CO2/
+Training reaction from kinetics library: PFAS_HPL
 Original entry: HC(O)OH <=> H2+CO2
 """,
 )
@@ -260,7 +259,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_Insertion_CO2/
+Training reaction from kinetics library: PFAS_HPL
 Original entry: CH3C(O)OH <=> CH4+CO2
 """,
 )
@@ -273,7 +272,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_Insertion_CO2/
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C2H4C(O)OH <=> C2H5+CO2
 """,
 )
@@ -286,7 +285,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_Insertion_CO2/
+Training reaction from kinetics library: PFAS_HPL
 Original entry: CH3OCH(CH3)C(O)OH <=> C2H5OCH3+CO2
 """,
 )
@@ -299,7 +298,7 @@ entry(
     rank = 3,
     longDesc = 
 """
-Training reaction from kinetics library: PFAS_HPL_Test/1,3_Insertion_CO2/
+Training reaction from kinetics library: PFAS_HPL
 Original entry: C2H5OCH(CH3)C(O)OH <=> C2H5OC2H5+CO2
 """,
 )

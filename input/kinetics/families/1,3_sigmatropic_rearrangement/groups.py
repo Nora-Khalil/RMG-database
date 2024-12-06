@@ -254,7 +254,7 @@ entry(
 2 *3 N                      u0 r1 {1,S} {4,S}
 3 *1 N                      u0 r0 {1,D}
 4 *4 C                      u0 r1 {2,S} {5,D}
-5    [N,P,F,I,Br,Cl,O,Si,S] u0 r1 {4,D}
+5    [I,P,Br,Cl,O,Si,S,N,F] u0 r1 {4,D}
 """,
     kinetics = None,
 )
@@ -322,7 +322,7 @@ entry(
 2 *3 N                      u0 r1 {1,S} {4,S}
 3 *1 O                      u0 r0 {1,D}
 4 *4 C                      u0 r1 {2,S} {5,D}
-5    [N,P,F,I,Br,Cl,O,Si,S] u0 r1 {4,D}
+5    [I,P,Br,Cl,O,Si,S,N,F] u0 r1 {4,D}
 """,
     kinetics = None,
 )

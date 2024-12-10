@@ -39,7 +39,7 @@ entry(
     label = "Root_1R->H",
     group =
 """
-1 * C u1 r1
+1 * H u1
 2 * R u1
 """,
     kinetics = None,
@@ -50,8 +50,8 @@ entry(
     label = "Root_1R->H_2R->S",
     group =
 """
-1 * C u1 r1
-2 * O u1
+1 * H u1
+2 * S u1
 """,
     kinetics = None,
 )
@@ -1636,7 +1636,7 @@ entry(
 """
 1 * C u1 r1 {3,S}
 2 * C u1 r0
-3   C u0 {1,S}
+3   O ux {1,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )

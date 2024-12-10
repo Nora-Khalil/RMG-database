@@ -6452,6 +6452,34 @@ entry(
 )
 
 entry(
+    index = 438,
+    label = "Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_Sp-5R!H-4C",
+    group = 
+"""
+1 *1 C   u0         r0 {2,D} {4,[S,D,T,B,Q]}
+2 *2 C   u0         r0 {1,D}
+3 *3 H   u[1,2,3,4]
+4    C   u0         r0 {1,[S,D,T,B,Q]} {5,S}
+5    R!H ux         r0 {4,S}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 439,
+    label = "Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_Sp-5R!H-4C_5R!H->C",
+    group = 
+"""
+1 *1 C u0         r0 {2,D} {4,[S,D,T,B,Q]}
+2 *2 C u0         r0 {1,D}
+3 *3 H u[1,2,3,4]
+4    C u0         r0 {1,[S,D,T,B,Q]} {5,S}
+5    C ux         r0 {4,S}
+""",
+    kinetics = None,
+)
+
+entry(
     index = 440,
     label = "Cds-CbH_Cds-OneDe",
     group =
@@ -7736,6 +7764,32 @@ entry(
 5    S2s u0 {2,S}
 6    Cb  u0 {2,S}
 7    C   u0 {3,D}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 520,
+    label = "Root_1R!H->O",
+    group = 
+"""
+1 *1 O   u0         {2,[D,T,B]}
+2 *2 R!H u0         {1,[D,T,B]}
+3 *3 R   u[1,2,3,4]
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 521,
+    label = "Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R",
+    group = 
+"""
+1 *1 O   u0         {2,[D,T,B]}
+2 *2 R!H u0         {1,[D,T,B]} {4,[S,D,T,B,Q]}
+3 *3 R   u[1,2,3,4]
+4    R!H ux         {2,[S,D,T,B,Q]} {5,[S,D,T,B,Q]}
+5    R!H ux         {4,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )
@@ -18887,117 +18941,117 @@ L1: YJ
 L1: Root
     L2: Root_3R->H
         L3: Root_3R->H_2R!H-inRing
-            L4: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H
-                L5: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_Sp-2R!H#1R!H
-                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_Sp-2R!H#1R!H_Ext-4R!H-R
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_Sp-2R!H#1R!H_Ext-4R!H-R_5R!H-inRing
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_Sp-2R!H#1R!H_Ext-4R!H-R_N-5R!H-inRing
-                L5: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H
-                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_Ext-2R!H-R
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_Ext-2R!H-R_Ext-4R!H-R
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_Ext-2R!H-R_Ext-4R!H-R_1R!H-inRing
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_Ext-2R!H-R_Ext-4R!H-R_N-1R!H-inRing
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_Ext-2R!H-R_6R!H-inRing
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_Ext-2R!H-R_6R!H-inRing_Ext-6R!H-R_Ext-6R!H-R
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_Ext-2R!H-R_6R!H-inRing_Ext-5R!H-R_Ext-5R!H-R
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_Ext-2R!H-R_6R!H-inRing_Ext-1R!H-R
-                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_Ext-2R!H-R_6R!H-inRing_Ext-1R!H-R_1R!H-inRing
-                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_Ext-2R!H-R_6R!H-inRing_Ext-1R!H-R_1R!H-inRing_Sp-2R!H-=1R!H
-                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_Ext-2R!H-R_6R!H-inRing_Ext-1R!H-R_1R!H-inRing_Int-7R!H-5R!H
-                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_Ext-2R!H-R_6R!H-inRing_Ext-1R!H-R_N-1R!H-inRing
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_Ext-2R!H-R_N-6R!H-inRing
-                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-6R!H-R
-                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-6R!H-R_7R!H->O
-                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-6R!H-R_N-7R!H->O
-                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-6R!H-R_N-7R!H->O_Ext-5R!H-R
-                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-6R!H-R_N-7R!H->O_Ext-5R!H-R_Ext-1R!H-R
-                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-6R!H-R_N-7R!H->O_Sp-7C=6R!H
-                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-6R!H-R_N-7R!H->O_N-Sp-7C=6R!H
-                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-6R!H-R_N-7R!H->O_N-Sp-7C=6R!H_Ext-1R!H-R
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Int-7R!H-5R!H
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-4R!H-R
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-7R!H-R
-                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-7R!H-R_8R!H-inRing
-                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-7R!H-R_8R!H-inRing_Sp-7R!H=6R!H
-                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-7R!H-R_8R!H-inRing_Sp-7R!H=6R!H_Ext-1R!H-R
-                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-7R!H-R_8R!H-inRing_N-Sp-7R!H=6R!H
-                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-7R!H-R_8R!H-inRing_N-Sp-7R!H=6R!H_Ext-5R!H-R
-                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-7R!H-R_N-8R!H-inRing
-                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-7R!H-R_N-8R!H-inRing_Sp-7R!H-6R!H
-                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-7R!H-R_N-8R!H-inRing_Sp-7R!H-6R!H_5R!H-inRing
-                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-7R!H-R_N-8R!H-inRing_Sp-7R!H-6R!H_N-5R!H-inRing
-                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-6R!H-R_Ext-7R!H-R_N-8R!H-inRing_N-Sp-7R!H-6R!H
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_1R!H-inRing_Ext-1R!H-R_Ext-4R!H-R
-                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-2R!H#1R!H_N-1R!H-inRing
-            L4: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H
-                L5: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H
-                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Sp-5R!H-4R!H
-                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Sp-5R!H-4R!H_N-Sp-7R!H-6R!H
-                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Sp-5R!H-4R!H_N-Sp-7R!H-6R!H_Ext-2R!H-R
-                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Sp-5R!H-4R!H_N-Sp-7R!H-6R!H_Int-6R!H-5R!H
-                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Sp-5R!H-4R!H_N-Sp-7R!H-6R!H_Int-6R!H-5R!H_Ext-5R!H-R
-                                            L12: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Sp-5R!H-4R!H_N-Sp-7R!H-6R!H_Int-6R!H-5R!H_Ext-5R!H-R_Ext-1R!H-R
-                                            L12: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Sp-5R!H-4R!H_N-Sp-7R!H-6R!H_Int-6R!H-5R!H_Ext-5R!H-R_Ext-4R!H-R
-                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Sp-5R!H-4R!H_N-Sp-7R!H-6R!H_Ext-5R!H-R
-                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Sp-5R!H-4R!H_N-Sp-7R!H-6R!H_Ext-5R!H-R_5R!H-inRing
-                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Sp-5R!H-4R!H_N-Sp-7R!H-6R!H_Ext-5R!H-R_N-5R!H-inRing
-                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Sp-5R!H-4R!H_Ext-2R!H-R
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Ext-1R!H-R
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Ext-7R!H-R_Ext-4R!H-R
-                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Ext-7R!H-R_Ext-4R!H-R_Int-6R!H-5R!H
-                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Ext-7R!H-R_Ext-4R!H-R_Int-6R!H-5R!H_Sp-6R!H-5R!H
-                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Ext-7R!H-R_Ext-4R!H-R_Int-6R!H-5R!H_N-Sp-6R!H-5R!H
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Sp-2R!H=1R!H
-                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_Sp-2R!H=1R!H_Ext-4R!H-R
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_Sp-4R!H-2R!H_N-Sp-2R!H=1R!H
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-1R!H-R_Ext-6R!H-R_N-Sp-4R!H-2R!H
-                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-2R!H-R
-                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-2R!H-=1R!H_Ext-5R!H-R_Ext-1R!H-R
-                L5: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R
-                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-7R!H-R_Ext-1R!H-R
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-7R!H-R_Ext-1R!H-R_5R!H-u1
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-7R!H-R_Ext-1R!H-R_N-5R!H-u1
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-7R!H-R_Ext-1R!H-R_N-5R!H-u1_Ext-8R!H-R_Sp-9R!H-8R!H
-                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-7R!H-R_Ext-1R!H-R_N-5R!H-u1_Ext-8R!H-R_Sp-9R!H-8R!H_Ext-4R!H-R
-                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-7R!H-R_Ext-1R!H-R_N-5R!H-u1_Ext-8R!H-R_Sp-9R!H-8R!H_Int-8R!H-5R!H
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-7R!H-R_Ext-1R!H-R_N-5R!H-u1_Ext-8R!H-R_N-Sp-9R!H-8R!H
-                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-7R!H-R_Ext-1R!H-R_N-5R!H-u1_Ext-8R!H-R_N-Sp-9R!H-8R!H_Sp-4R!H-2R!H
-                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-7R!H-R_Ext-1R!H-R_N-5R!H-u1_Ext-8R!H-R_N-Sp-9R!H-8R!H_N-Sp-4R!H-2R!H
-                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-7R!H-R_Ext-1R!H-R_N-5R!H-u1_Ext-8R!H-R_N-Sp-9R!H-8R!H_N-Sp-4R!H-2R!H_Int-9R!H-5R!H_Ext-5R!H-R
-                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-7R!H-R_Ext-1R!H-R_N-5R!H-u1_Ext-8R!H-R_N-Sp-9R!H-8R!H_N-Sp-4R!H-2R!H_Ext-4R!H-R
-                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-5R!H-R
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-5R!H-R_Sp-7R!H-5R!H
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-5R!H-R_N-Sp-7R!H-5R!H
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-5R!H-R_N-Sp-7R!H-5R!H_6R!H-inRing
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-5R!H-R_N-Sp-7R!H-5R!H_N-6R!H-inRing
-                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-2R!H-R_Ext-4R!H-R
-                L5: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R
-                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_Ext-1R!H-R
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_Ext-1R!H-R_6R!H-inRing
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_Ext-1R!H-R_6R!H-inRing_Int-9R!H-8R!H_Ext-7R!H-R_Ext-7R!H-R_Ext-9R!H-R
-                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_Ext-1R!H-R_6R!H-inRing_Int-9R!H-8R!H_Ext-7R!H-R_Ext-7R!H-R_Ext-9R!H-R_Sp-6R!H-1R!H
-                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_Ext-1R!H-R_6R!H-inRing_Int-9R!H-8R!H_Ext-7R!H-R_Ext-7R!H-R_Ext-9R!H-R_N-Sp-6R!H-1R!H
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_Ext-1R!H-R_6R!H-inRing_Ext-9R!H-R
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_Ext-1R!H-R_N-6R!H-inRing
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_Ext-1R!H-R_N-6R!H-inRing_Ext-6R!H-R
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_Ext-1R!H-R_N-6R!H-inRing_Sp-7R!H-6R!H
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_Ext-1R!H-R_N-6R!H-inRing_N-Sp-7R!H-6R!H
-                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_7R!H-inRing
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_7R!H-inRing_Sp-8R!H-5R!H
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_7R!H-inRing_Sp-8R!H-5R!H_Ext-5R!H-R
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_7R!H-inRing_N-Sp-8R!H-5R!H
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_7R!H-inRing_N-Sp-8R!H-5R!H_Ext-8R!H-R_Ext-9R!H-R_Ext-4R!H-R
-                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_7R!H-inRing_N-Sp-8R!H-5R!H_Ext-4R!H-R
-                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_N-7R!H-inRing
-                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_N-7R!H-inRing_Ext-7R!H-R
-                L5: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-1R!H-R
-                L5: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-4R!H-R
-                L5: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-7R!H-R
+            L4: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H
+                L5: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R
+                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R
+                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing
+                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Int-6R!H-5R!H
+                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Int-6R!H-5R!H_Ext-1R!H-R
+                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Int-6R!H-5R!H_Ext-2R!H-R
+                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Int-6R!H-5R!H_Ext-5R!H-R
+                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Int-6R!H-5R!H_Ext-5R!H-R_Ext-4R!H-R
+                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Int-6R!H-5R!H_Ext-5R!H-R_Ext-4R!H-R_Ext-9R!H-R
+                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R
+                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing
+                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R
+                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_Sp-7R!H=6R!H
+                                            L12: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_Sp-7R!H=6R!H_Sp-5R!H-4R!H
+                                                L13: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_Sp-7R!H=6R!H_Sp-5R!H-4R!H_Ext-1R!H-R
+                                                    L14: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_Sp-7R!H=6R!H_Sp-5R!H-4R!H_Ext-1R!H-R_Int-10R!H-8R!H
+                                                    L14: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_Sp-7R!H=6R!H_Sp-5R!H-4R!H_Ext-1R!H-R_Ext-4R!H-R
+                                                    L14: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_Sp-7R!H=6R!H_Sp-5R!H-4R!H_Ext-1R!H-R_Ext-8R!H-R
+                                                L13: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_Sp-7R!H=6R!H_Sp-5R!H-4R!H_Ext-4R!H-R
+                                            L12: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_Sp-7R!H=6R!H_N-Sp-5R!H-4R!H
+                                                L13: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_Sp-7R!H=6R!H_N-Sp-5R!H-4R!H_Ext-1R!H-R
+                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H
+                                            L12: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_Ext-1R!H-R
+                                                L13: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_Ext-1R!H-R_Ext-9R!H-R
+                                                    L14: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_Ext-1R!H-R_Ext-9R!H-R_Ext-4R!H-R
+                                                        L15: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_Ext-1R!H-R_Ext-9R!H-R_Ext-4R!H-R_Ext-2R!H-R
+                                                    L14: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_Ext-1R!H-R_Ext-9R!H-R_Ext-2R!H-R
+                                                L13: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_Ext-1R!H-R_9R!H-inRing
+                                                    L14: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_Ext-1R!H-R_9R!H-inRing_Ext-4R!H-R
+                                                    L14: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_Ext-1R!H-R_9R!H-inRing_Sp-4R!H-=1R!H
+                                                    L14: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_Ext-1R!H-R_9R!H-inRing_N-Sp-4R!H-=1R!H
+                                                        L15: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_Ext-1R!H-R_9R!H-inRing_N-Sp-4R!H-=1R!H_Sp-5R!H-4R!H
+                                                        L15: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_Ext-1R!H-R_9R!H-inRing_N-Sp-4R!H-=1R!H_N-Sp-5R!H-4R!H
+                                                L13: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_Ext-1R!H-R_N-9R!H-inRing
+                                            L12: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_Sp-2R!H-=1R!H
+                                            L12: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_N-Sp-2R!H-=1R!H
+                                                L13: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_N-Sp-2R!H-=1R!H_Ext-5R!H-R
+                                                L13: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_N-Sp-2R!H-=1R!H_Ext-2R!H-R
+                                                L13: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_N-Sp-2R!H-=1R!H_Sp-7R!H-6R!H
+                                                    L14: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_N-Sp-2R!H-=1R!H_Sp-7R!H-6R!H_Sp-2R!H=1R!H
+                                                    L14: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_N-Sp-2R!H-=1R!H_Sp-7R!H-6R!H_N-Sp-2R!H=1R!H
+                                                L13: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Ext-5R!H-R_N-Sp-7R!H=6R!H_N-Sp-2R!H-=1R!H_N-Sp-7R!H-6R!H
+                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Sp-7R!H=6R!H
+                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Sp-7R!H=6R!H_5R!H->C
+                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_Sp-7R!H=6R!H_N-5R!H->C
+                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_N-Sp-7R!H=6R!H
+                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_N-Sp-7R!H=6R!H_Sp-2R!H-=1R!H
+                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_4R!H-inRing_N-Sp-7R!H=6R!H_N-Sp-2R!H-=1R!H
+                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_Ext-4R!H-R
+                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_Ext-2R!H-R
+                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_Sp-5R!H-4R!H
+                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Ext-7R!H-R_N-Sp-5R!H-4R!H
+                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Sp-7R!H-6R!H
+                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Sp-7R!H-6R!H_Sp-5R!H-4R!H
+                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Sp-7R!H-6R!H_Sp-5R!H-4R!H_Ext-6R!H-R
+                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Sp-7R!H-6R!H_N-Sp-5R!H-4R!H
+                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Sp-7R!H-6R!H_N-Sp-5R!H-4R!H_5R!H-inRing
+                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Sp-7R!H-6R!H_N-Sp-5R!H-4R!H_N-5R!H-inRing
+                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_Sp-7R!H-6R!H_N-Sp-5R!H-4R!H_N-5R!H-inRing_Ext-2R!H-R
+                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_N-Sp-7R!H-6R!H
+                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_N-Sp-7R!H-6R!H_Ext-5R!H-R
+                                    L10: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_N-Sp-7R!H-6R!H_Ext-5R!H-R_Int-7R!H-4R!H
+                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_N-Sp-7R!H-6R!H_Ext-5R!H-R_Int-7R!H-4R!H_Sp-5R!H-4R!H
+                                        L11: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_N-Sp-7R!H-6R!H_Ext-5R!H-R_Int-7R!H-4R!H_N-Sp-5R!H-4R!H
+                                            L12: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_N-Sp-7R!H-6R!H_Ext-5R!H-R_Int-7R!H-4R!H_N-Sp-5R!H-4R!H_5R!H-inRing
+                                            L12: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_N-Sp-7R!H-6R!H_Ext-5R!H-R_Int-7R!H-4R!H_N-Sp-5R!H-4R!H_N-5R!H-inRing
+                                L9: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_7R!H-inRing_N-Sp-7R!H-6R!H_Ext-2R!H-R
+                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_N-7R!H-inRing
+                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_N-7R!H-inRing_Ext-7R!H-R
+                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-6R!H-R_N-7R!H-inRing_Ext-5R!H-R
+                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-5R!H-R
+                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-5R!H-=4R!H_Ext-2R!H-R_Ext-5R!H-R_Ext-2R!H-R
+            L4: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-4R!H-R
+                L5: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-4R!H-R_Sp-2R!H=1R!H
+                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-4R!H-R_Sp-2R!H=1R!H_Ext-6R!H-R_Int-7R!H-2R!H_Int-7R!H-2R!H_Int-7R!H-6R!H_Ext-6R!H-R_Ext-6R!H-R_Ext-8R!H-R_Ext-8R!H-R_Ext-6R!H-R_Sp-8R!H-7R!H
+                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-4R!H-R_Sp-2R!H=1R!H_Ext-6R!H-R_Int-7R!H-2R!H_Int-7R!H-2R!H_Int-7R!H-6R!H_Ext-6R!H-R_Ext-6R!H-R_Ext-8R!H-R_Ext-8R!H-R_Ext-6R!H-R_N-Sp-8R!H-7R!H
+                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-4R!H-R_Sp-2R!H=1R!H_Ext-6R!H-R_Int-7R!H-2R!H_Int-7R!H-2R!H_Int-7R!H-6R!H_Ext-6R!H-R_Ext-6R!H-R_Ext-8R!H-R_Ext-8R!H-R_Ext-6R!H-R_N-Sp-8R!H-7R!H_Ext-1R!H-R
+                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-4R!H-R_Sp-2R!H=1R!H_Ext-6R!H-R_Int-7R!H-2R!H_Int-7R!H-2R!H_Int-7R!H-6R!H_Ext-6R!H-R_Ext-6R!H-R_Ext-8R!H-R_Ext-8R!H-R_Ext-6R!H-R_N-Sp-8R!H-7R!H_Ext-7R!H-R
+                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-4R!H-R_Sp-2R!H=1R!H_Ext-6R!H-R_Int-7R!H-2R!H_Int-7R!H-2R!H_Int-7R!H-6R!H_Ext-6R!H-R_Ext-6R!H-R_Ext-8R!H-R_Ext-8R!H-R_Ext-6R!H-R_N-Sp-8R!H-7R!H_Int-7R!H-2R!H
+                L5: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-2R!H=1R!H
+                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-2R!H=1R!H_Ext-1R!H-R
+                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-2R!H=1R!H_Ext-6R!H-R_Int-7R!H-2R!H
+                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-2R!H=1R!H_N-Sp-2R!H-=1R!H
+                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-4R!H-R_N-Sp-2R!H=1R!H_Ext-6R!H-R_Ext-7R!H-R_Ext-7R!H-R_Ext-7R!H-R_Ext-8R!H-R
+            L4: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-1R!H-R
+                L5: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-1R!H-R_Sp-4R!H-1R!H
+                L5: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-1R!H-R_N-Sp-4R!H-1R!H
+                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-1R!H-R_N-Sp-4R!H-1R!H_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-6R!H-R
+            L4: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R
+                L5: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_Sp-5R!H=4R!H
+                L5: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_N-Sp-5R!H=4R!H
+                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_N-Sp-5R!H=4R!H_Sp-6R!H-5R!H
+                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_N-Sp-5R!H=4R!H_Sp-6R!H-5R!H_1R!H-inRing
+                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_N-Sp-5R!H=4R!H_Sp-6R!H-5R!H_1R!H-inRing_Ext-2R!H-R
+                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_N-Sp-5R!H=4R!H_Sp-6R!H-5R!H_N-1R!H-inRing
+                    L6: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_N-Sp-5R!H=4R!H_N-Sp-6R!H-5R!H
+                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_N-Sp-5R!H=4R!H_N-Sp-6R!H-5R!H_Ext-2R!H-R
+                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_N-Sp-5R!H=4R!H_N-Sp-6R!H-5R!H_Ext-2R!H-R_8R!H-inRing
+                            L8: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_N-Sp-5R!H=4R!H_N-Sp-6R!H-5R!H_Ext-2R!H-R_N-8R!H-inRing
+                        L7: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R_N-Sp-5R!H=4R!H_N-Sp-6R!H-5R!H_Ext-7R!H-R_Ext-7R!H-R
+            L4: Root_3R->H_2R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-6R!H-R_Ext-5R!H-R
+            L4: Root_3R->H_2R!H-inRing_1R!H-inRing
+                L5: Root_3R->H_2R!H-inRing_1R!H-inRing_Ext-2R!H-R_Ext-2R!H-R
+                    L6: Root_3R->H_2R!H-inRing_1R!H-inRing_Ext-2R!H-R_Ext-2R!H-R_Sp-4R!H-2R!H
+                    L6: Root_3R->H_2R!H-inRing_1R!H-inRing_Ext-2R!H-R_Ext-2R!H-R_N-Sp-4R!H-2R!H
+                L5: Root_3R->H_2R!H-inRing_1R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R_Ext-5R!H-R_Ext-5R!H-R_Ext-4R!H-R
+            L4: Root_3R->H_2R!H-inRing_N-1R!H-inRing
+                L5: Root_3R->H_2R!H-inRing_N-1R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-4R!H-R
+                L5: Root_3R->H_2R!H-inRing_N-1R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-2R!H-R
+                    L6: Root_3R->H_2R!H-inRing_N-1R!H-inRing_Ext-2R!H-R_Ext-4R!H-R_Ext-2R!H-R_Ext-1R!H-R
         L3: Root_3R->H_N-2R!H-inRing
             L4: Root_3R->H_N-2R!H-inRing_2R!H->N
                 L5: Root_3R->H_N-2R!H-inRing_2R!H->N_1R!H->C
@@ -19183,42 +19237,41 @@ L1: Root
                                                                                 L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-2C-R_N-5R!H-inRing_Ext-4C-R_N-Sp-6R!H#4C_Ext-6R!H-R_Ext-6R!H-R_Ext-6R!H-R
                                                             L16: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R
                                                                 L17: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0
-                                                                    L18: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R
-                                                                        L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_5R!H-inRing
-                                                                            L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_5R!H-inRing_Ext-4C-R
-                                                                                L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_5R!H-inRing_Ext-4C-R_Sp-7R!H=4C
-                                                                                L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_5R!H-inRing_Ext-4C-R_N-Sp-7R!H=4C
-                                                                        L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing
-                                                                            L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R
-                                                                                L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_Ext-5R!H-R
-                                                                                    L22: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H
-                                                                                        L23: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H_Sp-7R!H=4C
-                                                                                            L24: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H_Sp-7R!H=4C_Ext-6R!H-R
-                                                                                                L25: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H_Sp-7R!H=4C_Ext-6R!H-R_Sp-9R!H=6R!H
-                                                                                                L25: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H_Sp-7R!H=4C_Ext-6R!H-R_N-Sp-9R!H=6R!H
-                                                                                        L23: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H_N-Sp-7R!H=4C
-                                                                                            L24: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H_N-Sp-7R!H=4C_Ext-6R!H-R
-                                                                                                L25: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H_N-Sp-7R!H=4C_Ext-6R!H-R_Sp-9R!H=6R!H
-                                                                                                L25: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H_N-Sp-7R!H=4C_Ext-6R!H-R_N-Sp-9R!H=6R!H
-                                                                                    L22: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_Ext-5R!H-R_N-Sp-8R!H#5R!H
-                                                                                        L23: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_Ext-5R!H-R_N-Sp-8R!H#5R!H_Sp-7R!H=4C
-                                                                                            L24: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_Ext-5R!H-R_N-Sp-8R!H#5R!H_Sp-7R!H=4C_Ext-6R!H-R
-                                                                                        L23: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_Ext-5R!H-R_N-Sp-8R!H#5R!H_N-Sp-7R!H=4C
-                                                                                            L24: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_Ext-5R!H-R_N-Sp-8R!H#5R!H_N-Sp-7R!H=4C_Ext-6R!H-R
-                                                                                L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_Sp-7R!H=4C
-                                                                                L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-4C-R_N-Sp-7R!H=4C
-                                                                            L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-5R!H-R
-                                                                                L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-5R!H-R_Sp-7R!H#5R!H
-                                                                                    L22: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-5R!H-R_Sp-7R!H#5R!H_Ext-6R!H-R
-                                                                                        L23: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-5R!H-R_Sp-7R!H#5R!H_Ext-6R!H-R_Sp-8R!H=6R!H
-                                                                                        L23: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-5R!H-R_Sp-7R!H#5R!H_Ext-6R!H-R_N-Sp-8R!H=6R!H
-                                                                                L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-5R!H-R_N-Sp-7R!H#5R!H
-                                                                                    L22: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_Ext-1CS-R_N-5R!H-inRing_Ext-5R!H-R_N-Sp-7R!H#5R!H_Ext-6R!H-R
                                                                     L18: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_5R!H-inRing
+                                                                        L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_5R!H-inRing_Ext-1CS-R
+                                                                            L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_5R!H-inRing_Ext-1CS-R_Ext-4C-R
+                                                                                L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_5R!H-inRing_Ext-1CS-R_Ext-4C-R_Sp-7R!H=4C
+                                                                                L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_5R!H-inRing_Ext-1CS-R_Ext-4C-R_N-Sp-7R!H=4C
                                                                         L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_5R!H-inRing_Ext-4C-R
                                                                             L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_5R!H-inRing_Ext-4C-R_Sp-6R!H=4C
                                                                             L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_5R!H-inRing_Ext-4C-R_N-Sp-6R!H=4C
                                                                     L18: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing
+                                                                        L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R
+                                                                            L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R
+                                                                                L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_Ext-5R!H-R
+                                                                                    L22: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H
+                                                                                        L23: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H_Sp-7R!H=4C
+                                                                                            L24: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H_Sp-7R!H=4C_Ext-6R!H-R
+                                                                                                L25: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H_Sp-7R!H=4C_Ext-6R!H-R_Sp-9R!H=6R!H
+                                                                                                L25: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H_Sp-7R!H=4C_Ext-6R!H-R_N-Sp-9R!H=6R!H
+                                                                                        L23: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H_N-Sp-7R!H=4C
+                                                                                            L24: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H_N-Sp-7R!H=4C_Ext-6R!H-R
+                                                                                                L25: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H_N-Sp-7R!H=4C_Ext-6R!H-R_Sp-9R!H=6R!H
+                                                                                                L25: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_Ext-5R!H-R_Sp-8R!H#5R!H_N-Sp-7R!H=4C_Ext-6R!H-R_N-Sp-9R!H=6R!H
+                                                                                    L22: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_Ext-5R!H-R_N-Sp-8R!H#5R!H
+                                                                                        L23: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_Ext-5R!H-R_N-Sp-8R!H#5R!H_Sp-7R!H=4C
+                                                                                            L24: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_Ext-5R!H-R_N-Sp-8R!H#5R!H_Sp-7R!H=4C_Ext-6R!H-R
+                                                                                        L23: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_Ext-5R!H-R_N-Sp-8R!H#5R!H_N-Sp-7R!H=4C
+                                                                                            L24: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_Ext-5R!H-R_N-Sp-8R!H#5R!H_N-Sp-7R!H=4C_Ext-6R!H-R
+                                                                                L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_Sp-7R!H=4C
+                                                                                L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-4C-R_N-Sp-7R!H=4C
+                                                                            L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-5R!H-R
+                                                                                L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-5R!H-R_Sp-7R!H#5R!H
+                                                                                    L22: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-5R!H-R_Sp-7R!H#5R!H_Ext-6R!H-R
+                                                                                        L23: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-5R!H-R_Sp-7R!H#5R!H_Ext-6R!H-R_Sp-8R!H=6R!H
+                                                                                        L23: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-5R!H-R_Sp-7R!H#5R!H_Ext-6R!H-R_N-Sp-8R!H=6R!H
+                                                                                L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-5R!H-R_N-Sp-7R!H#5R!H
+                                                                                    L22: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_Ext-1CS-R_Ext-5R!H-R_N-Sp-7R!H#5R!H_Ext-6R!H-R
                                                                         L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_5R!H->C
                                                                             L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_5R!H->C_Ext-5C-R
                                                                                 L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_Ext-2C-R_Sp-4R!H-2C_N-4R!H->O_N-4CClF-inRing_N-4CClF->F_4CCl->C_Ext-1CS-R_5R!H-u0_N-5R!H-inRing_5R!H->C_Ext-5C-R_Ext-4C-R
@@ -19301,47 +19354,46 @@ L1: Root
                                             L12: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_1C-inRing_Ext-1C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H
                                         L11: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing
                                             L12: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R
-                                                L13: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_Ext-1C-R
-                                                    L14: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_Ext-1C-R_4R!H-inRing
-                                                        L15: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_Ext-1C-R_4R!H-inRing_Ext-5R!H-R
-                                                    L14: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_Ext-1C-R_N-4R!H-inRing
-                                                        L15: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_Ext-1C-R_N-4R!H-inRing_4R!H->Br
-                                                        L15: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_Ext-1C-R_N-4R!H-inRing_N-4R!H->Br
-                                                            L16: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_Ext-1C-R_N-4R!H-inRing_N-4R!H->Br_Ext-4CF-R
-                                                                L17: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_Ext-1C-R_N-4R!H-inRing_N-4R!H->Br_Ext-4CF-R_Sp-6R!H#4CCCFFF
-                                                                    L18: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_Ext-1C-R_N-4R!H-inRing_N-4R!H->Br_Ext-4CF-R_Sp-6R!H#4CCCFFF_Ext-5R!H-R
-                                                                        L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_Ext-1C-R_N-4R!H-inRing_N-4R!H->Br_Ext-4CF-R_Sp-6R!H#4CCCFFF_Ext-5R!H-R_Sp-7R!H=5R!H
-                                                                        L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_Ext-1C-R_N-4R!H-inRing_N-4R!H->Br_Ext-4CF-R_Sp-6R!H#4CCCFFF_Ext-5R!H-R_N-Sp-7R!H=5R!H
-                                                                L17: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_Ext-1C-R_N-4R!H-inRing_N-4R!H->Br_Ext-4CF-R_N-Sp-6R!H#4CCCFFF
-                                                                    L18: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_Ext-1C-R_N-4R!H-inRing_N-4R!H->Br_Ext-4CF-R_N-Sp-6R!H#4CCCFFF_Ext-4CF-R
-                                                                    L18: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_Ext-1C-R_N-4R!H-inRing_N-4R!H->Br_Ext-4CF-R_N-Sp-6R!H#4CCCFFF_Ext-5R!H-R
-                                                L13: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0
-                                                    L14: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C
-                                                        L15: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R
-                                                            L16: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R_5R!H-inRing
-                                                                L17: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R_5R!H-inRing_4C-inRing
-                                                                    L18: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R_5R!H-inRing_4C-inRing_Sp-5R!H-4C
-                                                                    L18: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R_5R!H-inRing_4C-inRing_N-Sp-5R!H-4C
-                                                                L17: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R_5R!H-inRing_N-4C-inRing
-                                                            L16: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing
-                                                                L17: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_Sp-4C-1C
-                                                                    L18: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_Sp-4C-1C_Sp-5R!H#4C
-                                                                    L18: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_Sp-4C-1C_N-Sp-5R!H#4C
-                                                                        L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_Sp-4C-1C_N-Sp-5R!H#4C_Ext-5R!H-R
-                                                                            L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_Sp-4C-1C_N-Sp-5R!H#4C_Ext-5R!H-R_Ext-6R!H-R
-                                                                        L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_Sp-4C-1C_N-Sp-5R!H#4C_Sp-5R!H-4C
-                                                                            L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_Sp-4C-1C_N-Sp-5R!H#4C_Sp-5R!H-4C_5R!H->C
-                                                                            L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_Sp-4C-1C_N-Sp-5R!H#4C_Sp-5R!H-4C_N-5R!H->C
-                                                                        L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_Sp-4C-1C_N-Sp-5R!H#4C_N-Sp-5R!H-4C
-                                                                L17: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_N-Sp-4C-1C
-                                                        L15: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_Sp-4C-1C
-                                                        L15: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_4R!H->C_N-Sp-4C-1C
-                                                    L14: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_N-4R!H->C
-                                                        L15: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_N-4R!H->C_4ClNO->N
-                                                        L15: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_N-4R!H->C_N-4ClNO->N
-                                                            L16: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_N-4R!H->C_N-4ClNO->N_4ClO->O
-                                                            L16: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-u0_N-4R!H->C_N-4ClNO->N_N-4ClO->O
-                                                L13: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-u0
+                                                L13: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-inRing
+                                                    L14: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-inRing_Ext-1C-R
+                                                        L15: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-inRing_Ext-1C-R_Ext-5R!H-R
+                                                    L14: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-inRing_Ext-4R!H-R_Sp-5R!H-4R!H
+                                                    L14: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_4R!H-inRing_Ext-4R!H-R_N-Sp-5R!H-4R!H
+                                                L13: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing
+                                                    L14: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0
+                                                        L15: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_Ext-1C-R
+                                                            L16: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_Ext-1C-R_4R!H->Br
+                                                            L16: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_Ext-1C-R_N-4R!H->Br
+                                                                L17: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_Ext-1C-R_N-4R!H->Br_Ext-4CClFNO-R
+                                                                    L18: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_Ext-1C-R_N-4R!H->Br_Ext-4CClFNO-R_Sp-6R!H#4CCCClClClFFFNNNOOO
+                                                                        L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_Ext-1C-R_N-4R!H->Br_Ext-4CClFNO-R_Sp-6R!H#4CCCClClClFFFNNNOOO_Ext-5R!H-R
+                                                                            L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_Ext-1C-R_N-4R!H->Br_Ext-4CClFNO-R_Sp-6R!H#4CCCClClClFFFNNNOOO_Ext-5R!H-R_Sp-7R!H=5R!H
+                                                                            L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_Ext-1C-R_N-4R!H->Br_Ext-4CClFNO-R_Sp-6R!H#4CCCClClClFFFNNNOOO_Ext-5R!H-R_N-Sp-7R!H=5R!H
+                                                                    L18: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_Ext-1C-R_N-4R!H->Br_Ext-4CClFNO-R_N-Sp-6R!H#4CCCClClClFFFNNNOOO
+                                                                        L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_Ext-1C-R_N-4R!H->Br_Ext-4CClFNO-R_N-Sp-6R!H#4CCCClClClFFFNNNOOO_Ext-4CClFNO-R
+                                                                        L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_Ext-1C-R_N-4R!H->Br_Ext-4CClFNO-R_N-Sp-6R!H#4CCCClClClFFFNNNOOO_Ext-5R!H-R
+                                                        L15: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C
+                                                            L16: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_Ext-4C-R
+                                                                L17: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_Ext-4C-R_5R!H-inRing
+                                                                L17: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing
+                                                                    L18: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_Sp-5R!H-4C
+                                                                        L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_Sp-5R!H-4C_5R!H->C
+                                                                            L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_Sp-5R!H-4C_5R!H->C_Ext-5C-R
+                                                                                L21: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_Sp-5R!H-4C_5R!H->C_Ext-5C-R_Ext-6R!H-R
+                                                                        L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_Sp-5R!H-4C_N-5R!H->C
+                                                                    L18: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_N-Sp-5R!H-4C
+                                                                        L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_N-Sp-5R!H-4C_Sp-4C-1C
+                                                                            L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_N-Sp-5R!H-4C_Sp-4C-1C_Sp-5R!H=4C
+                                                                            L20: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_N-Sp-5R!H-4C_Sp-4C-1C_N-Sp-5R!H=4C
+                                                                        L19: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_Ext-4C-R_N-5R!H-inRing_N-Sp-5R!H-4C_N-Sp-4C-1C
+                                                            L16: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_Sp-4C-1C
+                                                            L16: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_4R!H->C_N-Sp-4C-1C
+                                                        L15: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_N-4R!H->C
+                                                            L16: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_N-4R!H->C_4BrClFNO->N
+                                                            L16: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_N-4R!H->C_N-4BrClFNO->N
+                                                                L17: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_N-4R!H->C_N-4BrClFNO->N_4ClO->O
+                                                                L17: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_4R!H-u0_N-4R!H->C_N-4BrClFNO->N_N-4ClO->O
+                                                    L14: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_1CS->C_N-1C-inRing_Ext-1C-R_N-4R!H-inRing_N-4R!H-u0
                                     L10: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_2CS->C_N-1CS->C
                                 L9: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_N-2CS->C
                                     L10: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_Sp-2CS=1CCSS_N-2CS->C_Ext-1CS-R
@@ -19406,6 +19458,25 @@ L1: Root
                                                         L15: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_N-Sp-2CS=1CCSS_Ext-1CS-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_N-Sp-6R!H-5R!H_N-Sp-5R!H=4R!H_N-5R!H-inRing
                                             L12: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_N-Sp-2CS=1CCSS_Ext-1CS-R_N-4R!H-inRing_Ext-4R!H-R_Sp-5R!H=4R!H
                                             L12: Root_3R->H_N-2R!H-inRing_N-2R!H->N_N-1R!H->N_N-2COS->O_N-1COS->O_N-Sp-2CS=1CCSS_Ext-1CS-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-5R!H=4R!H
+    L2: Root_1R!H->O
+        L3: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R
+            L4: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_5R!H->O
+                L5: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_5R!H->O_Ext-2R!H-R
+                    L6: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_5R!H->O_Ext-2R!H-R_Ext-4R!H-R_Ext-3R-R_7R!H->C
+                        L7: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_5R!H->O_Ext-2R!H-R_Ext-4R!H-R_Ext-3R-R_7R!H->C_Ext-7C-R_8R!H->C
+                        L7: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_5R!H->O_Ext-2R!H-R_Ext-4R!H-R_Ext-3R-R_7R!H->C_Ext-7C-R_N-8R!H->C
+                    L6: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_5R!H->O_Ext-2R!H-R_Ext-4R!H-R_Ext-3R-R_N-7R!H->C
+            L4: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_N-5R!H->O
+                L5: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_N-5R!H->O_Ext-4R!H-R_5BrCClFINPSSi->C
+                L5: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_N-5R!H->O_Ext-4R!H-R_N-5BrCClFINPSSi->C
+                    L6: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_N-5R!H->O_Ext-4R!H-R_N-5BrCClFINPSSi->C_Ext-4R!H-R_Ext-3R-R_7R!H->O
+                    L6: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_N-5R!H->O_Ext-4R!H-R_N-5BrCClFINPSSi->C_Ext-4R!H-R_Ext-3R-R_N-7R!H->O
+                        L7: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_N-5R!H->O_Ext-4R!H-R_N-5BrCClFINPSSi->C_Ext-4R!H-R_Ext-3R-R_N-7R!H->O_Ext-4R!H-R_Ext-3R-R_Ext-4R!H-R_8R!H->O
+                            L8: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_N-5R!H->O_Ext-4R!H-R_N-5BrCClFINPSSi->C_Ext-4R!H-R_Ext-3R-R_N-7R!H->O_Ext-4R!H-R_Ext-3R-R_Ext-4R!H-R_8R!H->O_Ext-8O-R_Ext-9R!H-R_Ext-8O-R_Ext-8O-R_Ext-10R!H-R_Ext-8O-R_Ext-8O-R_Ext-10R!H-R_Ext-8O-R_10R!H->C
+                            L8: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_N-5R!H->O_Ext-4R!H-R_N-5BrCClFINPSSi->C_Ext-4R!H-R_Ext-3R-R_N-7R!H->O_Ext-4R!H-R_Ext-3R-R_Ext-4R!H-R_8R!H->O_Ext-8O-R_Ext-9R!H-R_Ext-8O-R_Ext-8O-R_Ext-10R!H-R_Ext-8O-R_Ext-8O-R_Ext-10R!H-R_Ext-8O-R_N-10R!H->C
+                        L7: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_N-5R!H->O_Ext-4R!H-R_N-5BrCClFINPSSi->C_Ext-4R!H-R_Ext-3R-R_N-7R!H->O_Ext-4R!H-R_Ext-3R-R_Ext-4R!H-R_N-8R!H->O
+                            L8: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_N-5R!H->O_Ext-4R!H-R_N-5BrCClFINPSSi->C_Ext-4R!H-R_Ext-3R-R_N-7R!H->O_Ext-4R!H-R_Ext-3R-R_Ext-4R!H-R_N-8R!H->O_7BrCClFINPSSi->C
+                            L8: Root_1R!H->O_Ext-2R!H-R_Ext-4R!H-R_N-5R!H->O_Ext-4R!H-R_N-5BrCClFINPSSi->C_Ext-4R!H-R_Ext-3R-R_N-7R!H->O_Ext-4R!H-R_Ext-3R-R_Ext-4R!H-R_N-8R!H->O_N-7BrCClFINPSSi->C
     L2: Root_3R-inRing
         L3: Root_3R-inRing_Ext-3R-R_Sp-4R!H-3R
             L4: Root_3R-inRing_Ext-3R-R_Sp-4R!H-3R_4R!H->O
@@ -19621,12 +19692,13 @@ L1: Root
                                         L11: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_Sp-6R!H-=5R!H_N-4R!H-inRing_Ext-3C-R_7R!H-inRing_Ext-3C-R
                                     L10: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_Sp-6R!H-=5R!H_N-4R!H-inRing_Ext-3C-R_N-7R!H-inRing
                         L7: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_N-Sp-6R!H-=5R!H
+                            L8: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_N-Sp-6R!H-=5R!H_Ext-6R!H-R
+                                L9: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_N-Sp-6R!H-=5R!H_Ext-6R!H-R_Sp-7R!H-6R!H
+                                    L10: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_N-Sp-6R!H-=5R!H_Ext-6R!H-R_Sp-7R!H-6R!H_Ext-6R!H-R
+                                    L10: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_N-Sp-6R!H-=5R!H_Ext-6R!H-R_Sp-7R!H-6R!H_Ext-4R!H-R
+                                L9: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_N-Sp-6R!H-=5R!H_Ext-6R!H-R_N-Sp-7R!H-6R!H
                             L8: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_N-Sp-6R!H-=5R!H_Ext-4R!H-R
-                                L9: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_N-Sp-6R!H-=5R!H_Ext-4R!H-R_Int-6R!H-4R!H
-                                    L10: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_N-Sp-6R!H-=5R!H_Ext-4R!H-R_Int-6R!H-4R!H_Ext-6R!H-R
                                 L9: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_N-Sp-6R!H-=5R!H_Ext-4R!H-R_6R!H-inRing
-                                    L10: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_N-Sp-6R!H-=5R!H_Ext-4R!H-R_6R!H-inRing_Ext-5R!H-R
-                                    L10: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_N-Sp-6R!H-=5R!H_Ext-4R!H-R_6R!H-inRing_Int-6R!H-2R!H
                                 L9: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_N-Sp-6R!H-=5R!H_Ext-4R!H-R_N-6R!H-inRing
                             L8: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_N-Sp-6R!H-=5R!H_Ext-3C-R
                                 L9: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_1R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_N-Sp-6R!H-=5R!H_Ext-3C-R_Sp-6R!H-5R!H
@@ -21511,11 +21583,7 @@ L1: Root
                                                             L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_Ext-1R!H-R_N-5R!H-inRing_N-4R!H-inRing_Ext-1R!H-R_Ext-2R!H-R_4R!H->C_Ext-3C-R_N-Sp-8R!H=3C_Ext-3C-R_Ext-3C-R
                                             L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_Ext-1R!H-R_N-5R!H-inRing_N-4R!H-inRing_Ext-1R!H-R_Ext-2R!H-R_N-4R!H->C
                                                 L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_Ext-1R!H-R_N-5R!H-inRing_N-4R!H-inRing_Ext-1R!H-R_Ext-2R!H-R_N-4R!H->C_Ext-3C-R_8R!H->C
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_Ext-1R!H-R_N-5R!H-inRing_N-4R!H-inRing_Ext-1R!H-R_Ext-2R!H-R_N-4R!H->C_Ext-3C-R_8R!H->C_Ext-8C-R_9R!H->O
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_Ext-1R!H-R_N-5R!H-inRing_N-4R!H-inRing_Ext-1R!H-R_Ext-2R!H-R_N-4R!H->C_Ext-3C-R_8R!H->C_Ext-8C-R_N-9R!H->O
                                                 L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_Ext-1R!H-R_N-5R!H-inRing_N-4R!H-inRing_Ext-1R!H-R_Ext-2R!H-R_N-4R!H->C_Ext-3C-R_N-8R!H->C
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_Ext-1R!H-R_N-5R!H-inRing_N-4R!H-inRing_Ext-1R!H-R_Ext-2R!H-R_N-4R!H->C_Ext-3C-R_N-8R!H->C_8BrClFINOPSSi->O
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_Ext-1R!H-R_N-5R!H-inRing_N-4R!H-inRing_Ext-1R!H-R_Ext-2R!H-R_N-4R!H->C_Ext-3C-R_N-8R!H->C_N-8BrClFINOPSSi->O
                                         L11: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_Ext-1R!H-R_N-5R!H-inRing_N-4R!H-inRing_Ext-1R!H-R_Ext-5R!H-R
                                             L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_Ext-1R!H-R_N-5R!H-inRing_N-4R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_Ext-6R!H-R
                                                 L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_Ext-1R!H-R_N-5R!H-inRing_N-4R!H-inRing_Ext-1R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-3C-R
@@ -21884,33 +21952,131 @@ L1: Root
                                                     L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_Ext-1R!H-R_N-5R!H-inRing_N-4R!H-inRing_N-Sp-2R!H=1R!H_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R_Ext-3C-R
                         L7: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C
                             L8: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C
+                                L9: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R
+                                    L10: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing
+                                        L11: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_2R!H-inRing
+                                        L11: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing
+                                            L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_Sp-7R!H=6R!H
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_6R!H-inRing
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Sp-7R!H=6R!H
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_6R!H-inRing
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Sp-7R!H=6R!H
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_6R!H-inRing
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Sp-6R!H=3C
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_Sp-6R!H=3C_Ext-3C-R
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_N-Sp-6R!H=3C
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_4R!H-inRing_N-2R!H-inRing_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R_Ext-3C-R
+                                    L10: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing
+                                        L11: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R
+                                            L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Ext-10R!H-R
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Ext-10R!H-R_Ext-3C-R
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Ext-3C-R
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Ext-3C-R_Sp-9R!H=8R!H
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-9R!H=8R!H
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-9R!H=8R!H_8R!H-inRing
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-9R!H=8R!H_N-8R!H-inRing
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Sp-9R!H=8R!H
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_N-Sp-9R!H=8R!H
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_N-Sp-9R!H=8R!H_8R!H-inRing
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_N-Sp-9R!H=8R!H_N-8R!H-inRing
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R_Sp-9R!H=8R!H
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R_N-Sp-9R!H=8R!H
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R_N-Sp-9R!H=8R!H_8R!H-inRing
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Ext-8R!H-R_N-Sp-9R!H=8R!H_N-8R!H-inRing
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Sp-8R!H=3C
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_Sp-8R!H=3C_Ext-3C-R
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_N-Sp-8R!H=3C
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_N-Sp-8R!H=3C_Ext-3C-R
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-3C-R_N-Sp-8R!H=3C_Ext-3C-R_Ext-3C-R
+                                            L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-9R!H-R
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-9R!H-R_Ext-3C-R
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R_Sp-8R!H=7R!H
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-8R!H=7R!H
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-8R!H=7R!H_7R!H-inRing
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-8R!H=7R!H_N-7R!H-inRing
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Sp-8R!H=7R!H
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_N-Sp-8R!H=7R!H
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_N-Sp-8R!H=7R!H_7R!H-inRing
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_N-Sp-8R!H=7R!H_N-7R!H-inRing
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Sp-8R!H=7R!H
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_N-Sp-8R!H=7R!H
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_N-Sp-8R!H=7R!H_7R!H-inRing
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_N-Sp-8R!H=7R!H_N-7R!H-inRing
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Sp-7R!H=3C
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_Sp-7R!H=3C_Ext-3C-R
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_N-Sp-7R!H=3C
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_N-Sp-7R!H=3C_Ext-3C-R
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_Sp-6R!H=4R!H_Ext-3C-R_N-Sp-7R!H=3C_Ext-3C-R_Ext-3C-R
+                                            L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-9R!H-R
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-9R!H-R_Ext-3C-R
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R_Sp-8R!H=7R!H
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-8R!H=7R!H
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-8R!H=7R!H_7R!H-inRing
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-8R!H=7R!H_N-7R!H-inRing
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Sp-8R!H=7R!H
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_N-Sp-8R!H=7R!H
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_N-Sp-8R!H=7R!H_7R!H-inRing
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_N-Sp-8R!H=7R!H_N-7R!H-inRing
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_Sp-8R!H=7R!H
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_N-Sp-8R!H=7R!H
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_N-Sp-8R!H=7R!H_7R!H-inRing
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Ext-7R!H-R_N-Sp-8R!H=7R!H_N-7R!H-inRing
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Sp-7R!H=3C
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_Sp-7R!H=3C_Ext-3C-R
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_N-Sp-7R!H=3C
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_N-Sp-7R!H=3C_Ext-3C-R
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-4R!H-R_N-Sp-6R!H=4R!H_Ext-3C-R_N-Sp-7R!H=3C_Ext-3C-R_Ext-3C-R
+                                        L11: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R
+                                            L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_Sp-7R!H=6R!H
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_6R!H-inRing
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Sp-7R!H=6R!H
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_6R!H-inRing
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R_Sp-7R!H=6R!H
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_6R!H-inRing
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
+                                            L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Sp-6R!H=3C
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_Sp-6R!H=3C_Ext-3C-R
+                                            L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_N-Sp-6R!H=3C
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_Ext-2R!H-R_N-4R!H-inRing_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R_Ext-3C-R
                                 L9: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing
-                                    L10: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R
-                                        L11: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_2R!H-inRing
-                                        L11: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing
-                                            L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R
-                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_Sp-7R!H=6R!H
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_6R!H-inRing
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Sp-7R!H=6R!H
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_6R!H-inRing
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_Sp-7R!H=6R!H
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_6R!H-inRing
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
-                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Sp-6R!H=3C
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_Sp-6R!H=3C_Ext-3C-R
-                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_N-Sp-6R!H=3C
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-2R!H-R_N-2R!H-inRing_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R_Ext-3C-R
                                     L10: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-3C-R
                                         L11: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-3C-R_Ext-5R!H-R
                                             L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-3C-R_Ext-5R!H-R_Ext-3C-R
@@ -21937,163 +22103,75 @@ L1: Root
                                             L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-3C-R_N-Sp-5R!H=3C_Ext-3C-R
                                                 L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_4R!H-inRing_Ext-3C-R_N-Sp-5R!H=3C_Ext-3C-R_Ext-3C-R
                                 L9: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing
-                                    L10: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R
-                                        L11: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C
-                                            L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R
-                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Ext-10R!H-R
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Ext-10R!H-R_Ext-3C-R
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Ext-3C-R
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Ext-3C-R_Sp-9R!H=8R!H
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-9R!H=8R!H
-                                                                        L19: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-9R!H=8R!H_8R!H-inRing
-                                                                        L19: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-9R!H=8R!H_N-8R!H-inRing
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Sp-9R!H=8R!H
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_N-Sp-9R!H=8R!H
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_N-Sp-9R!H=8R!H_8R!H-inRing
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_N-Sp-9R!H=8R!H_N-8R!H-inRing
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Sp-9R!H=8R!H
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_N-Sp-9R!H=8R!H
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_N-Sp-9R!H=8R!H_8R!H-inRing
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_N-Sp-9R!H=8R!H_N-8R!H-inRing
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Sp-8R!H=3C
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_Sp-8R!H=3C_Ext-3C-R
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_N-Sp-8R!H=3C
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_N-Sp-8R!H=3C_Ext-3C-R
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Ext-6R!H-R_Ext-3C-R_N-Sp-8R!H=3C_Ext-3C-R_Ext-3C-R
-                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-9R!H-R
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-9R!H-R_Ext-3C-R
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R_Sp-8R!H=7R!H
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-8R!H=7R!H
-                                                                        L19: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-8R!H=7R!H_7R!H-inRing
-                                                                        L19: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-8R!H=7R!H_N-7R!H-inRing
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Sp-8R!H=7R!H
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_N-Sp-8R!H=7R!H
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_N-Sp-8R!H=7R!H_7R!H-inRing
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_N-Sp-8R!H=7R!H_N-7R!H-inRing
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Sp-8R!H=7R!H
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_N-Sp-8R!H=7R!H
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_N-Sp-8R!H=7R!H_7R!H-inRing
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_N-Sp-8R!H=7R!H_N-7R!H-inRing
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Sp-7R!H=3C
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_Sp-7R!H=3C_Ext-3C-R
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_N-Sp-7R!H=3C
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_N-Sp-7R!H=3C_Ext-3C-R
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_Sp-5C=4R!H_Ext-3C-R_N-Sp-7R!H=3C_Ext-3C-R_Ext-3C-R
-                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-9R!H-R
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-9R!H-R_Ext-3C-R
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R_Sp-8R!H=7R!H
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-8R!H=7R!H
-                                                                        L19: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-8R!H=7R!H_7R!H-inRing
-                                                                        L19: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-8R!H=7R!H_N-7R!H-inRing
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_Sp-8R!H=7R!H
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_N-Sp-8R!H=7R!H
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_N-Sp-8R!H=7R!H_7R!H-inRing
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Ext-3C-R_N-Sp-8R!H=7R!H_N-7R!H-inRing
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_Sp-8R!H=7R!H
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_N-Sp-8R!H=7R!H
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_N-Sp-8R!H=7R!H_7R!H-inRing
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Ext-7R!H-R_N-Sp-8R!H=7R!H_N-7R!H-inRing
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Sp-7R!H=3C
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_Sp-7R!H=3C_Ext-3C-R
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_N-Sp-7R!H=3C
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_N-Sp-7R!H=3C_Ext-3C-R
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-2R!H-R_N-Sp-5C=4R!H_Ext-3C-R_N-Sp-7R!H=3C_Ext-3C-R_Ext-3C-R
-                                            L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H
-                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_Sp-7R!H=6R!H
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_6R!H-inRing
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Sp-7R!H=6R!H
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_6R!H-inRing
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Sp-7R!H=6R!H
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_6R!H-inRing
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Sp-6R!H=3C
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_Sp-6R!H=3C_Ext-3C-R
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_N-Sp-6R!H=3C
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Sp-5C=4R!H_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R_Ext-3C-R
-                                            L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H
-                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_Sp-7R!H=6R!H
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_6R!H-inRing
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Sp-7R!H=6R!H
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_6R!H-inRing
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_Sp-7R!H=6R!H
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_6R!H-inRing
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Sp-6R!H=3C
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_Sp-6R!H=3C_Ext-3C-R
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_N-Sp-6R!H=3C
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_N-Sp-5C=4R!H_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R_Ext-3C-R
-                                            L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-3C-R
-                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-3C-R_Ext-5C-R
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-3C-R_Ext-5C-R_Ext-7R!H-R
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-3C-R_Ext-5C-R_Ext-7R!H-R_Ext-8R!H-R
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-3C-R_Ext-5C-R_Ext-7R!H-R_Ext-8R!H-R_Ext-9R!H-R
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-3C-R_Ext-5C-R_Ext-7R!H-R_Ext-8R!H-R_Ext-9R!H-R_Ext-6R!H-R
-                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-3C-R_Ext-5C-R_Ext-7R!H-R_Ext-8R!H-R_Ext-9R!H-R_Ext-6R!H-R_Ext-10R!H-R
-                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_5R!H->C_Ext-3C-R_Ext-6R!H-R_Ext-7R!H-R
-                                        L11: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_Ext-4R!H-R_N-5R!H->C
                                     L10: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C
-                                        L11: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R
-                                            L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R
-                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R_Ext-3C-R
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_Sp-7R!H=6R!H
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_6R!H-inRing
-                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Sp-7R!H=6R!H
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_6R!H-inRing
-                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R_Sp-7R!H=6R!H
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_6R!H-inRing
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
-                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Sp-6R!H=3C
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_Sp-6R!H=3C_Ext-3C-R
-                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_N-Sp-6R!H=3C
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-2R!H-R_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R_Ext-3C-R
+                                        L11: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R
+                                            L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-5R!H->C
+                                            L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_Sp-5R!H-4C
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_Sp-5R!H-4C_Ext-3C-R
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_Sp-5R!H-4C_Ext-3C-R_Ext-5R!H-R
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_Sp-5R!H-4C_Ext-3C-R_Ext-5R!H-R_Ext-7R!H-R
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_Sp-5R!H-4C_Ext-3C-R_Ext-5R!H-R_Ext-7R!H-R_Ext-8R!H-R
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_Sp-5R!H-4C_Ext-3C-R_Ext-5R!H-R_Ext-7R!H-R_Ext-8R!H-R_Ext-9R!H-R
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_Sp-5R!H-4C_Ext-3C-R_Ext-5R!H-R_Ext-7R!H-R_Ext-8R!H-R_Ext-9R!H-R_Ext-6R!H-R
+                                                                        L19: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_Sp-5R!H-4C_Ext-3C-R_Ext-5R!H-R_Ext-7R!H-R_Ext-8R!H-R_Ext-9R!H-R_Ext-6R!H-R_Ext-10R!H-R
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-7R!H-R
+                                            L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_Sp-5R!H=4C
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Ext-3C-R_N-Sp-5R!H=4C
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_Sp-5R!H=4C
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-8R!H-R_N-Sp-5R!H=4C
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_Sp-7R!H=6R!H
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_Sp-7R!H=6R!H_Sp-5R!H=4C
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_Sp-7R!H=6R!H_N-Sp-5R!H=4C
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_6R!H-inRing
+                                                                        L19: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_6R!H-inRing_Sp-5R!H=4C
+                                                                        L19: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_6R!H-inRing_N-Sp-5R!H=4C
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-6R!H-inRing
+                                                                        L19: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-6R!H-inRing_Sp-5R!H=4C
+                                                                        L19: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-6R!H-inRing_N-Sp-5R!H=4C
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Sp-7R!H=6R!H
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Sp-7R!H=6R!H_Sp-5R!H=4C
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_Sp-7R!H=6R!H_N-Sp-5R!H=4C
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_Sp-5R!H=4C
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_Sp-5R!H=4C_6R!H-inRing
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_Sp-5R!H=4C_N-6R!H-inRing
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-Sp-5R!H=4C
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-Sp-5R!H=4C_6R!H-inRing
+                                                                    L18: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R_N-Sp-7R!H=6R!H_N-Sp-5R!H=4C_N-6R!H-inRing
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Sp-7R!H=6R!H
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Sp-7R!H=6R!H_Sp-5R!H=4C
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_Sp-7R!H=6R!H_N-Sp-5R!H=4C
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_Sp-5R!H=4C
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_Sp-5R!H=4C_6R!H-inRing
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_Sp-5R!H=4C_N-6R!H-inRing
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_N-Sp-5R!H=4C
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_N-Sp-5R!H=4C_6R!H-inRing
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Ext-6R!H-R_N-Sp-7R!H=6R!H_N-Sp-5R!H=4C_N-6R!H-inRing
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Sp-6R!H=3C
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Sp-6R!H=3C_Sp-5R!H=4C
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Sp-6R!H=3C_Sp-5R!H=4C_Ext-3C-R
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Sp-6R!H=3C_N-Sp-5R!H=4C
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_Sp-6R!H=3C_N-Sp-5R!H=4C_Ext-3C-R
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_N-Sp-6R!H=3C
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R_Ext-3C-R
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R_Ext-3C-R_Sp-5R!H=4C
+                                                                L17: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R_Ext-3C-R_N-Sp-5R!H=4C
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R_Sp-5R!H=4C
+                                                            L16: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_N-Sp-6R!H=3C_Ext-3C-R_N-Sp-5R!H=4C
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_N-Sp-6R!H=3C_Sp-5R!H=4C
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Ext-3C-R_N-Sp-6R!H=3C_N-Sp-5R!H=4C
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_Sp-5R!H=4C
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-4C-R_N-Sp-5R!H-4C_N-Sp-5R!H=4C
                                         L11: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R
                                             L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R
                                                 L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_Ext-3C-R
@@ -22108,13 +22186,13 @@ L1: Root
                                                     L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_Ext-3C-R_N-Sp-6R!H=5R!H
                                                         L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_Ext-3C-R_N-Sp-6R!H=5R!H_5R!H-inRing
                                                         L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_Ext-3C-R_N-Sp-6R!H=5R!H_N-5R!H-inRing
-                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_Sp-6R!H=5R!H
-                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_N-Sp-6R!H=5R!H
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_N-Sp-6R!H=5R!H_Ext-6R!H-R
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_N-Sp-6R!H=5R!H_Ext-6R!H-R_5R!H-inRing
-                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_N-Sp-6R!H=5R!H_Ext-6R!H-R_N-5R!H-inRing
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_N-Sp-6R!H=5R!H_Sp-6R!H-5R!H
-                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_N-Sp-6R!H=5R!H_N-Sp-6R!H-5R!H
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_Sp-6R!H-5R!H
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_Sp-6R!H-5R!H_Ext-6R!H-R
+                                                L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_N-Sp-6R!H-5R!H
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_N-Sp-6R!H-5R!H_Sp-6R!H=5R!H
+                                                    L14: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_N-Sp-6R!H-5R!H_N-Sp-6R!H=5R!H
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_N-Sp-6R!H-5R!H_N-Sp-6R!H=5R!H_5R!H-inRing
+                                                        L15: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Ext-5R!H-R_N-Sp-6R!H-5R!H_N-Sp-6R!H=5R!H_N-5R!H-inRing
                                             L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Sp-5R!H=3C
                                                 L13: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_Sp-5R!H=3C_Ext-3C-R
                                             L12: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_1R!H->C_Sp-2R!H=1C_N-4R!H-inRing_4R!H->C_Ext-3C-R_N-Sp-5R!H=3C
@@ -22207,20 +22285,6 @@ L1: Root
                                 L9: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_N-1R!H->C_Ext-4R!H-R_Ext-2R!H-R
                             L8: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_N-1R!H->C_Ext-2R!H-R
                             L8: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_N-1R!H->C_Ext-3C-R
-                        L7: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_4R!H->O
-                            L8: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_4R!H->O_Ext-4O-R_Ext-5R!H-R_Ext-4O-R_Ext-5R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-4O-R_Ext-6R!H-R_6R!H->C
-                            L8: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_4R!H->O_Ext-4O-R_Ext-5R!H-R_Ext-4O-R_Ext-5R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-5R!H-R_Ext-6R!H-R_Ext-4O-R_Ext-6R!H-R_N-6R!H->C
-                        L7: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_N-4R!H->O
-                            L8: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_N-4R!H->O_Ext-4BrCClFINPSSi-R_5R!H->O
-                                L9: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_N-4R!H->O_Ext-4BrCClFINPSSi-R_5R!H->O_Ext-4BrCClFINPSSi-R_Ext-3C-R_6R!H->C
-                                    L10: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_N-4R!H->O_Ext-4BrCClFINPSSi-R_5R!H->O_Ext-4BrCClFINPSSi-R_Ext-3C-R_6R!H->C_Ext-6C-R_7R!H->C
-                                    L10: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_N-4R!H->O_Ext-4BrCClFINPSSi-R_5R!H->O_Ext-4BrCClFINPSSi-R_Ext-3C-R_6R!H->C_Ext-6C-R_N-7R!H->C
-                                L9: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_N-4R!H->O_Ext-4BrCClFINPSSi-R_5R!H->O_Ext-4BrCClFINPSSi-R_Ext-3C-R_N-6R!H->C
-                            L8: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_N-4R!H->O_Ext-4BrCClFINPSSi-R_N-5R!H->O
-                                L9: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_N-4R!H->O_Ext-4BrCClFINPSSi-R_N-5R!H->O_Ext-4BrCClFINPSSi-R_Ext-4BrCClFINPSSi-R_6R!H->C
-                                    L10: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_N-4R!H->O_Ext-4BrCClFINPSSi-R_N-5R!H->O_Ext-4BrCClFINPSSi-R_Ext-4BrCClFINPSSi-R_6R!H->C_Ext-6C-R_7R!H->C
-                                    L10: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_N-4R!H->O_Ext-4BrCClFINPSSi-R_N-5R!H->O_Ext-4BrCClFINPSSi-R_Ext-4BrCClFINPSSi-R_6R!H->C_Ext-6C-R_N-7R!H->C
-                                L9: Root_N-3R-inRing_3R->C_Ext-2R!H-R_Sp-4R!H-2R!H_N-1R!H-inRing_N-4R!H->O_Ext-4BrCClFINPSSi-R_N-5R!H->O_Ext-4BrCClFINPSSi-R_Ext-4BrCClFINPSSi-R_N-6R!H->C
                 L5: Root_N-3R-inRing_3R->C_Ext-2R!H-R_N-Sp-4R!H-2R!H
                     L6: Root_N-3R-inRing_3R->C_Ext-2R!H-R_N-Sp-4R!H-2R!H_1R!H-inRing
                         L7: Root_N-3R-inRing_3R->C_Ext-2R!H-R_N-Sp-4R!H-2R!H_1R!H-inRing_Ext-4R!H-R_Ext-5R!H-R_Ext-1R!H-R
@@ -22496,6 +22560,7 @@ L1: Root
                                 L9: Root_N-3R-inRing_3R->C_Ext-1R!H-R_Sp-2R!H=1R!H_4R!H->F_3C-u1_Ext-1R!H-R_5R!H->C
                                     L10: Root_N-3R-inRing_3R->C_Ext-1R!H-R_Sp-2R!H=1R!H_4R!H->F_3C-u1_Ext-1R!H-R_5R!H->C_Ext-3C-R
                                         L11: Root_N-3R-inRing_3R->C_Ext-1R!H-R_Sp-2R!H=1R!H_4R!H->F_3C-u1_Ext-1R!H-R_5R!H->C_Ext-3C-R_5C-u0
+                                            L12: Root_N-3R-inRing_3R->C_Ext-1R!H-R_Sp-2R!H=1R!H_4R!H->F_3C-u1_Ext-1R!H-R_5R!H->C_Ext-3C-R_5C-u0_Ext-5C-R
                                         L11: Root_N-3R-inRing_3R->C_Ext-1R!H-R_Sp-2R!H=1R!H_4R!H->F_3C-u1_Ext-1R!H-R_5R!H->C_Ext-3C-R_N-5C-u0
                                 L9: Root_N-3R-inRing_3R->C_Ext-1R!H-R_Sp-2R!H=1R!H_4R!H->F_3C-u1_Ext-1R!H-R_N-5R!H->C
                                     L10: Root_N-3R-inRing_3R->C_Ext-1R!H-R_Sp-2R!H=1R!H_4R!H->F_3C-u1_Ext-1R!H-R_N-5R!H->C_Ext-3C-R_6R!H->C
@@ -22905,13 +22970,14 @@ L1: Root
                                                     L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-5R!H-4R!H_Ext-3C-R_N-4R!H-inRing
                                                 L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-5R!H-4R!H_4R!H-inRing
                                                 L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-5R!H-4R!H_N-4R!H-inRing
-                                    L10: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_Sp-4R!H=3C
-                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_Sp-4R!H=3C_Ext-3C-R
-                                    L10: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_N-Sp-4R!H=3C
-                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_N-Sp-4R!H=3C_Ext-3C-R
-                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_N-Sp-4R!H=3C_Ext-3C-R_Ext-3C-R
-                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_N-Sp-4R!H=3C_4R!H->C
-                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_N-Sp-4R!H=3C_N-4R!H->C
+                                    L10: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_4R!H->C
+                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_4R!H->C_Sp-4C=3C
+                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_4R!H->C_Sp-4C=3C_Ext-3C-R
+                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_4R!H->C_N-Sp-4C=3C
+                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_4R!H->C_N-Sp-4C=3C_Ext-3C-R
+                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_4R!H->C_N-Sp-4C=3C_Ext-3C-R_Ext-3C-R
+                                    L10: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_N-4R!H->C
+                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_2CNO->C_Ext-3C-R_N-4R!H->C_Ext-3C-R
                             L8: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_N-2CNO->C
                                 L9: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_N-2CNO->C_Ext-3C-R
                                     L10: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_N-2CNO->C_Ext-3C-R_4R!H->C
@@ -22919,46 +22985,46 @@ L1: Root
                                         L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_N-2CNO->C_Ext-3C-R_4R!H->C_Ext-4C-R
                                     L10: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_Sp-2CNO=1CCNNO_N-2CNO->C_Ext-3C-R_N-4R!H->C
                         L7: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO
-                            L8: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->N
-                                L9: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->N_2CNO->C
-                                L9: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->N_N-2CNO->C
-                            L8: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N
-                                L9: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R
-                                    L10: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R
-                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H
-                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_Sp-4R!H-3C
-                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_Sp-4R!H-3C_Ext-3C-R
-                                                    L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_Sp-4R!H-3C_Ext-3C-R_Ext-6R!H-R
-                                                        L15: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_Sp-4R!H-3C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R
-                                                    L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_Sp-4R!H-3C_Ext-3C-R_Ext-3C-R
-                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-4R!H-3C
-                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-4R!H-3C_Ext-3C-R
-                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-4R!H-3C_Ext-5R!H-R
-                                                    L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-4R!H-3C_Ext-5R!H-R_Sp-6R!H-5R!H
-                                                    L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-4R!H-3C_Ext-5R!H-R_N-Sp-6R!H-5R!H
-                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H
-                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-3C-R
-                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-3C-R_Ext-3C-R
-                                                    L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-3C-R_Ext-3C-R_4R!H-inRing
-                                                    L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-3C-R_Ext-3C-R_N-4R!H-inRing
-                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-3C-R_Ext-6R!H-R
-                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-3C-R_4R!H-inRing
-                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-3C-R_N-4R!H-inRing
-                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Sp-4R!H-3C
-                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Sp-4R!H-3C_Ext-5R!H-R
-                                                    L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Sp-4R!H-3C_Ext-5R!H-R_4R!H-inRing
-                                                    L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Sp-4R!H-3C_Ext-5R!H-R_N-4R!H-inRing
-                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-4R!H-3C
-                                    L10: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Sp-4R!H-3C
-                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Sp-4R!H-3C_Ext-3C-R
-                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Sp-4R!H-3C_Ext-3C-R_Sp-5R!H-3C
-                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Sp-4R!H-3C_Ext-3C-R_Sp-5R!H-3C_Ext-3C-R
-                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Sp-4R!H-3C_Ext-3C-R_N-Sp-5R!H-3C
-                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Sp-4R!H-3C_2CNO->N
-                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_Sp-4R!H-3C_N-2CNO->N
-                                    L10: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_N-Sp-4R!H-3C
-                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_N-Sp-4R!H-3C_Sp-4R!H=3C
-                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->N_Ext-3C-R_N-Sp-4R!H-3C_N-Sp-4R!H=3C
+                            L8: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C
+                                L9: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R
+                                    L10: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R
+                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H
+                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_Sp-4R!H-3C
+                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_Sp-4R!H-3C_Ext-3C-R
+                                                    L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_Sp-4R!H-3C_Ext-3C-R_Ext-6R!H-R
+                                                        L15: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_Sp-4R!H-3C_Ext-3C-R_Ext-6R!H-R_Ext-3C-R
+                                                    L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_Sp-4R!H-3C_Ext-3C-R_Ext-3C-R
+                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-4R!H-3C
+                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-4R!H-3C_Ext-3C-R
+                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-4R!H-3C_Ext-5R!H-R
+                                                    L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-4R!H-3C_Ext-5R!H-R_Sp-6R!H-5R!H
+                                                    L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_Sp-5R!H=4R!H_N-Sp-4R!H-3C_Ext-5R!H-R_N-Sp-6R!H-5R!H
+                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H
+                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-3C-R
+                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-3C-R_Ext-3C-R
+                                                    L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-3C-R_Ext-3C-R_4R!H-inRing
+                                                    L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-3C-R_Ext-3C-R_N-4R!H-inRing
+                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-3C-R_Ext-6R!H-R
+                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-3C-R_4R!H-inRing
+                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Ext-3C-R_N-4R!H-inRing
+                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Sp-4R!H-3C
+                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Sp-4R!H-3C_Ext-5R!H-R
+                                                    L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Sp-4R!H-3C_Ext-5R!H-R_4R!H-inRing
+                                                    L14: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_Sp-4R!H-3C_Ext-5R!H-R_N-4R!H-inRing
+                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Ext-4R!H-R_N-Sp-5R!H=4R!H_N-Sp-4R!H-3C
+                                    L10: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Sp-4R!H-3C
+                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Sp-4R!H-3C_Ext-3C-R
+                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Sp-4R!H-3C_Ext-3C-R_Sp-5R!H-3C
+                                                L13: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Sp-4R!H-3C_Ext-3C-R_Sp-5R!H-3C_Ext-3C-R
+                                            L12: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Sp-4R!H-3C_Ext-3C-R_N-Sp-5R!H-3C
+                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Sp-4R!H-3C_2CNO->C
+                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_Sp-4R!H-3C_N-2CNO->C
+                                    L10: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_N-Sp-4R!H-3C
+                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_N-Sp-4R!H-3C_Sp-4R!H=3C
+                                        L11: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_1CN->C_Ext-3C-R_N-Sp-4R!H-3C_N-Sp-4R!H=3C
+                            L8: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->C
+                                L9: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->C_2CNO->C
+                                L9: Root_N-3R-inRing_3R->C_3C-u1_N-2R!H->S_N-1R!H->S_N-Sp-2CNO=1CCNNO_N-1CN->C_N-2CNO->C
             L4: Root_N-3R-inRing_3R->C_N-3C-u1
         L3: Root_N-3R-inRing_N-3R->C
             L4: Root_N-3R-inRing_N-3R->C_1R!H->N
@@ -22980,6 +23046,8 @@ L1: Root
                             L8: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_3BrFNOS->F_Ext-1CS-R_Ext-1CS-R
                                 L9: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_3BrFNOS->F_Ext-1CS-R_Ext-1CS-R_2COS->C
                                 L9: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_3BrFNOS->F_Ext-1CS-R_Ext-1CS-R_N-2COS->C
+                                    L10: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_3BrFNOS->F_Ext-1CS-R_Ext-1CS-R_N-2COS->C_4R!H->C
+                                    L10: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_3BrFNOS->F_Ext-1CS-R_Ext-1CS-R_N-2COS->C_N-4R!H->C
                         L7: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F
                             L8: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_3BrNOS->N
                             L8: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N
@@ -23020,15 +23088,15 @@ L1: Root
                                                                 L17: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_Ext-1C-R_3BrO-u1_Ext-3BrO-R_N-6R!H->C
                                                         L15: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_Ext-1C-R_N-3BrO-u1
                                                     L14: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1
-                                                        L15: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_3BrO->Br
-                                                        L15: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_N-3BrO->Br
-                                                            L16: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_N-3BrO->Br_Ext-3O-R
-                                                                L17: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_N-3BrO->Br_Ext-3O-R_5R!H-u0
-                                                                    L18: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_N-3BrO->Br_Ext-3O-R_5R!H-u0_4R!H->C
-                                                                        L19: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_N-3BrO->Br_Ext-3O-R_5R!H-u0_4R!H->C_5R!H->C
-                                                                        L19: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_N-3BrO->Br_Ext-3O-R_5R!H-u0_4R!H->C_N-5R!H->C
-                                                                    L18: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_N-3BrO->Br_Ext-3O-R_5R!H-u0_N-4R!H->C
-                                                                L17: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_N-3BrO->Br_Ext-3O-R_N-5R!H-u0
+                                                        L15: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_3BrO->O
+                                                            L16: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_3BrO->O_Ext-3O-R
+                                                                L17: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_3BrO->O_Ext-3O-R_5R!H-u0
+                                                                    L18: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_3BrO->O_Ext-3O-R_5R!H-u0_4R!H->C
+                                                                        L19: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_3BrO->O_Ext-3O-R_5R!H-u0_4R!H->C_5R!H->C
+                                                                        L19: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_3BrO->O_Ext-3O-R_5R!H-u0_4R!H->C_N-5R!H->C
+                                                                    L18: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_3BrO->O_Ext-3O-R_5R!H-u0_N-4R!H->C
+                                                                L17: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_3BrO->O_Ext-3O-R_N-5R!H-u0
+                                                        L15: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_3BrO-u1_N-3BrO->O
                                                     L14: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_Ext-1C-R_N-3BrO-u1
                                                 L13: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_3BrO-u1
                                                     L14: Root_N-3R-inRing_N-3R->C_N-1R!H->N_N-3BrClFNOS->Cl_N-2R!H->N_N-3BrFNOS->F_N-3BrNOS->N_1CS->C_2COS->C_N-3BrOS->S_Sp-2C=1C_3BrO-u1_Ext-3BrO-R

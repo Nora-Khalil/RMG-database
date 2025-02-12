@@ -87,7 +87,7 @@ entry(
 4 *3 O                      u0       {1,D}
 5 *5 H                      u0       {3,S}
 6    [F1s,H]                u0       {2,S}
-7    [I,Br,Cl,C,O,Si,S,N,P] ux       {2,[S,D,T,B,Q]}
+7    [I,P,Br,Cl,C,O,Si,S,N] ux       {2,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )
@@ -177,7 +177,7 @@ entry(
 6    [F1s,H]                u0 r0 {2,S}
 7    O                      ux {2,[S,D,T,B,Q]} {8,[S,D,T,B,Q]}
 8    C                      ux {7,[S,D,T,B,Q]} {9,S}
-9    [I,Br,Cl,O,Si,S,N,P,F] u0 r0 {8,S}
+9    [I,P,Br,Cl,O,Si,S,N,F] u0 r0 {8,S}
 """,
     kinetics = None,
 )
@@ -193,7 +193,7 @@ entry(
 4 *3 O                      u0       {1,D}
 5 *5 H                      u0       {3,S}
 6    H                      u0       {2,S}
-7    [I,Br,Cl,C,O,Si,S,N,P] ux       {2,[S,D,T,B,Q]}
+7    [I,P,Br,Cl,C,O,Si,S,N] ux       {2,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )
@@ -209,7 +209,7 @@ entry(
 4 *3 O                      u0       {1,D}
 5 *5 H                      u0       {3,S}
 6    F1s                    u0       {2,S}
-7    [I,Br,Cl,C,O,Si,S,N,P] ux       {2,[S,D,T,B,Q]}
+7    [I,P,Br,Cl,C,O,Si,S,N] ux       {2,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )

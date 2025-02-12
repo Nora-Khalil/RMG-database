@@ -132,7 +132,7 @@ entry(
 2 *2 C                        u[0,1,2]   {1,S} {3,[S,D]}
 3 *4 C                        u[0,1,2]   {2,[S,D]} {6,S}
 4    [F1s,H]                  u0         {1,S}
-5    [I,Br,Cl,C,Si,H,P,S,N,F] u[0,1,2,3] {1,S}
+5    [I,Br,Cl,C,Si,H,S,N,P,F] u[0,1,2,3] {1,S}
 6 *3 [F1s,H]                  u0         {3,S}
 """,
     kinetics = None,
@@ -147,7 +147,7 @@ entry(
 2 *2 C                        u[0,1,2]   {1,S} {3,[S,D]}
 3 *4 C                        u[0,1,2]   {2,[S,D]} {6,S}
 4    [F1s,H]                  u0         {1,S}
-5    [I,Br,Cl,C,Si,H,P,S,N,F] u[0,1,2,3] {1,S}
+5    [I,Br,Cl,C,Si,H,S,N,P,F] u[0,1,2,3] {1,S}
 6 *3 [F1s,H]                  u0         {3,S}
 7    R!H                      ux         {1,[S,D,T,B,Q]}
 """,

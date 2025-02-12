@@ -320,7 +320,7 @@ entry(
 5 *2 H                      u0 r0 {2,S}
 6 *4 F1s                    u0 r0 {3,S}
 7    F                      u0 r0 {3,S}
-8    [I,P,Br,Cl,O,Si,S,N,F] u0 r0 {3,S}
+8    [I,Br,Cl,O,Si,S,N,P,F] u0 r0 {3,S}
 """,
     kinetics = None,
 )
@@ -336,7 +336,7 @@ entry(
 4    O                      u0 {1,D}
 5 *2 H                      u0 {2,S}
 6 *4 F1s                    u0 {3,S}
-7    [I,P,Br,Cl,C,O,Si,S,N] u0 {3,S}
+7    [I,Br,Cl,C,O,Si,S,N,P] u0 {3,S}
 """,
     kinetics = None,
 )

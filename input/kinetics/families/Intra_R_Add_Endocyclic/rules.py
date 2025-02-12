@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "Intra_R_Add_Endocyclic/rules"
-shortDesc = ""
-longDesc = """
+shortDesc = u""
+longDesc = u"""
 
 """
 entry(

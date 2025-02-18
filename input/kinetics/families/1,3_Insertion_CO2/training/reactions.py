@@ -105,7 +105,11 @@ Calculated by Kevin Spiekermann
 opt, freq: wB97X-D3/def2-TZVP
 sp: CCSD(T)-F12a/cc-pVDZ-F12
 All species include systematic conformer search and 1D rotor scans
-    index = 6,
+""",
+)    
+
+entry(
+    index = 20,
     label = "C2HF3O2 <=> CO2 + CHF3",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(1.19e-45,'s^-1'), n=17.11, Ea=(41536.3,'cal/mol'), T0=(1,'K')),

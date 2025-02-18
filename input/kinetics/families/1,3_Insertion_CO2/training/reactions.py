@@ -307,3 +307,16 @@ Original entry: C2H5OCH(CH3)C(O)OH <=> C2H5OC2H5+CO2
 """,
 )
 
+
+entry(
+    index = 21,
+    label = "CHFO2 <=> CO2 + FH",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(25300,'s^-1'), n=2.53, Ea=(28082.1,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: FC(O)OH <=> CO2+HF
+""",
+)

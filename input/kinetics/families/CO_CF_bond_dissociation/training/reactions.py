@@ -330,7 +330,7 @@ entry(
     index = 25,
     label = "CH3OCHC(O)OH <=> CH2C(O)OH+CH2O",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(5.75e+07,'1/s'), n=1.52, Ea=(27913,'cal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(A=(5.75e+07,'s^-1'), n=1.52, Ea=(27913,'cal/mol'), T0=(1,'K')),
     rank = 3,
     longDesc = 
 """
@@ -343,7 +343,7 @@ entry(
     index = 26,
     label = "C4F9O-2 <=> C2F4O-2 + C2F5",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.59e+10,'1/s'), n=0.65, Ea=(22327.4,'cal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(A=(2.59e+10,'s^-1'), n=0.65, Ea=(22327.4,'cal/mol'), T0=(1,'K')),
     rank = 3,
     longDesc = 
 """
@@ -356,7 +356,7 @@ entry(
     index = 27,
     label = "CF3OCF2 <=> CF3+CF2O",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(5.95e+09,'1/s'), n=1.2, Ea=(27353.5,'cal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(A=(5.95e+09,'s^-1'), n=1.2, Ea=(27353.5,'cal/mol'), T0=(1,'K')),
     rank = 3,
     longDesc = 
 """
@@ -369,7 +369,7 @@ entry(
     index = 28,
     label = "C2H5OCHCH3 <=> C2H4O+C2H5",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.78e+10,'1/s'), n=0.74, Ea=(22459.6,'cal/mol'), T0=(1,'K')),
+    kinetics = Arrhenius(A=(2.78e+10,'s^-1'), n=0.74, Ea=(22459.6,'cal/mol'), T0=(1,'K')),
     rank = 3,
     longDesc = 
 """

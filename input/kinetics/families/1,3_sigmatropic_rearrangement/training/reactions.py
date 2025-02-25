@@ -176,7 +176,7 @@ All species include systematic conformer search and 1D rotor scans
 )
 
 entry(
-    index = 12,
+    index = 10,
     label = "C3H2BrF3 <=> C3H2BrF3-2",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(2.5058e+11,'s^-1'), n=0.533491, Ea=(191.066,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.20251, dn = +|- 0.0242278, dEa = +|- 0.131847 kJ/mol"""),
@@ -200,7 +200,7 @@ H    -2.272469    -1.300136    -0.341214
 )
 
 entry(
-    index = 13,
+    index = 11,
     label = "C3H2F4 <=> C3H2F4-2",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(2.11883e+10,'s^-1'), n=0.811585, Ea=(262.426,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.30388, dn = +|- 0.0348607, dEa = +|- 0.18971 kJ/mol"""),
@@ -224,7 +224,7 @@ H    2.466716    1.19485    0.571355
 )
 
 entry(
-    index = 14,
+    index = 12,
     label = "C3H2ClF3 <=> C3H2ClF3-2",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(1.69656e+11,'s^-1'), n=0.593389, Ea=(209.675,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.22321, dn = +|- 0.0264708, dEa = +|- 0.144053 kJ/mol"""),
@@ -248,7 +248,7 @@ H    -2.255039    -1.314295    -0.289684
 )
 
 entry(
-    index = 15,
+    index = 13,
     label = "C3F6O <=> C3F6O-2",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(7.89e+07,'s^-1'), n=1.5, Ea=(116144,'cal/mol'), T0=(1,'K')),
@@ -261,7 +261,7 @@ Original entry: C2F5CFO <=> CF3OCFCF2
 )
 
 entry(
-    index = 16,
+    index = 14,
     label = "C3F4O2 <=> C3F4O2-2",
     degeneracy = 2.0,
     kinetics = Arrhenius(A=(4.5e+06,'s^-1'), n=1.38, Ea=(77809.6,'cal/mol'), T0=(1,'K')),
@@ -274,7 +274,7 @@ Original entry: CF(O)CF2CFO <=> CF2CFOCFO
 )
 
 entry(
-    index = 17,
+    index = 15,
     label = "C3H6O-3 <=> C3H6O-4",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(1.26e+07,'s^-1'), n=1.81, Ea=(92397.3,'cal/mol'), T0=(1,'K')),
@@ -287,7 +287,7 @@ Original entry: C2H5CHO <=> CH3OCHCH2
 )
 
 entry(
-    index = 18,
+    index = 16,
     label = "C3H4O2 <=> C3H4O2-2",
     degeneracy = 2.0,
     kinetics = Arrhenius(A=(3.15e+06,'s^-1'), n=1.45, Ea=(48596.7,'cal/mol'), T0=(1,'K')),
@@ -300,7 +300,7 @@ Original entry: CH(O)CH2CHO <=> CH2CHOCHO
 )
 
 entry(
-    index = 19,
+    index = 17,
     label = "C4H6O2 <=> C4H6O2-2",
     degeneracy = 2.0,
     kinetics = Arrhenius(A=(3.6e+08,'s^-1'), n=0.98, Ea=(87754.8,'cal/mol'), T0=(1,'K')),

@@ -106,19 +106,6 @@ opt, freq: wB97X-D3/def2-TZVP
 sp: CCSD(T)-F12a/cc-pVDZ-F12
 All species include systematic conformer search and 1D rotor scans
 """,
-)    
-
-entry(
-    index = 20,
-    label = "C2HF3O2 <=> CO2 + CHF3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.19e-45,'s^-1'), n=17.11, Ea=(41536.3,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    shortDesc = The chemkin file reaction is CF3C(O)OH <=> CF3H+CO2,
-    longDesc = 
-Training reaction from kinetics library: PFAS_HPL
-Original entry: CF3C(O)OH <=> CF3H+CO2
-""",
 )
 
 entry(
@@ -135,19 +122,6 @@ Calculated by Kevin Spiekermann
 opt, freq: wB97X-D3/def2-TZVP
 sp: CCSD(T)-F12a/cc-pVDZ-F12
 All species include systematic conformer search and 1D rotor scans
-""", 
-)
-
-entry(
-    index = 15,
-    label = "C3HF4O2 <=> CO2 + C2HF4",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(66.3,'s^-1'), n=2.87, Ea=(24236.8,'cal/mol'), T0=(1,'K')),
-    rank = 3,
-    longDesc = 
-"""
-Training reaction from kinetics library: PFAS_HPL
-Original entry: C2F4C(O)OH <=> CF2CF2H+CO2
 """,
 )
 
@@ -307,6 +281,19 @@ Original entry: C2H5OCH(CH3)C(O)OH <=> C2H5OC2H5+CO2
 """,
 )
 
+entry(
+    index = 20,
+    label = "C2HF3O2 <=> CO2 + CHF3",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.19e-45,'s^-1'), n=17.11, Ea=(41536.3,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    shortDesc = """The chemkin file reaction is CF3C(O)OH <=> CF3H+CO2,""",
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: CF3C(O)OH <=> CF3H+CO2
+""",
+)
 
 entry(
     index = 21,
@@ -320,3 +307,17 @@ Training reaction from kinetics library: PFAS_HPL
 Original entry: FC(O)OH <=> CO2+HF
 """,
 )
+
+entry(
+    index = 22,
+    label = "C3HF4O2 <=> CO2 + C2HF4",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(66.3,'s^-1'), n=2.87, Ea=(24236.8,'cal/mol'), T0=(1,'K')),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: PFAS_HPL
+Original entry: C2F4C(O)OH <=> CF2CF2H+CO2
+""",
+)
+

@@ -313,14 +313,14 @@ entry(
     label = "Root_6F1sH->F1s_Ext-3C-R_7R!H->F_Ext-3C-R_N-8R!H->C",
     group = 
 """
-1    C                      u0 r0 {2,S} {3,S} {4,D}
-2 *1 O                      u0 r0 {1,S} {5,S}
-3 *3 C                      u0 r0 {1,S} {6,S} {7,S} {8,S}
-4    O                      u0 r0 {1,D}
-5 *2 H                      u0 r0 {2,S}
-6 *4 F1s                    u0 r0 {3,S}
-7    F                      u0 r0 {3,S}
-8    [I,Br,Cl,O,Si,S,N,P,F] u0 r0 {3,S}
+1    C                         u0 r0 {2,S} {3,S} {4,D}
+2 *1 O                         u0 r0 {1,S} {5,S}
+3 *3 C                         u0 r0 {1,S} {6,S} {7,S} {8,S}
+4    O                         u0 r0 {1,D}
+5 *2 H                         u0 r0 {2,S}
+6 *4 F1s                       u0 r0 {3,S}
+7    F                         u0 r0 {3,S}
+8    [Li,F,O,Si,S,I,P,Br,Cl,N] u0 r0 {3,S}
 """,
     kinetics = None,
 )
@@ -330,13 +330,13 @@ entry(
     label = "Root_6F1sH->F1s_Ext-3C-R_N-7R!H->F",
     group = 
 """
-1    C                      u0 {2,S} {3,S} {4,D}
-2 *1 O                      u0 {1,S} {5,S}
-3 *3 C                      u0 {1,S} {6,S} {7,S}
-4    O                      u0 {1,D}
-5 *2 H                      u0 {2,S}
-6 *4 F1s                    u0 {3,S}
-7    [I,Br,Cl,C,O,Si,S,N,P] u0 {3,S}
+1    C                         u0 {2,S} {3,S} {4,D}
+2 *1 O                         u0 {1,S} {5,S}
+3 *3 C                         u0 {1,S} {6,S} {7,S}
+4    O                         u0 {1,D}
+5 *2 H                         u0 {2,S}
+6 *4 F1s                       u0 {3,S}
+7    [Li,O,C,Si,S,I,P,Br,Cl,N] u0 {3,S}
 """,
     kinetics = None,
 )
@@ -369,9 +369,9 @@ entry(
 4     O   u0 {1,D}
 5  *2 H   u0 {2,S}
 6  *4 F1s u0 {3,S}
-7     O   u0 {3,S} {9,[S,D,T,B,Q]}
+7     O   u0 {3,S} {9,[S,B,D,T,Q]}
 8     C   u0 {3,S}
-9     C   ux {7,[S,D,T,B,Q]} {10,S}
+9     C   ux {7,[S,B,D,T,Q]} {10,S}
 10    C   u0 {9,S}
 """,
     kinetics = None,
@@ -388,9 +388,9 @@ entry(
 4     O   u0 r0 {1,D}
 5  *2 H   u0 r0 {2,S}
 6  *4 F1s u0 r0 {3,S}
-7     O   u0 r0 {3,S} {9,[S,D,T,B,Q]}
+7     O   u0 r0 {3,S} {9,[S,B,D,T,Q]}
 8     C   u0 r0 {3,S}
-9     C   ux {7,[S,D,T,B,Q]} {10,S}
+9     C   ux {7,[S,B,D,T,Q]} {10,S}
 10    C   u0 r0 {9,S} {11,S}
 11    C   u0 r0 {10,S}
 """,
@@ -408,9 +408,9 @@ entry(
 4     O   u0 r0 {1,D}
 5  *2 H   u0 r0 {2,S}
 6  *4 F1s u0 r0 {3,S}
-7     O   u0 r0 {3,S} {9,[S,D,T,B,Q]}
+7     O   u0 r0 {3,S} {9,[S,B,D,T,Q]}
 8     C   u0 r0 {3,S}
-9     C   ux {7,[S,D,T,B,Q]} {10,S}
+9     C   ux {7,[S,B,D,T,Q]} {10,S}
 10    C   u0 r0 {9,S} {11,S}
 11    F   u0 r0 {10,S}
 """,
@@ -428,9 +428,9 @@ entry(
 4     O   u0 r0 {1,D}
 5  *2 H   u0 r0 {2,S}
 6  *4 F1s u0 r0 {3,S}
-7     O   u0 r0 {3,S} {9,[S,D,T,B,Q]}
+7     O   u0 r0 {3,S} {9,[S,B,D,T,Q]}
 8     C   u0 r0 {3,S}
-9     C   ux {7,[S,D,T,B,Q]} {10,S}
+9     C   ux {7,[S,B,D,T,Q]} {10,S}
 10    F   u0 r0 {9,S}
 """,
     kinetics = None,
@@ -458,11 +458,11 @@ entry(
 """
 1    C   u0       {2,S} {3,S} {4,D}
 2 *1 O   u0       {1,S} {5,S}
-3 *3 C   u[0,1,2] {1,S} {6,S} {7,[S,D,T,B,Q]}
+3 *3 C   u[0,1,2] {1,S} {6,S} {7,[S,B,D,T,Q]}
 4    O   u0       {1,D}
 5 *2 H   u0       {2,S}
 6 *4 H   u0       {3,S}
-7    R!H ux       {3,[S,D,T,B,Q]}
+7    R!H ux       {3,[S,B,D,T,Q]}
 """,
     kinetics = None,
 )
@@ -474,12 +474,12 @@ entry(
 """
 1    C     u0 {2,S} {3,S} {4,D}
 2 *1 O     u0 {1,S} {5,S}
-3 *3 C     u0 {1,S} {6,S} {7,S} {8,[S,D,T,B,Q]}
+3 *3 C     u0 {1,S} {6,S} {7,S} {8,[S,B,D,T,Q]}
 4    O     u0 {1,D}
 5 *2 H     u0 {2,S}
 6 *4 H     u0 {3,S}
 7    [C,O] u0 {3,S}
-8    [C,O] ux {3,[S,D,T,B,Q]}
+8    [C,O] ux {3,[S,B,D,T,Q]}
 """,
     kinetics = None,
 )
@@ -491,14 +491,14 @@ entry(
 """
 1     C   u0 r0 {2,S} {3,S} {4,D}
 2  *1 O   u0 r0 {1,S} {5,S}
-3  *3 C   u0 r0 {1,S} {6,S} {7,S} {8,[S,D,T,B,Q]}
+3  *3 C   u0 r0 {1,S} {6,S} {7,S} {8,[S,B,D,T,Q]}
 4     O   u0 r0 {1,D}
 5  *2 H   u0 r0 {2,S}
 6  *4 H   u0 r0 {3,S}
 7     C   u0 r0 {3,S}
-8     O   ux {3,[S,D,T,B,Q]} {9,S}
-9     C   u0 r0 {8,S} {10,[S,D,T,B,Q]}
-10    R!H ux {9,[S,D,T,B,Q]}
+8     O   ux {3,[S,B,D,T,Q]} {9,S}
+9     C   u0 r0 {8,S} {10,[S,B,D,T,Q]}
+10    R!H ux {9,[S,B,D,T,Q]}
 """,
     kinetics = None,
 )
@@ -510,12 +510,12 @@ entry(
 """
 1    C   u0       {2,S} {3,S} {4,D}
 2 *1 O   u0       {1,S} {5,S}
-3 *3 C   u[0,1,2] {1,S} {6,S} {7,[S,D,T,B,Q]}
+3 *3 C   u[0,1,2] {1,S} {6,S} {7,[S,B,D,T,Q]}
 4    O   u0       {1,D}
 5 *2 H   u0       {2,S}
 6 *4 H   u0       {3,S}
-7    C   ux       {3,[S,D,T,B,Q]} {8,[S,D,T,B,Q]}
-8    R!H ux       {7,[S,D,T,B,Q]}
+7    C   ux       {3,[S,B,D,T,Q]} {8,[S,B,D,T,Q]}
+8    R!H ux       {7,[S,B,D,T,Q]}
 """,
     kinetics = None,
 )

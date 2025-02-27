@@ -41047,8 +41047,6 @@ Original entry: CH3OCHC(O)OH <=> CH(O)C(O)OH+CH3
 """,
 )
 
-#starting matt and su's addition 
-
 entry(
     index = 3010,
     label = "C3H6LiO3 <=> C2H3LiO3 + CH3",
@@ -41304,3 +41302,4 @@ ccsd(t)-f12/cc-pvdz-f12//wb97x-d3/def2-tzvpused COSMO TZPD-Fine with energy file
     MAE error: 10990.041834280188 J/mol
 """,
 )
+

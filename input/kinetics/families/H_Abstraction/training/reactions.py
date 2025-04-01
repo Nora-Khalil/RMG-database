@@ -2375,7 +2375,7 @@ Fit to multiple experimental measurements from 200-1000 K, including PLP experim
 )
 
 entry(
-    index = 132,
+    index = 3787,
     label = "Cl + C3H8-3 <=> ClH + C3H7-3",
     degeneracy = 6.0,
     kinetics = Arrhenius(A=(8.26e-11,'cm^3/(molecule*s)'), n=0, Ea=(748.302,'J/mol'), T0=(1,'K')),
@@ -2517,7 +2517,7 @@ LP-IR experiments from 295-600 K
 )
 
 entry(
-    index = 141,
+    index = 3793,
     label = "Cl + C2H6O-2 <=> ClH + C2H5O-2",
     degeneracy = 3.0,
     kinetics = Arrhenius(A=(1.13e-13,'cm^3/(molecule*s)'), n=0.7494, Ea=(-374.151,'J/mol'), T0=(1,'K')),
@@ -2607,7 +2607,7 @@ Singh, H.; Tedder, J.M., J. Chem. Soc. B, 1966
 )
 
 entry(
-    index = 144,
+    index = 3788,
     label = "Cl + C5H10O2-3 <=> ClH + C5H9O2-3",
     degeneracy = 2.0,
     kinetics = Arrhenius(A=(1.05e-11,'cm^3/(molecule*s)'), n=0, Ea=(1249.67,'J/mol'), T0=(1,'K')),
@@ -2622,7 +2622,7 @@ Singh, H.; Tedder, J.M., J. Chem. Soc. B, 1966
 )
 
 entry(
-    index = 145,
+    index = 3789,
     label = "Cl + C5H12-2 <=> ClH + C5H11-2",
     degeneracy = 12.0,
     kinetics = Arrhenius(A=(2.79e-10,'cm^3/(molecule*s)'), n=0, Ea=(3849.6,'J/mol'), T0=(1,'K')),
@@ -2637,7 +2637,7 @@ Knox, J.H.; Nelson, R.L., Trans. Faraday Soc., 55, 1959
 )
 
 entry(
-    index = 146,
+    index = 3790,
     label = "Cl + C3H4 <=> ClH + C3H3",
     degeneracy = 4.0,
     kinetics = Arrhenius(A=(1.40759e-16,'cm^3/(molecule*s)'), n=2, Ea=(4400.02,'J/mol'), T0=(1,'K')),
@@ -2652,7 +2652,7 @@ Farrell, J.T.; Taatjes, C.A., J. Phys. Chem. A, 102, 1998, 4846-4856
 )
 
 entry(
-    index = 147,
+    index = 3791,
     label = "Cl + C5H10-5 <=> ClH + C5H9-5",
     degeneracy = 10.0,
     kinetics = Arrhenius(A=(4.87e-10,'cm^3/(molecule*s)'), n=0, Ea=(2419.51,'J/mol'), T0=(1,'K')),
@@ -2667,7 +2667,7 @@ Pritchard, H.O.; Pyke, J.B.; Trotman-Dickenson, A.F., JACS, 77, 1955
 )
 
 entry(
-    index = 148,
+    index = 3792,
     label = "Cl + C4H8-9 <=> ClH + C4H7-9",
     degeneracy = 8.0,
     kinetics = Arrhenius(A=(4.25e-10,'cm^3/(molecule*s)'), n=0, Ea=(3449.67,'J/mol'), T0=(1,'K')),
@@ -4563,7 +4563,7 @@ Converted to training reaction from rate rule: X_H;O2b
 )
 
 entry(
-    index = 285,
+    index = 3794,
     label = "HO + C2H6 <=> H2O + C2H5",
     degeneracy = 6.0,
     kinetics = Arrhenius(A=(3.558e+07,'cm^3/(mol*s)'), n=1.8, Ea=(39.2041,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K')),
@@ -11044,7 +11044,7 @@ Converted to training reaction from rate rule: N3d/H/NonDeN;NH_triplet
 
 entry(
     index = 642,
-    label = "OH + N2H3_r12 <=> H2O_p + H2NN(S)_p23",
+    label = "HO + H3N2-2 <=> H2O + H2NN(S)_p23",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(3e+13,'cm^3/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K')),
     rank = 2,
@@ -11059,7 +11059,7 @@ Converted to training reaction from rate rule: N3s_rad_H/H/NonDeN;O_pri_rad
 
 entry(
     index = 643,
-    label = "N2H3_r12 + CH3_r3 <=> CH4p + H2NN(S)_p23",
+    label = "H3N2-2 + CH3-2 <=> CH4-2 + H2NN(S)_p23",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(3e+13,'cm^3/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K')),
     rank = 2,
@@ -11074,7 +11074,7 @@ Converted to training reaction from rate rule: N3s_rad_H/H/NonDeN;C_methyl
 
 entry(
     index = 644,
-    label = "NH2_r3 + N2H3_r12 <=> NH3_p23 + H2NN(S)_p23",
+    label = "H2N-2 + H3N2-2 <=> H3N-2 + H2NN(S)_p23",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(3e+13,'cm^3/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K')),
     rank = 2,
@@ -11089,7 +11089,7 @@ Converted to training reaction from rate rule: N3s_rad_H/H/NonDeN;NH2_rad
 
 entry(
     index = 645,
-    label = "H + N2H4_r12 <=> H2_p + N2H3_r3",
+    label = "H + H4N2 <=> H2 + H3N2-4",
     degeneracy = 4.0,
     kinetics = Arrhenius(A=(3.84e+09,'cm^3/(mol*s)'), n=1.5, Ea=(20.2506,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K')),
     rank = 2,
@@ -11178,7 +11178,7 @@ Converted to training reaction from rate rule: N3d/H/NonDeO;O_pri_rad
 )
 
 entry(
-    index = 642,
+    index = 3795,
     label = "H + HNO-2 <=> H2 + NO-2",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(4.5e+11,'cm^3/(mol*s)'), n=0.72, Ea=(2.76144,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K')),
@@ -11193,7 +11193,7 @@ Converted to training reaction from rate rule: N3d/H/NonDeO;H_rad
 )
 
 entry(
-    index = 643,
+    index = 3796,
     label = "HNO-2 + O <=> HO-2 + NO-2",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(4.5e+11,'cm^3/(mol*s)'), n=0.72, Ea=(2.76144,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K')),
@@ -11208,7 +11208,7 @@ Converted to training reaction from rate rule: N3d/H/NonDeO;O_atom_triplet
 )
 
 entry(
-    index = 644,
+    index = 3797,
     label = "HNO-2 + H2N-2 <=> H3N-2 + NO-2",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(920000,'cm^3/(mol*s)'), n=1.94, Ea=(-4.8116,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K')),
@@ -11223,7 +11223,7 @@ Converted to training reaction from rate rule: N3d/H/NonDeO;NH2_rad
 )
 
 entry(
-    index = 645,
+    index = 3798,
     label = "HNO-2 + O2 <=> HO2-3 + NO-2",
     degeneracy = 2.0,
     kinetics = Arrhenius(A=(4e+13,'cm^3/(mol*s)'), n=0, Ea=(66.5256,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K')),
@@ -58991,8 +58991,8 @@ H    0.173034    -0.236244    0.1014
 )
 
 entry(
-    index = 3109,
-    label = "C6H6 + H <=> H2_p + C6H5_p1",
+    index = 3806,
+    label = "C6H6 + H <=> H2 + C6H5",
     degeneracy = 6.0,
     kinetics = Arrhenius(
         A = (5.38e+09, 'cm^3/(mol*s)'),
@@ -59019,8 +59019,8 @@ Rate calculations using conventional TST, done with Multiwell 2016
 )
 
 entry(
-    index = 3110,
-    label = "C10H8 + H <=> H2_p + C10H7-3",
+    index = 3805,
+    label = "C10H8 + H <=> H2 + C10H7-5",
     degeneracy = 4.0,
     kinetics = Arrhenius(
         A = (2.47e+09, 'cm^3/(mol*s)'),
@@ -59047,8 +59047,8 @@ Rate calculations using conventional TST, done with Multiwell 2016
 )
 
 entry(
-    index = 3111,
-    label = "C14H10 + H <=> H2_p + C14H9",
+    index = 3804,
+    label = "C14H10 + H <=> H2 + C14H9",
     degeneracy = 2.0,
     kinetics = Arrhenius(
         A = (8.33e+08, 'cm^3/(mol*s)'),
@@ -59075,8 +59075,8 @@ Rate calculations using conventional TST, done with Multiwell 2016
 )
 
 entry(
-    index = 3112,
-    label = "C14H10_p + H <=> H2_p + C14H9_p",
+    index = 3803,
+    label = "C14H10_p + H <=> H2 + C14H9_p",
     degeneracy = 2.0,
     kinetics = Arrhenius(
         A = (4.63e+08, 'cm^3/(mol*s)'),
@@ -59103,8 +59103,8 @@ Rate calculations using conventional TST, done with Multiwell 2016
 )
 
 entry(
-    index = 3113,
-    label = "C18H12 + H <=> H2_p + C18H11",
+    index = 3802,
+    label = "C18H12 + H <=> H2 + C18H11",
     degeneracy = 4.0,
     kinetics = Arrhenius(
         A = (1.03e+09, 'cm^3/(mol*s)'),
@@ -59131,8 +59131,8 @@ Rate calculations using conventional TST, done with Multiwell 2016
 )
 
 entry(
-    index = 3114,
-    label = "C16H10 + H <=> H2_p + C16H9",
+    index = 3801,
+    label = "C16H10 + H <=> H2 + C16H9",
     degeneracy = 2.0,
     kinetics = Arrhenius(
         A = (9.08e+08, 'cm^3/(mol*s)'),
@@ -59159,8 +59159,8 @@ Rate calculations using conventional TST, done with Multiwell 2016
 )
 
 entry(
-    index = 3115,
-    label = "C22H14 + H <=> H2_p + C22H13",
+    index = 3800,
+    label = "C22H14 + H <=> H2 + C22H13",
     degeneracy = 2.0,
     kinetics = Arrhenius(
         A = (4.89e+09, 'cm^3/(mol*s)'),
@@ -59187,8 +59187,8 @@ Rate calculations using conventional TST, done with Multiwell 2016
 )
 
 entry(
-    index = 3116,
-    label = "CH3_r3 + HLi <=> CH4b + Li",
+    index = 3799,
+    label = "CH3-2 + HLi <=> CH4 + Li",
     degeneracy = 1.0,
     kinetics = Arrhenius(A=(79732.1,'cm^3/(mol*s)'), n=2.61156, Ea=(12.1363,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(3000,'K'), solute=SoluteData(S=3.39470212956669,B=1.6022203760198037,E=1.4946262264125265,L=10.49010693814182,A=0.4943151788298517,comment='')),
     rank = 3,

@@ -1193,7 +1193,7 @@ entry(
 
 entry(
 	index=124,
-	label='O2(2)+CH2(T)<=>[O][CH]O',
+	label='O2+CH2(T)<=>[O][CH]O',
 	degeneracy=1.0,
 	kinetics = Lindemann(
         arrheniusHigh = Arrhenius(A=(0, 'cm^3/(mol*s)'), n=0, Ea=(100, 'cal/mol'), T0=(1, 'K')),

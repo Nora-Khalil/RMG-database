@@ -1050,3 +1050,165 @@ kinetics = PDepArrhenius(pressures=([1.000000E-01, 2.150000E-01, 4.640000E-01, 1
 shortDesc = """From Brown difluoromethane mech""",
 )
 
+
+#adding other CH2(T) + O2 chemistry right now from pdep
+
+entry(
+	index=117,
+	label='O2 + CH2(T) <=> C1OO1',
+	degeneracy=1.0,
+	kinetics = Lindemann(
+        arrheniusHigh = Arrhenius(A=(0, 'cm^3/(mol*s)'), n=0, Ea=(100, 'cal/mol'), T0=(1, 'K')),
+        arrheniusLow = Arrhenius(
+            A = (0, 'cm^6/(mol^2*s)'),
+            n = 0,
+            Ea = (100, 'cal/mol'),
+            T0 = (1, 'K'),
+        ),
+        efficiencies = {'N#N': 0.87},
+    ),
+	shortDesc = """From CH3F model that produced good flamespeed (/work/westgroup/nora/Code/projects/halogens/refrigerants/halogens_paper/changing_RMG_Py/on_USNCM_blends/singles/CH3F""",
+) #O2+CH2(T)(+M)<=>C1OO1(71)(+M)                1.000e+00 0.000     0.000  
+
+
+
+
+entry(
+	index=118,
+	label='O2 + CH2(T) <=> [O]C[O]',
+	degeneracy=1.0,
+	kinetics = Lindemann(
+        arrheniusHigh = Arrhenius(A=(0, 'cm^3/(mol*s)'), n=0, Ea=(100, 'cal/mol'), T0=(1, 'K')),
+        arrheniusLow = Arrhenius(
+            A = (0, 'cm^6/(mol^2*s)'),
+            n = 0,
+            Ea = (100, 'cal/mol'),
+            T0 = (1, 'K'),
+        ),
+        efficiencies = {'N#N': 0.87},
+    ),
+	shortDesc = """From CH3F model that produced good flamespeed (/work/westgroup/nora/Code/projects/halogens/refrigerants/halogens_paper/changing_RMG_Py/on_USNCM_blends/singles/CH3F""",
+) #O2(2)+CH2(T)(+M)<=>[O]C[O](73)(+M)              1.000e+00 0.000     0.000    
+
+
+
+
+entry(
+	index=119,
+	label='O2 + CH2(T) <=> H + [O]C=O',
+	degeneracy=1.0,
+	kinetics = Lindemann(
+        arrheniusHigh = Arrhenius(A=(0, 'cm^3/(mol*s)'), n=0, Ea=(100, 'cal/mol'), T0=(1, 'K')),
+        arrheniusLow = Arrhenius(
+            A = (0, 'cm^6/(mol^2*s)'),
+            n = 0,
+            Ea = (100, 'cal/mol'),
+            T0 = (1, 'K'),
+        ),
+        efficiencies = {'N#N': 0.87},
+    ),
+	shortDesc = """From CH3F model that produced good flamespeed (/work/westgroup/nora/Code/projects/halogens/refrigerants/halogens_paper/changing_RMG_Py/on_USNCM_blends/singles/CH3F""",
+) #O2(2)+CH2(T)(+M)<=>H(3)+CHO2(76)(+M)            1.000e+00 0.000     0.000    
+
+
+
+
+entry(
+	index=120,
+	label='O2 + CH2(T) <=> O=O + CH2(S)',
+	degeneracy=1.0,
+	kinetics = Lindemann(
+        arrheniusHigh = Arrhenius(A=(0, 'cm^3/(mol*s)'), n=0, Ea=(100, 'cal/mol'), T0=(1, 'K')),
+        arrheniusLow = Arrhenius(
+            A = (0, 'cm^6/(mol^2*s)'),
+            n = 0,
+            Ea = (100, 'cal/mol'),
+            T0 = (1, 'K'),
+        ),
+        efficiencies = {'N#N': 0.87},
+    ),
+	shortDesc = """From CH3F model that produced good flamespeed (/work/westgroup/nora/Code/projects/halogens/refrigerants/halogens_paper/changing_RMG_Py/on_USNCM_blends/singles/CH3F""",
+)
+
+
+
+entry(
+	index=121,
+	label='O2 + CH2(T) <=> O=CO',
+	degeneracy=1.0,
+	kinetics = Lindemann(
+        arrheniusHigh = Arrhenius(A=(0, 'cm^3/(mol*s)'), n=0, Ea=(100, 'cal/mol'), T0=(1, 'K')),
+        arrheniusLow = Arrhenius(
+            A = (0, 'cm^6/(mol^2*s)'),
+            n = 0,
+            Ea = (100, 'cal/mol'),
+            T0 = (1, 'K'),
+        ),
+        efficiencies = {'N#N': 0.87},
+    ),
+	shortDesc = """From CH3F model that produced good flamespeed (/work/westgroup/nora/Code/projects/halogens/refrigerants/halogens_paper/changing_RMG_Py/on_USNCM_blends/singles/CH3F""",
+)   #O2(2)+CH2(T)(+M)<=>CH2O2(75)(+M)                1.000e+00 0.000     0.000    
+
+
+
+
+entry(
+	index=122,
+	label='O2 + CH2(T) <=> OH + HCO',
+	degeneracy=1.0,
+	kinetics = Lindemann(
+        arrheniusHigh = Arrhenius(A=(0, 'cm^3/(mol*s)'), n=0, Ea=(100, 'cal/mol'), T0=(1, 'K')),
+        arrheniusLow = Arrhenius(
+            A = (0, 'cm^6/(mol^2*s)'),
+            n = 0,
+            Ea = (100, 'cal/mol'),
+            T0 = (1, 'K'),
+        ),
+        efficiencies = {'N#N': 0.87},
+    ),
+	shortDesc = """From CH3F model that produced good flamespeed (/work/westgroup/nora/Code/projects/halogens/refrigerants/halogens_paper/changing_RMG_Py/on_USNCM_blends/singles/CH3F""",
+) # O2(2)+CH2(T)(+M)<=>OH(5)+HCO(14)(+M)            1.000e+00 0.000     0.000    
+
+
+
+
+entry(
+	index=123,
+	label='O2 + CH2(T) <=> H + O=[C]O',
+	degeneracy=1.0,
+	kinetics = Lindemann(
+        arrheniusHigh = Arrhenius(A=(0, 'cm^3/(mol*s)'), n=0, Ea=(100, 'cal/mol'), T0=(1, 'K')),
+        arrheniusLow = Arrhenius(
+            A = (0, 'cm^6/(mol^2*s)'),
+            n = 0,
+            Ea = (100, 'cal/mol'),
+            T0 = (1, 'K'),
+        ),
+        efficiencies = {'N#N': 0.87},
+    ),
+	shortDesc = """From CH3F model that produced good flamespeed (/work/westgroup/nora/Code/projects/halogens/refrigerants/halogens_paper/changing_RMG_Py/on_USNCM_blends/singles/CH3F""",
+)
+
+
+
+entry(
+	index=124,
+	label='O2(2)+CH2(T)<=>[O][CH]O',
+	degeneracy=1.0,
+	kinetics = Lindemann(
+        arrheniusHigh = Arrhenius(A=(0, 'cm^3/(mol*s)'), n=0, Ea=(100, 'cal/mol'), T0=(1, 'K')),
+        arrheniusLow = Arrhenius(
+            A = (0, 'cm^6/(mol^2*s)'),
+            n = 0,
+            Ea = (100, 'cal/mol'),
+            T0 = (1, 'K'),
+        ),
+        efficiencies = {'N#N': 0.87},
+    ),
+	shortDesc = """From CH3F model that produced less ideal flamespeed (/work/westgroup/nora/Code/projects/halogens/refrigerants/halogens_paper/models_diff/CH3F_before_and_after_rebase/rebased_RMG-Py-database/regenerating_model_at_different_commits/shutting_down_pathways_with_zero_rate/""",
+)
+
+
+
+#reactions in pdep network #3 in CH3F_main_with_ANL_pdep, where CH2(T) + O2(2) are reacting when they shouldn't be 
+

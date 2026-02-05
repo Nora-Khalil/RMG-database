@@ -77991,3 +77991,20 @@ u"""
 
 """,
 )
+
+forbidden(
+    label = "carbontrioxide",
+    group =
+"""
+multiplicity 3
+1 *3 O u1 p2 c0 {4,S}
+2 *1 O u1 p2 c0 {4,S}
+3 O u0 p2 c0 {4,D}
+4 *1 C u0 p0 c0 {1,S} {2,S} {3,D}
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+
+""",
+)

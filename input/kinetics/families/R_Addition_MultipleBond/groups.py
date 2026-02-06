@@ -77996,7 +77996,6 @@ forbidden(
     label = "carbontrioxide",
     group =
 """
-multiplicity 3
 1 *3 O u1 p2 c0 {4,S}
 2 *1 O u1 p2 c0 {4,S}
 3 O u0 p2 c0 {4,D}
